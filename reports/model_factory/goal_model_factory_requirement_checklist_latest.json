@@ -1,0 +1,528 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:57.727662+00:00",
+  "report": "goal_model_factory_requirement_checklist",
+  "objective": "C:\\AI continuous model-factory pull-through goal",
+  "status": "COMPLETE",
+  "completion_allowed": true,
+  "total_count": 8,
+  "pass_count": 8,
+  "incomplete_count": 0,
+  "count_semantics": "top-level count equals pass_count plus missing_or_incomplete count; prompt deliverables are counted only when incomplete",
+  "unexpected_incomplete_count": 0,
+  "unexpected_incomplete_requirements": [],
+  "first_incomplete_requirement": null,
+  "items": [
+    {
+      "requirement": "Keep a file-backed progress record for each iteration",
+      "status": "PASS",
+      "evidence": {
+        "iteration_count": 253,
+        "progress_entry_count": 253,
+        "latest_iteration_number": 228,
+        "latest_iteration_heading": "## 2026-05-04 Iteration 228 Result",
+        "open_iteration_count": 0
+      },
+      "source_files": [
+        "C:\\AI\\GOAL_MODEL_FACTORY_PROGRESS.md"
+      ]
+    },
+    {
+      "requirement": "Keep live/private/real-order paths disabled",
+      "status": "PASS",
+      "evidence": {
+        "risk_guard_status": "WARN",
+        "broker_submit_allowed": true,
+        "broker_submit_scope": "paper_only",
+        "live_enabled_flag": false,
+        "private_submit_used": false,
+        "real_orders": 0
+      },
+      "source_files": [
+        "C:\\AI\\ops\\reports\\paper_promotion_evidence_latest.json",
+        "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json"
+      ]
+    },
+    {
+      "requirement": "Do not count historical replay as paper promotion evidence",
+      "status": "PASS",
+      "evidence": {
+        "scope": "paper_evidence_velocity_monitor_no_order_paths",
+        "live_enabled": false,
+        "broker_submit_allowed": false,
+        "private_submit_used": false,
+        "real_orders": 0,
+        "historical_replay_counts_as_promotion_evidence": false,
+        "historical_replay_excluded": true
+      },
+      "source_files": [
+        "C:\\AI\\ops\\reports\\paper_evidence_velocity_monitor_latest.json"
+      ]
+    },
+    {
+      "requirement": "Maintain review-stack refresh and sanitized public export guards",
+      "status": "PASS",
+      "evidence": {
+        "refresh_status": "PASS",
+        "refresh_steps_ok": true,
+        "accepted_blocked_step_count": 1,
+        "public_export_checks": {
+          "sensitive_hit_count": 0,
+          "stale_derived_warning_count": 0,
+          "readiness_surface_present": true,
+          "goal_requirement_checklist_surface_present": true
+        },
+        "previous_refresh_public_export_checks": {
+          "operational_warning_count": 4,
+          "stale_derived_warning_count": 0,
+          "stale_derived_warnings": [],
+          "sensitive_hit_count": 0,
+          "sensitive_hits": [],
+          "paper_evidence_readiness_percent": 100.0,
+          "dominant_blocking_dimensions": [
+            "paper_cycles",
+            "non_flat_signals",
+            "executable_orders"
+          ],
+          "readiness_surface_present": true,
+          "goal_requirement_checklist_status": "COMPLETE",
+          "goal_requirement_checklist_incomplete_count": 0,
+          "goal_requirement_checklist_surface_present": true,
+          "goal_requirement_checklist_progress_surface_present": true,
+          "goal_requirement_checklist_progress_entry_count": 253,
+          "goal_requirement_checklist_latest_iteration_number": 228,
+          "goal_requirement_checklist_open_iteration_count": 0,
+          "pace_eta_status": "COMPLETE",
+          "slowest_gate_dimension": "complete",
+          "pace_eta_surface_present": true,
+          "event_stall_status": "EVENT_EVIDENCE_STALLED",
+          "stall_severity": "REVIEW_STALL",
+          "non_flat_hours_since_last_increase": 10.397,
+          "executable_hours_since_last_increase": 10.397,
+          "event_stall_surface_present": true,
+          "event_stall_triage_status": "READY_FOR_STALL_REVIEW",
+          "event_stall_triage_review_ready": true,
+          "event_stall_triage_blocker_count": 0,
+          "event_stall_triage_surface_present": true,
+          "paper_smoke_packet_status": "READY_FOR_GATEKEEPER_REVIEW",
+          "paper_smoke_packet_review_ready": true,
+          "paper_smoke_packet_blocker_count": 0,
+          "paper_smoke_packet_surface_present": true,
+          "paper_smoke_human_draft_status": "DRAFT_READY",
+          "paper_smoke_human_draft_blocker_count": 0,
+          "paper_smoke_human_draft_surface_present": true,
+          "paper_smoke_human_draft_surface_safe": true,
+          "gatekeeper_review_phrase_packet_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+          "gatekeeper_review_phrase_packet_ready": true,
+          "gatekeeper_review_phrase_packet_ready_count": 33,
+          "gatekeeper_review_phrase_packet_next_exact_phrase": "REVIEW_PAPER_SMOKE_ONLY",
+          "gatekeeper_review_phrase_packet_surface_present": true,
+          "gatekeeper_review_phrase_packet_surface_safe": true,
+          "gatekeeper_review_phrase_public_parity_ok": true,
+          "gatekeeper_review_phrase_public_missing": [],
+          "gatekeeper_review_phrase_public_extra": [],
+          "gatekeeper_decision_priority_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+          "gatekeeper_decision_priority_surface_present": true,
+          "gatekeeper_decision_priority_surface_safe": true,
+          "gatekeeper_decision_priority_next_decision_id": "paper_smoke_review",
+          "gatekeeper_decision_priority_next_priority_score": 100,
+          "gatekeeper_decision_priority_ready_count": 33,
+          "model_factory_experiment_queue_status": "PASS",
+          "model_factory_experiment_queue_surface_present": true,
+          "model_factory_experiment_queue_surface_safe": true,
+          "model_factory_experiment_queue_experiment_count": 40,
+          "model_factory_experiment_queue_ready_count": 37,
+          "model_factory_experiment_queue_waiting_count": 3,
+          "model_factory_experiment_queue_top_experiment_id": "paper_smoke_evidence_review__small_account_growth_paper",
+          "model_factory_experiment_queue_order_submission_allowed": false,
+          "model_factory_experiment_queue_real_orders_allowed": false,
+          "gatekeeper_review_phrase_shadow_drafts_surface_safe": true,
+          "gatekeeper_review_phrase_bithumb_shadow_draft_status": "DRAFT_READY",
+          "gatekeeper_review_phrase_btc_eth_shadow_draft_status": "DRAFT_READY",
+          "family_parameter_repair_packet_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+          "family_parameter_repair_packet_exact_phrase": "REVIEW_FAMILY_PARAMETER_REPAIR_EVIDENCE_ONLY",
+          "family_parameter_repair_board_exact_phrase": "REVIEW_FAMILY_PARAMETER_REPAIR_EVIDENCE_ONLY",
+          "family_parameter_repair_public_board_exact_phrase": "REVIEW_FAMILY_PARAMETER_REPAIR_EVIDENCE_ONLY",
+          "family_parameter_repair_phrase_surface_present": true,
+          "family_parameter_repair_phrase_surface_safe": true,
+          "family_parameter_repair_evidence_surface_safe": true,
+          "family_parameter_repair_public_evidence_surface_safe": true,
+          "family_parameter_repair_evidence_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+          "family_parameter_repair_evidence_best_market": "KRW-POLA",
+          "family_parameter_repair_evidence_oos_pass_candidate_count": 9,
+          "family_parameter_repair_evidence_robustness_pass_candidate_count": 2,
+          "family_parameter_repair_evidence_robustness_status": "ROBUSTNESS_STRESS_PASS",
+          "family_parameter_repair_public_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+          "family_parameter_repair_public_oos_folds": {
+            "pass": 2,
+            "total": 3
+          },
+          "family_parameter_repair_public_robustness": {
+            "status": "ROBUSTNESS_STRESS_PASS",
+            "pass": 4,
+            "total": 7,
+            "cost_pass": 2
+          },
+          "stock_conversion_packet_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+          "stock_conversion_packet_blocker_count": 0,
+          "stock_conversion_packet_surface_present": true,
+          "stock_conversion_top5_surface_present": true,
+          "stock_conversion_top5_covered_candidate_count": 5,
+          "stock_conversion_top5_target_count": 5,
+          "stock_conversion_top5_stress_pass_candidate_count": 3,
+          "stock_conversion_top5_sizing_repair_ready_count": 2,
+          "stock_conversion_top5_stress_pass_plus_repair_ready_count": 5,
+          "stock_conversion_top5_full_coverage": true,
+          "stock_conversion_top5_all_safe": true,
+          "goal_unblock_packet_status": "NO_BLOCKERS_REPORTED",
+          "goal_unblock_packet_blocker_count": 0,
+          "goal_unblock_packet_surface_present": true,
+          "goal_unblock_packet_surface_safe": true,
+          "goal_unblock_summary_surface_present": true,
+          "goal_unblock_summary_surface_safe": true,
+          "goal_unblock_paper_cycles_completed": 318,
+          "goal_unblock_paper_cycles_target": 288,
+          "goal_unblock_paper_cycles_missing": 0,
+          "goal_unblock_non_flat_signal_count": 55,
+          "goal_unblock_executable_order_count": 52,
+          "goal_unblock_historical_replay_counts_as_promotion_evidence": false,
+          "goal_unblock_kis_missing_requirements": [],
+          "goal_unblock_verification_step_count": 2,
+          "goal_unblock_verification_steps_have_current_status": true,
+          "goal_unblock_cycle_source_safe": true,
+          "goal_unblock_cycle_source": null,
+          "goal_unblock_completion_recheck_command_count": 7,
+          "goal_remaining_blocker_ownership_surface_safe": true,
+          "goal_remaining_blocker_count": 0,
+          "goal_remaining_codex_unblockable_now_count": 0,
+          "goal_remaining_approval_required_count": 0,
+          "goal_remaining_operator_input_blocker_count": 0
+        },
+        "completion_audit_checks": {
+          "stale_derived_warning_count": 0
+        },
+        "previous_refresh_completion_audit_checks": {
+          "operational_warning_count": 4,
+          "stale_derived_warning_count": 0,
+          "stale_derived_warnings": [],
+          "pace_eta_status": "COMPLETE",
+          "slowest_gate_dimension": "complete",
+          "pace_eta_surface_present": true,
+          "stall_severity": "REVIEW_STALL",
+          "stall_severity_surface_present": true
+        },
+        "public_summary_status": "PASS"
+      },
+      "source_files": [
+        "C:\\AI\\ops\\reports\\paper_evidence_review_stack_refresh_latest.json",
+        "C:\\AI\\public_dashboard_export\\public_summary.json"
+      ]
+    },
+    {
+      "requirement": "Keep operational monitor limited to expected paper/capital collection warnings",
+      "status": "PASS",
+      "evidence": {
+        "operational_status": "WARN",
+        "blockers": [],
+        "warnings": [
+          "NON_PASS_STATUS:realtime_risk_guard:WARN",
+          "NON_PASS_STATUS:crypto_live_preflight:BLOCKED",
+          "NON_PASS_STATUS:stock_live_preflight:BLOCKED",
+          "NON_PASS_STATUS:pipeline_live_preflight_reconfiguration:RECONFIGURED_WITH_BLOCKERS"
+        ]
+      },
+      "source_files": [
+        "C:\\AI\\ops\\reports\\operational_monitor_latest.json"
+      ]
+    },
+    {
+      "requirement": "Maintain stock/ETF risk-conversion queue as review-only evidence",
+      "status": "PASS",
+      "evidence": {
+        "stock_queue_status": "READY_FOR_GATEKEEPER_REVIEW",
+        "target_count": 5,
+        "ready_candidate_count": 5,
+        "blocked_candidate_count": 0,
+        "no_order_assertions": {
+          "promotion_allowed_by_this_report": false,
+          "paper_enabled_by_this_report": false,
+          "live_allowed_by_this_report": false,
+          "broker_submit_allowed_by_this_report": false,
+          "private_submit_allowed_by_this_report": false,
+          "real_orders_allowed_by_this_report": false
+        }
+      },
+      "source_files": [
+        "C:\\AI\\reports\\model_factory\\stock_risk_conversion_queue_latest.json"
+      ]
+    },
+    {
+      "requirement": "Maintain frozen-scope experiment queue as no-order model-factory worklist",
+      "status": "PASS",
+      "evidence": {
+        "queue_present": true,
+        "queue_status": "PASS",
+        "state_status": "PASS",
+        "state_schema_version": "1.1",
+        "experiment_count": 40,
+        "ready_experiment_count": 37,
+        "waiting_for_human_review_count": 3,
+        "lane_counts": {
+          "operations": 2,
+          "shadow": 3,
+          "validation": 11,
+          "conversion": 14,
+          "portfolio": 10
+        },
+        "top_experiment_id": "paper_smoke_evidence_review__small_account_growth_paper",
+        "unsafe_experiment_ids": [],
+        "no_order_assertions": {
+          "promotion_allowed_by_this_report": false,
+          "paper_enabled_by_this_report": false,
+          "live_allowed_by_this_report": false,
+          "broker_submit_allowed_by_this_report": false,
+          "private_submit_allowed_by_this_report": false,
+          "real_orders_allowed_by_this_report": false
+        },
+        "state_no_order_assertions": {
+          "promotion_allowed_by_this_report": false,
+          "paper_enabled_by_this_report": false,
+          "live_allowed_by_this_report": false,
+          "broker_submit_allowed_by_this_report": false,
+          "private_submit_allowed_by_this_report": false,
+          "real_orders_allowed_by_this_report": false
+        },
+        "public_status": "PASS",
+        "public_experiment_count": 40,
+        "public_order_submission_allowed": false,
+        "public_real_orders_allowed": false
+      },
+      "source_files": [
+        "C:\\AI\\reports\\model_factory\\model_factory_experiment_queue_latest.json",
+        "C:\\AI\\automation\\state\\experiment_queue.json",
+        "C:\\AI\\public_dashboard_export\\public_summary.json"
+      ]
+    },
+    {
+      "requirement": "Allow pipeline pull-through via paper-smoke while extended paper/live remains blocked",
+      "status": "PASS",
+      "evidence": {
+        "completion_allowed": true,
+        "audit_status": "COMPLETE",
+        "pipeline_pull_through_allowed_without_live": true,
+        "extended_paper_or_live_completion_allowed": true,
+        "taxonomy_status": "PASS",
+        "recommended_gatekeeper_lane": "PAPER_SMOKE_REVIEW_READY",
+        "paper_smoke_ready": true,
+        "paper_evidence_readiness_percent": 100.0,
+        "promotion_review_ready": true,
+        "paper_cycles_completed": 318,
+        "paper_cycles_missing": 0,
+        "non_flat_signal_count": 55,
+        "non_flat_signals_missing": 0,
+        "executable_order_count": 52,
+        "executable_orders_missing": 0
+      },
+      "source_files": [
+        "C:\\AI\\ops\\reports\\paper_promotion_evidence_latest.json",
+        "C:\\AI\\ops\\reports\\paper_evidence_velocity_monitor_latest.json",
+        "C:\\AI\\reports\\model_factory\\goal_model_factory_completion_audit_latest.json",
+        "C:\\AI\\reports\\model_factory\\gatekeeper_evidence_taxonomy_latest.json"
+      ]
+    }
+  ],
+  "prompt_to_artifact_completion_required": true,
+  "prompt_to_artifact_checklist": [
+    {
+      "deliverable": "two_axis_model_factory_scope",
+      "explicit_requirement": "Build a two-axis automated trading/investment system: Bithumb-tradable crypto plus KIS stocks/ETFs.",
+      "status": "PASS",
+      "evidence": {
+        "bithumb_checked_market_count": 447,
+        "bithumb_total_liquidity_market_count": 447,
+        "bithumb_covers_full_krw_universe": true,
+        "bithumb_coverage_ratio": 1.0,
+        "bithumb_model_ready_market_count": 406,
+        "kis_local_coverage_status": "KIS_API_UNIVERSE_READY",
+        "kis_all_four_axes_local_coverage_present": true,
+        "kis_api_environment_ready": true,
+        "kis_missing_environment_requirements": [],
+        "kis_operator_handoff_status": "READY_FOR_PREFLIGHT_RECHECK",
+        "kis_operator_handoff_ready": true,
+        "kis_operator_handoff_missing_requirements": [],
+        "kis_operator_handoff_verification_commands": [
+          "Set-Location -LiteralPath C:\\AI",
+          "python .\\build_kis_environment_readiness_report.py",
+          "python .\\build_stock_live_preflight_packet.py",
+          "python .\\build_kis_production_universe_coverage_report.py",
+          "python .\\build_goal_model_factory_requirement_checklist.py",
+          "powershell -ExecutionPolicy Bypass -File C:\\AI\\run_goal_model_factory_unblock_recheck.ps1 -IncludeKisVerification -Execute"
+        ],
+        "stock_queue_status": "READY_FOR_GATEKEEPER_REVIEW",
+        "stock_ready_candidate_count": 5,
+        "paper_approval_valid": true,
+        "paper_approved": true,
+        "paper_approval_profile": "small_account_growth_paper",
+        "paper_policy_mode": "paper_only",
+        "paper_policy_enabled": true,
+        "paper_policy_broker_submit_scope": "paper_only",
+        "paper_policy_live_enabled": false,
+        "paper_policy_private_submit_used": false,
+        "paper_policy_real_orders_allowed": false,
+        "why_incomplete": null
+      },
+      "source_files": [
+        "C:\\AI\\Crypto\\analysis_results\\bithumb_krw_candle_availability_latest.json",
+        "C:\\AI\\reports\\model_factory\\kis_production_universe_coverage_latest.json",
+        "C:\\AI\\reports\\live_readiness\\kis_environment_operator_handoff_latest.json",
+        "C:\\AI\\reports\\model_factory\\stock_risk_conversion_queue_latest.json",
+        "C:\\AI\\ops\\runstate\\paper_approval.json",
+        "C:\\AI\\ops\\runstate\\broker_paper_policy.json"
+      ],
+      "uncovered_or_incomplete": []
+    },
+    {
+      "deliverable": "research_conversion_operations_lanes",
+      "explicit_requirement": "Keep research, conversion, and operations lanes separate.",
+      "status": "PASS",
+      "evidence": {
+        "taxonomy_status": "PASS",
+        "recommended_gatekeeper_lane": "PAPER_SMOKE_REVIEW_READY",
+        "stock_queue_status": "READY_FOR_GATEKEEPER_REVIEW",
+        "review_stack_status": "PASS"
+      },
+      "source_files": [
+        "C:\\AI\\reports\\model_factory\\gatekeeper_evidence_taxonomy_latest.json",
+        "C:\\AI\\reports\\model_factory\\stock_risk_conversion_queue_latest.json",
+        "C:\\AI\\ops\\reports\\paper_evidence_review_stack_refresh_latest.json"
+      ],
+      "uncovered_or_incomplete": []
+    },
+    {
+      "deliverable": "current_paper_activation_gate",
+      "explicit_requirement": "Use paper activation-ready 100% for small_account_growth_paper as the next gate, not the final objective.",
+      "status": "PASS",
+      "evidence": {
+        "activation_packet_status": "ready_for_explicit_paper_activation",
+        "activation_packet_blocker_count": 0,
+        "paper_evidence_readiness_percent": 100.0,
+        "promotion_review_ready": true,
+        "paper_cycles_completed": 318,
+        "paper_cycles_missing": 0,
+        "non_flat_signal_count": 55,
+        "executable_order_count": 52
+      },
+      "source_files": [
+        "C:\\AI\\overnight_runs\\small_autotrade_activation_packet_latest.json",
+        "C:\\AI\\ops\\reports\\paper_evidence_velocity_monitor_latest.json",
+        "C:\\AI\\ops\\reports\\paper_evidence_review_stack_refresh_latest.json"
+      ],
+      "uncovered_or_incomplete": []
+    },
+    {
+      "deliverable": "hard_safety_controls",
+      "explicit_requirement": "Do not enable paper/live/broker/private submit or real orders without explicit approvals.",
+      "status": "PASS",
+      "evidence": {
+        "risk_guard_status": "WARN",
+        "halt_count": 0,
+        "warn_count": 5,
+        "broker_submit_scope": "paper_only",
+        "live_enabled_flag": false,
+        "private_submit_used": false,
+        "real_orders": 0
+      },
+      "source_files": [
+        "C:\\AI\\ops\\reports\\paper_promotion_evidence_latest.json",
+        "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json"
+      ],
+      "uncovered_or_incomplete": []
+    },
+    {
+      "deliverable": "gatekeeper_priority_review_queue",
+      "explicit_requirement": "Surface Gatekeeper-ready decisions in a deterministic review-only priority queue.",
+      "status": "PASS",
+      "evidence": {
+        "priority_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+        "ready_decision_count": 33,
+        "blocked_decision_count": 1,
+        "next_decision_id": "paper_smoke_review",
+        "next_exact_phrase_to_record": "REVIEW_PAPER_SMOKE_ONLY",
+        "public_priority_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+        "public_next_decision_id": "paper_smoke_review",
+        "public_next_exact_phrase_to_record": "REVIEW_PAPER_SMOKE_ONLY",
+        "public_priority_surface_safe": true,
+        "order_submission_allowed_by_this_report": false,
+        "real_orders_allowed_by_this_report": false
+      },
+      "source_files": [
+        "C:\\AI\\reports\\model_factory\\gatekeeper_decision_priority_latest.json",
+        "C:\\AI\\public_dashboard_export\\public_summary.json",
+        "C:\\AI\\ops\\reports\\paper_evidence_review_stack_refresh_latest.json"
+      ],
+      "uncovered_or_incomplete": []
+    },
+    {
+      "deliverable": "frozen_scope_experiment_queue",
+      "explicit_requirement": "Promote current evidence into bounded frozen-scope experiments before further model-factory work.",
+      "status": "PASS",
+      "evidence": {
+        "queue_status": "PASS",
+        "state_schema_version": "1.1",
+        "experiment_count": 40,
+        "ready_experiment_count": 37,
+        "waiting_for_human_review_count": 3,
+        "lane_counts": {
+          "operations": 2,
+          "shadow": 3,
+          "validation": 11,
+          "conversion": 14,
+          "portfolio": 10
+        },
+        "top_experiment_id": "paper_smoke_evidence_review__small_account_growth_paper",
+        "unsafe_experiment_ids": [],
+        "no_order_assertions": {
+          "promotion_allowed_by_this_report": false,
+          "paper_enabled_by_this_report": false,
+          "live_allowed_by_this_report": false,
+          "broker_submit_allowed_by_this_report": false,
+          "private_submit_allowed_by_this_report": false,
+          "real_orders_allowed_by_this_report": false
+        },
+        "public_status": "PASS"
+      },
+      "source_files": [
+        "C:\\AI\\reports\\model_factory\\model_factory_experiment_queue_latest.json",
+        "C:\\AI\\automation\\state\\experiment_queue.json",
+        "C:\\AI\\public_dashboard_export\\public_summary.json"
+      ],
+      "uncovered_or_incomplete": []
+    },
+    {
+      "deliverable": "file_backed_review_and_public_surfaces",
+      "explicit_requirement": "Maintain file-backed progress, review-stack refresh, and sanitized public export evidence.",
+      "status": "PASS",
+      "evidence": {
+        "progress_iteration_count": 253,
+        "progress_entry_count": 253,
+        "latest_iteration_number": 228,
+        "latest_iteration_heading": "## 2026-05-04 Iteration 228 Result",
+        "review_stack_status": "PASS",
+        "refresh_steps_ok": true,
+        "public_export_checks": {
+          "sensitive_hit_count": 0,
+          "stale_derived_warning_count": 0,
+          "readiness_surface_present": true,
+          "goal_requirement_checklist_surface_present": true
+        }
+      },
+      "source_files": [
+        "C:\\AI\\GOAL_MODEL_FACTORY_PROGRESS.md",
+        "C:\\AI\\ops\\reports\\paper_evidence_review_stack_refresh_latest.json",
+        "C:\\AI\\public_dashboard_export\\public_summary.json"
+      ],
+      "uncovered_or_incomplete": []
+    }
+  ],
+  "missing_or_incomplete": [],
+  "next_action": "All checklist items are complete."
+}

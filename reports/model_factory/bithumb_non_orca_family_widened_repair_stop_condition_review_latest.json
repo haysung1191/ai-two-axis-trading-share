@@ -1,0 +1,46 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:45.066058+00:00",
+  "report": "bithumb_non_orca_family_widened_repair_stop_condition_review",
+  "status": "NON_ORCA_WIDENED_REPAIR_STOP_CONDITION_READY",
+  "scope": "non_orca_family_widened_repair_stop_condition_review_only_no_order_paths",
+  "source_spec": "C:\\AI\\reports\\model_factory\\bithumb_non_orca_family_widened_repair_spec_latest.json",
+  "source_sweep": "C:\\AI\\reports\\model_factory\\bithumb_non_orca_family_widened_repair_sweep_latest.json",
+  "repair_target_count": 2,
+  "trial_count": 162,
+  "evaluated_trial_count": 162,
+  "oos_pass_trial_count": 0,
+  "robustness_pass_trial_count": 0,
+  "best_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_widenedrepair_070",
+  "dominant_failure_dimensions": [
+    {
+      "dimension": "enough_pass_folds",
+      "case_count": 162
+    },
+    {
+      "dimension": "enough_positive_folds",
+      "case_count": 147
+    },
+    {
+      "dimension": "mdd_within_limit",
+      "case_count": 115
+    },
+    {
+      "dimension": "enough_total_trades",
+      "case_count": 35
+    }
+  ],
+  "recommended_branch_action": "STOP_NON_ORCA_WIDENED_REPAIR_GRID",
+  "recommended_next_research_action": "REBUILD_NON_ORCA_ENTRY_FAMILY_OR_SOURCE_DATA_EVIDENCE",
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Stop the widened non-ORCA parameter grid and rebuild the non-ORCA entry family or source-data evidence."
+}

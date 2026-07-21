@@ -1,0 +1,66 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:09.731909+00:00",
+  "report": "btc_eth_intraday_robustness_repair_delta_review",
+  "status": "ROBUSTNESS_REPAIR_DELTA_REVIEW_READY",
+  "scope": "lineage_delta_review_only_no_order_paths",
+  "source_risk_conversion": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_risk_conversion_latest.json",
+  "source_robustness_repair": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_robustness_repair_review_latest.json",
+  "base_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "child_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_447",
+  "lineage_match": true,
+  "market": "KRW-BTC",
+  "timeframe": "4h",
+  "base_conversion": {
+    "target_mdd_abs": 0.12,
+    "recommended_exposure_cap": 0.7146408932992823,
+    "estimated_average_fold_cagr": 0.22202103828420336,
+    "estimated_worst_fold_mdd": -0.12,
+    "total_trade_count": 76,
+    "pass_fold_count": 2,
+    "positive_fold_count": 2
+  },
+  "child_conversion": {
+    "target_mdd_abs": 0.12,
+    "recommended_exposure_cap": 0.6548552701037181,
+    "estimated_average_fold_cagr": 0.41100371323712054,
+    "estimated_worst_fold_mdd": -0.12,
+    "total_trade_count": 45,
+    "pass_fold_count": 2,
+    "positive_fold_count": 2
+  },
+  "child_full_window_metrics": {
+    "total_return": 0.13540335236093504,
+    "cagr": 0.2940049509292042,
+    "mdd": -0.18324659734508053,
+    "win_rate": 0.5652173913043478,
+    "profit_factor": 1.362030793867326,
+    "trade_count": 46
+  },
+  "delta": {
+    "estimated_average_fold_cagr_delta": 0.18898267495291718,
+    "estimated_worst_fold_mdd_delta": 0.0,
+    "exposure_cap_delta": -0.05978562319556413,
+    "trade_count_delta": -31,
+    "cost_pass_count_delta": 2
+  },
+  "repair_stress": {
+    "repair_pass_count": 48,
+    "best_pass_count": 7,
+    "best_cost_pass_count": 2,
+    "best_cost_case_id": "cost_30bps",
+    "best_cost_total_return": 0.08445142021501262,
+    "best_cost_mdd": -0.19553976881343693
+  },
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Use this lineage/delta packet as review-only support for the BTC/ETH intraday robustness-repair child; do not register or submit orders."
+}

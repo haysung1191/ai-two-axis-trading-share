@@ -1,0 +1,120 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:51.448278+00:00",
+  "report": "stock_portfolio_sleeve_gatekeeper_bundle_packet",
+  "status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+  "scope": "stock_etf_portfolio_sleeve_bundle_review_only_no_order_paths",
+  "candidate_id": "stock_etf_top5_sleeve_bundle",
+  "exact_phrase_to_record": "REVIEW_STOCK_PORTFOLIO_SLEEVE_BUNDLE_ONLY",
+  "stage_count": 9,
+  "ready_stage_count": 9,
+  "base_component_count": 5,
+  "base_total_effective_exposure": 0.6060000000000001,
+  "base_max_lane_weight": 0.6000000000000001,
+  "base_estimated_sleeve_cagr": 0.44036166786492137,
+  "base_weighted_mdd_proxy": -0.1933035276298402,
+  "resilience_ladder_stage_count": 7,
+  "resilience_ladder_ready_stage_count": 7,
+  "resilience_ladder_scenario_total_count": 50,
+  "resilience_ladder_source_fragile_count": 5,
+  "resilience_ladder_repaired_source_fragile_count": 5,
+  "constraint_envelope_scenario_count": 21,
+  "constraint_pass_scenario_count": 21,
+  "constraint_fail_scenario_count": 0,
+  "worst_bundle_cagr": 0.3334522939161242,
+  "worst_bundle_mdd_proxy": -0.19862839211347605,
+  "stages": [
+    {
+      "stage_id": "base",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "sensitivity",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_sensitivity_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_SENSITIVITY_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_SENSITIVITY_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "leave_one_out",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_resilience_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_RESILIENCE_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_RESILIENCE_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "pairwise",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_pairwise_resilience_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_PAIRWISE_RESILIENCE_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_PAIRWISE_RESILIENCE_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "pairwise_repair",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_pairwise_fragility_repair_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_PAIRWISE_FRAGILITY_REPAIR_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_PAIRWISE_FRAGILITY_REPAIR_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "tail_drop",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_tail_drop_resilience_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_TAIL_DROP_RESILIENCE_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_TAIL_DROP_RESILIENCE_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "tail_drop_repair",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_tail_drop_fragility_repair_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_TAIL_DROP_FRAGILITY_REPAIR_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_TAIL_DROP_FRAGILITY_REPAIR_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "ladder",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_resilience_ladder_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_RESILIENCE_LADDER_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_RESILIENCE_LADDER_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "stage_id": "constraint_envelope",
+      "source_path": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_constraint_envelope_review_latest.json",
+      "status": "PORTFOLIO_SLEEVE_CONSTRAINT_ENVELOPE_REVIEW_READY",
+      "expected_status": "PORTFOLIO_SLEEVE_CONSTRAINT_ENVELOPE_REVIEW_READY",
+      "ready_for_gatekeeper_review": true,
+      "no_order_safe": true,
+      "counts_as_paper_or_live_evidence": false
+    }
+  ],
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Review the bundled stock/ETF portfolio sleeve evidence; this packet has no side effects."
+}

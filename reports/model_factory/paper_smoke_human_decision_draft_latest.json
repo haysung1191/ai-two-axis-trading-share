@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-05-05T01:46:23.141157+00:00",
+  "report": "paper_smoke_human_decision_draft",
+  "status": "DRAFT_READY",
+  "scope": "draft_only_not_a_human_decision_no_paper_no_live_no_orders",
+  "draft_path": "C:\\AI\\reports\\model_factory\\paper_smoke_gatekeeper_decision_draft.json",
+  "candidate_profile": "small_account_growth_paper",
+  "paper_smoke_packet_path": "C:\\AI\\reports\\model_factory\\paper_smoke_gatekeeper_review_packet_latest.json",
+  "evidence_summary": {
+    "paper_cycles_completed": 318,
+    "combined_non_flat_signal_count": 55,
+    "combined_executable_order_evidence_count": 52,
+    "extended_paper_ready": true,
+    "extended_paper_evidence_gaps": [],
+    "historical_replay_non_flat_excluded": 7621
+  },
+  "draft_decision": {
+    "candidate_profile": "small_account_growth_paper",
+    "decision": "HUMAN_MUST_CHOOSE_ACKNOWLEDGE_REJECT_OR_DEFER",
+    "allowed_decisions": [
+      "ACKNOWLEDGE_PAPER_SMOKE_REVIEW_ONLY",
+      "REJECT",
+      "DEFER"
+    ],
+    "decided_by": "human_gatekeeper_name_or_initials",
+    "rationale": "Review paper-smoke evidence only. This does not approve extended paper activation, live trading, broker/private submit, real orders, or capital changes."
+  },
+  "blockers": [],
+  "safety": {
+    "does_write_final_human_decision_file": false,
+    "does_acknowledge_only": true,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "does_allow_broker_submit": false,
+    "does_allow_private_submit": false,
+    "does_allow_real_orders": false,
+    "does_change_capital": false,
+    "real_orders": 0
+  },
+  "next_action": "Human Gatekeeper may review and record an acknowledgement, rejection, or deferral; Codex must not auto-acknowledge."
+}

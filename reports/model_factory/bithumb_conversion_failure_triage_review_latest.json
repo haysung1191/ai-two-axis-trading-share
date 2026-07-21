@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-05-04T06:13:19.520147+00:00",
+  "report": "bithumb_conversion_failure_triage_review",
+  "status": "BITHUMB_CONVERSION_FAILURE_TRIAGE_REVIEW_READY",
+  "scope": "bithumb_conversion_failure_triage_review_only_no_order_paths",
+  "source_reports": {
+    "candidate_registry": "C:\\AI\\gatekeeper\\artifacts\\candidate_registry_latest.json",
+    "pull_through_board": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json"
+  },
+  "conversion_failure_count": 1,
+  "candidates": [
+    {
+      "candidate_id": "locked_recent_score3_hold14_top1",
+      "strategy_family": "bithumb_short_horizon",
+      "status": "CONVERSION_FAILED",
+      "current_gate": "G06_RISK_CONVERSION_PORTFOLIO_FIT",
+      "failure_reason": "CONVERSION_RETURN_RETENTION_FAILED",
+      "secondary_reasons": [
+        "MDD_TOO_HIGH",
+        "INSUFFICIENT_HISTORY"
+      ],
+      "total_return": 1.3201004809571595,
+      "cagr": 25802722.417750347,
+      "mdd": -0.2774101234126275,
+      "sharpe": 7.058842689587838,
+      "trade_count": 18,
+      "scope_frozen": 0,
+      "latest_report_path": "C:\\AI\\gatekeeper\\reports\\candidates\\locked_recent_score3_hold14_top1.md",
+      "real_orders_count": 0,
+      "broker_submit_allowed": 0,
+      "private_submit_used": 0,
+      "recommended_triage": "KEEP_RESEARCH_ONLY_REQUIRE_LONGER_HISTORY_AND_RISK_CONVERSION_REPAIR"
+    }
+  ],
+  "triage_summary": {
+    "dominant_failure_reason": "CONVERSION_RETURN_RETENTION_FAILED",
+    "secondary_risk_reasons": [
+      "INSUFFICIENT_HISTORY",
+      "MDD_TOO_HIGH"
+    ],
+    "recommended_action": "KEEP_RESEARCH_ONLY_REQUIRE_LONGER_HISTORY_AND_RISK_CONVERSION_REPAIR",
+    "mutation_allowed_by_this_report": false,
+    "high_cagr_counts_as_promotion_evidence": false,
+    "reason": "Extreme CAGR is not accepted as promotion evidence because conversion return retention failed and the row is also marked with risk/history secondary reasons."
+  },
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "mutation_allowed_by_this_report": false,
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Gatekeeper can review conversion-failure triage; do not promote, mutate registry/archive state, or submit orders."
+}

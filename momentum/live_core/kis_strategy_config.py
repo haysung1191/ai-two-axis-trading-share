@@ -1,0 +1,76 @@
+from __future__ import annotations
+
+from typing import Any, Callable
+
+
+def strategy_runtime_kwargs(args: Any, fee_rate: float, use_regime_filter: bool) -> dict[str, Any]:
+    return dict(
+        top_n_stock=args.top_n,
+        top_n_etf=args.top_n,
+        fee_rate=fee_rate,
+        use_regime_filter=use_regime_filter,
+        stop_loss_pct=args.stop_loss_pct,
+        trend_exit_ma=args.trend_exit_ma,
+        regime_ma_window=args.regime_ma_window,
+        regime_slope_window=args.regime_slope_window,
+        regime_breadth_threshold=args.regime_breadth_threshold,
+        vol_lookback=args.vol_lookback,
+        target_vol_annual=args.target_vol_annual,
+        max_weight=args.max_weight,
+        min_gross_exposure=args.min_gross_exposure,
+        score_top_k=args.score_top_k,
+        score_power=args.score_power,
+        allow_intraperiod_reentry=bool(args.allow_intraperiod_reentry),
+        reentry_cooldown_days=args.reentry_cooldown_days,
+        osc_lookback=args.osc_lookback,
+        osc_z_entry=args.osc_z_entry,
+        osc_z_exit=args.osc_z_exit,
+        osc_z_stop=args.osc_z_stop,
+        osc_band_sigma=args.osc_band_sigma,
+        osc_band_break_sigma=args.osc_band_break_sigma,
+        osc_reentry_cooldown_days=args.osc_reentry_cooldown_days,
+        range_slope_threshold=args.range_slope_threshold,
+        range_dist_threshold=args.range_dist_threshold,
+        range_breakout_persistence_threshold=args.range_breakout_persistence_threshold,
+        range_breadth_tolerance=args.range_breadth_tolerance,
+        rotation_top_k=args.rotation_top_k,
+        rotation_tilt_strength=args.rotation_tilt_strength,
+        rotation_min_sleeve_weight=args.rotation_min_sleeve_weight,
+        risk_budget_lookback=int(getattr(args, "risk_budget_lookback", 120)),
+        risk_budget_shrinkage=float(getattr(args, "risk_budget_shrinkage", 0.35)),
+        risk_budget_iv_blend=float(getattr(args, "risk_budget_iv_blend", 0.50)),
+        quality_hold_buffer=int(getattr(args, "quality_hold_buffer", 10)),
+        quality_trend_ma=int(getattr(args, "quality_trend_ma", 60)),
+        use_point_in_time_universe=bool(getattr(args, "use_point_in_time_universe", 1)),
+        stock_universe_min_bars=int(getattr(args, "stock_universe_min_bars", 750)),
+        stock_universe_min_price=float(getattr(args, "stock_universe_min_price", 1000.0)),
+        stock_universe_min_avg_value=float(getattr(args, "stock_universe_min_avg_value", 5_000_000_000.0)),
+        stock_universe_min_median_value=float(getattr(args, "stock_universe_min_median_value", 2_000_000_000.0)),
+        stock_universe_max_zero_days=int(getattr(args, "stock_universe_max_zero_days", 1)),
+        etf_universe_min_bars=int(getattr(args, "etf_universe_min_bars", 180)),
+        etf_universe_min_avg_value=float(getattr(args, "etf_universe_min_avg_value", 500_000_000.0)),
+        etf_universe_min_median_value=float(getattr(args, "etf_universe_min_median_value", 100_000_000.0)),
+        etf_universe_max_zero_days=int(getattr(args, "etf_universe_max_zero_days", 1)),
+    )
+
+
+def build_default_strategies(args: Any, strategy_cls: Callable[..., Any], *, fee_rate: float, use_regime_filter: bool) -> list[Any]:
+    base_kwargs = strategy_runtime_kwargs(args, fee_rate=fee_rate, use_regime_filter=use_regime_filter)
+    return [
+        strategy_cls(name="Daily Top20", rebalance="D", use_buffer=False, selection_mode="topn", entry_rank=20, exit_rank=25, regime_off_exposure=0.0, **base_kwargs),
+        strategy_cls(name="Weekly Top20", rebalance="W-FRI", use_buffer=False, selection_mode="topn", entry_rank=20, exit_rank=25, regime_off_exposure=0.0, **base_kwargs),
+        strategy_cls(name="Weekly Buffer 20/25", rebalance="W-FRI", use_buffer=True, selection_mode="topn", entry_rank=20, exit_rank=25, regime_off_exposure=0.0, **base_kwargs),
+        strategy_cls(name="Weekly Score50 MADScale", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, **base_kwargs),
+        strategy_cls(name="Biweekly Score50 MADScale", rebalance="W-2FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, **base_kwargs),
+        strategy_cls(name="Weekly Score50 RegimeState", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, use_regime_state_model=True, **base_kwargs),
+        strategy_cls(name="Weekly Score50 Rotation", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, use_regime_state_model=True, use_rotation_overlay=True, **base_kwargs),
+        strategy_cls(name="Weekly ETF RiskBudget", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, use_regime_state_model=True, use_etf_risk_budget=True, fixed_sleeve_weights={"stock": 0.0, "etf": 1.0}, **{**base_kwargs, "regime_off_exposure": args.regime_off_exposure, "max_weight": max(float(args.max_weight), 0.35)}),
+        strategy_cls(name="Weekly ForeignFlow v2", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, use_foreign_flow_model=True, flow_hold_buffer=10, flow_trend_ma=60, flow_foreign_ratio_cap=40.0, flow_foreign_ratio_penalty=0.50, **{**base_kwargs, "regime_off_exposure": args.regime_off_exposure, "score_top_k": min(int(args.score_top_k), int(args.top_n))}),
+        strategy_cls(name="Weekly ForeignFlow v3", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, use_foreign_flow_model=True, flow_model_version=3, flow_hold_buffer=10, flow_trend_ma=60, flow_foreign_ratio_cap=40.0, flow_foreign_ratio_penalty=0.50, **{**base_kwargs, "regime_off_exposure": args.regime_off_exposure, "score_top_k": min(int(args.score_top_k), int(args.top_n))}),
+        strategy_cls(name="Weekly QualityProfitability MVP", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, use_quality_profitability_model=True, fixed_sleeve_weights={"stock": 1.0, "etf": 0.0}, **{**base_kwargs, "regime_off_exposure": args.regime_off_exposure, "score_top_k": min(int(args.score_top_k), int(args.top_n))}),
+        strategy_cls(name="Weekly Score50 RangeOsc", rebalance="W-FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, use_regime_state_model=True, enable_oscillation_long=True, **base_kwargs),
+        strategy_cls(name="Biweekly Score50 RegimeState", rebalance="W-2FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, use_regime_state_model=True, **base_kwargs),
+        strategy_cls(name="Biweekly Score50 Rotation", rebalance="W-2FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, use_regime_state_model=True, use_rotation_overlay=True, **base_kwargs),
+        strategy_cls(name="Biweekly ETF RiskBudget", rebalance="W-2FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, use_regime_state_model=True, use_etf_risk_budget=True, fixed_sleeve_weights={"stock": 0.0, "etf": 1.0}, **{**base_kwargs, "regime_off_exposure": args.regime_off_exposure, "max_weight": max(float(args.max_weight), 0.35)}),
+        strategy_cls(name="Biweekly Score50 RangeOsc", rebalance="W-2FRI", use_buffer=False, selection_mode="score", entry_rank=20, exit_rank=25, regime_off_exposure=args.regime_off_exposure, use_regime_state_model=True, enable_oscillation_long=True, **base_kwargs),
+    ]

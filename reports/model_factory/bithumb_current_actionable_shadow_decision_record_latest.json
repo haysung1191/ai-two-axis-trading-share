@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-05-16T10:29:51.766692+00:00",
+  "report": "bithumb_current_actionable_shadow_decision_record",
+  "status": "DECISION_RECORDED",
+  "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+  "expected_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+  "decision": "APPROVE_SHADOW_REVIEW_ONLY",
+  "decision_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_gatekeeper_decision.json",
+  "file_mutated": true,
+  "blockers": [],
+  "decision_payload": {
+    "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+    "decision": "APPROVE_SHADOW_REVIEW_ONLY",
+    "decided_by": "human_gatekeeper",
+    "rationale": "HUMAN_REVIEWED_SWEEP2154_SHADOW_REVIEW_ONLY_NO_PAPER_LIVE_BROKER_ORDERS",
+    "recorded_at_utc": "2026-05-16T10:29:51.766692+00:00",
+    "source_phrase_packet": "C:\\AI\\reports\\model_factory\\gatekeeper_review_decision_phrase_packet_latest.json",
+    "review_only_effect": "This records shadow-review consideration only. It does not register a shadow candidate, start loops, enable paper/live, broker submit, private submit, or real orders."
+  },
+  "safety": {
+    "does_register_shadow_candidate": false,
+    "does_start_shadow_loop": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders": 0
+  }
+}

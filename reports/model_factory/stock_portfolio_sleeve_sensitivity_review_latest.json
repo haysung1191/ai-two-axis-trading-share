@@ -1,0 +1,356 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:50.713468+00:00",
+  "report": "stock_portfolio_sleeve_sensitivity_review",
+  "status": "PORTFOLIO_SLEEVE_SENSITIVITY_REVIEW_READY",
+  "scope": "top5_stock_etf_portfolio_sleeve_sensitivity_review_only_no_order_paths",
+  "source_sleeve_review": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_review_latest.json",
+  "scenario_count": 5,
+  "viable_scenario_count": 4,
+  "best_scenario_id": "etf_tilt_60_40",
+  "best_estimated_sleeve_cagr": 0.4462482429823629,
+  "worst_weighted_mdd_proxy": -0.19510873381475943,
+  "scenarios": [
+    {
+      "scenario_id": "equal_weight_current_caps",
+      "component_count": 5,
+      "weights_sum": 1.0,
+      "total_effective_exposure": 0.606,
+      "max_effective_component_exposure": 0.13,
+      "max_lane_weight": 0.6000000000000001,
+      "lane_weights": {
+        "kis_etfs": 0.6000000000000001,
+        "kis_stocks": 0.4
+      },
+      "estimated_sleeve_cagr": 0.44036166786492137,
+      "weighted_mdd_proxy": -0.1933035276298402,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.13,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.128,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.128,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.11000000000000001,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324,
+          "repair_applied": true
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.11000000000000001,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313,
+          "repair_applied": true
+        }
+      ]
+    },
+    {
+      "scenario_id": "etf_tilt_60_40",
+      "component_count": 5,
+      "weights_sum": 1.0,
+      "total_effective_exposure": 0.62,
+      "max_effective_component_exposure": 0.1625,
+      "max_lane_weight": 0.75,
+      "lane_weights": {
+        "kis_etfs": 0.75,
+        "kis_stocks": 0.25
+      },
+      "estimated_sleeve_cagr": 0.4462482429823629,
+      "weighted_mdd_proxy": -0.19510873381475943,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.25,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.1625,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.25,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.16,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.25,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.16,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.125,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.06875,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324,
+          "repair_applied": true
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.125,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.06875,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313,
+          "repair_applied": true
+        }
+      ]
+    },
+    {
+      "scenario_id": "stock_tilt_50_50",
+      "component_count": 5,
+      "weights_sum": 1.0,
+      "total_effective_exposure": 0.59,
+      "max_effective_component_exposure": 0.15714285714285714,
+      "max_lane_weight": 0.5714285714285714,
+      "lane_weights": {
+        "kis_etfs": 0.42857142857142855,
+        "kis_stocks": 0.5714285714285714
+      },
+      "estimated_sleeve_cagr": 0.4336341534449881,
+      "weighted_mdd_proxy": -0.1912404348470753,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.14285714285714285,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.09285714285714286,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.14285714285714285,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.09142857142857143,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.14285714285714285,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.09142857142857143,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.2857142857142857,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.15714285714285714,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324,
+          "repair_applied": true
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.2857142857142857,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.15714285714285714,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313,
+          "repair_applied": true
+        }
+      ]
+    },
+    {
+      "scenario_id": "conservative_max_component_20pct",
+      "component_count": 5,
+      "weights_sum": 1.0,
+      "total_effective_exposure": 0.606,
+      "max_effective_component_exposure": 0.13,
+      "max_lane_weight": 0.6000000000000001,
+      "lane_weights": {
+        "kis_etfs": 0.6000000000000001,
+        "kis_stocks": 0.4
+      },
+      "estimated_sleeve_cagr": 0.44036166786492137,
+      "weighted_mdd_proxy": -0.1933035276298402,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.13,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.128,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.128,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.11000000000000001,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324,
+          "repair_applied": true
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.2,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.11000000000000001,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313,
+          "repair_applied": true
+        }
+      ]
+    },
+    {
+      "scenario_id": "repair_only_conservative",
+      "component_count": 2,
+      "weights_sum": 1.0,
+      "total_effective_exposure": 0.55,
+      "max_effective_component_exposure": 0.275,
+      "max_lane_weight": 1.0,
+      "lane_weights": {
+        "kis_etfs": 0.0,
+        "kis_stocks": 1.0
+      },
+      "estimated_sleeve_cagr": 0.4168153673951552,
+      "weighted_mdd_proxy": -0.18608270289016318,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.0,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.0,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.0,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.0,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.0,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.0,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242,
+          "repair_applied": false
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324,
+          "repair_applied": true
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313,
+          "repair_applied": true
+        }
+      ]
+    }
+  ],
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Attach sleeve sensitivity evidence to the stock/ETF Gatekeeper review packet; do not promote or submit orders."
+}

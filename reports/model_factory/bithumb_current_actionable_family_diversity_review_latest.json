@@ -1,0 +1,226 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:43.167412+00:00",
+  "report": "bithumb_current_actionable_family_diversity_review",
+  "status": "FAMILY_DIVERSITY_ITERATE",
+  "scope": "family_diversity_oos_robustness_review_only_no_order_paths",
+  "sources": {
+    "frozen_candidate": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_frozen_candidate_latest.json",
+    "risk_conversion": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_risk_conversion_latest.json",
+    "current_oos": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_oos_walkforward_latest.json"
+  },
+  "current_oos_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "current_oos_parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+  "current_oos_market": "KRW-ORCA",
+  "evaluated_candidate_count": 2,
+  "oos_pass_candidate_count": 0,
+  "robustness_pass_candidate_count": 0,
+  "best_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+  "best_candidate_market": "KRW-POLA",
+  "candidate_results": [
+    {
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_pola_1d_long",
+      "market": "KRW-POLA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "source_conversion": {
+        "target_mdd_abs": 0.2,
+        "recommended_exposure_cap": 0.6335465355400421,
+        "estimated_cagr": 0.2087704578968781,
+        "estimated_total_return": 0.12989303370346103,
+        "estimated_mdd": -0.2,
+        "source_cagr": 0.3295266348807666,
+        "source_total_return": 0.20502524505597486,
+        "source_mdd": -0.3156832036489913,
+        "source_trade_count": 12,
+        "source_profit_factor": 1.670879583451356,
+        "min_estimated_cagr": 0.15,
+        "min_trade_count": 8,
+        "min_profit_factor": 1.3,
+        "min_exposure_cap": 0.25
+      },
+      "status": "OOS_CANDIDATE_ITERATE",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.1860761073040632,
+        "average_fold_cagr": 3.0620023156308207,
+        "total_trade_count": 11
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.17896811971372795,
+            "cagr": -0.597911533903096,
+            "mdd": -0.17896811971372795,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 1,
+            "average_holding_bars": 5.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.05026451973748991,
+            "cagr": -0.2120137642451142,
+            "mdd": -0.15678650218319612,
+            "win_rate": 0.75,
+            "profit_factor": 0.6757647502695162,
+            "trade_count": 4,
+            "average_holding_bars": 4.25
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.6802060896100006,
+            "cagr": 9.995932245040672,
+            "mdd": -0.1860761073040632,
+            "win_rate": 0.5,
+            "profit_factor": 3.2211617982902387,
+            "trade_count": 6,
+            "average_holding_bars": 3.5
+          },
+          "pass": true
+        }
+      ],
+      "robustness": {
+        "status": "SKIPPED_OOS_NOT_PASS",
+        "case_count": 0,
+        "pass_count": 0,
+        "cost_pass_count": 0
+      }
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "source_conversion": {
+        "target_mdd_abs": 0.2,
+        "recommended_exposure_cap": 0.42942540730859274,
+        "estimated_cagr": 0.3902351816764992,
+        "estimated_total_return": 0.22629528183732803,
+        "estimated_mdd": -0.2,
+        "source_cagr": 0.9087379904283801,
+        "source_total_return": 0.5269722703545303,
+        "source_mdd": -0.4657386279342257,
+        "source_trade_count": 16,
+        "source_profit_factor": 1.850960913943686,
+        "min_estimated_cagr": 0.15,
+        "min_trade_count": 8,
+        "min_profit_factor": 1.3,
+        "min_exposure_cap": 0.25
+      },
+      "status": "OOS_CANDIDATE_ITERATE",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 0,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.28078926292652706,
+        "average_fold_cagr": 15.653366164751057,
+        "total_trade_count": 14
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1887952945326279,
+            "cagr": -0.6196707512109159,
+            "mdd": -0.22402222222222223,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 2,
+            "average_holding_bars": 4.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.14402576709737736,
+            "cagr": -0.5125261807967336,
+            "mdd": -0.21226919250431175,
+            "win_rate": 0.3333333333333333,
+            "profit_factor": 0.2257202204327369,
+            "trade_count": 3,
+            "average_holding_bars": 5.333333333333333
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 1.322737584448865,
+            "cagr": 48.092295426260826,
+            "mdd": -0.28078926292652706,
+            "win_rate": 0.5555555555555556,
+            "profit_factor": 3.188598946934911,
+            "trade_count": 9,
+            "average_holding_bars": 3.888888888888889
+          },
+          "pass": false
+        }
+      ],
+      "robustness": {
+        "status": "SKIPPED_OOS_NOT_PASS",
+        "case_count": 0,
+        "pass_count": 0,
+        "cost_pass_count": 0
+      }
+    }
+  ],
+  "errors": [],
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Keep non-ORCA Bithumb current-actionable families in research review; do not register or submit orders."
+}

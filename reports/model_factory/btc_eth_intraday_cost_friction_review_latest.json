@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-05-05T01:16:17.279407+00:00",
+  "report": "btc_eth_intraday_cost_friction_review",
+  "status": "BTC_ETH_INTRADAY_COST_FRICTION_REVIEW_READY",
+  "scope": "btc_eth_intraday_cost_friction_review_only_no_order_paths",
+  "source_path": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_robustness_stress_latest.json",
+  "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "market": "KRW-BTC",
+  "timeframe": "4h",
+  "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+  "case_count": 7,
+  "pass_count": 4,
+  "cost_pass_count": 0,
+  "cost_case_count": 2,
+  "cost_cases": [
+    {
+      "case_id": "cost_30bps",
+      "status": "STRESS_ITERATE",
+      "total_return": -0.018074778274968173,
+      "cagr": -0.036344288508372125,
+      "mdd": -0.18945981527228994,
+      "profit_factor": 1.0026511334362012,
+      "trade_count": 78,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.18860365913131172,
+      "average_fold_cagr": 0.1320160587726081
+    },
+    {
+      "case_id": "cost_40bps",
+      "status": "STRESS_ITERATE",
+      "total_return": -0.09182449627983014,
+      "cagr": -0.17756988518834282,
+      "mdd": -0.22062732796886508,
+      "profit_factor": 0.9034429714465343,
+      "trade_count": 78,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.20879658397855438,
+      "average_fold_cagr": -0.0219338133203113
+    }
+  ],
+  "recommended_action": "KEEP_RESEARCH_ONLY_REQUIRE_COST_FRICTION_REPAIR_BEFORE_SHADOW_OR_PAPER_USE",
+  "counts_as_paper_or_live_evidence": false,
+  "mutation_allowed_by_this_report": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "mutation_allowed_by_this_report": false,
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Review BTC/ETH intraday cost-friction weakness; keep research-only until a child passes cost stress."
+}

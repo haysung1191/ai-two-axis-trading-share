@@ -1,0 +1,471 @@
+{
+  "generated_at_utc": "2026-05-05T01:49:02.031757+00:00",
+  "report": "model_factory_queue_coverage_audit",
+  "scope": "ready_decision_to_frozen_queue_coverage_no_state_promotion_no_order_paths",
+  "status": "PASS",
+  "source_reports": {
+    "gatekeeper_decision_priority": "C:\\AI\\reports\\model_factory\\gatekeeper_decision_priority_latest.json",
+    "model_factory_experiment_queue": "C:\\AI\\reports\\model_factory\\model_factory_experiment_queue_latest.json"
+  },
+  "summary": {
+    "ready_decision_count": 33,
+    "queue_item_count": 40,
+    "covered_ready_decision_count": 33,
+    "missing_ready_decision_count": 0,
+    "unsafe_queue_item_count": 0,
+    "unexpected_duplicate_source_decision_count": 0
+  },
+  "missing_ready_decision_ids": [],
+  "unsafe_queue_experiment_ids": [],
+  "unexpected_duplicate_source_decisions": {},
+  "coverage_rows": [
+    {
+      "decision_id": "paper_smoke_review",
+      "candidate_id": "small_account_growth_paper",
+      "priority_score": 100,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "paper_smoke_evidence_review__small_account_growth_paper"
+      ],
+      "queue_scopes": [
+        "review_only_no_paper_activation_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_shadow_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "priority_score": 95,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "shadow_review_decision_prep__btc_eth_intraday_momentum_btc_4h_sweep001"
+      ],
+      "queue_scopes": [
+        "human_decision_prep_only_no_shadow_registration_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_robustness_repair_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_447",
+      "priority_score": 90,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "btc_eth_intraday_robustness_repair_review__btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_447"
+      ],
+      "queue_scopes": [
+        "robustness_repair_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_robustness_repair_alternate_child_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_441",
+      "priority_score": 89,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "btc_eth_intraday_robustness_repair_alternate_child_review__btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_441"
+      ],
+      "queue_scopes": [
+        "alternate_repair_child_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_low_turnover_followup_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080_followup159",
+      "priority_score": 86,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "btc_eth_intraday_low_turnover_followup_review__btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080_followup159"
+      ],
+      "queue_scopes": [
+        "btc_eth_intraday_low_turnover_followup_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_family_parameter_repair_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+      "priority_score": 85,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_family_parameter_repair_review__bithumb_current_actionable_pola_1d_long_freeze001_sweep1355"
+      ],
+      "queue_scopes": [
+        "family_repair_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_non_orca_entry_source_rebuild_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_entrysource_002",
+      "priority_score": 84,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_non_orca_entry_source_rebuild_review__bithumb_current_actionable_pola_1d_long_freeze001_entrysource_002"
+      ],
+      "queue_scopes": [
+        "entry_source_rebuild_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_non_orca_entry_source_alternate_child_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_entrysource_020",
+      "priority_score": 83,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_non_orca_entry_source_alternate_child_review__bithumb_current_actionable_pola_1d_long_freeze001_entrysource_020"
+      ],
+      "queue_scopes": [
+        "entry_source_alternate_child_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_orca_oos_family_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1507",
+      "priority_score": 83,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_orca_oos_family_review__bithumb_current_actionable_orca_1d_long_freeze001_sweep1507"
+      ],
+      "queue_scopes": [
+        "orca_oos_family_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_dependency_relief_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+      "priority_score": 82,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_dependency_relief_review__bithumb_current_actionable_pola_1d_long_freeze001_sweep1355"
+      ],
+      "queue_scopes": [
+        "dependency_relief_evidence_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_conversion_review",
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+      "priority_score": 80,
+      "covered": true,
+      "queue_item_count": 6,
+      "queue_experiment_ids": [
+        "stock_etf_fixed_exposure_child__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_etf_risk_conversion_review__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_etf_fixed_exposure_child__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_etf_fixed_exposure_child__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "stock_etf_fixed_exposure_child__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "stock_etf_fixed_exposure_child__stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "queue_scopes": [
+        "risk_conversion_only_no_order_paths",
+        "risk_conversion_only_no_order_paths",
+        "risk_conversion_only_no_order_paths",
+        "risk_conversion_only_no_order_paths",
+        "risk_conversion_only_no_order_paths",
+        "risk_conversion_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_review",
+      "candidate_id": "stock_etf_top5_equal_weight_sleeve",
+      "priority_score": 76,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_review__stock_etf_top5_equal_weight_sleeve"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_sensitivity_review",
+      "candidate_id": "stock_etf_top5_sleeve_sensitivity",
+      "priority_score": 75,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_sensitivity_review__stock_etf_top5_sleeve_sensitivity"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_sensitivity_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_pairwise_resilience_review",
+      "candidate_id": "stock_etf_top5_sleeve_pairwise_resilience",
+      "priority_score": 74,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_pairwise_resilience_review__stock_etf_top5_sleeve_pairwise_resilience"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_pairwise_resilience_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_pairwise_fragility_repair_review",
+      "candidate_id": "stock_etf_top5_sleeve_pairwise_fragility_repair",
+      "priority_score": 73,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_pairwise_fragility_repair_review__stock_etf_top5_sleeve_pairwise_fragility_repair"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_pairwise_fragility_repair_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_tail_drop_resilience_review",
+      "candidate_id": "stock_etf_top5_sleeve_tail_drop_resilience",
+      "priority_score": 72,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_tail_drop_resilience_review__stock_etf_top5_sleeve_tail_drop_resilience"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_tail_drop_resilience_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_tail_drop_fragility_repair_review",
+      "candidate_id": "stock_etf_top5_sleeve_tail_drop_fragility_repair",
+      "priority_score": 71,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_tail_drop_fragility_repair_review__stock_etf_top5_sleeve_tail_drop_fragility_repair"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_tail_drop_fragility_repair_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_resilience_ladder_review",
+      "candidate_id": "stock_etf_top5_sleeve_resilience_ladder",
+      "priority_score": 70,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_resilience_ladder_review__stock_etf_top5_sleeve_resilience_ladder"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_resilience_ladder_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_shadow_rollover_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+      "priority_score": 70,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "shadow_rollover_review_prep__bithumb_current_actionable_orca_1d_long_freeze001_sweep2118"
+      ],
+      "queue_scopes": [
+        "human_decision_prep_only_no_shadow_registration_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_constraint_envelope_review",
+      "candidate_id": "stock_etf_top5_sleeve_constraint_envelope",
+      "priority_score": 69,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_constraint_envelope_review__stock_etf_top5_sleeve_constraint_envelope"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_constraint_envelope_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_gatekeeper_bundle_review",
+      "candidate_id": "stock_etf_top5_sleeve_bundle",
+      "priority_score": 68,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_gatekeeper_bundle_review__stock_etf_top5_sleeve_bundle"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_gatekeeper_bundle_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_non_orca_widened_repair_stop_condition_review",
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_widenedrepair_070",
+      "priority_score": 65,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_non_orca_widened_repair_stop_condition_review__bithumb_current_actionable_bio_1d_long_freeze001_widenedrepair_070"
+      ],
+      "queue_scopes": [
+        "widened_repair_stop_condition_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_shadow_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+      "priority_score": 60,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "shadow_review_decision_prep__bithumb_current_actionable_orca_1d_long_freeze001_sweep2118"
+      ],
+      "queue_scopes": [
+        "human_decision_prep_only_no_shadow_registration_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "stock_portfolio_sleeve_resilience_review",
+      "candidate_id": "stock_etf_top5_sleeve_leave_one_out_resilience",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "stock_etf_portfolio_sleeve_resilience_review__stock_etf_top5_sleeve_leave_one_out_resilience"
+      ],
+      "queue_scopes": [
+        "portfolio_sleeve_resilience_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_oos_stability_plateau_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "btc_eth_intraday_oos_stability_plateau_review__btc_eth_intraday_momentum_btc_4h_sweep001"
+      ],
+      "queue_scopes": [
+        "oos_stability_plateau_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_low_turnover_signal_rebuild_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "btc_eth_intraday_low_turnover_signal_rebuild_review__btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080"
+      ],
+      "queue_scopes": [
+        "btc_eth_intraday_low_turnover_signal_rebuild_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "btc_eth_intraday_cost_friction_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "btc_eth_intraday_cost_friction_review__btc_eth_intraday_momentum_btc_4h_sweep001"
+      ],
+      "queue_scopes": [
+        "btc_eth_intraday_cost_friction_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bridge_paper_safety_triage_review",
+      "candidate_id": "bridge_28_relief",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bridge_paper_safety_triage_review__bridge_28_relief"
+      ],
+      "queue_scopes": [
+        "bridge_paper_safety_triage_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_research_hold_triage_review",
+      "candidate_id": "bithumb_research_hold_backtest_under_bar_batch",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_research_hold_triage_review__bithumb_research_hold_backtest_under_bar_batch"
+      ],
+      "queue_scopes": [
+        "research_hold_triage_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_orca_repair_stop_condition_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_orca_repair_stop_condition_review__bithumb_current_actionable_orca_1d_long_freeze001_sweep2118"
+      ],
+      "queue_scopes": [
+        "orca_repair_stop_condition_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_gatekeeper_blocker_triage_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1507",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_gatekeeper_blocker_triage_review__bithumb_current_actionable_orca_1d_long_freeze001_sweep1507"
+      ],
+      "queue_scopes": [
+        "gatekeeper_blocker_triage_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_current_actionable_alternate_robustness_failure_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_alternate_robustness_failure_review__bithumb_current_actionable_orca_1d_long_freeze001_sweep2118"
+      ],
+      "queue_scopes": [
+        "alternate_robustness_failure_review_only_no_order_paths"
+      ]
+    },
+    {
+      "decision_id": "bithumb_conversion_failure_triage_review",
+      "candidate_id": "bithumb_conversion_failed_high_cagr_batch",
+      "priority_score": 10,
+      "covered": true,
+      "queue_item_count": 1,
+      "queue_experiment_ids": [
+        "bithumb_conversion_failure_triage_review__bithumb_conversion_failed_high_cagr_batch"
+      ],
+      "queue_scopes": [
+        "conversion_failure_triage_review_only_no_order_paths"
+      ]
+    }
+  ],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Ready decision to frozen queue coverage is complete; continue model-factory evidence pull-through."
+}

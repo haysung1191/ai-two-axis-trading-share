@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTC 1d Operator Dashboard</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --panel: #fffdf8;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #d6d3d1;
+      --ok: #1d6b57;
+      --ok-bg: #dff5ea;
+      --alert: #9a3412;
+      --alert-bg: #fde7d8;
+      --accent: #0f4c5c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Noto Sans KR", sans-serif;
+      background: linear-gradient(180deg, #efe9de 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(15, 76, 92, 0.08);
+    }
+    .title {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.1;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      color: var(--accent);
+    }
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 0;
+      border-top: 1px solid #ece8e1;
+    }
+    .metric:first-of-type { border-top: 0; }
+    .k { color: var(--muted); }
+    .v {
+      text-align: right;
+      word-break: break-word;
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .ok { color: var(--ok); background: var(--ok-bg); }
+    .alert { color: var(--alert); background: var(--alert-bg); }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li {
+      margin: 6px 0;
+    }
+    code {
+      font-family: Consolas, monospace;
+      font-size: 12px;
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 6px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1 class="title">BTC 1d Operator Dashboard</h1>
+      <p class="subtitle">Candidate: <strong>low_vol_cap_050_025_minvol020_p2200</strong> | Shadow decision: <strong>shadow_ready_for_btc_only</strong></p>
+      <div style="margin-top:14px;">
+        <span class="badge alert">dashboard_ready=False</span>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="card">
+        <h2>Status</h2>
+        <div class="metric"><span class="k">Practical status</span><span class="v">btc_only_practical_with_caveats</span></div>
+        <div class="metric"><span class="k">Quick-read partitioned</span><span class="v"><span class="badge ok">True</span></span></div>
+        <div class="metric"><span class="k">Contract health aligned</span><span class="v"><span class="badge alert">False</span></span></div>
+        <div class="metric"><span class="k">Execution contract aligned</span><span class="v"><span class="badge ok">True</span></span></div>
+      </div>
+      <div class="card">
+        <h2>Paper Execution</h2>
+        <div class="metric"><span class="k">Paper execution contract aligned</span><span class="v"><span class="badge alert">False</span></span></div>
+        <div class="metric"><span class="k">Paper ledger consistent</span><span class="v"><span class="badge alert">False</span></span></div>
+        <div class="metric"><span class="k">Paper exit duplicate run</span><span class="v">False</span></div>
+        <div class="metric"><span class="k">Paper execution read</span><span class="v">paper execution | track=operating | applied=1 | closed=1 | open=0</span></div>
+      </div>
+      <div class="card">
+        <h2>Development</h2>
+        <div class="metric"><span class="k">Project direction</span><span class="v">ops hardening</span></div>
+        <div class="metric"><span class="k">Current work</span><span class="v">candidate=low_vol_cap_050_025_minvol020_p2200 | practical_status=btc_only_practical_with_caveats | shadow_decision=shadow_ready_for_btc_only | research_stack=BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold)</span></div>
+        <div class="metric"><span class="k">Next actions</span><span class="v">contract_health drift recovery | paper execution contract alignment recovery | paper ledger consistency recovery</span></div>
+      </div>
+      <div class="card">
+        <h2>Performance</h2>
+        <div class="metric"><span class="k">Carry</span><span class="v">PASS | sharpe=1.16798884 | cagr=0.143529</span></div>
+        <div class="metric"><span class="k">Survivability</span><span class="v">PASS | sharpe=1.14501096 | cagr=0.15303622</span></div>
+        <div class="metric"><span class="k">Walk-forward</span><span class="v">passed=True | oos_sharpe=0.82219649</span></div>
+        <div class="metric"><span class="k">Friction</span><span class="v">continue | bps=20.0</span></div>
+        <div class="metric"><span class="k">ETH cross-check</span><span class="v">ETHUSDT | pass_rate=0.0</span></div>
+      </div>
+      <div class="card">
+        <h2>Overview</h2>
+        <div class="metric"><span class="k">Combined health</span><span class="v">BTC 1d practical health | status=btc_only_practical_with_caveats | ok=True | candidate=volatility_expansion_reclaim_lower_atr_window_tighter_stop | sharpe=1.3946 | cagr=37.72% | mdd=16.09% | caveats=4 || BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold)</span></div>
+        <div class="metric"><span class="k">Research stack</span><span class="v">BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold)</span></div>
+        <div class="metric"><span class="k">Contract health</span><span class="v">BTC 1d contract health | operating_brief=operating_v3 | operating_index=operating_v3 | aligned=True | research=research_stack_v2 | distinct=True | partitioned=True | standard_order_aligned=True | health_order_aligned=True | standard_order=practical &gt; research &gt; contract &gt; brief</span></div>
+        <div class="metric"><span class="k">Execution contract read</span><span class="v">execution contract | aligned | paper execution | track=operating | applied=1 | closed=1 | open=0</span></div>
+      </div>
+      <div class="card">
+        <h2>Counts</h2>
+        <div class="metric"><span class="k">intent_count</span><span class="v">1</span></div>
+        <div class="metric"><span class="k">signed_request_count</span><span class="v">1</span></div>
+        <div class="metric"><span class="k">paper_applied_count</span><span class="v">1</span></div>
+        <div class="metric"><span class="k">paper_duplicate_count</span><span class="v">None</span></div>
+        <div class="metric"><span class="k">paper_closed_count</span><span class="v">1</span></div>
+        <div class="metric"><span class="k">paper_open_count</span><span class="v">0</span></div>
+      </div>
+      <div class="card">
+        <h2>Contracts</h2>
+        <div class="metric"><span class="k">quick_read_operating_contract_aligned</span><span class="v">True</span></div>
+        <div class="metric"><span class="k">quick_read_paper_execution_contract_aligned</span><span class="v">False</span></div>
+        <div class="metric"><span class="k">quick_read_contract_health_aligned</span><span class="v">False</span></div>
+        <div class="metric"><span class="k">execution_contract_paper_ledger_snapshot_summary_aligned</span><span class="v">False</span></div>
+        <div class="metric"><span class="k">execution_contract_paper_execution_contract_aligned_summary_aligned</span><span class="v">False</span></div>
+      </div>
+      <div class="card">
+        <h2>Attention</h2>
+        <ul><li>shadow_decision=shadow_ready_for_btc_only</li><li>contract_health=drifted</li><li>paper_execution_contract=drifted</li><li>paper_ledger=inconsistent</li></ul>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Artifacts</h2>
+      <ul>
+        <li><code>analysis_results\btc_1d_latest_summary_latest.json</code></li>
+        <li><code>analysis_results\btc_1d_operating_index_latest.json</code></li>
+        <li><code>analysis_results\btc_1d_operating_brief_latest.json</code></li>
+        <li><code>analysis_results\btc_1d_quick_read_contract_screen_latest.json</code></li>
+        <li><code>analysis_results\btc_1d_execution_contract_screen_latest.json</code></li>
+        <li><code>analysis_results\btc_1d_paper_nightly_summary_latest.json</code></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

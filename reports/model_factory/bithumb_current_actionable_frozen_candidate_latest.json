@@ -1,0 +1,235 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:10.393903+00:00",
+  "report": "bithumb_current_actionable_frozen_candidate",
+  "status": "READY_FOR_BACKTEST_SCREEN",
+  "scope": "frozen_research_candidate_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_candidate_intake_latest.json",
+  "lane": "bithumb_1d",
+  "frozen_candidate_count": 5,
+  "candidates": [
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long",
+      "lane": "bithumb_1d",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "strategy_family": "bithumb_multi_asset_momentum",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "status": "READY_FOR_BACKTEST_SCREEN",
+      "source_evidence_type": "bithumb_current_actionable_non_flat_intake",
+      "source_signal": {
+        "current_signal_side": "long",
+        "current_target_weight": 0.02,
+        "latest_timestamp": "2026-05-02T15:00:00",
+        "latest_close": 81.39,
+        "lookback_return": 2.066692,
+        "short_return": 0.673314,
+        "volume_ratio": 2.923781,
+        "source_signal_id": "f5d6e40cb4ab5db5bb103c58197176363c8ecfedd5873894c9aec4ee81855a16"
+      },
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "promotion_allowed_by_this_report": false,
+      "paper_enabled_by_this_report": false,
+      "live_allowed_by_this_report": false,
+      "broker_submit_allowed_by_this_report": false,
+      "private_submit_allowed_by_this_report": false,
+      "real_orders_allowed_by_this_report": false,
+      "next_gate": "G03_BACKTEST_SCREEN_RESEARCH_ONLY",
+      "required_next_evidence": [
+        "backtest screen on the frozen current-actionable signal family",
+        "OOS or walk-forward validation for passing screens",
+        "risk conversion and Gatekeeper review before any operational promotion"
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long",
+      "lane": "bithumb_1d",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "strategy_family": "bithumb_multi_asset_momentum",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "status": "READY_FOR_BACKTEST_SCREEN",
+      "source_evidence_type": "bithumb_current_actionable_non_flat_intake",
+      "source_signal": {
+        "current_signal_side": "long",
+        "current_target_weight": 0.02,
+        "latest_timestamp": "2026-05-02T15:00:00",
+        "latest_close": 3094.0,
+        "lookback_return": 1.37452,
+        "short_return": 0.222442,
+        "volume_ratio": 1.417273,
+        "source_signal_id": "94748604f6e59fed18a10e9981e10d2938e94d2a371cee083a4c783369946d64"
+      },
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "promotion_allowed_by_this_report": false,
+      "paper_enabled_by_this_report": false,
+      "live_allowed_by_this_report": false,
+      "broker_submit_allowed_by_this_report": false,
+      "private_submit_allowed_by_this_report": false,
+      "real_orders_allowed_by_this_report": false,
+      "next_gate": "G03_BACKTEST_SCREEN_RESEARCH_ONLY",
+      "required_next_evidence": [
+        "backtest screen on the frozen current-actionable signal family",
+        "OOS or walk-forward validation for passing screens",
+        "risk conversion and Gatekeeper review before any operational promotion"
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_baby_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_baby_1d_long",
+      "lane": "bithumb_1d",
+      "market": "KRW-BABY",
+      "timeframe": "1d",
+      "strategy_family": "bithumb_multi_asset_momentum",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "status": "READY_FOR_BACKTEST_SCREEN",
+      "source_evidence_type": "bithumb_current_actionable_non_flat_intake",
+      "source_signal": {
+        "current_signal_side": "long",
+        "current_target_weight": 0.02,
+        "latest_timestamp": "2026-05-02T15:00:00",
+        "latest_close": 41.36,
+        "lookback_return": 0.979895,
+        "short_return": 0.815628,
+        "volume_ratio": 126.895329,
+        "source_signal_id": "d2eb12edd6628057ee043b7c67fa6ddd54e0854ee1960d9756af12e955b60b1b"
+      },
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "promotion_allowed_by_this_report": false,
+      "paper_enabled_by_this_report": false,
+      "live_allowed_by_this_report": false,
+      "broker_submit_allowed_by_this_report": false,
+      "private_submit_allowed_by_this_report": false,
+      "real_orders_allowed_by_this_report": false,
+      "next_gate": "G03_BACKTEST_SCREEN_RESEARCH_ONLY",
+      "required_next_evidence": [
+        "backtest screen on the frozen current-actionable signal family",
+        "OOS or walk-forward validation for passing screens",
+        "risk conversion and Gatekeeper review before any operational promotion"
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_crts_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_crts_1d_long",
+      "lane": "bithumb_1d",
+      "market": "KRW-CRTS",
+      "timeframe": "1d",
+      "strategy_family": "bithumb_multi_asset_momentum",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "status": "READY_FOR_BACKTEST_SCREEN",
+      "source_evidence_type": "bithumb_current_actionable_non_flat_intake",
+      "source_signal": {
+        "current_signal_side": "long",
+        "current_target_weight": 0.02,
+        "latest_timestamp": "2026-05-02T15:00:00",
+        "latest_close": 0.1883,
+        "lookback_return": 0.84427,
+        "short_return": 0.322331,
+        "volume_ratio": 8.544131,
+        "source_signal_id": "89458792223b7d66a7e8540c8b78fcd6f47143a469fc8d1596f5f1197e546787"
+      },
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "promotion_allowed_by_this_report": false,
+      "paper_enabled_by_this_report": false,
+      "live_allowed_by_this_report": false,
+      "broker_submit_allowed_by_this_report": false,
+      "private_submit_allowed_by_this_report": false,
+      "real_orders_allowed_by_this_report": false,
+      "next_gate": "G03_BACKTEST_SCREEN_RESEARCH_ONLY",
+      "required_next_evidence": [
+        "backtest screen on the frozen current-actionable signal family",
+        "OOS or walk-forward validation for passing screens",
+        "risk conversion and Gatekeeper review before any operational promotion"
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_pola_1d_long",
+      "lane": "bithumb_1d",
+      "market": "KRW-POLA",
+      "timeframe": "1d",
+      "strategy_family": "bithumb_multi_asset_momentum",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "status": "READY_FOR_BACKTEST_SCREEN",
+      "source_evidence_type": "bithumb_current_actionable_non_flat_intake",
+      "source_signal": {
+        "current_signal_side": "long",
+        "current_target_weight": 0.02,
+        "latest_timestamp": "2026-05-02T15:00:00",
+        "latest_close": 12.43,
+        "lookback_return": 0.663544,
+        "short_return": 0.554333,
+        "volume_ratio": 6.657694,
+        "source_signal_id": "1710a264421727b48663044f6b5daf497efdcad100bd4a3fbc44ba7fdbddb988"
+      },
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "promotion_allowed_by_this_report": false,
+      "paper_enabled_by_this_report": false,
+      "live_allowed_by_this_report": false,
+      "broker_submit_allowed_by_this_report": false,
+      "private_submit_allowed_by_this_report": false,
+      "real_orders_allowed_by_this_report": false,
+      "next_gate": "G03_BACKTEST_SCREEN_RESEARCH_ONLY",
+      "required_next_evidence": [
+        "backtest screen on the frozen current-actionable signal family",
+        "OOS or walk-forward validation for passing screens",
+        "risk conversion and Gatekeeper review before any operational promotion"
+      ]
+    }
+  ],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Run a Bithumb current-actionable backtest screen for the frozen candidates; keep all order paths disabled."
+}

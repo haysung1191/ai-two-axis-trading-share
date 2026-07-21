@@ -1,0 +1,67 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:26.486855+00:00",
+  "report": "bithumb_current_actionable_shadow_rollover_review_packet",
+  "status": "ROLLOVER_REVIEW_READY",
+  "scope": "review_only_no_registration_no_order_paths",
+  "lane": "bithumb_1d",
+  "registered_candidate": {
+    "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+    "market": "KRW-POLA",
+    "timeframe": "1d",
+    "estimated_cagr": 0.9433543189324173,
+    "estimated_mdd": -0.2,
+    "source_profit_factor": 2.381643717740363,
+    "source_trade_count": 18,
+    "status": "SHADOW_REVIEW_REGISTERED"
+  },
+  "latest_oos_candidate": {
+    "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+    "market": "KRW-ORCA",
+    "timeframe": "1d",
+    "estimated_cagr": 1.2064543379763026,
+    "estimated_mdd": -0.2,
+    "source_profit_factor": 2.9963715883520585,
+    "source_trade_count": 14,
+    "status": "OOS_CANDIDATE_PASS"
+  },
+  "comparison": {
+    "candidate_rollover_detected": true,
+    "registered_vs_latest_cagr_delta": 0.26310001904388536,
+    "registered_vs_latest_mdd_delta": 0.0,
+    "latest_cagr_higher": true,
+    "latest_mdd_not_worse": true
+  },
+  "current_registered_observation": {
+    "status": "BLOCKED",
+    "shadow_action": null,
+    "triggered": null,
+    "target_shadow_weight": null,
+    "parameter_source": null,
+    "parameter_candidate_id": null,
+    "warnings": []
+  },
+  "human_decision_state": {
+    "expected_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+    "recorded_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+    "decision_recorded": false,
+    "decision": "APPROVE_SHADOW_REVIEW_ONLY"
+  },
+  "blockers": [
+    "FRESH_HUMAN_DECISION_REQUIRED_FOR_LATEST_OOS_CANDIDATE",
+    "RECORDED_HUMAN_DECISION_DOES_NOT_MATCH_LATEST_OOS_CANDIDATE"
+  ],
+  "recommended_gatekeeper_action": "Review latest OOS candidate for a fresh shadow-review-only decision; keep existing registered observation running.",
+  "safety": {
+    "does_register_shadow_candidate": false,
+    "does_start_shadow_loop": false,
+    "does_start_order_shadow_loop": false,
+    "does_emit_order_signal": false,
+    "does_write_order_intent": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false,
+    "real_orders": 0
+  }
+}

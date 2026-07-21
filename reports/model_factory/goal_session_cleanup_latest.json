@@ -1,0 +1,55 @@
+{
+  "generated_at_utc": "2026-05-04T02:22:26Z",
+  "status": "CLEANED",
+  "scope": "duplicate_model_factory_goal_session_cleanup_only",
+  "stopped_process_ids": [
+    1112,
+    1228,
+    2044,
+    2896,
+    2936,
+    4988,
+    5972,
+    8736,
+    9528,
+    9740,
+    10216,
+    15496,
+    15872,
+    16016,
+    16316
+  ],
+  "followup_stopped_orphan_process_ids": [
+    1228
+  ],
+  "remaining_model_factory_goal_process_count": 0,
+  "remaining_model_factory_goal_codex_process_count": 0,
+  "safe_loop_process_count": 1,
+  "safe_loop_process_ids": [
+    6556
+  ],
+  "kept_processes": [
+    {
+      "process_id": 6556,
+      "name": "python.exe",
+      "role": "gatekeeper_refresh_loop"
+    },
+    {
+      "process_id": 13088,
+      "name": "codex.exe",
+      "role": "current_conversation_session"
+    }
+  ],
+  "post_cleanup_inventory": "C:\\AI\\reports\\model_factory\\goal_session_duplicate_review_packet_latest.json",
+  "safety": {
+    "live_enabled": false,
+    "real_orders": 0,
+    "private_submit_used": false,
+    "broker_submit_scope": "paper_only",
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "does_submit_orders": false,
+    "does_stop_safe_loop": false,
+    "does_inspect_or_write_kis_secret_values": false
+  }
+}

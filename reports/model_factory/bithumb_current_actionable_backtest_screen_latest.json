@@ -1,0 +1,545 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:10.954041+00:00",
+  "report": "bithumb_current_actionable_backtest_screen",
+  "status": "BACKTEST_SCREEN_COMPLETE",
+  "scope": "frozen_backtest_screen_research_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_frozen_candidate_latest.json",
+  "lane": "bithumb_1d",
+  "candidate_count": 5,
+  "screened_count": 5,
+  "pass_count": 1,
+  "errors": [],
+  "top_screen": {
+    "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+    "parent_candidate_id": "bithumb_current_actionable_pola_1d_long",
+    "market": "KRW-POLA",
+    "timeframe": "1d",
+    "status": "BACKTEST_SCREEN_PASS",
+    "next_gate": "G04_OOS_WALKFORWARD_RESEARCH_ONLY",
+    "source_signal_id": null,
+    "frozen_parameters": {
+      "lookback_bars": 3,
+      "hold_bars": 7,
+      "volume_window": 20,
+      "volume_ratio_floor": 1.0,
+      "momentum_threshold": 0.02,
+      "round_trip_cost_rate": 0.002,
+      "stop_loss": 0.12,
+      "take_profit": 0.35
+    },
+    "data": {
+      "candle_count": 240,
+      "first_timestamp": "2025-09-07T15:00:00+00:00",
+      "last_timestamp": "2026-05-04T15:00:00+00:00"
+    },
+    "metrics": {
+      "total_return": 0.1990815377150863,
+      "cagr": 0.3195246128169751,
+      "mdd": -0.3156832036489913,
+      "win_rate": 0.4166666666666667,
+      "profit_factor": 1.6599206232684285,
+      "trade_count": 12,
+      "average_holding_bars": 4.583333333333333
+    },
+    "trade_samples": [
+      {
+        "entry_time": "2026-03-14T15:00:00+00:00",
+        "exit_time": "2026-03-19T15:00:00+00:00",
+        "entry_price": 11.23,
+        "exit_price": 9.484,
+        "gross_return": -0.1554764024933215,
+        "net_return": -0.1574764024933215,
+        "holding_bars": 5,
+        "exit_reason": "stop_loss"
+      },
+      {
+        "entry_time": "2026-04-15T15:00:00+00:00",
+        "exit_time": "2026-04-22T15:00:00+00:00",
+        "entry_price": 7.723,
+        "exit_price": 7.77,
+        "gross_return": 0.0060857179852389365,
+        "net_return": 0.0040857179852389364,
+        "holding_bars": 7,
+        "exit_reason": "time_exit"
+      },
+      {
+        "entry_time": "2026-04-27T15:00:00+00:00",
+        "exit_time": "2026-04-28T15:00:00+00:00",
+        "entry_price": 7.997,
+        "exit_price": 12.99,
+        "gross_return": 0.6243591346755033,
+        "net_return": 0.6223591346755033,
+        "holding_bars": 1,
+        "exit_reason": "take_profit"
+      },
+      {
+        "entry_time": "2026-04-28T15:00:00+00:00",
+        "exit_time": "2026-05-01T15:00:00+00:00",
+        "entry_price": 12.99,
+        "exit_price": 11.21,
+        "gross_return": -0.1370284834488067,
+        "net_return": -0.1390284834488067,
+        "holding_bars": 3,
+        "exit_reason": "stop_loss"
+      },
+      {
+        "entry_time": "2026-05-02T15:00:00+00:00",
+        "exit_time": "2026-05-04T15:00:00+00:00",
+        "entry_price": 12.81,
+        "exit_price": 12.13,
+        "gross_return": -0.05308352849336451,
+        "net_return": -0.05508352849336451,
+        "holding_bars": 2,
+        "exit_reason": "data_end_exit"
+      }
+    ],
+    "order_paths_allowed": false,
+    "counts_as_paper_or_live_evidence": false
+  },
+  "screens": [
+    {
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_pola_1d_long",
+      "market": "KRW-POLA",
+      "timeframe": "1d",
+      "status": "BACKTEST_SCREEN_PASS",
+      "next_gate": "G04_OOS_WALKFORWARD_RESEARCH_ONLY",
+      "source_signal_id": null,
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "data": {
+        "candle_count": 240,
+        "first_timestamp": "2025-09-07T15:00:00+00:00",
+        "last_timestamp": "2026-05-04T15:00:00+00:00"
+      },
+      "metrics": {
+        "total_return": 0.1990815377150863,
+        "cagr": 0.3195246128169751,
+        "mdd": -0.3156832036489913,
+        "win_rate": 0.4166666666666667,
+        "profit_factor": 1.6599206232684285,
+        "trade_count": 12,
+        "average_holding_bars": 4.583333333333333
+      },
+      "trade_samples": [
+        {
+          "entry_time": "2026-03-14T15:00:00+00:00",
+          "exit_time": "2026-03-19T15:00:00+00:00",
+          "entry_price": 11.23,
+          "exit_price": 9.484,
+          "gross_return": -0.1554764024933215,
+          "net_return": -0.1574764024933215,
+          "holding_bars": 5,
+          "exit_reason": "stop_loss"
+        },
+        {
+          "entry_time": "2026-04-15T15:00:00+00:00",
+          "exit_time": "2026-04-22T15:00:00+00:00",
+          "entry_price": 7.723,
+          "exit_price": 7.77,
+          "gross_return": 0.0060857179852389365,
+          "net_return": 0.0040857179852389364,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-27T15:00:00+00:00",
+          "exit_time": "2026-04-28T15:00:00+00:00",
+          "entry_price": 7.997,
+          "exit_price": 12.99,
+          "gross_return": 0.6243591346755033,
+          "net_return": 0.6223591346755033,
+          "holding_bars": 1,
+          "exit_reason": "take_profit"
+        },
+        {
+          "entry_time": "2026-04-28T15:00:00+00:00",
+          "exit_time": "2026-05-01T15:00:00+00:00",
+          "entry_price": 12.99,
+          "exit_price": 11.21,
+          "gross_return": -0.1370284834488067,
+          "net_return": -0.1390284834488067,
+          "holding_bars": 3,
+          "exit_reason": "stop_loss"
+        },
+        {
+          "entry_time": "2026-05-02T15:00:00+00:00",
+          "exit_time": "2026-05-04T15:00:00+00:00",
+          "entry_price": 12.81,
+          "exit_price": 12.13,
+          "gross_return": -0.05308352849336451,
+          "net_return": -0.05508352849336451,
+          "holding_bars": 2,
+          "exit_reason": "data_end_exit"
+        }
+      ],
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "BACKTEST_SCREEN_ITERATE",
+      "next_gate": "G03_RESEARCH_ITERATE",
+      "source_signal_id": null,
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "data": {
+        "candle_count": 240,
+        "first_timestamp": "2025-09-07T15:00:00+00:00",
+        "last_timestamp": "2026-05-04T15:00:00+00:00"
+      },
+      "metrics": {
+        "total_return": 0.5304440058605207,
+        "cagr": 0.915369568267816,
+        "mdd": -0.4657386279342257,
+        "win_rate": 0.4375,
+        "profit_factor": 1.854070033824492,
+        "trade_count": 16,
+        "average_holding_bars": 4.375
+      },
+      "trade_samples": [
+        {
+          "entry_time": "2026-04-15T15:00:00+00:00",
+          "exit_time": "2026-04-16T15:00:00+00:00",
+          "entry_price": 55.91,
+          "exit_price": 47.89,
+          "gross_return": -0.14344482203541398,
+          "net_return": -0.14544482203541398,
+          "holding_bars": 1,
+          "exit_reason": "stop_loss"
+        },
+        {
+          "entry_time": "2026-04-16T15:00:00+00:00",
+          "exit_time": "2026-04-17T15:00:00+00:00",
+          "entry_price": 47.89,
+          "exit_price": 40.81,
+          "gross_return": -0.14783879724368343,
+          "net_return": -0.14983879724368343,
+          "holding_bars": 1,
+          "exit_reason": "stop_loss"
+        },
+        {
+          "entry_time": "2026-04-17T15:00:00+00:00",
+          "exit_time": "2026-04-24T15:00:00+00:00",
+          "entry_price": 40.81,
+          "exit_price": 44.57,
+          "gross_return": 0.09213428081352615,
+          "net_return": 0.09013428081352615,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-28T15:00:00+00:00",
+          "exit_time": "2026-05-01T15:00:00+00:00",
+          "entry_price": 48.56,
+          "exit_price": 95.33,
+          "gross_return": 0.9631383855024711,
+          "net_return": 0.9611383855024711,
+          "holding_bars": 3,
+          "exit_reason": "take_profit"
+        },
+        {
+          "entry_time": "2026-05-01T15:00:00+00:00",
+          "exit_time": "2026-05-04T15:00:00+00:00",
+          "entry_price": 95.33,
+          "exit_price": 79.54,
+          "gross_return": -0.16563516206860374,
+          "net_return": -0.16763516206860374,
+          "holding_bars": 3,
+          "exit_reason": "stop_loss"
+        }
+      ],
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_crts_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_crts_1d_long",
+      "market": "KRW-CRTS",
+      "timeframe": "1d",
+      "status": "BACKTEST_SCREEN_ITERATE",
+      "next_gate": "G03_RESEARCH_ITERATE",
+      "source_signal_id": null,
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "data": {
+        "candle_count": 240,
+        "first_timestamp": "2025-09-07T15:00:00+00:00",
+        "last_timestamp": "2026-05-04T15:00:00+00:00"
+      },
+      "metrics": {
+        "total_return": -0.19132175664375983,
+        "cagr": -0.27697144765903037,
+        "mdd": -0.47950462042080444,
+        "win_rate": 0.38461538461538464,
+        "profit_factor": 0.8329082056133342,
+        "trade_count": 13,
+        "average_holding_bars": 6.153846153846154
+      },
+      "trade_samples": [
+        {
+          "entry_time": "2026-03-26T15:00:00+00:00",
+          "exit_time": "2026-04-02T15:00:00+00:00",
+          "entry_price": 0.1096,
+          "exit_price": 0.1032,
+          "gross_return": -0.058394160583941646,
+          "net_return": -0.06039416058394165,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-09T15:00:00+00:00",
+          "exit_time": "2026-04-16T15:00:00+00:00",
+          "entry_price": 0.105,
+          "exit_price": 0.1056,
+          "gross_return": 0.005714285714285783,
+          "net_return": 0.0037142857142857828,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-17T15:00:00+00:00",
+          "exit_time": "2026-04-24T15:00:00+00:00",
+          "entry_price": 0.1118,
+          "exit_price": 0.128,
+          "gross_return": 0.14490161001788904,
+          "net_return": 0.14290161001788904,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-27T15:00:00+00:00",
+          "exit_time": "2026-05-03T15:00:00+00:00",
+          "entry_price": 0.1424,
+          "exit_price": 0.1932,
+          "gross_return": 0.356741573033708,
+          "net_return": 0.354741573033708,
+          "holding_bars": 6,
+          "exit_reason": "take_profit"
+        },
+        {
+          "entry_time": "2026-05-03T15:00:00+00:00",
+          "exit_time": "2026-05-04T15:00:00+00:00",
+          "entry_price": 0.1932,
+          "exit_price": 0.1882,
+          "gross_return": -0.025879917184265078,
+          "net_return": -0.02787991718426508,
+          "holding_bars": 1,
+          "exit_reason": "data_end_exit"
+        }
+      ],
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "status": "BACKTEST_SCREEN_ITERATE",
+      "next_gate": "G03_RESEARCH_ITERATE",
+      "source_signal_id": null,
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "data": {
+        "candle_count": 240,
+        "first_timestamp": "2025-09-07T15:00:00+00:00",
+        "last_timestamp": "2026-05-04T15:00:00+00:00"
+      },
+      "metrics": {
+        "total_return": -0.23027970750642357,
+        "cagr": -0.32948570583594516,
+        "mdd": -0.6037122729737956,
+        "win_rate": 0.2727272727272727,
+        "profit_factor": 0.8741846934954312,
+        "trade_count": 11,
+        "average_holding_bars": 5.181818181818182
+      },
+      "trade_samples": [
+        {
+          "entry_time": "2026-03-04T15:00:00+00:00",
+          "exit_time": "2026-03-06T15:00:00+00:00",
+          "entry_price": 1540.0,
+          "exit_price": 1334.0,
+          "gross_return": -0.13376623376623376,
+          "net_return": -0.13576623376623376,
+          "holding_bars": 2,
+          "exit_reason": "stop_loss"
+        },
+        {
+          "entry_time": "2026-03-30T15:00:00+00:00",
+          "exit_time": "2026-04-06T15:00:00+00:00",
+          "entry_price": 1317.0,
+          "exit_price": 1317.0,
+          "gross_return": 0.0,
+          "net_return": -0.002,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-06T15:00:00+00:00",
+          "exit_time": "2026-04-13T15:00:00+00:00",
+          "entry_price": 1317.0,
+          "exit_price": 1328.0,
+          "gross_return": 0.008352315869400107,
+          "net_return": 0.0063523158694001065,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-24T15:00:00+00:00",
+          "exit_time": "2026-04-25T15:00:00+00:00",
+          "entry_price": 1706.0,
+          "exit_price": 2344.0,
+          "gross_return": 0.37397420867526376,
+          "net_return": 0.37197420867526376,
+          "holding_bars": 1,
+          "exit_reason": "take_profit"
+        },
+        {
+          "entry_time": "2026-04-25T15:00:00+00:00",
+          "exit_time": "2026-05-02T15:00:00+00:00",
+          "entry_price": 2344.0,
+          "exit_price": 3072.0,
+          "gross_return": 0.31058020477815695,
+          "net_return": 0.30858020477815695,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        }
+      ],
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_baby_1d_long_freeze001",
+      "parent_candidate_id": "bithumb_current_actionable_baby_1d_long",
+      "market": "KRW-BABY",
+      "timeframe": "1d",
+      "status": "BACKTEST_SCREEN_ITERATE",
+      "next_gate": "G03_RESEARCH_ITERATE",
+      "source_signal_id": null,
+      "frozen_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "data": {
+        "candle_count": 240,
+        "first_timestamp": "2025-09-07T15:00:00+00:00",
+        "last_timestamp": "2026-05-04T15:00:00+00:00"
+      },
+      "metrics": {
+        "total_return": -0.38488669044926227,
+        "cagr": -0.5239057107968625,
+        "mdd": -0.581678169635484,
+        "win_rate": 0.2857142857142857,
+        "profit_factor": 0.45660143092678906,
+        "trade_count": 14,
+        "average_holding_bars": 6.285714285714286
+      },
+      "trade_samples": [
+        {
+          "entry_time": "2026-03-30T15:00:00+00:00",
+          "exit_time": "2026-04-06T15:00:00+00:00",
+          "entry_price": 21.52,
+          "exit_price": 19.26,
+          "gross_return": -0.10501858736059466,
+          "net_return": -0.10701858736059466,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-08T15:00:00+00:00",
+          "exit_time": "2026-04-15T15:00:00+00:00",
+          "entry_price": 20.59,
+          "exit_price": 23.8,
+          "gross_return": 0.15590092277804768,
+          "net_return": 0.15390092277804768,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-15T15:00:00+00:00",
+          "exit_time": "2026-04-22T15:00:00+00:00",
+          "entry_price": 23.8,
+          "exit_price": 23.62,
+          "gross_return": -0.007563025210084007,
+          "net_return": -0.009563025210084007,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-04-22T15:00:00+00:00",
+          "exit_time": "2026-04-29T15:00:00+00:00",
+          "entry_price": 23.62,
+          "exit_price": 22.02,
+          "gross_return": -0.0677392040643523,
+          "net_return": -0.0697392040643523,
+          "holding_bars": 7,
+          "exit_reason": "time_exit"
+        },
+        {
+          "entry_time": "2026-05-01T15:00:00+00:00",
+          "exit_time": "2026-05-04T15:00:00+00:00",
+          "entry_price": 26.4,
+          "exit_price": 28.53,
+          "gross_return": 0.0806818181818183,
+          "net_return": 0.0786818181818183,
+          "holding_bars": 3,
+          "exit_reason": "data_end_exit"
+        }
+      ],
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    }
+  ],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Move passing current-actionable Bithumb screens to OOS/walk-forward research review; keep all order paths disabled."
+}

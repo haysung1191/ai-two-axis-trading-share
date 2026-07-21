@@ -1,0 +1,65 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:43.346452+00:00",
+  "report": "bithumb_current_actionable_family_diversity_failure_review",
+  "status": "FAMILY_DIVERSITY_FAILURE_REVIEW_READY",
+  "scope": "family_diversity_failure_review_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_family_diversity_review_latest.json",
+  "family_diversity_status": "FAMILY_DIVERSITY_ITERATE",
+  "current_oos_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "current_oos_market": "KRW-ORCA",
+  "evaluated_candidate_count": 2,
+  "failure_candidate_count": 2,
+  "oos_pass_candidate_count": 0,
+  "robustness_pass_candidate_count": 0,
+  "dominant_failure_dimension": "enough_pass_folds",
+  "failure_dimension_counts": {
+    "enough_pass_folds": 2,
+    "enough_positive_folds": 2,
+    "mdd_within_limit": 1
+  },
+  "candidate_gaps": [
+    {
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+      "market": "KRW-POLA",
+      "status": "OOS_CANDIDATE_ITERATE",
+      "failure_dimensions": [
+        "enough_pass_folds",
+        "enough_positive_folds"
+      ],
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "fold_count": 3,
+      "worst_fold_mdd": -0.1860761073040632,
+      "average_fold_cagr": 3.0620023156308207,
+      "total_trade_count": 11
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "status": "OOS_CANDIDATE_ITERATE",
+      "failure_dimensions": [
+        "enough_pass_folds",
+        "enough_positive_folds",
+        "mdd_within_limit"
+      ],
+      "pass_fold_count": 0,
+      "positive_fold_count": 1,
+      "fold_count": 3,
+      "worst_fold_mdd": -0.28078926292652706,
+      "average_fold_cagr": 15.653366164751057,
+      "total_trade_count": 14
+    }
+  ],
+  "recommended_research_action": "REPAIR_NON_ORCA_PASS_FOLD_COVERAGE",
+  "counts_as_paper_or_live_evidence": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Use this failure review to seed the next non-ORCA frozen research repair; do not register, submit, or enable paper/live."
+}

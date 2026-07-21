@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-04-18T04:06:17.901266+00:00",
+  "dashboard_summary": {
+    "dashboard_ready": false,
+    "candidate": "low_vol_cap_050_025_minvol020_p2200",
+    "shadow_decision": "shadow_ready_for_btc_only",
+    "practical_status_label": "btc_only_practical_with_caveats",
+    "quick_read_contract_partitioned": true,
+    "contract_health_aligned": false,
+    "execution_contract_aligned": true,
+    "paper_execution_contract_aligned": false,
+    "paper_ledger_consistent": false,
+    "paper_exit_duplicate_run": false,
+    "attention_flags": [
+      "shadow_decision=shadow_ready_for_btc_only",
+      "contract_health=drifted",
+      "paper_execution_contract=drifted",
+      "paper_ledger=inconsistent"
+    ]
+  },
+  "development": {
+    "project_direction": "ops hardening",
+    "current_work": [
+      "candidate=low_vol_cap_050_025_minvol020_p2200",
+      "practical_status=btc_only_practical_with_caveats",
+      "shadow_decision=shadow_ready_for_btc_only",
+      "research_stack=BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold)"
+    ],
+    "next_actions": [
+      "contract_health drift recovery",
+      "paper execution contract alignment recovery",
+      "paper ledger consistency recovery"
+    ]
+  },
+  "performance": {
+    "carry_decision": "PASS",
+    "carry_sharpe": 1.16798884,
+    "carry_cagr": 0.143529,
+    "carry_max_drawdown": 0.10931171,
+    "survivability_decision": "PASS",
+    "survivability_sharpe": 1.14501096,
+    "survivability_cagr": 0.15303622,
+    "survivability_max_drawdown": 0.13213551,
+    "walk_forward_passed": true,
+    "walk_forward_oos_sharpe": 0.82219649,
+    "walk_forward_oos_cagr": 0.05588628,
+    "walk_forward_oos_max_drawdown": 0.06155691,
+    "friction_decision": "continue",
+    "friction_heaviest_level_bps": 20.0,
+    "friction_heaviest_level_sharpe": 1.04850218,
+    "eth_symbol": "ETHUSDT",
+    "eth_pass_rate": 0.0
+  },
+  "overview": {
+    "combined_health_line": "BTC 1d practical health | status=btc_only_practical_with_caveats | ok=True | candidate=volatility_expansion_reclaim_lower_atr_window_tighter_stop | sharpe=1.3946 | cagr=37.72% | mdd=16.09% | caveats=4 || BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold)",
+    "research_stack_status": "BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold)",
+    "contract_health_line": "BTC 1d contract health | operating_brief=operating_v3 | operating_index=operating_v3 | aligned=True | research=research_stack_v2 | distinct=True | partitioned=True | standard_order_aligned=True | health_order_aligned=True | standard_order=practical > research > contract > brief",
+    "execution_contract_health_line": "BTC 1d practical health | status=btc_only_practical_with_caveats | ok=True | candidate=volatility_expansion_reclaim_lower_atr_window_tighter_stop | sharpe=1.3946 | cagr=37.72% | mdd=16.09% | caveats=4 || BTC 1d research stack | frontier=ratio112_tighter_stop_main | cagr=42.43% | mdd=16.09% | sharpe=1.5613 | backup=ratio111_tighter_stop_backup | backup_drift=0.4172 | defensive=volatility_expansion_pullthrough_shorter_hold (candidate_stage_hold) | next_near_miss=trend_dip_reversal_breakout_tighter_stop_mid_hold (validated_fail_hold) || BTC 1d paper nightly | track=operating | intents=1 | signed=1 | applied=1 | closed=1 | open=0 || execution contract | aligned | paper execution | track=operating | applied=1 | closed=1 | open=0",
+    "execution_contract_read": "execution contract | aligned | paper execution | track=operating | applied=1 | closed=1 | open=0"
+  },
+  "paper_execution": {
+    "paper_execution_read": "paper execution | track=operating | applied=1 | closed=1 | open=0",
+    "intent_count": 1,
+    "signed_request_count": 1,
+    "paper_applied_count": 1,
+    "paper_duplicate_count": null,
+    "paper_closed_count": 1,
+    "paper_open_count": 0,
+    "paper_ledger_snapshot_read": ""
+  },
+  "contracts": {
+    "quick_read_operating_contract_aligned": true,
+    "quick_read_paper_execution_contract_aligned": false,
+    "quick_read_contract_health_aligned": false,
+    "execution_contract_paper_ledger_snapshot_summary_aligned": false,
+    "execution_contract_paper_execution_contract_aligned_summary_aligned": false
+  },
+  "artifacts": {
+    "latest_summary_json": "analysis_results\\btc_1d_latest_summary_latest.json",
+    "operating_index_json": "analysis_results\\btc_1d_operating_index_latest.json",
+    "operating_brief_json": "analysis_results\\btc_1d_operating_brief_latest.json",
+    "quick_read_contract_json": "analysis_results\\btc_1d_quick_read_contract_screen_latest.json",
+    "execution_contract_json": "analysis_results\\btc_1d_execution_contract_screen_latest.json",
+    "paper_nightly_summary_json": "analysis_results\\btc_1d_paper_nightly_summary_latest.json"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "generated_at_utc": "2026-05-05T01:49:01.805716+00:00",
+  "report": "stock_risk_conversion_queue",
+  "status": "READY_FOR_GATEKEEPER_REVIEW",
+  "scope": "stock_aggressive_risk_conversion_queue_report_only",
+  "source": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json",
+  "risk_guard_status": "WARN",
+  "risk_guard_halt_count": 0,
+  "risk_guard_allows_review": true,
+  "target_count": 5,
+  "ready_candidate_count": 5,
+  "blocked_candidate_count": 0,
+  "queue": [
+    {
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+      "lane": "kis_etfs",
+      "status": "SHADOW_READY",
+      "failure_reason": "MDD_TOO_HIGH",
+      "before": {
+        "cagr": 0.7060692144490932,
+        "mdd": -0.3065255636909545,
+        "sharpe": 1.7455973852445321,
+        "required_mdd_reduction_to_20pct": 0.1065255636909545
+      },
+      "proposed_conversion": {
+        "overlay": "fixed_exposure_065",
+        "fixed_exposure_cap": 0.65,
+        "estimated_cagr": 0.4589449893919106,
+        "estimated_mdd": -0.19924161639912044,
+        "estimated_return_retention": 0.65,
+        "gate_result": "pass_mdd_margin"
+      },
+      "safe_experiment_scope": "risk_conversion_only_no_order_paths",
+      "order_paths_allowed": false,
+      "broker_submit_allowed": false,
+      "live_enabled": false,
+      "private_submit_allowed": false,
+      "real_orders_allowed": false,
+      "gatekeeper_action": "review_fixed_exposure_conversion_candidate"
+    },
+    {
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+      "lane": "kis_etfs",
+      "status": "SHADOW_READY",
+      "failure_reason": "MDD_TOO_HIGH",
+      "before": {
+        "cagr": 0.7117596868794229,
+        "mdd": -0.309398699730987,
+        "sharpe": 1.7436785182561916,
+        "required_mdd_reduction_to_20pct": 0.10939869973098698
+      },
+      "proposed_conversion": {
+        "overlay": "fixed_exposure_064",
+        "fixed_exposure_cap": 0.64,
+        "estimated_cagr": 0.4555261996028307,
+        "estimated_mdd": -0.19801516782783168,
+        "estimated_return_retention": 0.64,
+        "gate_result": "pass_mdd_margin"
+      },
+      "safe_experiment_scope": "risk_conversion_only_no_order_paths",
+      "order_paths_allowed": false,
+      "broker_submit_allowed": false,
+      "live_enabled": false,
+      "private_submit_allowed": false,
+      "real_orders_allowed": false,
+      "gatekeeper_action": "review_fixed_exposure_conversion_candidate"
+    },
+    {
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+      "lane": "kis_etfs",
+      "status": "SHADOW_READY",
+      "failure_reason": "MDD_TOO_HIGH",
+      "before": {
+        "cagr": 0.708916274280555,
+        "mdd": -0.3079616377217538,
+        "sharpe": 1.7446559487383329,
+        "required_mdd_reduction_to_20pct": 0.10796163772175377
+      },
+      "proposed_conversion": {
+        "overlay": "fixed_exposure_064",
+        "fixed_exposure_cap": 0.64,
+        "estimated_cagr": 0.4537064155395552,
+        "estimated_mdd": -0.19709544814192242,
+        "estimated_return_retention": 0.64,
+        "gate_result": "pass_mdd_margin"
+      },
+      "safe_experiment_scope": "risk_conversion_only_no_order_paths",
+      "order_paths_allowed": false,
+      "broker_submit_allowed": false,
+      "live_enabled": false,
+      "private_submit_allowed": false,
+      "real_orders_allowed": false,
+      "gatekeeper_action": "review_fixed_exposure_conversion_candidate"
+    },
+    {
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "lane": "kis_stocks",
+      "status": "SHADOW_READY",
+      "failure_reason": "MDD_TOO_HIGH",
+      "before": {
+        "cagr": 0.7676964364079504,
+        "mdd": -0.33833218707302404,
+        "sharpe": 1.7178758127808547,
+        "required_mdd_reduction_to_20pct": 0.13833218707302403
+      },
+      "proposed_conversion": {
+        "overlay": "fixed_exposure_059",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.4529408974806907,
+        "estimated_mdd": -0.19961599037308417,
+        "estimated_return_retention": 0.59,
+        "gate_result": "pass_mdd_margin"
+      },
+      "safe_experiment_scope": "risk_conversion_only_no_order_paths",
+      "order_paths_allowed": false,
+      "broker_submit_allowed": false,
+      "live_enabled": false,
+      "private_submit_allowed": false,
+      "real_orders_allowed": false,
+      "gatekeeper_action": "review_fixed_exposure_conversion_candidate"
+    },
+    {
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "lane": "kis_stocks",
+      "status": "SHADOW_READY",
+      "failure_reason": "MDD_TOO_HIGH",
+      "before": {
+        "cagr": 0.7479958086653411,
+        "mdd": -0.3383321870730238,
+        "sharpe": 1.6936987997817152,
+        "required_mdd_reduction_to_20pct": 0.1383321870730238
+      },
+      "proposed_conversion": {
+        "overlay": "fixed_exposure_059",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.44131752711255123,
+        "estimated_mdd": -0.19961599037308403,
+        "estimated_return_retention": 0.59,
+        "gate_result": "pass_mdd_margin"
+      },
+      "safe_experiment_scope": "risk_conversion_only_no_order_paths",
+      "order_paths_allowed": false,
+      "broker_submit_allowed": false,
+      "live_enabled": false,
+      "private_submit_allowed": false,
+      "real_orders_allowed": false,
+      "gatekeeper_action": "review_fixed_exposure_conversion_candidate"
+    }
+  ],
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Gatekeeper can review the ready fixed-exposure conversion queue; do not promote without a separate Gatekeeper decision."
+}

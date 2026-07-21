@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-05-04T06:31:05.439424+00:00",
+  "report": "btc_eth_intraday_oos_stability_plateau_review",
+  "status": "BTC_ETH_INTRADAY_OOS_STABILITY_PLATEAU_REVIEW_READY",
+  "scope": "oos_stability_plateau_review_only_no_order_paths",
+  "source_path": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_oos_stability_review_latest.json",
+  "current_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "best_candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_001",
+  "evaluated_trial_count": 20,
+  "stability_pass_count": 3,
+  "current_worst_fold_mdd": -0.16791650341473752,
+  "best_worst_fold_mdd": -0.16791650341473752,
+  "current_average_fold_cagr": 0.26930593366095223,
+  "best_average_fold_cagr": 0.26930593366095223,
+  "best_improves_current": false,
+  "recommended_action": "KEEP_CURRENT_INTRADAY_OOS_CANDIDATE_FOCUS_ROBUSTNESS_REPAIR",
+  "counts_as_paper_or_live_evidence": false,
+  "mutation_allowed_by_this_report": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "mutation_allowed_by_this_report": false,
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Review the OOS stability plateau evidence; keep the current intraday OOS candidate and focus robustness repair."
+}

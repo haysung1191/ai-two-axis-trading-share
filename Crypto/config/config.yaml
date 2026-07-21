@@ -1,0 +1,45 @@
+exchange:
+  name: bithumb
+  krw_quote_volume_24h_min: 300000000  # KRW
+  max_symbols: 120  # safety cap
+
+strategy:
+  interval_ms: 3600000  # 1h
+  slippage_rate: 0.0008
+  fee_rate: 0.0004
+
+  starting_equity_krw: 10000000
+  risk_per_trade: 0.005
+  max_concurrent_positions: 2
+  max_new_entries_per_day: 3
+  daily_realized_loss_kill_switch: 0.02
+  per_symbol_cooldown_ms: 21600000  # 6h
+
+  atr_period: 14
+  stop_atr_mult: 2.5
+  take_profit_r_mult: 1.5
+  time_exit_candles: 48
+
+  market_filter_symbol: "BTC"
+  market_filter_ema: 26
+
+scanner:
+  top_n: 10
+  ema_fast: 12
+  ema_slow: 26
+  rsi_period: 14
+  bb_period: 20
+  bb_std: 2.0
+  vol_ratio_period: 20
+  lookback_candles: 200
+
+email:
+  enabled: false
+  subject_prefix: "[scanner]"
+
+policy:
+  trace_enabled: true
+  shadow_enabled: true
+  active_enabled: true
+  soft_reject_enabled: false
+  max_score_delta: 0.05

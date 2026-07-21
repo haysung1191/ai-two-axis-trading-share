@@ -1,0 +1,107 @@
+{
+  "generated_at_utc": "2026-05-05T01:49:13.932450+00:00",
+  "report": "gatekeeper_operator_review_digest",
+  "status": "READY_FOR_OPERATOR_REVIEW",
+  "scope": "operator_review_digest_no_state_mutation_no_order_paths",
+  "ready_decision_count": 33,
+  "compressed_review_row_count": 25,
+  "compression_group_count": 1,
+  "top_action_count": 8,
+  "top_ready_actions": [
+    {
+      "decision_id": "paper_smoke_review",
+      "candidate_id": "small_account_growth_paper",
+      "lane": "portfolio",
+      "priority_score": 100,
+      "exact_phrase_to_record": "REVIEW_PAPER_SMOKE_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    },
+    {
+      "decision_id": "btc_eth_intraday_shadow_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "lane": "btc_eth_1h4h",
+      "priority_score": 95,
+      "exact_phrase_to_record": "APPROVE_SHADOW_REVIEW_ONLY",
+      "review_only_effect": "Records human approval for shadow-review consideration only. It does not register a shadow candidate, start a loop, enable paper/live, or allow orders.",
+      "blocker_count": 1
+    },
+    {
+      "decision_id": "btc_eth_intraday_robustness_repair_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_447",
+      "lane": "btc_eth_intraday",
+      "priority_score": 90,
+      "exact_phrase_to_record": "REVIEW_BTC_ETH_INTRADAY_ROBUSTNESS_REPAIR_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    },
+    {
+      "decision_id": "btc_eth_intraday_robustness_repair_alternate_child_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_robustrepair_441",
+      "lane": "btc_eth_intraday",
+      "priority_score": 89,
+      "exact_phrase_to_record": "REVIEW_BTC_ETH_INTRADAY_ALTERNATE_REPAIR_CHILDREN_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    },
+    {
+      "decision_id": "btc_eth_intraday_low_turnover_followup_review",
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080_followup159",
+      "lane": "btc_eth_intraday",
+      "priority_score": 86,
+      "exact_phrase_to_record": "REVIEW_BTC_ETH_INTRADAY_LOW_TURNOVER_FOLLOWUP_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    },
+    {
+      "decision_id": "bithumb_current_actionable_family_parameter_repair_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+      "lane": "bithumb_1d",
+      "priority_score": 85,
+      "exact_phrase_to_record": "REVIEW_FAMILY_PARAMETER_REPAIR_EVIDENCE_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    },
+    {
+      "decision_id": "bithumb_non_orca_entry_source_rebuild_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_entrysource_002",
+      "lane": "bithumb_1d",
+      "priority_score": 84,
+      "exact_phrase_to_record": "REVIEW_NON_ORCA_ENTRY_SOURCE_REBUILD_EVIDENCE_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    },
+    {
+      "decision_id": "bithumb_non_orca_entry_source_alternate_child_review",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_entrysource_020",
+      "lane": "bithumb_1d",
+      "priority_score": 83,
+      "exact_phrase_to_record": "REVIEW_NON_ORCA_ENTRY_SOURCE_ALTERNATE_CHILDREN_ONLY",
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "blocker_count": 0
+    }
+  ],
+  "hard_safety": {
+    "ok": true,
+    "live_enabled": false,
+    "real_orders": 0,
+    "private_submit_used": false,
+    "broker_submit_scope": "paper_only"
+  },
+  "operational_monitor": {
+    "status": "WARN",
+    "blocker_count": 0,
+    "actionable_warning_count": 0
+  },
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Review top_ready_actions manually; recording a phrase remains a separate human action."
+}

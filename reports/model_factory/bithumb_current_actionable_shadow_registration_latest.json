@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-05-16T10:30:28.175041+00:00",
+  "report": "bithumb_current_actionable_shadow_registration",
+  "status": "REGISTERED",
+  "already_registered": false,
+  "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+  "registry_path": "C:\\AI\\registry\\model_factory_shadow_candidates\\bithumb_current_actionable_shadow_candidates.json",
+  "blockers": [],
+  "record": {
+    "schema_version": "1.0",
+    "registered_at_utc": "2026-05-16T10:30:28.175041+00:00",
+    "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+    "lane": "bithumb_1d",
+    "market": "KRW-ORCA",
+    "timeframe": "1d",
+    "mode": "shadow_review_only",
+    "status": "REGISTERED",
+    "shadow_gate": "G07_SHADOW_REVIEW_ONLY",
+    "recommended_exposure_cap": 0.724065787923393,
+    "estimated_cagr": 1.6822725338689943,
+    "estimated_mdd": -0.2,
+    "oos_status": "OOS_WALKFORWARD_PASS",
+    "oos_pass_fold_count": 2,
+    "oos_total_trade_count": 17,
+    "robustness_status": "ROBUSTNESS_STRESS_PASS",
+    "robustness_pass_count": 7,
+    "robustness_cost_pass_count": 1,
+    "source_action_packet": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_registration_action_packet_latest.json",
+    "action_packet_hash": "854506fe24198e7f34d41a111294e2e3f155ff7822d020e3a1c09c2a946bf820",
+    "human_decision": {
+      "decision": "APPROVE_SHADOW_REVIEW_ONLY",
+      "decided_by": "human_gatekeeper",
+      "rationale": "HUMAN_REVIEWED_SWEEP2154_SHADOW_REVIEW_ONLY_NO_PAPER_LIVE_BROKER_ORDERS"
+    },
+    "runtime_limits": {
+      "does_start_shadow_loop": false,
+      "does_emit_order_signal": false,
+      "does_enable_paper": false,
+      "does_enable_live": false,
+      "broker_submit_allowed": false,
+      "private_submit_allowed": false,
+      "real_orders_allowed": false,
+      "real_orders": 0
+    }
+  },
+  "safety": {
+    "does_start_shadow_loop": false,
+    "does_emit_order_signal": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false,
+    "real_orders": 0
+  },
+  "next_action": "Registry record is file-only shadow-review metadata; a separate reviewed process is required before any loop starts."
+}

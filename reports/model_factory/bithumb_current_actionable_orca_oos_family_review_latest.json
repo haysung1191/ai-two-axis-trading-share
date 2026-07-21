@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-16T15:58:50+09:00",
+  "status": "ORCA_OOS_FAMILY_REVIEW_READY",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_oos_walkforward_latest.json",
+  "oos_pass_candidate_count": 6,
+  "distinct_parameter_count": 6,
+  "top_candidates": [
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.724065787923393,
+        "estimated_cagr": 1.6822725338689943,
+        "estimated_total_return": 0.8655965169126618,
+        "estimated_mdd": -0.2,
+        "source_cagr": 2.3233697295569233,
+        "source_total_return": 1.1954666707774941,
+        "source_mdd": -0.2762179947399479,
+        "source_trade_count": 13,
+        "source_profit_factor": 3.4498569431632595,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": 0.14151091885645095,
+          "cagr": 0.42278845480327965,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 1.948803837752342,
+          "win_rate": 0.6666666666666666
+        },
+        {
+          "total_return": -0.2560337315046808,
+          "cagr": -0.5452341519804038,
+          "mdd": -0.082,
+          "trade_count": 5,
+          "profit_factor": 0.0,
+          "win_rate": 0.0
+        },
+        {
+          "total_return": 0.6096867372177928,
+          "cagr": 2.522215558896145,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 4.15528946382565,
+          "win_rate": 0.3333333333333333
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 0.7999232872396735,
+        "total_trade_count": 17
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2145",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.7463397708428299,
+        "estimated_cagr": 1.5378942673390756,
+        "estimated_total_return": 0.8061844748682295,
+        "estimated_mdd": -0.2,
+        "source_cagr": 2.060581959343203,
+        "source_total_return": 1.0801842624007802,
+        "source_mdd": -0.26797446392833,
+        "source_trade_count": 14,
+        "source_profit_factor": 2.9740732486187764,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": 0.14151091885645095,
+          "cagr": 0.42278845480327965,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 1.948803837752342,
+          "win_rate": 0.6666666666666666
+        },
+        {
+          "total_return": -0.24125703112184715,
+          "cagr": -0.5207697549525773,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 0.11995918404825563,
+          "win_rate": 0.16666666666666666
+        },
+        {
+          "total_return": 0.6397378815171331,
+          "cagr": 2.6988166491104355,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 4.532714457205618,
+          "win_rate": 0.42857142857142855
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 0.8669451163203793,
+        "total_trade_count": 19
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2136",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.015,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.7043279703192277,
+        "estimated_cagr": 1.4937979072029068,
+        "estimated_total_return": 0.7796423498295896,
+        "estimated_mdd": -0.2,
+        "source_cagr": 2.120883977567811,
+        "source_total_return": 1.1069308371726692,
+        "source_mdd": -0.283958622159152,
+        "source_trade_count": 15,
+        "source_profit_factor": 2.825351623427716,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": 0.14151091885645095,
+          "cagr": 0.42278845480327965,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 1.948803837752342,
+          "win_rate": 0.6666666666666666
+        },
+        {
+          "total_return": -0.3034739545698557,
+          "cagr": -0.6184526487633765,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 0.09418868833633903,
+          "win_rate": 0.14285714285714285
+        },
+        {
+          "total_return": 0.6397378815171331,
+          "cagr": 2.6988166491104355,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 4.532714457205618,
+          "win_rate": 0.42857142857142855
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 0.8343841517167796,
+        "total_trade_count": 20
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2153",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.35,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.6295440505483922,
+        "estimated_cagr": 1.2821218629856728,
+        "estimated_total_return": 0.6732919481410057,
+        "estimated_mdd": -0.2,
+        "source_cagr": 2.0365880066197493,
+        "source_total_return": 1.0694914002515072,
+        "source_mdd": -0.31769023919101635,
+        "source_trade_count": 13,
+        "source_profit_factor": 3.2722744242682227,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": 0.14151091885645095,
+          "cagr": 0.42278845480327965,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 1.948803837752342,
+          "win_rate": 0.6666666666666666
+        },
+        {
+          "total_return": -0.2560337315046808,
+          "cagr": -0.5452341519804038,
+          "mdd": -0.082,
+          "trade_count": 5,
+          "profit_factor": 0.0,
+          "win_rate": 0.0
+        },
+        {
+          "total_return": 0.4485031520491216,
+          "cagr": 1.6645278882017118,
+          "mdd": -0.082,
+          "trade_count": 6,
+          "profit_factor": 3.390635320769199,
+          "win_rate": 0.3333333333333333
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 0.5140273970081959,
+        "total_trade_count": 17
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1494",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.015,
+        "stop_loss": 0.18,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.6802607697619755,
+        "estimated_cagr": 1.27752973290841,
+        "estimated_total_return": 0.6789460993847503,
+        "estimated_mdd": -0.2,
+        "source_cagr": 1.8780000107244463,
+        "source_total_return": 0.9980674023320715,
+        "source_mdd": -0.29400490060595497,
+        "source_trade_count": 17,
+        "source_profit_factor": 2.6902709962343523,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": 0.09069820712562371,
+          "cagr": 0.26024173909722337,
+          "mdd": -0.12852129817444224,
+          "trade_count": 9,
+          "profit_factor": 1.4628011517764987,
+          "win_rate": 0.5555555555555556
+        },
+        {
+          "total_return": -0.2787240845536043,
+          "cagr": -0.58125554704323,
+          "mdd": -0.1040602218700476,
+          "trade_count": 9,
+          "profit_factor": 0.11878907588097061,
+          "win_rate": 0.3333333333333333
+        },
+        {
+          "total_return": 0.26743423811288447,
+          "cagr": 0.8716744713002884,
+          "mdd": -0.17356348373557184,
+          "trade_count": 9,
+          "profit_factor": 1.8986713240435267,
+          "win_rate": 0.4444444444444444
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.17356348373557184,
+        "average_fold_cagr": 0.18355355445142726,
+        "total_trade_count": 27
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    }
+  ],
+  "blockers": [],
+  "review_value": {
+    "reduces_single_registered_candidate_dependency": true,
+    "supports_shadow_wait_without_forcing_signal": true
+  },
+  "single_next_action": "Review ORCA OOS pass family diversity for shadow-candidate registration readiness.",
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  }
+}

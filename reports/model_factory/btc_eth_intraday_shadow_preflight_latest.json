@@ -1,0 +1,47 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:09.955804+00:00",
+  "report": "btc_eth_intraday_shadow_preflight",
+  "status": "BLOCKED_PENDING_HUMAN_GATEKEEPER_DECISION",
+  "scope": "shadow_preflight_only_no_candidate_registration_no_order_paths",
+  "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "lane": "btc_eth_1h4h",
+  "sources": {
+    "shadow_review_packet": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_review_packet_latest.json",
+    "risk_guard": "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json",
+    "kill_switch": "C:\\AI\\ops\\runstate\\kill_switch.json"
+  },
+  "evidence_summary": {
+    "market": "KRW-BTC",
+    "timeframe": "4h",
+    "recommended_exposure_cap": 0.7146408932992823,
+    "estimated_average_fold_cagr": 0.22202103828420336,
+    "estimated_worst_fold_mdd": -0.12,
+    "oos_pass_fold_count": 2,
+    "oos_total_trade_count": 76
+  },
+  "readiness_checks": {
+    "shadow_review_packet_ready": true,
+    "shadow_review_packet_has_no_blockers": true,
+    "shadow_review_packet_no_order_safe": true,
+    "risk_guard_pass": false,
+    "paper_disabled": true,
+    "live_disabled": true
+  },
+  "blockers": [
+    "risk_guard_pass",
+    "HUMAN_GATEKEEPER_SHADOW_DECISION_MISSING"
+  ],
+  "safety": {
+    "does_register_shadow_candidate": false,
+    "does_start_shadow_loop": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed": false,
+    "private_submit_allowed": false,
+    "real_orders_allowed": false,
+    "kill_switch_shadow_enabled": true,
+    "kill_switch_paper_enabled": false,
+    "kill_switch_live_enabled": false
+  },
+  "next_action": "Human Gatekeeper must decide whether to create a separate shadow-registration action for this candidate; this preflight does not register it."
+}

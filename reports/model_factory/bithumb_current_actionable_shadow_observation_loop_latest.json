@@ -1,0 +1,96 @@
+{
+  "generated_at_utc": "2026-05-05T08:24:24.740524+00:00",
+  "run_id": "20260505T082424Z",
+  "mode": "bithumb_current_actionable_shadow_observation_loop",
+  "cycles_requested": 288,
+  "cycles_completed": 1,
+  "sleep_seconds": 300,
+  "max_hours": 2.0,
+  "last_status": "fail",
+  "last_cycle": {
+    "cycle": 1,
+    "started_at_utc": "2026-05-05T08:24:24.542481+00:00",
+    "finished_at_utc": "2026-05-05T08:24:24.729532+00:00",
+    "returncode": 1,
+    "status": "fail",
+    "log_path": "C:\\AI\\reports\\model_factory\\logs\\bithumb_current_actionable_shadow_observation_loop\\20260505T082424Z\\cycle_001_shadow_observation_adapter.log",
+    "stdout_tail": [
+      "{",
+      "  \"latest_json\": \"C:\\\\AI\\\\reports\\\\model_factory\\\\bithumb_current_actionable_shadow_signal_latest.json\",",
+      "  \"latest_md\": \"C:\\\\AI\\\\reports\\\\model_factory\\\\bithumb_current_actionable_shadow_signal_latest.md\",",
+      "  \"status\": \"BLOCKED\",",
+      "  \"candidate_id\": \"bithumb_current_actionable_pola_1d_long_freeze001_sweep1354\",",
+      "  \"blockers\": [",
+      "    \"OOS_PARAMETERS_NOT_FOUND_FOR_REGISTERED_CANDIDATE\"",
+      "  ]",
+      "}"
+    ],
+    "stderr_tail": [],
+    "observation": {
+      "adapter_status": "BLOCKED",
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+      "market": null,
+      "timeframe": null,
+      "signal_id": null,
+      "bar_close_ts_utc": null,
+      "shadow_action": null,
+      "triggered": null,
+      "target_shadow_weight": null,
+      "momentum_return": null,
+      "volume_ratio": null,
+      "blockers": [
+        "OOS_PARAMETERS_NOT_FOUND_FOR_REGISTERED_CANDIDATE"
+      ]
+    },
+    "safety": {
+      "scope": "bithumb_shadow_observation_only_no_order_paths",
+      "does_run_observation_loop": true,
+      "does_start_order_shadow_loop": false,
+      "does_start_shadow_loop": false,
+      "does_emit_order_signal": false,
+      "does_write_order_intent": false,
+      "does_enable_paper": false,
+      "does_enable_live": false,
+      "broker_submit_allowed": false,
+      "private_submit_used": false,
+      "real_orders": 0
+    }
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "finished_at_utc": "2026-05-05T08:24:24.729532+00:00",
+      "status": "fail",
+      "observation": {
+        "adapter_status": "BLOCKED",
+        "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+        "market": null,
+        "timeframe": null,
+        "signal_id": null,
+        "bar_close_ts_utc": null,
+        "shadow_action": null,
+        "triggered": null,
+        "target_shadow_weight": null,
+        "momentum_return": null,
+        "volume_ratio": null,
+        "blockers": [
+          "OOS_PARAMETERS_NOT_FOUND_FOR_REGISTERED_CANDIDATE"
+        ]
+      }
+    }
+  ],
+  "safety": {
+    "scope": "bithumb_shadow_observation_only_no_order_paths",
+    "does_run_observation_loop": true,
+    "does_start_order_shadow_loop": false,
+    "does_start_shadow_loop": false,
+    "does_emit_order_signal": false,
+    "does_write_order_intent": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed": false,
+    "private_submit_used": false,
+    "real_orders": 0
+  },
+  "note": "Bithumb current-actionable shadow observation only. It never submits broker orders."
+}

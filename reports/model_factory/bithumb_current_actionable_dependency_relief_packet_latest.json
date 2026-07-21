@@ -1,0 +1,81 @@
+{
+  "generated_at_utc": "2026-05-04T01:41:52.785815+00:00",
+  "report": "bithumb_current_actionable_dependency_relief_packet",
+  "status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+  "scope": "dependency_relief_review_only_no_registration_no_order_paths",
+  "decision_type": "dependency_relief_evidence_review",
+  "recommended_decision": "REVIEW_DEPENDENCY_RELIEF_EVIDENCE_ONLY",
+  "exact_phrase_to_record": "REVIEW_DEPENDENCY_RELIEF_EVIDENCE_ONLY",
+  "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+  "registered_candidate": {
+    "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+    "market": "KRW-POLA",
+    "timeframe": "1d",
+    "estimated_cagr": 0.9433543189324173,
+    "estimated_mdd": -0.2,
+    "source_profit_factor": 2.381643717740363,
+    "source_trade_count": 18,
+    "status": "SHADOW_REVIEW_REGISTERED"
+  },
+  "latest_oos_candidate": {
+    "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1507",
+    "market": "KRW-ORCA",
+    "timeframe": "1d",
+    "estimated_cagr": 1.390057529740537,
+    "estimated_mdd": -0.2,
+    "source_profit_factor": 2.9844857548685635,
+    "source_trade_count": 14,
+    "status": "OOS_CANDIDATE_PASS"
+  },
+  "dependency_relief_candidate": {
+    "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+    "parent_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+    "market": "KRW-POLA",
+    "timeframe": "1d",
+    "estimated_cagr": 0.8838148713053242,
+    "estimated_mdd": -0.2,
+    "recommended_exposure_cap": 0.8678815971275287,
+    "oos_pass_fold_count": 2,
+    "oos_fold_count": 3,
+    "robustness_status": "ROBUSTNESS_STRESS_PASS",
+    "robustness_pass_count": 4,
+    "robustness_case_count": 7,
+    "robustness_cost_pass_count": 2
+  },
+  "dependency_relief_summary": {
+    "registered_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+    "latest_oos_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1507",
+    "relief_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1355",
+    "candidate_rollover_detected": true,
+    "latest_vs_registered_cagr_delta": 0.4467032108081198,
+    "relief_vs_registered_cagr_delta": -0.05953944762709307,
+    "relief_vs_registered_mdd_delta": 0.0,
+    "relief_candidate_is_registered_candidate": false,
+    "relief_candidate_is_latest_oos_candidate": false,
+    "sweep1354_dependency_reduced_by_review_evidence": true
+  },
+  "readiness_checks": {
+    "rollover_review_ready": true,
+    "rollover_no_side_effects": true,
+    "registered_candidate_present": true,
+    "latest_oos_candidate_present": true,
+    "dependency_relief_candidate_ready": true,
+    "dependency_relief_no_order_safe": true,
+    "dependency_relief_candidate_differs_from_registered": true
+  },
+  "blockers": [],
+  "sources": {
+    "rollover_review": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_rollover_review_packet_latest.json",
+    "family_parameter_repair_gatekeeper_packet": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_family_parameter_repair_gatekeeper_packet_latest.json"
+  },
+  "no_order_assertions": {
+    "promotion_allowed_by_this_packet": false,
+    "shadow_registration_allowed_by_this_packet": false,
+    "paper_enabled_by_this_packet": false,
+    "live_allowed_by_this_packet": false,
+    "broker_submit_allowed_by_this_packet": false,
+    "private_submit_allowed_by_this_packet": false,
+    "real_orders_allowed_by_this_packet": false
+  },
+  "next_action": "Human Gatekeeper can review dependency-relief evidence; do not register shadow or enable orders from this packet."
+}

@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-05-03T01:36:23.432141+00:00",
+  "report": "stock_risk_conversion_candidate_backtest",
+  "status": "READY_FOR_GATEKEEPER_REVIEW",
+  "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+  "source_variant": "tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+  "source_summary": "C:\\AI\\momentum\\output\\split_models_operational_conversion_concentration_carry_kr_etf_trim_micro\\concentration_carry_kr_etf_trim_micro_summary.json",
+  "source_evidence_type": "existing_candidate_backtest_row_plus_fixed_exposure_overlay",
+  "frozen_scope": {
+    "allowed_change": "position_sizing_overlay_only",
+    "signal_logic_change_allowed": false,
+    "child_candidate_required": false,
+    "order_paths_allowed": false,
+    "broker_submit_allowed": false,
+    "live_enabled": false,
+    "private_submit_allowed": false,
+    "real_orders_allowed": false
+  },
+  "before": {
+    "cagr": 0.7060692144490932,
+    "mdd": -0.3065255636909545,
+    "sharpe": 1.7455973852445321,
+    "annual_turnover": 14.290301313023587,
+    "positive_cagr_windows": 4,
+    "negative_cagr_windows": 0,
+    "top1_positive_symbol_share": 0.1989149565149976,
+    "top3_positive_symbol_share": 0.43800856809800714
+  },
+  "after_fixed_exposure": {
+    "overlay": "fixed_exposure_065",
+    "fixed_exposure_cap": 0.65,
+    "estimated_cagr": 0.4589449893919106,
+    "estimated_mdd": -0.19924161639912044,
+    "estimated_sharpe": 1.7455973852445321,
+    "estimated_annual_turnover": 9.288695853465331,
+    "estimated_return_retention": 0.65,
+    "mdd_gate": -0.2,
+    "gate_result": "pass_mdd_margin"
+  },
+  "acceptance_checks": {
+    "source_row_found": true,
+    "signal_logic_preserved": true,
+    "order_paths_allowed": false,
+    "mdd_gate_passed": true,
+    "return_retention_min_55pct": true,
+    "negative_walkforward_windows_zero": true
+  },
+  "safety": {
+    "scope": "candidate_specific_conversion_evidence_report_only",
+    "live_enabled": false,
+    "broker_submit_allowed": false,
+    "private_submit_used": false,
+    "real_orders": 0,
+    "order_paths_allowed": false
+  },
+  "next_action": "Gatekeeper may review this candidate-specific conversion evidence; do not promote without Gatekeeper decision."
+}

@@ -1,0 +1,50 @@
+{
+  "generated_at_utc": "2026-05-03T01:20:59.319384+00:00",
+  "report": "stock_risk_conversion_experiment_spec",
+  "status": "READY_FOR_CONVERSION_BACKTEST",
+  "source_board": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json",
+  "experiment_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__fixed_exposure_65",
+  "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+  "lane": "kis_etfs",
+  "frozen_scope": {
+    "allowed_change": "position_sizing_overlay_only",
+    "signal_logic_change_allowed": false,
+    "child_candidate_required": false,
+    "order_paths_allowed": false,
+    "broker_submit_allowed": false,
+    "live_enabled": false,
+    "private_submit_allowed": false,
+    "real_orders_allowed": false
+  },
+  "before": {
+    "cagr": 0.7060692144490932,
+    "mdd": -0.3065255636909545,
+    "sharpe": 1.7455973852445321,
+    "failure_reason": "MDD_TOO_HIGH",
+    "required_mdd_reduction_to_20pct": 0.1065255636909545
+  },
+  "sizing_overlay": {
+    "type": "fixed_exposure_cap",
+    "recommended_fixed_exposure_cap": 0.65,
+    "target_mdd_abs": 0.2,
+    "estimated_capped_cagr": 0.4589449893919106,
+    "estimated_capped_mdd": -0.19924161639912044,
+    "estimated_return_retention": 0.65
+  },
+  "acceptance_checks": [
+    "conversion backtest must preserve signal definition",
+    "estimated and realized capped MDD must stay at or below 20% absolute",
+    "return retention should stay at or above 55%",
+    "no live, private submit, real broker endpoint, or order-path code may be called",
+    "Gatekeeper must review the resulting artifact before any status promotion"
+  ],
+  "safety": {
+    "scope": "research_conversion_report_only",
+    "live_enabled": false,
+    "broker_submit_allowed": false,
+    "broker_submit_scope": "none_for_this_report",
+    "private_submit_used": false,
+    "real_orders": 0
+  },
+  "next_command_hint": "run the existing Momentum conversion backtest with this fixed exposure cap; do not submit orders"
+}

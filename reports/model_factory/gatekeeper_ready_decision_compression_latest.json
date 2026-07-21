@@ -1,0 +1,55 @@
+{
+  "generated_at_utc": "2026-05-05T01:49:02.141783+00:00",
+  "report": "gatekeeper_ready_decision_compression",
+  "status": "PASS",
+  "scope": "review_queue_compression_no_state_mutation_no_order_paths",
+  "ready_decision_count": 33,
+  "lane_counts": {
+    "portfolio": 11,
+    "btc_eth_1h4h": 1,
+    "btc_eth_intraday": 6,
+    "bithumb_1d": 14,
+    "kis_stock_etf": 1
+  },
+  "compression_group_count": 1,
+  "compressed_source_decision_count": 9,
+  "primary_review_count": 1,
+  "estimated_review_rows_after_compression": 25,
+  "compression_groups": [
+    {
+      "group_id": "stock_portfolio_sleeve_bundle_group",
+      "primary_decision_id": "stock_portfolio_sleeve_gatekeeper_bundle_review",
+      "primary_exact_phrase": "REVIEW_STOCK_PORTFOLIO_SLEEVE_BUNDLE_ONLY",
+      "source_decision_count": 9,
+      "source_decision_ids": [
+        "stock_portfolio_sleeve_review",
+        "stock_portfolio_sleeve_sensitivity_review",
+        "stock_portfolio_sleeve_resilience_review",
+        "stock_portfolio_sleeve_pairwise_resilience_review",
+        "stock_portfolio_sleeve_pairwise_fragility_repair_review",
+        "stock_portfolio_sleeve_tail_drop_resilience_review",
+        "stock_portfolio_sleeve_tail_drop_fragility_repair_review",
+        "stock_portfolio_sleeve_resilience_ladder_review",
+        "stock_portfolio_sleeve_constraint_envelope_review"
+      ],
+      "bundle_surface_audit_pass": true,
+      "review_compression_note": "Use the bundle as the first compact review surface, while preserving all source decisions for traceability.",
+      "side_effects_allowed": false
+    }
+  ],
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "source_paths": {
+    "priority": "C:\\AI\\reports\\model_factory\\gatekeeper_decision_priority_latest.json",
+    "bundle_surface_audit": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_bundle_surface_audit_latest.json"
+  },
+  "next_action": "Review compressed primary packets first, then inspect source decisions only when details are needed."
+}

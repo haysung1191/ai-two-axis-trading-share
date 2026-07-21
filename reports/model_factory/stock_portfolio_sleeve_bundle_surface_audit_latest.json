@@ -1,0 +1,44 @@
+{
+  "generated_at_utc": "2026-05-05T01:49:12.907211+00:00",
+  "report": "stock_portfolio_sleeve_bundle_surface_audit",
+  "status": "PASS",
+  "scope": "stock_etf_portfolio_bundle_surface_audit_no_order_paths",
+  "decision_id": "stock_portfolio_sleeve_gatekeeper_bundle_review",
+  "exact_phrase": "REVIEW_STOCK_PORTFOLIO_SLEEVE_BUNDLE_ONLY",
+  "checks": {
+    "bundle_ready": true,
+    "bundle_exact_phrase_ok": true,
+    "bundle_no_order_safe": true,
+    "board_contains_bundle": true,
+    "phrase_contains_bundle": true,
+    "priority_contains_bundle": true,
+    "queue_contains_bundle": true,
+    "coverage_covers_bundle": true,
+    "dashboard_contains_bundle": true,
+    "public_contains_bundle": true,
+    "dashboard_order_safe": true,
+    "public_order_safe": true
+  },
+  "blockers": [],
+  "ready_for_review_surface": true,
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "source_paths": {
+    "bundle": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_gatekeeper_bundle_packet_latest.json",
+    "board": "C:\\AI\\reports\\model_factory\\gatekeeper_pending_decision_board_latest.json",
+    "phrase": "C:\\AI\\reports\\model_factory\\gatekeeper_review_decision_phrase_packet_latest.json",
+    "priority": "C:\\AI\\reports\\model_factory\\gatekeeper_decision_priority_latest.json",
+    "queue": "C:\\AI\\reports\\model_factory\\model_factory_experiment_queue_latest.json",
+    "coverage": "C:\\AI\\reports\\model_factory\\model_factory_queue_coverage_audit_latest.json",
+    "dashboard": "C:\\AI\\reports\\dashboard\\pipeline_dashboard_latest.json",
+    "public": "C:\\AI\\public_dashboard_export\\public_summary.json"
+  },
+  "next_action": "Use the bundle packet as the compact stock/ETF portfolio review surface; this audit has no side effects."
+}

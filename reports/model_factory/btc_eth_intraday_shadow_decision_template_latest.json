@@ -1,0 +1,67 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:10.056837+00:00",
+  "report": "btc_eth_intraday_shadow_decision_template",
+  "status": "PENDING_HUMAN_GATEKEEPER_DECISION",
+  "scope": "human_decision_template_only_no_candidate_registration_no_order_paths",
+  "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "lane": "btc_eth_1h4h",
+  "allowed_decisions": [
+    "APPROVE_SHADOW_REVIEW_ONLY",
+    "REJECT",
+    "DEFER"
+  ],
+  "sources": {
+    "shadow_preflight": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_preflight_latest.json",
+    "human_decision": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_gatekeeper_decision.json"
+  },
+  "evidence_summary": {
+    "market": "KRW-BTC",
+    "timeframe": "4h",
+    "recommended_exposure_cap": 0.7146408932992823,
+    "estimated_average_fold_cagr": 0.22202103828420336,
+    "estimated_worst_fold_mdd": -0.12,
+    "oos_pass_fold_count": 2,
+    "oos_total_trade_count": 76
+  },
+  "decision_template": {
+    "path": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_gatekeeper_decision.json",
+    "required_fields": {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "decision": [
+        "APPROVE_SHADOW_REVIEW_ONLY",
+        "REJECT",
+        "DEFER"
+      ],
+      "decided_by": "human_gatekeeper_name_or_initials",
+      "rationale": "short reason for approve, reject, or defer"
+    },
+    "example": {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "decision": "DEFER",
+      "decided_by": "human_gatekeeper",
+      "rationale": "Need more review before shadow registration."
+    }
+  },
+  "human_decision": {
+    "path": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_gatekeeper_decision.json",
+    "present": false,
+    "valid": false,
+    "decision_recorded": false,
+    "normalized": null
+  },
+  "approved_for_separate_shadow_registration_review": false,
+  "blockers": [
+    "HUMAN_GATEKEEPER_SHADOW_DECISION_MISSING"
+  ],
+  "blocker_count": 1,
+  "safety": {
+    "does_register_shadow_candidate": false,
+    "does_start_shadow_loop": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed": false,
+    "private_submit_allowed": false,
+    "real_orders_allowed": false
+  },
+  "next_action": "Human Gatekeeper must write a valid decision file before any separate shadow-registration action can be considered."
+}

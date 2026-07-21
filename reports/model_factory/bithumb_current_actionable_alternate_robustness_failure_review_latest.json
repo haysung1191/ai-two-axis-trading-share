@@ -1,0 +1,52 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:42.791407+00:00",
+  "report": "bithumb_current_actionable_alternate_robustness_failure_review",
+  "status": "BITHUMB_ALTERNATE_ROBUSTNESS_FAILURE_REVIEW_READY",
+  "scope": "alternate_robustness_failure_review_only_no_order_paths",
+  "source_alternate_robustness": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_alternate_robustness_latest.json",
+  "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "alternate_robustness_status": "ALTERNATE_ROBUSTNESS_ITERATE",
+  "evaluated_oos_pass_candidate_count": 2,
+  "robustness_pass_candidate_count": 0,
+  "best_alternate_candidate_id": null,
+  "candidate_result_count": 2,
+  "top_candidate_results": [
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1512",
+      "market": "KRW-ORCA",
+      "status": "ROBUSTNESS_STRESS_ITERATE",
+      "pass_count": 0,
+      "cost_pass_count": 0,
+      "estimated_cagr": 1.2606304410287108,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_total_trade_count": 11
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+      "market": "KRW-ORCA",
+      "status": "ROBUSTNESS_STRESS_ITERATE",
+      "pass_count": 0,
+      "cost_pass_count": 0,
+      "estimated_cagr": 1.2064543379763026,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_total_trade_count": 11
+    }
+  ],
+  "recommended_action": "STOP_TREATING_OOS_ALTERNATES_AS_GATEKEEPER_RELIEF_REQUIRE_ROBUSTNESS_OR_NEW_FAMILY",
+  "oos_alternates_count_as_gatekeeper_relief": false,
+  "counts_as_paper_or_live_evidence": false,
+  "mutation_allowed_by_this_report": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "mutation_allowed_by_this_report": false,
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Record this review-only failure packet; require robustness repair or a new family before Gatekeeper relief."
+}

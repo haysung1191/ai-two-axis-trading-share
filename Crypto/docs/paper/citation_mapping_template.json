@@ -1,0 +1,17 @@
+{
+  "LLM-FIN-1": "@wu2023bloomberggpt",
+  "LLM-FIN-2": "@yang2023fingpt",
+  "LLM-FIN-3": "@li2023llmfinancesurvey",
+  "LLM-FIN-4": "@dong2025financeagents",
+  "LLM-FIN-5": "@kou2025automate",
+  "AUTO-STRAT-1": "@neely1997technical",
+  "AUTO-STRAT-2": "@potvin2004generating",
+  "AUTO-STRAT-3": "@martin2019grammatical",
+  "VALID-1": "@white2000reality",
+  "VALID-2": "@hansen2005spa",
+  "VALID-3": "@romano2005stepwise",
+  "VALID-4": "@bailey2017pbo",
+  "TAI-1": "@nist2023airmf",
+  "TAI-2": "@frb2011sr117",
+  "TAI-3": "@raji2020auditing"
+}

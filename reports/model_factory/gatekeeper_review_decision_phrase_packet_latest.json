@@ -1,0 +1,221 @@
+{
+  "generated_at_utc": "2026-05-16T07:20:55.058098+00:00",
+  "report": "gatekeeper_review_decision_phrase_packet",
+  "scope": "human_phrase_packet_review_only_no_state_mutation_no_order_paths",
+  "status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+  "source_board": "C:\\AI\\reports\\model_factory\\gatekeeper_pending_decision_board_latest.json",
+  "board_status": "READY_FOR_GATEKEEPER_REVIEW",
+  "ready_phrase_count": 2,
+  "blocked_decision_count": 1,
+  "next_phrase": {
+    "decision_id": "bithumb_current_actionable_shadow_review",
+    "decision_type": "shadow_registration_review",
+    "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+    "lane": "bithumb_1d",
+    "status": "INVALID_HUMAN_GATEKEEPER_DECISION",
+    "ready_for_human_review": true,
+    "source_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_decision_template_latest.json",
+    "recommended_decision": "DEFER_OR_APPROVE_SHADOW_REVIEW_ONLY",
+    "exact_phrase_to_record": "APPROVE_SHADOW_REVIEW_ONLY",
+    "alternate_allowed_phrases": [
+      "REJECT",
+      "DEFER"
+    ],
+    "human_decision_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_gatekeeper_decision.json",
+    "review_only_effect": "Records human approval for shadow-review consideration only. It does not register a shadow candidate, start a loop, enable paper/live, or allow orders.",
+    "evidence_summary": {
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "recommended_exposure_cap": 0.724065787923393,
+      "estimated_cagr": 1.6822725338689943,
+      "estimated_mdd": -0.2,
+      "oos_status": "OOS_WALKFORWARD_PASS",
+      "oos_pass_fold_count": 2,
+      "oos_positive_fold_count": 2,
+      "oos_total_trade_count": 17,
+      "robustness_status": "ROBUSTNESS_STRESS_PASS",
+      "robustness_pass_count": 7,
+      "robustness_cost_pass_count": 1,
+      "robustness_case_count": 7
+    },
+    "blockers": [
+      "HUMAN_GATEKEEPER_DECISION_CANDIDATE_MISMATCH"
+    ],
+    "human_decision_state": {
+      "human_decision_present": true,
+      "human_decision_valid": false,
+      "recorded_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+      "expected_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+      "decision_candidate_match": false
+    },
+    "human_decision_draft_status": "DRAFT_READY",
+    "human_decision_draft_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+    "human_decision_draft_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_gatekeeper_decision_draft.json"
+  },
+  "ready_phrases": [
+    {
+      "decision_id": "paper_smoke_review",
+      "decision_type": "gatekeeper_paper_smoke_review",
+      "candidate_id": "small_account_growth_paper",
+      "lane": "portfolio",
+      "status": "READY_FOR_GATEKEEPER_REVIEW",
+      "ready_for_human_review": true,
+      "source_path": "C:\\AI\\reports\\model_factory\\paper_smoke_gatekeeper_review_packet_latest.json",
+      "recommended_decision": "REVIEW_PAPER_SMOKE_ONLY",
+      "exact_phrase_to_record": "REVIEW_PAPER_SMOKE_ONLY",
+      "alternate_allowed_phrases": [],
+      "human_decision_path": null,
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "evidence_summary": {
+        "paper_cycles_completed": 318,
+        "paper_smoke_minimum_cycles": 24,
+        "combined_non_flat_signal_count": 55,
+        "combined_executable_order_evidence_count": 52,
+        "recent_non_flat_signal_count": 52,
+        "recent_executable_virtual_order_count": 52,
+        "extended_paper_ready": true,
+        "extended_paper_decision": "PROMOTION_REVIEW_READY",
+        "extended_paper_evidence_gaps": [],
+        "historical_replay_non_flat_excluded": 7621
+      },
+      "blockers": []
+    },
+    {
+      "decision_id": "bithumb_current_actionable_shadow_review",
+      "decision_type": "shadow_registration_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+      "lane": "bithumb_1d",
+      "status": "INVALID_HUMAN_GATEKEEPER_DECISION",
+      "ready_for_human_review": true,
+      "source_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_decision_template_latest.json",
+      "recommended_decision": "DEFER_OR_APPROVE_SHADOW_REVIEW_ONLY",
+      "exact_phrase_to_record": "APPROVE_SHADOW_REVIEW_ONLY",
+      "alternate_allowed_phrases": [
+        "REJECT",
+        "DEFER"
+      ],
+      "human_decision_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_gatekeeper_decision.json",
+      "review_only_effect": "Records human approval for shadow-review consideration only. It does not register a shadow candidate, start a loop, enable paper/live, or allow orders.",
+      "evidence_summary": {
+        "market": "KRW-ORCA",
+        "timeframe": "1d",
+        "recommended_exposure_cap": 0.724065787923393,
+        "estimated_cagr": 1.6822725338689943,
+        "estimated_mdd": -0.2,
+        "oos_status": "OOS_WALKFORWARD_PASS",
+        "oos_pass_fold_count": 2,
+        "oos_positive_fold_count": 2,
+        "oos_total_trade_count": 17,
+        "robustness_status": "ROBUSTNESS_STRESS_PASS",
+        "robustness_pass_count": 7,
+        "robustness_cost_pass_count": 1,
+        "robustness_case_count": 7
+      },
+      "blockers": [
+        "HUMAN_GATEKEEPER_DECISION_CANDIDATE_MISMATCH"
+      ],
+      "human_decision_state": {
+        "human_decision_present": true,
+        "human_decision_valid": false,
+        "recorded_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+        "expected_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+        "decision_candidate_match": false
+      },
+      "human_decision_draft_status": "DRAFT_READY",
+      "human_decision_draft_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+      "human_decision_draft_path": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_gatekeeper_decision_draft.json"
+    }
+  ],
+  "blocked_decisions": [
+    {
+      "decision_id": "bithumb_current_actionable_shadow_registration_action",
+      "decision_type": "shadow_registration_action_review",
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+      "lane": "bithumb_1d",
+      "status": "BLOCKED",
+      "ready_for_human_review": false,
+      "recommended_decision": "REVIEW_ACTION_PACKET_ONLY",
+      "exact_phrase_to_record": "REVIEW_ACTION_PACKET_ONLY",
+      "alternate_allowed_phrases": [],
+      "review_only_effect": "Records evidence review only. It does not approve promotion, shadow registration, paper/live, broker submit, private submit, or real orders.",
+      "evidence_summary": {
+        "generated_at_utc": "2026-05-16T07:16:53.166275+00:00",
+        "report": "bithumb_current_actionable_shadow_registration_action_packet",
+        "status": "BLOCKED",
+        "scope": "action_packet_only_no_registration_no_order_paths",
+        "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+        "lane": "bithumb_1d",
+        "sources": {
+          "shadow_preflight": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_preflight_latest.json",
+          "decision_template": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_shadow_decision_template_latest.json",
+          "risk_guard": "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json",
+          "kill_switch": "C:\\AI\\ops\\runstate\\kill_switch.json"
+        },
+        "planned_shadow_registration": {
+          "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+          "market": "KRW-ORCA",
+          "timeframe": "1d",
+          "shadow_gate": "G07_SHADOW_REVIEW_ONLY",
+          "recommended_exposure_cap": 0.724065787923393,
+          "estimated_cagr": 1.6822725338689943,
+          "estimated_mdd": -0.2,
+          "oos_status": "OOS_WALKFORWARD_PASS",
+          "oos_pass_fold_count": 2,
+          "oos_total_trade_count": 17,
+          "robustness_status": "ROBUSTNESS_STRESS_PASS",
+          "robustness_pass_count": 7,
+          "robustness_cost_pass_count": 1
+        },
+        "human_decision_summary": {
+          "decision_recorded": false,
+          "decision": "APPROVE_SHADOW_REVIEW_ONLY",
+          "expected_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+          "recorded_candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+          "decided_by": "human_gatekeeper",
+          "rationale": "Approved for shadow-review-only registration consideration after OOS-backed Gatekeeper packet review. This does not approve paper, live, broker submit, private submit, or real orders."
+        },
+        "blockers": [
+          "HUMAN_GATEKEEPER_DECISION_CANDIDATE_MISMATCH",
+          "HUMAN_SHADOW_REVIEW_ONLY_APPROVAL_NOT_RECORDED",
+          "SHADOW_PREFLIGHT_NOT_READY_FOR_REGISTRATION_REVIEW",
+          "VALID_HUMAN_SHADOW_REVIEW_ONLY_DECISION_MISSING"
+        ],
+        "safety": {
+          "does_register_shadow_candidate": false,
+          "does_start_shadow_loop": false,
+          "does_enable_paper": false,
+          "does_enable_live": false,
+          "broker_submit_allowed_by_this_packet": false,
+          "private_submit_allowed_by_this_packet": false,
+          "real_orders_allowed_by_this_packet": false,
+          "real_orders": 0,
+          "risk_guard_status": "PASS",
+          "risk_guard_hard_safety_ok": true
+        },
+        "next_action": "Resolve blockers before preparing any separate shadow-registration implementation step."
+      },
+      "blockers": [
+        "HUMAN_GATEKEEPER_DECISION_CANDIDATE_MISMATCH",
+        "HUMAN_SHADOW_REVIEW_ONLY_APPROVAL_NOT_RECORDED",
+        "SHADOW_PREFLIGHT_NOT_READY_FOR_REGISTRATION_REVIEW",
+        "VALID_HUMAN_SHADOW_REVIEW_ONLY_DECISION_MISSING"
+      ]
+    }
+  ],
+  "board_permissions": {
+    "shadow_registration_allowed_by_this_packet": false,
+    "paper_enabled_by_this_packet": false,
+    "live_allowed_by_this_packet": false,
+    "broker_submit_allowed_by_this_packet": false,
+    "private_submit_allowed_by_this_packet": false,
+    "real_orders_allowed_by_this_packet": false
+  },
+  "safety": {
+    "shadow_registration_allowed_by_this_packet": false,
+    "paper_enabled_by_this_packet": false,
+    "live_allowed_by_this_packet": false,
+    "broker_submit_allowed_by_this_packet": false,
+    "private_submit_allowed_by_this_packet": false,
+    "real_orders_allowed_by_this_packet": false
+  }
+}

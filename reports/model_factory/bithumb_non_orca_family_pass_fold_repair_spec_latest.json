@@ -1,0 +1,150 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:43.456477+00:00",
+  "report": "bithumb_non_orca_family_pass_fold_repair_spec",
+  "status": "READY_FOR_RESEARCH_SPEC_REVIEW",
+  "scope": "non_orca_family_pass_fold_repair_spec_review_only_no_order_paths",
+  "source_reports": {
+    "experiment_queue": "C:\\AI\\reports\\model_factory\\model_factory_experiment_queue_latest.json",
+    "family_diversity": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_family_diversity_review_latest.json",
+    "failure_review": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_family_diversity_failure_review_latest.json"
+  },
+  "experiment_id": "bithumb_non_orca_family_pass_fold_repair__bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "source_decision_id": "bithumb_current_actionable_family_diversity_failure_review",
+  "queue_rank": 23,
+  "dominant_failure_dimension": "enough_pass_folds",
+  "recommended_research_action": "REPAIR_NON_ORCA_PASS_FOLD_COVERAGE",
+  "repair_target_count": 2,
+  "repair_targets": [
+    {
+      "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001",
+      "market": "KRW-POLA",
+      "timeframe": "1d",
+      "base_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "failed_fold_indices": [
+        1,
+        2
+      ],
+      "failure_dimensions": [
+        "enough_pass_folds",
+        "enough_positive_folds"
+      ],
+      "repair_dimensions": [
+        "shorten_hold_bars_to_reduce_negative_fold_exposure",
+        "tighten_stop_loss_for_failed_positive_fold_recovery",
+        "lower_take_profit_to_improve_pass_fold_realization"
+      ],
+      "parameter_grid": {
+        "hold_bars": [
+          4,
+          5,
+          6
+        ],
+        "stop_loss": [
+          0.06,
+          0.08
+        ],
+        "take_profit": [
+          0.2,
+          0.25
+        ]
+      },
+      "acceptance_checks": {
+        "min_fold_count": 3,
+        "min_pass_fold_count": 2,
+        "min_positive_fold_count": 2,
+        "max_worst_fold_mdd": -0.25,
+        "min_total_trade_count": 8,
+        "robustness_required_after_oos_pass": true
+      }
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "base_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 7,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.02,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.12,
+        "take_profit": 0.35
+      },
+      "failed_fold_indices": [
+        1,
+        2,
+        3
+      ],
+      "failure_dimensions": [
+        "enough_pass_folds",
+        "enough_positive_folds",
+        "mdd_within_limit"
+      ],
+      "repair_dimensions": [
+        "shorten_hold_bars_to_reduce_negative_fold_exposure",
+        "tighten_stop_loss_for_failed_positive_fold_recovery",
+        "lower_take_profit_to_improve_pass_fold_realization"
+      ],
+      "parameter_grid": {
+        "hold_bars": [
+          4,
+          5,
+          6
+        ],
+        "stop_loss": [
+          0.06,
+          0.08
+        ],
+        "take_profit": [
+          0.2,
+          0.25
+        ]
+      },
+      "acceptance_checks": {
+        "min_fold_count": 3,
+        "min_pass_fold_count": 2,
+        "min_positive_fold_count": 2,
+        "max_worst_fold_mdd": -0.25,
+        "min_total_trade_count": 8,
+        "robustness_required_after_oos_pass": true
+      }
+    }
+  ],
+  "frozen_scope": {
+    "scope": "non_orca_family_pass_fold_repair_research_only_no_order_paths",
+    "allowed_changes": [
+      "hold_bars",
+      "stop_loss",
+      "take_profit"
+    ],
+    "forbidden_changes": [
+      "market_universe",
+      "timeframe",
+      "entry_signal_family",
+      "order_execution_path",
+      "broker_submit_path",
+      "shadow_registry_state"
+    ]
+  },
+  "counts_as_paper_or_live_evidence": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Run only frozen research review for these non-ORCA parameter grids and write child evidence packets."
+}

@@ -1,0 +1,31 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:09.512737+00:00",
+  "report": "btc_eth_intraday_risk_conversion",
+  "status": "READY_FOR_GATEKEEPER_REVIEW",
+  "scope": "risk_conversion_research_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_oos_walkforward_latest.json",
+  "lane": "btc_eth_1h4h",
+  "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "market": "KRW-BTC",
+  "timeframe": "4h",
+  "conversion": {
+    "target_mdd_abs": 0.12,
+    "recommended_exposure_cap": 0.7146408932992823,
+    "estimated_average_fold_cagr": 0.22202103828420336,
+    "estimated_worst_fold_mdd": -0.12,
+    "total_trade_count": 76,
+    "pass_fold_count": 2,
+    "positive_fold_count": 2
+  },
+  "gate_result": "pass_mdd_cap",
+  "next_gate": "G07_SHADOW_REVIEW_RESEARCH_ONLY",
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Submit the BTC/ETH intraday risk-conversion packet for Gatekeeper shadow-review consideration; do not enable shadow/paper/live here."
+}

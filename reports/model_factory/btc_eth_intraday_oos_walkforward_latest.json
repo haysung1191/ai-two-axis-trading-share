@@ -1,0 +1,90 @@
+{
+  "generated_at_utc": "2026-05-05T01:16:15.511842+00:00",
+  "report": "btc_eth_intraday_oos_walkforward",
+  "status": "OOS_WALKFORWARD_PASS",
+  "scope": "oos_walkforward_research_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_frozen_candidate_latest.json",
+  "lane": "btc_eth_1h4h",
+  "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "market": "KRW-BTC",
+  "timeframe": "4h",
+  "frozen_parameters": {
+    "lookback_bars": 3,
+    "hold_bars": 6,
+    "volume_window": 18,
+    "volume_ratio_floor": 1.0,
+    "momentum_threshold": 0.002,
+    "round_trip_cost_rate": 0.002,
+    "stop_loss": 0.035,
+    "take_profit": 0.03
+  },
+  "aggregate": {
+    "fold_count": 3,
+    "pass_fold_count": 2,
+    "positive_fold_count": 2,
+    "worst_fold_mdd": -0.16791650341473752,
+    "average_fold_cagr": 0.31067497027660834,
+    "total_trade_count": 76
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "status": "BACKTEST_SCREEN_ITERATE",
+      "first_timestamp": "2025-11-06T03:00:00+00:00",
+      "last_timestamp": "2026-01-04T19:00:00+00:00",
+      "metrics": {
+        "total_return": -0.1221411412663681,
+        "cagr": -0.5492758271846331,
+        "mdd": -0.16791650341473752,
+        "win_rate": 0.3793103448275862,
+        "profit_factor": 0.6201350589847207,
+        "trade_count": 29,
+        "average_holding_bars": 5.379310344827586
+      },
+      "pass": false
+    },
+    {
+      "fold": 2,
+      "status": "BACKTEST_SCREEN_PASS",
+      "first_timestamp": "2026-01-04T23:00:00+00:00",
+      "last_timestamp": "2026-03-05T15:00:00+00:00",
+      "metrics": {
+        "total_return": 0.09407845362838052,
+        "cagr": 0.7332926546730121,
+        "mdd": -0.06490150749869128,
+        "win_rate": 0.45,
+        "profit_factor": 1.4822240162020663,
+        "trade_count": 20,
+        "average_holding_bars": 5.1
+      },
+      "pass": true
+    },
+    {
+      "fold": 3,
+      "status": "BACKTEST_SCREEN_PASS",
+      "first_timestamp": "2026-03-05T19:00:00+00:00",
+      "last_timestamp": "2026-05-04T23:00:00+00:00",
+      "metrics": {
+        "total_return": 0.09642998586630092,
+        "cagr": 0.748008083341446,
+        "mdd": -0.04904290045861437,
+        "win_rate": 0.5185185185185185,
+        "profit_factor": 1.6104763264537765,
+        "trade_count": 27,
+        "average_holding_bars": 5.925925925925926
+      },
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "next_gate": "G06_RISK_CONVERSION_RESEARCH_ONLY",
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Run risk-conversion research on the OOS-passing BTC/ETH intraday candidate; keep all order paths disabled."
+}

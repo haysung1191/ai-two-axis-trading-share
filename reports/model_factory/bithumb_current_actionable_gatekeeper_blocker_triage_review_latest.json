@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-05-04T06:47:06.139032+00:00",
+  "report": "bithumb_current_actionable_gatekeeper_blocker_triage_review",
+  "status": "BITHUMB_GATEKEEPER_BLOCKER_TRIAGE_REVIEW_READY",
+  "scope": "gatekeeper_blocker_triage_review_only_no_order_paths",
+  "source_gatekeeper_packet": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_gatekeeper_review_packet_latest.json",
+  "source_robustness": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_robustness_stress_latest.json",
+  "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep1507",
+  "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+  "market": "KRW-ORCA",
+  "timeframe": "1d",
+  "gatekeeper_packet_status": "BLOCKED",
+  "gatekeeper_blockers": [
+    "robustness_stress_pass"
+  ],
+  "oos_status": "OOS_WALKFORWARD_PASS",
+  "oos_pass_fold_count": 2,
+  "oos_total_trade_count": 11,
+  "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+  "robustness_case_count": 7,
+  "robustness_pass_count": 0,
+  "robustness_cost_pass_count": 0,
+  "estimated_cagr": 1.390057529740537,
+  "estimated_mdd": -0.2,
+  "recommended_action": "KEEP_BLOCKED_REQUIRE_ROBUSTNESS_REPAIR_OR_ALTERNATE_FAMILY_BEFORE_GATEKEEPER_REVIEW",
+  "high_cagr_counts_as_promotion_evidence": false,
+  "counts_as_paper_or_live_evidence": false,
+  "mutation_allowed_by_this_report": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "mutation_allowed_by_this_report": false,
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Review the blocker triage only; keep the candidate blocked until robustness repair or alternate-family evidence clears stress."
+}

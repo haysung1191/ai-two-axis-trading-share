@@ -1,0 +1,534 @@
+{
+  "generated_at_utc": "2026-05-05T01:16:38.779997+00:00",
+  "report": "btc_eth_intraday_low_turnover_signal_rebuild_sweep",
+  "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_PASS",
+  "scope": "btc_eth_intraday_low_turnover_signal_rebuild_sweep_research_only_no_order_paths",
+  "source_spec": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_low_turnover_signal_rebuild_spec_latest.json",
+  "base_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "market": "KRW-BTC",
+  "timeframe": "4h",
+  "target_count": 3,
+  "trial_count": 162,
+  "evaluated_oos_pass_trial_count": 35,
+  "rebuild_pass_count": 1,
+  "target_oos_pass_counts": {
+    "volatility_filtered_momentum": 17,
+    "low_turnover_trend_confirmation": 15,
+    "payoff_asymmetric_reentry": 3
+  },
+  "target_rebuild_pass_counts": {
+    "volatility_filtered_momentum": 1
+  },
+  "best_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080",
+  "best_target_id": "volatility_filtered_momentum",
+  "best_entry_signal_family": "volatility_expansion_momentum",
+  "best_pass_count": 7,
+  "best_cost_pass_count": 2,
+  "candidate_results": [
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep080",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 10,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.3,
+        "momentum_threshold": 0.0036999999999999997,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 20,
+        "atr_percentile_floor": 0.75,
+        "cooldown_bars_after_exit": 4
+      },
+      "screen_metrics": {
+        "total_return": 0.13470477081452192,
+        "cagr": 0.2923895216230086,
+        "mdd": -0.16365220680617576,
+        "win_rate": 0.5,
+        "profit_factor": 1.384929658570169,
+        "trade_count": 46,
+        "average_holding_bars": 9.717391304347826
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.16365220680617576,
+        "average_fold_cagr": 0.6590640300909819,
+        "total_trade_count": 45
+      },
+      "case_count": 7,
+      "pass_count": 7,
+      "cost_pass_count": 2
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep066",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 12,
+        "volume_window": 14,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.0025,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 14,
+        "atr_percentile_floor": 0.55,
+        "cooldown_bars_after_exit": 6
+      },
+      "screen_metrics": {
+        "total_return": 0.057024646370817944,
+        "cagr": 0.11914026657153554,
+        "mdd": -0.2072359522161783,
+        "win_rate": 0.56,
+        "profit_factor": 1.144645924349237,
+        "trade_count": 50,
+        "average_holding_bars": 11.16
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.2072359522161783,
+        "average_fold_cagr": 0.45402186604262956,
+        "total_trade_count": 49
+      },
+      "case_count": 7,
+      "pass_count": 4,
+      "cost_pass_count": 1
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep093",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "range_expansion_retest",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 4,
+        "hold_bars": 12,
+        "volume_window": 14,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.0025,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 14,
+        "atr_percentile_floor": 0.55,
+        "cooldown_bars_after_exit": 6
+      },
+      "screen_metrics": {
+        "total_return": 0.05698990135155735,
+        "cagr": 0.11906560325358462,
+        "mdd": -0.2078450880681907,
+        "win_rate": 0.5833333333333334,
+        "profit_factor": 1.1650847299159803,
+        "trade_count": 48,
+        "average_holding_bars": 11.520833333333334
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.2078450880681907,
+        "average_fold_cagr": 0.3211206693260413,
+        "total_trade_count": 48
+      },
+      "case_count": 7,
+      "pass_count": 4,
+      "cost_pass_count": 1
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep079",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 8,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.3,
+        "momentum_threshold": 0.0036999999999999997,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 20,
+        "atr_percentile_floor": 0.75,
+        "cooldown_bars_after_exit": 2
+      },
+      "screen_metrics": {
+        "total_return": 0.04667588779601739,
+        "cagr": 0.09701360007157533,
+        "mdd": -0.16330567156350306,
+        "win_rate": 0.40816326530612246,
+        "profit_factor": 1.1454904386282947,
+        "trade_count": 49,
+        "average_holding_bars": 7.877551020408164
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.16330567156350306,
+        "average_fold_cagr": 0.2534668766381934,
+        "total_trade_count": 48
+      },
+      "case_count": 7,
+      "pass_count": 5,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep060",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 12,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.2000000000000002,
+        "momentum_threshold": 0.0031,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 10,
+        "atr_percentile_floor": 0.65,
+        "cooldown_bars_after_exit": 6
+      },
+      "screen_metrics": {
+        "total_return": 0.05533335197350975,
+        "cagr": 0.11550878875462334,
+        "mdd": -0.2174510245235417,
+        "win_rate": 0.5777777777777777,
+        "profit_factor": 1.1680983495000576,
+        "trade_count": 45,
+        "average_holding_bars": 10.977777777777778
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.2174510245235417,
+        "average_fold_cagr": 0.36825965903775665,
+        "total_trade_count": 45
+      },
+      "case_count": 7,
+      "pass_count": 3,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep075",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 12,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.0025,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 20,
+        "atr_percentile_floor": 0.55,
+        "cooldown_bars_after_exit": 6
+      },
+      "screen_metrics": {
+        "total_return": 0.018629533333919035,
+        "cagr": 0.03817428220290342,
+        "mdd": -0.23425659019715506,
+        "win_rate": 0.5686274509803921,
+        "profit_factor": 1.0718249393155568,
+        "trade_count": 51,
+        "average_holding_bars": 11.156862745098039
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.20393346971650217,
+        "average_fold_cagr": 0.3074703359885577,
+        "total_trade_count": 50
+      },
+      "case_count": 7,
+      "pass_count": 3,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep056",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 10,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.0025,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 10,
+        "atr_percentile_floor": 0.55,
+        "cooldown_bars_after_exit": 4
+      },
+      "screen_metrics": {
+        "total_return": 0.06283685862783894,
+        "cagr": 0.13166565787454965,
+        "mdd": -0.2038825262531152,
+        "win_rate": 0.5614035087719298,
+        "profit_factor": 1.1492496953560525,
+        "trade_count": 57,
+        "average_holding_bars": 9.403508771929825
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.19315549495437445,
+        "average_fold_cagr": 0.4967903391078902,
+        "total_trade_count": 56
+      },
+      "case_count": 7,
+      "pass_count": 2,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep104",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "range_expansion_retest",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 4,
+        "hold_bars": 10,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.2000000000000002,
+        "momentum_threshold": 0.0031,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 20,
+        "atr_percentile_floor": 0.65,
+        "cooldown_bars_after_exit": 4
+      },
+      "screen_metrics": {
+        "total_return": 0.01879743307547188,
+        "cagr": 0.038521629203177365,
+        "mdd": -0.1904907765702677,
+        "win_rate": 0.5,
+        "profit_factor": 1.074010625431457,
+        "trade_count": 48,
+        "average_holding_bars": 9.770833333333334
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.1904907765702677,
+        "average_fold_cagr": 0.2509759247979298,
+        "total_trade_count": 47
+      },
+      "case_count": 7,
+      "pass_count": 2,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_low_turnover_trend_confirmation_sweep053",
+      "target_id": "low_turnover_trend_confirmation",
+      "entry_signal_family": "trend_pullback_continuation",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 8,
+        "hold_bars": 12,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.05,
+        "momentum_threshold": 0.0035,
+        "stop_loss": 0.035,
+        "take_profit": 0.08,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "confirmation_window": 8,
+        "min_trend_slope": 0.0035,
+        "cooldown_bars_after_exit": 4
+      },
+      "screen_metrics": {
+        "total_return": -0.03303652782488964,
+        "cagr": -0.06591275410054154,
+        "mdd": -0.19625367382201997,
+        "win_rate": 0.5319148936170213,
+        "profit_factor": 0.9681923929561972,
+        "trade_count": 47,
+        "average_holding_bars": 11.085106382978724
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.19625367382201997,
+        "average_fold_cagr": 0.17808896515326608,
+        "total_trade_count": 46
+      },
+      "case_count": 7,
+      "pass_count": 2,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep092",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "range_expansion_retest",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 4,
+        "hold_bars": 10,
+        "volume_window": 14,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.0025,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 14,
+        "atr_percentile_floor": 0.55,
+        "cooldown_bars_after_exit": 4
+      },
+      "screen_metrics": {
+        "total_return": 0.0013383242111522087,
+        "cagr": 0.002718210826615497,
+        "mdd": -0.21603971246665465,
+        "win_rate": 0.5192307692307693,
+        "profit_factor": 1.0290419668311674,
+        "trade_count": 52,
+        "average_holding_bars": 9.653846153846153
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.21603971246665465,
+        "average_fold_cagr": 0.2479747622879722,
+        "total_trade_count": 51
+      },
+      "case_count": 7,
+      "pass_count": 1,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_payoff_asymmetric_reentry_sweep152",
+      "target_id": "payoff_asymmetric_reentry",
+      "entry_signal_family": "breakout_reentry_profitlock",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 10,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.004,
+        "stop_loss": 0.05,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "minimum_expected_move": 0.016,
+        "profit_lock_trigger": 0.03,
+        "cooldown_bars_after_exit": 5
+      },
+      "screen_metrics": {
+        "total_return": -0.03950582335872399,
+        "cagr": -0.07855309196616223,
+        "mdd": -0.2556198542154371,
+        "win_rate": 0.48148148148148145,
+        "profit_factor": 0.9629419389829573,
+        "trade_count": 54,
+        "average_holding_bars": 9.555555555555555
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.21432079848854735,
+        "average_fold_cagr": 0.17377285194210979,
+        "total_trade_count": 53
+      },
+      "case_count": 7,
+      "pass_count": 1,
+      "cost_pass_count": 0
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001_volatility_filtered_momentum_sweep074",
+      "target_id": "volatility_filtered_momentum",
+      "entry_signal_family": "volatility_expansion_momentum",
+      "status": "LOW_TURNOVER_SIGNAL_REBUILD_SWEEP_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 10,
+        "volume_window": 20,
+        "volume_ratio_floor": 1.1,
+        "momentum_threshold": 0.0025,
+        "stop_loss": 0.035,
+        "take_profit": 0.09,
+        "round_trip_cost_rate": 0.002
+      },
+      "conceptual_parameters": {
+        "atr_window": 20,
+        "atr_percentile_floor": 0.55,
+        "cooldown_bars_after_exit": 4
+      },
+      "screen_metrics": {
+        "total_return": -0.04345263463656257,
+        "cagr": -0.08622184802727684,
+        "mdd": -0.2706032172980196,
+        "win_rate": 0.47368421052631576,
+        "profit_factor": 0.9644766446740715,
+        "trade_count": 57,
+        "average_holding_bars": 9.43859649122807
+      },
+      "oos_aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.21301696216424215,
+        "average_fold_cagr": 0.11588775019864898,
+        "total_trade_count": 56
+      },
+      "case_count": 7,
+      "pass_count": 1,
+      "cost_pass_count": 0
+    }
+  ],
+  "errors": [],
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "mutation_allowed_by_this_report": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Promote the best low-turnover rebuild child to review-only Gatekeeper context; do not register or submit orders."
+}

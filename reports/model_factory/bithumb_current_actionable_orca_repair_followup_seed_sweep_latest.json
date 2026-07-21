@@ -1,0 +1,350 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:42.274290+00:00",
+  "report": "bithumb_current_actionable_orca_repair_followup_seed_sweep",
+  "status": "ORCA_REPAIR_FOLLOWUP_SEED_SWEEP_ITERATE",
+  "scope": "orca_repair_followup_seed_sweep_research_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_repair_followup_seed_packet_latest.json",
+  "base_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+  "market": "KRW-ORCA",
+  "timeframe": "1d",
+  "seed_count": 3,
+  "evaluated_seed_count": 3,
+  "oos_pass_seed_count": 0,
+  "robustness_pass_seed_count": 0,
+  "best_seed_id": "orca_followup_volume150_stop035_hold1_tp08",
+  "best_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_followup_volume150_stop035_hold1_tp08",
+  "best_candidate_status": "OOS_CANDIDATE_ITERATE",
+  "best_robustness_status": "SKIPPED_OOS_NOT_PASS",
+  "seed_results": [
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_followup_volume150_stop035_hold1_tp08",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 1,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.5,
+        "momentum_threshold": 0.045,
+        "stop_loss": 0.035,
+        "take_profit": 0.08,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.648050072840021,
+        "estimated_cagr": 0.09165251452533969,
+        "estimated_total_return": 0.05863444245013483,
+        "estimated_mdd": -0.19999999999999998,
+        "source_cagr": 0.14142813706305257,
+        "source_total_return": 0.09047825917706431,
+        "source_mdd": -0.3086181274905472,
+        "source_trade_count": 17,
+        "source_profit_factor": 1.328729979171576,
+        "pass_like": false
+      },
+      "status": "OOS_CANDIDATE_ITERATE",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.19889354696579586,
+        "average_fold_cagr": 0.4268885776765208,
+        "total_trade_count": 12
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.018949152542372838,
+            "cagr": -0.08459620963743986,
+            "mdd": -0.018949152542372838,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 1,
+            "average_holding_bars": 1.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.07461866666666661,
+            "cagr": -0.3011350370192709,
+            "mdd": -0.08533333333333337,
+            "win_rate": 0.5,
+            "profit_factor": 0.13727678571428653,
+            "trade_count": 2,
+            "average_holding_bars": 1.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.23647820457479019,
+            "cagr": 1.6663969796862732,
+            "mdd": -0.19889354696579586,
+            "win_rate": 0.3333333333333333,
+            "profit_factor": 2.234598195304266,
+            "trade_count": 9,
+            "average_holding_bars": 1.0
+          },
+          "pass": true
+        }
+      ],
+      "screen_metrics": {
+        "total_return": 0.09047825917706431,
+        "cagr": 0.14142813706305257,
+        "mdd": -0.3086181274905472,
+        "win_rate": 0.35294117647058826,
+        "profit_factor": 1.328729979171576,
+        "trade_count": 17,
+        "average_holding_bars": 1.0
+      },
+      "seed_id": "orca_followup_volume150_stop035_hold1_tp08",
+      "seed_hypothesis": "shorten holding period to reduce drawdown tail while preserving recent positive fold behavior",
+      "robustness": {
+        "status": "SKIPPED_OOS_NOT_PASS",
+        "case_count": 0,
+        "pass_count": 0,
+        "cost_pass_count": 0,
+        "cases": []
+      }
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_followup_volume175_stop03_hold2_tp10",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 2,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.75,
+        "momentum_threshold": 0.05,
+        "stop_loss": 0.03,
+        "take_profit": 0.1,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.5876665930109518,
+        "estimated_cagr": -0.09018132895557422,
+        "estimated_total_return": -0.06073273191588503,
+        "estimated_mdd": -0.2,
+        "source_cagr": -0.15345661983868053,
+        "source_total_return": -0.10334555790336242,
+        "source_mdd": -0.34032902734063153,
+        "source_trade_count": 13,
+        "source_profit_factor": 0.9577954145277344,
+        "pass_like": false
+      },
+      "status": "OOS_CANDIDATE_ITERATE",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.20973161133750595,
+        "average_fold_cagr": 0.10590077932599151,
+        "total_trade_count": 10
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.00684261501210659,
+            "cagr": -0.03122536885327165,
+            "mdd": -0.016949152542372836,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 1,
+            "average_holding_bars": 2.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.009428571428571453,
+            "cagr": -0.04282501096234337,
+            "mdd": -0.02282976324689978,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 1,
+            "average_holding_bars": 2.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.07416832104369853,
+            "cagr": 0.39175271779358956,
+            "mdd": -0.20973161133750595,
+            "win_rate": 0.375,
+            "profit_factor": 1.429204187437351,
+            "trade_count": 8,
+            "average_holding_bars": 1.625
+          },
+          "pass": true
+        }
+      ],
+      "screen_metrics": {
+        "total_return": -0.10334555790336242,
+        "cagr": -0.15345661983868053,
+        "mdd": -0.34032902734063153,
+        "win_rate": 0.3076923076923077,
+        "profit_factor": 0.9577954145277344,
+        "trade_count": 13,
+        "average_holding_bars": 1.6153846153846154
+      },
+      "seed_id": "orca_followup_volume175_stop03_hold2_tp10",
+      "seed_hypothesis": "force higher selectivity and tighter stop to restore full-window total return before robustness stress",
+      "robustness": {
+        "status": "SKIPPED_OOS_NOT_PASS",
+        "case_count": 0,
+        "pass_count": 0,
+        "cost_pass_count": 0,
+        "cases": []
+      }
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_followup_lookback2_volume175_stop04_hold2_tp12",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 2,
+        "hold_bars": 2,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.75,
+        "momentum_threshold": 0.04,
+        "stop_loss": 0.04,
+        "take_profit": 0.12,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.583904243413232,
+        "estimated_cagr": -0.09211120064502576,
+        "estimated_total_return": -0.06208433703094595,
+        "estimated_mdd": -0.2,
+        "source_cagr": -0.1577505244808406,
+        "source_total_return": -0.1063262302531488,
+        "source_mdd": -0.34252191563276413,
+        "source_trade_count": 15,
+        "source_profit_factor": 0.947274134976203,
+        "pass_like": false
+      },
+      "status": "OOS_CANDIDATE_ITERATE",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.20071157812168217,
+        "average_fold_cagr": 0.0008711581793652279,
+        "total_trade_count": 13
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.06852458639643288,
+            "cagr": -0.27961602154251364,
+            "mdd": -0.06852458639643288,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 3,
+            "average_holding_bars": 2.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.043170322703310005,
+            "cagr": -0.18444891246002637,
+            "mdd": -0.043170322703310005,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 2,
+            "average_holding_bars": 2.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.08642875569375219,
+            "cagr": 0.4666784085406357,
+            "mdd": -0.20071157812168217,
+            "win_rate": 0.375,
+            "profit_factor": 1.4742889207463892,
+            "trade_count": 8,
+            "average_holding_bars": 1.75
+          },
+          "pass": true
+        }
+      ],
+      "screen_metrics": {
+        "total_return": -0.1063262302531488,
+        "cagr": -0.1577505244808406,
+        "mdd": -0.34252191563276413,
+        "win_rate": 0.26666666666666666,
+        "profit_factor": 0.947274134976203,
+        "trade_count": 15,
+        "average_holding_bars": 1.8
+      },
+      "seed_id": "orca_followup_lookback2_volume175_stop04_hold2_tp12",
+      "seed_hypothesis": "react faster to ORCA moves while keeping the stricter volume gate from the failed seed family",
+      "robustness": {
+        "status": "SKIPPED_OOS_NOT_PASS",
+        "case_count": 0,
+        "pass_count": 0,
+        "cost_pass_count": 0,
+        "cases": []
+      }
+    }
+  ],
+  "errors": [],
+  "blockers": [
+    "NO_ORCA_FOLLOWUP_REPAIR_SEED_ROBUSTNESS_PASS"
+  ],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Keep ORCA in repair iteration; follow-up seed sweep did not find a robustness-passing child."
+}

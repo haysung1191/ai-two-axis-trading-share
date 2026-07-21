@@ -1,0 +1,151 @@
+{
+  "generated_at_utc": "2026-05-05T01:16:35.242946+00:00",
+  "report": "btc_eth_intraday_low_turnover_signal_rebuild_spec",
+  "status": "READY_FOR_RESEARCH_SPEC_REVIEW",
+  "scope": "btc_eth_intraday_low_turnover_signal_rebuild_spec_review_only_no_order_paths",
+  "source_stop_condition": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_cost_friction_repair_stop_condition_review_latest.json",
+  "base_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "market": "KRW-BTC",
+  "timeframe": "4h",
+  "source_trial_count": 648,
+  "source_evaluated_oos_pass_trial_count": 162,
+  "source_repair_pass_count": 0,
+  "source_best_cost_pass_count": 0,
+  "recommended_research_action": "REBUILD_INTRADAY_SIGNAL_FOR_LOWER_TURNOVER_OR_SKIP_SHADOW_UNTIL_COST_PASS",
+  "rebuild_target_count": 3,
+  "rebuild_targets": [
+    {
+      "target_id": "low_turnover_trend_confirmation",
+      "parent_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "rebuild_hypothesis": "reduce churn by requiring trend confirmation before momentum entry",
+      "signal_grid": {
+        "entry_signal_family": [
+          "trend_confirmation_breakout",
+          "trend_pullback_continuation"
+        ],
+        "confirmation_window": [
+          3,
+          5,
+          8
+        ],
+        "min_trend_slope": [
+          0.0015,
+          0.0025,
+          0.0035
+        ],
+        "cooldown_bars_after_exit": [
+          2,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "target_id": "volatility_filtered_momentum",
+      "parent_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "rebuild_hypothesis": "avoid low-quality small moves by requiring volatility expansion",
+      "signal_grid": {
+        "entry_signal_family": [
+          "volatility_expansion_momentum",
+          "range_expansion_retest"
+        ],
+        "atr_window": [
+          10,
+          14,
+          20
+        ],
+        "atr_percentile_floor": [
+          0.55,
+          0.65,
+          0.75
+        ],
+        "cooldown_bars_after_exit": [
+          2,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "target_id": "payoff_asymmetric_reentry",
+      "parent_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "rebuild_hypothesis": "raise payoff per trade enough to survive 30-40 bps stress",
+      "signal_grid": {
+        "entry_signal_family": [
+          "pullback_reentry_profitlock",
+          "breakout_reentry_profitlock"
+        ],
+        "minimum_expected_move": [
+          0.012,
+          0.016,
+          0.02
+        ],
+        "profit_lock_trigger": [
+          0.018,
+          0.024,
+          0.03
+        ],
+        "cooldown_bars_after_exit": [
+          3,
+          5,
+          8
+        ]
+      }
+    }
+  ],
+  "frozen_scope": {
+    "scope": "btc_eth_intraday_low_turnover_signal_rebuild_research_only_no_order_paths",
+    "allowed_changes": [
+      "entry_signal_family",
+      "confirmation_window",
+      "trend_slope_filter",
+      "volatility_filter",
+      "cooldown_bars_after_exit",
+      "minimum_expected_move",
+      "profit_lock_trigger"
+    ],
+    "fixed_parameters": [
+      "market",
+      "timeframe",
+      "data_source",
+      "round_trip_cost_stress_targets"
+    ],
+    "forbidden_changes": [
+      "order_execution_path",
+      "broker_submit_path",
+      "shadow_registry_state",
+      "paper_or_live_enablement",
+      "private_submit_path"
+    ]
+  },
+  "acceptance_checks": {
+    "must_pass_oos_walkforward": true,
+    "must_pass_robustness_stress": true,
+    "min_cost_pass_count": 2,
+    "target_round_trip_cost_rates": [
+      0.003,
+      0.004
+    ],
+    "min_positive_fold_count": 2,
+    "min_pass_fold_count": 2,
+    "min_total_trade_count": 45
+  },
+  "counts_as_paper_or_live_evidence": false,
+  "mutation_allowed_by_this_report": false,
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Run only research-review low-turnover signal rebuild sweeps and require cost stress pass before review."
+}

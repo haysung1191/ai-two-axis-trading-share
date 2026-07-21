@@ -1,0 +1,250 @@
+{
+  "generated_at_utc": "2026-05-05T01:46:19.655846+00:00",
+  "report": "paper_smoke_gatekeeper_review_packet",
+  "scope": "gatekeeper_review_input_no_promotion_side_effects",
+  "status": "READY_FOR_GATEKEEPER_REVIEW",
+  "candidate_profile": "small_account_growth_paper",
+  "recommended_gatekeeper_lane": "PAPER_SMOKE_REVIEW_READY",
+  "review_ready": true,
+  "blockers": [],
+  "review_checks": {
+    "risk_guard_hard_safety_ok": true,
+    "taxonomy_pass": true,
+    "paper_only_broker_scope_ok": true,
+    "paper_autotrade_no_real_submit": true,
+    "dedup_idempotency_ok": true,
+    "historical_replay_not_promotion": true,
+    "historical_replay_not_paper_smoke": true,
+    "historical_replay_only_accelerated_shadow": true,
+    "acceleration_no_broker_submit": true,
+    "acceleration_live_disabled": true,
+    "live_disabled": true,
+    "private_submit_unused": true,
+    "real_orders_zero": true,
+    "replay_source_declares_not_live": true
+  },
+  "evidence_summary": {
+    "paper_cycles_completed": 318,
+    "paper_smoke_minimum_cycles": 24,
+    "combined_non_flat_signal_count": 55,
+    "combined_executable_order_evidence_count": 52,
+    "recent_non_flat_signal_count": 52,
+    "recent_executable_virtual_order_count": 52,
+    "extended_paper_ready": true,
+    "extended_paper_decision": "PROMOTION_REVIEW_READY",
+    "extended_paper_evidence_gaps": [],
+    "historical_replay_non_flat_excluded": 7621
+  },
+  "recent_non_flat_signals": [
+    {
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "f5d6e40cb4ab5db5bb103c58197176363c8ecfedd5873894c9aec4ee81855a16",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-POLA",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "1710a264421727b48663044f6b5daf497efdcad100bd4a3fbc44ba7fdbddb988",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "94748604f6e59fed18a10e9981e10d2938e94d2a371cee083a4c783369946d64",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-VIRTUAL",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "13bc9a0bd01735d3abb49954a87f20961ae50828c8581c46202d34bf820615a8",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-ONDO",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "484f869a9fd462e3ffce1efb8acef8feb5a6b5f0df3c154e4c8530597c8715f8",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-TRX",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "b7f0c29179249fd0eb2b1aff96d330eff4886f7a060bc95b131a0d34d6865f17",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-APT",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "2ccc96dfc25c1fcfad7544df21e752c4eb49d4351522fba196ef282cb3c72c80",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-ACH",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "5d77098563437cbca910b78155e62d36bc25c80c33ba10560a9fc922588c8f4b",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-PARTI",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "f7551082268444d7b8ae7b6e8239bc433ff7c4226b176fd935906166c742b84a",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-REZ",
+      "timeframe": "1d",
+      "side": "long",
+      "target_weight": 0.02,
+      "latest_timestamp": "2026-05-02T15:00:00",
+      "signal_id": "a04be022337405189f88fb6df4bd8247dd628778c231ad10a0ce24220f17359a",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    }
+  ],
+  "recent_virtual_executable_orders": [
+    {
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "f5d6e40cb4ab5db5bb103c58197176363c8ecfedd5873894c9aec4ee81855a16",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-POLA",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "1710a264421727b48663044f6b5daf497efdcad100bd4a3fbc44ba7fdbddb988",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "94748604f6e59fed18a10e9981e10d2938e94d2a371cee083a4c783369946d64",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-VIRTUAL",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "13bc9a0bd01735d3abb49954a87f20961ae50828c8581c46202d34bf820615a8",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-ONDO",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "484f869a9fd462e3ffce1efb8acef8feb5a6b5f0df3c154e4c8530597c8715f8",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-TRX",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "b7f0c29179249fd0eb2b1aff96d330eff4886f7a060bc95b131a0d34d6865f17",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-APT",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "2ccc96dfc25c1fcfad7544df21e752c4eb49d4351522fba196ef282cb3c72c80",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-ACH",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "5d77098563437cbca910b78155e62d36bc25c80c33ba10560a9fc922588c8f4b",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-PARTI",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "f7551082268444d7b8ae7b6e8239bc433ff7c4226b176fd935906166c742b84a",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    },
+    {
+      "market": "KRW-REZ",
+      "timeframe": "1d",
+      "action": "BUY",
+      "target_weight": 0.02,
+      "signal_id": "a04be022337405189f88fb6df4bd8247dd628778c231ad10a0ce24220f17359a",
+      "counts_as_live_paper_evidence": true,
+      "broker_submit_allowed": false
+    }
+  ],
+  "permissions": {
+    "promotion_allowed_by_this_packet": false,
+    "extended_paper_promotion_allowed_by_this_packet": false,
+    "live_readiness_allowed_by_this_packet": false,
+    "live_allowed_by_this_packet": false,
+    "real_orders_allowed_by_this_packet": false,
+    "private_submit_allowed_by_this_packet": false,
+    "broker_submit_scope_required": "paper_only"
+  },
+  "next_action": "Gatekeeper may review paper-smoke evidence while extended paper continues collecting 5/5 evidence.",
+  "source_files": {
+    "taxonomy": "C:\\AI\\reports\\model_factory\\gatekeeper_evidence_taxonomy_latest.json",
+    "paper_evidence": "C:\\AI\\ops\\reports\\paper_promotion_evidence_latest.json",
+    "acceleration": "C:\\AI\\ops\\reports\\paper_evidence_acceleration_latest.json",
+    "risk_guard": "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json",
+    "safety_self_test": "C:\\AI\\ops\\reports\\ops_safety_self_test_latest.json",
+    "paper_autotrade": "C:\\AI\\ops\\reports\\paper_autotrade_latest.json"
+  }
+}

@@ -1,0 +1,2 @@
+"""Manual trading recommendation helpers."""
+

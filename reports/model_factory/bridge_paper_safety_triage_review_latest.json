@@ -1,0 +1,75 @@
+{
+  "generated_at_utc": "2026-05-04T05:53:47.796363+00:00",
+  "report": "bridge_paper_safety_triage_review",
+  "status": "BRIDGE_PAPER_SAFETY_TRIAGE_REVIEW_READY",
+  "scope": "bridge_28_relief_paper_safety_triage_review_only_no_order_paths",
+  "candidate_id": "bridge_28_relief",
+  "source_reports": {
+    "pull_through_board": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json",
+    "paper_autotrade": "C:\\AI\\ops\\reports\\paper_autotrade_latest.json",
+    "pretrade_firewall": "C:\\AI\\reports\\risk\\pretrade_firewall_report.md"
+  },
+  "repair_queue_evidence": {
+    "current_gate": "G08_LOCAL_SIM_PAPER",
+    "status": "LOCAL_SIM_PAPER_FAILED",
+    "failure_reason": "SIM_SAFETY_VIOLATION",
+    "cagr": 0.35726566,
+    "mdd": -0.09077917,
+    "sharpe": 1.864248
+  },
+  "paper_autotrade_evidence": {
+    "mode": "paper_autotrade_active_simulated",
+    "status": "pass",
+    "paper_profile": "small_account_growth_paper",
+    "broker_submit_scope": "paper_only",
+    "live_enabled_flag": false,
+    "real_orders": 0,
+    "private_submit_used": false,
+    "target_symbol": "KRW-BTC",
+    "target_signal_side": "flat",
+    "target_account_weight": 0.0,
+    "simulated_order_action": "HOLD",
+    "simulated_delta_weight": 0.0,
+    "simulated_real_order_submitted": false,
+    "simulated_broker_submit_allowed": false
+  },
+  "firewall_evidence": {
+    "source_path": "C:\\AI\\reports\\risk\\pretrade_firewall_report.md",
+    "bridge_firewall_row_count": 10,
+    "allow_paper_only_count": 1,
+    "reject_count": 9,
+    "limited_live_reject_count": 1,
+    "historical_replay_reject_count": 1,
+    "rejection_reason_counts": {
+      "PAPER_ONLY_POLICY_NOT_APPROVED": 1,
+      "DIRECT_SUBMIT_FORBIDDEN:research": 1,
+      "DIRECT_SUBMIT_FORBIDDEN:conversion": 1,
+      "DIRECT_SUBMIT_FORBIDDEN:shadow": 1,
+      "MISSING_CAP:max_crypto_weight": 1,
+      "PAPER_APPROVAL_EXPIRED": 1,
+      "WRONG_SYMBOL": 1,
+      "LIMITED_LIVE_DISABLED": 1,
+      "HISTORICAL_REPLAY_REJECTED": 1
+    }
+  },
+  "review_conclusion": {
+    "candidate_remains_failed_for_promotion": true,
+    "paper_loop_hard_safety_clean": true,
+    "current_bridge_order_is_hold_zero_delta": true,
+    "firewall_observed_blocking_disallowed_paths": true,
+    "historical_replay_rejected_by_firewall": true,
+    "recommended_action": "KEEP_BRIDGE_28_RELIEF_FAILED_FOR_PROMOTION_AND_REVIEW_REPLACEMENT_OR_REPAIR"
+  },
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Gatekeeper can review bridge paper-safety triage; do not promote bridge_28_relief or submit orders."
+}

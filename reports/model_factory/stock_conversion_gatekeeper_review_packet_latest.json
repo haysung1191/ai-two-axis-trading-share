@@ -1,0 +1,226 @@
+{
+  "generated_at_utc": "2026-05-05T01:49:01.925738+00:00",
+  "report": "stock_conversion_gatekeeper_review_packet",
+  "status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+  "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+  "review_scope": "stock_aggressive_fixed_exposure_conversion_evidence_only",
+  "sources": {
+    "spec": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_experiment_spec_latest.json",
+    "candidate_evidence": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_candidate_backtest_latest.json",
+    "execution_gap": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_execution_gap_latest.json",
+    "robustness_stress": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_robustness_stress_latest.json",
+    "sizing_repair": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_sizing_repair_latest.json",
+    "repaired_robustness": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_repaired_robustness_stress_latest.json",
+    "pull_through_board": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json",
+    "risk_guard": "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json"
+  },
+  "before": {
+    "cagr": 0.7060692144490932,
+    "mdd": -0.3065255636909545,
+    "sharpe": 1.7455973852445321,
+    "failure_reason": "MDD_TOO_HIGH"
+  },
+  "proposed_conversion": {
+    "overlay": "fixed_exposure_065",
+    "fixed_exposure_cap": 0.65,
+    "estimated_cagr": 0.4589449893919106,
+    "estimated_mdd": -0.19924161639912044,
+    "estimated_sharpe": 1.7455973852445321,
+    "estimated_return_retention": 0.65,
+    "gate_result": "pass_mdd_margin"
+  },
+  "readiness_checks": {
+    "spec_ready": true,
+    "candidate_evidence_ready": true,
+    "execution_gap_ready": true,
+    "robustness_stress_ready": true,
+    "repaired_robustness_top5_pass": true,
+    "robustness_candidate_id_matches": true,
+    "robustness_top5_queue_coverage_present": true,
+    "candidate_specific_evidence_ready": true,
+    "pull_through_board_ready": true,
+    "candidate_id_matches": true,
+    "overlay_matches": true,
+    "risk_guard_pass": false,
+    "risk_guard_no_halt": true
+  },
+  "robustness_stress": {
+    "status": "ROBUSTNESS_STRESS_PASS",
+    "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+    "case_count": 7,
+    "pass_count": 4,
+    "mdd_stress_pass_count": 1,
+    "queue_coverage": {
+      "target_count": 5,
+      "ready_candidate_count": 5,
+      "covered_candidate_count": 5,
+      "stress_pass_candidate_count": 3,
+      "all_covered_candidates_safe": true,
+      "top5_full_coverage": true
+    },
+    "candidate_results": [
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "lane": "kis_etfs",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "case_count": 7,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 1,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "lane": "kis_etfs",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "case_count": 7,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 1,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "lane": "kis_etfs",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "case_count": 7,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 1,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "lane": "kis_stocks",
+        "status": "ROBUSTNESS_STRESS_ITERATE",
+        "case_count": 7,
+        "pass_count": 2,
+        "mdd_stress_pass_count": 1,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+        "lane": "kis_stocks",
+        "status": "ROBUSTNESS_STRESS_ITERATE",
+        "case_count": 7,
+        "pass_count": 2,
+        "mdd_stress_pass_count": 1,
+        "queue_order_paths_safe": true
+      }
+    ]
+  },
+  "sizing_repair": {
+    "status": "SIZING_REPAIR_READY",
+    "evaluated_iterate_candidate_count": 2,
+    "repair_ready_count": 2,
+    "repairs": [
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "lane": "kis_stocks",
+        "repair_status": "SIZING_REPAIR_READY",
+        "current_fixed_exposure_cap": 0.59,
+        "recommended_fixed_exposure_cap": 0.55,
+        "recommended_overlay": "fixed_exposure_055",
+        "repair_pass_count": 4
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+        "lane": "kis_stocks",
+        "repair_status": "SIZING_REPAIR_READY",
+        "current_fixed_exposure_cap": 0.59,
+        "recommended_fixed_exposure_cap": 0.55,
+        "recommended_overlay": "fixed_exposure_055",
+        "repair_pass_count": 4
+      }
+    ],
+    "promotion_allowed_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "repaired_robustness": {
+    "status": "REPAIRED_ROBUSTNESS_STRESS_PASS",
+    "queue_coverage": {
+      "target_count": 5,
+      "ready_candidate_count": 5,
+      "covered_candidate_count": 5,
+      "stress_pass_candidate_count": 5,
+      "repaired_candidate_count": 2,
+      "all_covered_candidates_safe": true,
+      "top5_full_coverage": true
+    },
+    "candidate_results": [
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "lane": "kis_etfs",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "overlay": "fixed_exposure_065",
+        "fixed_exposure_cap": null,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 1,
+        "repair_applied": false,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "lane": "kis_etfs",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "overlay": "fixed_exposure_064",
+        "fixed_exposure_cap": null,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 1,
+        "repair_applied": false,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "lane": "kis_etfs",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "overlay": "fixed_exposure_064",
+        "fixed_exposure_cap": null,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 1,
+        "repair_applied": false,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "lane": "kis_stocks",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "overlay": "fixed_exposure_055",
+        "fixed_exposure_cap": 0.55,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 2,
+        "repair_applied": true,
+        "queue_order_paths_safe": true
+      },
+      {
+        "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+        "lane": "kis_stocks",
+        "status": "ROBUSTNESS_STRESS_PASS",
+        "overlay": "fixed_exposure_055",
+        "fixed_exposure_cap": 0.55,
+        "pass_count": 4,
+        "mdd_stress_pass_count": 2,
+        "repair_applied": true,
+        "queue_order_paths_safe": true
+      }
+    ],
+    "promotion_allowed_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false,
+    "candidate_report_live_enabled": false,
+    "candidate_report_broker_submit_allowed": false,
+    "candidate_report_private_submit_used": false,
+    "candidate_report_real_orders": 0
+  },
+  "gatekeeper_instruction": "Review this as conversion evidence only. Do not promote, enable paper, enable live, or submit broker orders from this packet.",
+  "next_action": "Human Gatekeeper can review the fixed-exposure stock conversion evidence."
+}

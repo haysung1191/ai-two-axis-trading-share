@@ -1,0 +1,33 @@
+from __future__ import annotations
+
+from scripts.run_btc_1d_walk_forward_volatility_expansion_trend_candidate import parse_args as parse_walk_args
+from scripts.validate_btc_1d_volatility_expansion_trend_candidate import parse_args as parse_validation_args
+
+
+def test_validate_btc_1d_volatility_expansion_trend_candidate_defaults() -> None:
+    config = parse_validation_args([])
+    assert config.symbol == "BTCUSDT"
+    assert config.interval == "1d"
+    assert config.periods == 2200
+    assert config.strategy_name == "b1dvolexptrend"
+    assert config.extra_parameters["trend_ema_window"] == 72
+    assert config.extra_parameters["breakout_window"] == 16
+    assert config.extra_parameters["atr_expansion_window"] == 6
+    assert config.extra_parameters["min_atr_expansion_ratio"] == 1.16
+    assert config.extra_parameters["stop_ema_window"] == 20
+    assert config.extra_parameters["max_hold_bars"] == 40
+
+
+def test_run_btc_1d_walk_forward_volatility_expansion_trend_candidate_defaults() -> None:
+    config = parse_walk_args([])
+    assert config.symbol == "BTCUSDT"
+    assert config.interval == "1d"
+    assert config.periods == 2200
+    assert config.strategy_name == "b1dvolexptrend"
+    assert config.candidate_label == "volatility_expansion_trend_faster_trigger_wider_stop"
+    assert config.extra_parameters["trend_ema_window"] == 72
+    assert config.extra_parameters["breakout_window"] == 16
+    assert config.extra_parameters["atr_expansion_window"] == 6
+    assert config.extra_parameters["min_atr_expansion_ratio"] == 1.16
+    assert config.extra_parameters["stop_ema_window"] == 20
+    assert config.extra_parameters["max_hold_bars"] == 40

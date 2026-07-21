@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-05-04T02:22:26.646506+00:00",
+  "status": "SINGLE_OR_NO_GOAL_SESSION",
+  "scope": "review_only_process_inventory_no_stop",
+  "model_factory_goal_process_chain_count": 0,
+  "model_factory_goal_codex_process_count": 0,
+  "duplicate_model_factory_goal_process_count": 0,
+  "model_factory_goal_process_ids": [],
+  "model_factory_goal_codex_processes": [],
+  "model_factory_goal_processes": [],
+  "safe_loop_process_count": 1,
+  "safe_loop_processes": [
+    {
+      "process_id": 6556,
+      "parent_process_id": 12148,
+      "name": "python.exe",
+      "command_line": "\"C:\\Users\\haysu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" C:\\AI\\run_gatekeeper_refresh_loop.py --cycles 288 --sleep-seconds 300 --lock-retries 3 --lock-retry-sleep-seconds 10 "
+    }
+  ],
+  "operator_cleanup_recommendation": "No duplicate model-development goal session cleanup is needed.",
+  "auto_cleanup_allowed": false,
+  "stop_process_executed": false,
+  "watchdog_action": "duplicate_goal_sessions_detected_no_restart",
+  "remaining_blocker_status": "BLOCKED",
+  "remaining_blocker_count": 1,
+  "codex_unblockable_now_count": 0,
+  "operator_input_blocker_count": 1,
+  "approval_required_count": 0,
+  "safety": {
+    "live_enabled": false,
+    "real_orders": 0,
+    "private_submit_used": false,
+    "gatekeeper_broker_submit_allowed": false,
+    "paper_broker_submit_scope": "paper_only",
+    "paper_broker_submit_allowed": true,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "does_submit_orders": false,
+    "does_stop_processes": false
+  }
+}

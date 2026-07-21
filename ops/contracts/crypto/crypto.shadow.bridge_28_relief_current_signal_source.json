@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "crypto.shadow.bridge_28_relief_current_signal_source",
+  "source_frozen_contract_id": "bridge_28_relief",
+  "model_id": "bridge_28_relief",
+  "asset_class": "crypto",
+  "symbols": [
+    "BTC-USD"
+  ],
+  "timeframe": "1d",
+  "mode": "shadow",
+  "status": "shadow_contract_signal_source_current",
+  "allowed_modes": [
+    "shadow"
+  ],
+  "broker_adapter": "shadow_only",
+  "allow_live_submit": false,
+  "generated_at_utc": "2026-05-09T21:33:59.917916+00:00",
+  "expires_at_utc": null,
+  "source_repo": "C:\\AI\\Crypto",
+  "source_freeze_pack": "C:\\AI\\Crypto\\analysis_results\\btc_1d_shadow_packet_latest.json",
+  "source_hashes": {
+    "btc_shadow_packet_hash": "690deb6709d4120420fb1216140146b6ff69169362a9b7e16e701ea8a0481aa0"
+  },
+  "candidate_metrics": {
+    "paper_validation_decision": "NOT_REQUESTED",
+    "survivability_validation_decision": "NOT_REQUESTED",
+    "shadow_decision": "shadow_ready_for_btc_only_pending_reproducibility_evidence",
+    "walk_forward_passed": false
+  },
+  "gate_state": {
+    "signal_source_aligned": true,
+    "source": "btc_1d_shadow_packet_latest",
+    "freeze_artifacts_present": false,
+    "note": "Current signal-source contract. Promote to frozen contract only after matching freeze pack exists."
+  },
+  "sizing_policy": {
+    "type": "shadow_target_weight_cap",
+    "max_model_weight": 0.2,
+    "max_symbol_weight": 0.2,
+    "max_order_notional_pct_of_sleeve": 0.05,
+    "max_leverage": 1.0
+  },
+  "risk_policy": {
+    "daily_loss_pause_pct": 0.005,
+    "daily_loss_stop_pct": 0.01,
+    "max_contract_drawdown_pct": 0.12,
+    "max_spread_bps": 20,
+    "max_slippage_bps": 25,
+    "stale_signal_minutes": 90,
+    "require_finalized_daily_bar": true
+  },
+  "order_policy": {
+    "intent_only": true,
+    "submit_to_broker": false,
+    "order_style": "shadow_limit_or_market_fallback",
+    "time_in_force": "shadow_day",
+    "client_order_id_prefix": "SHADOW"
+  },
+  "deactivation_rules": {
+    "signal_mismatch_count": 1,
+    "critical_exception_count": 1,
+    "unreconciled_position_minutes": 30,
+    "duplicate_intent_violation": 1
+  },
+  "approval": {
+    "approved_by": "system_generated_from_current_shadow_packet",
+    "approved_at_utc": "2026-05-09T21:33:59.917916+00:00",
+    "manual_live_approval": false
+  },
+  "payload_hash": "971a0717fa4597daef508e60b2ce67baef61bdb374fc088de609753c2e3aa619"
+}

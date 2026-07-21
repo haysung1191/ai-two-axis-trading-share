@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-19T13:50:57+09:00",
+  "status": "ROBUSTNESS_STRESS_PASS",
+  "source_oos": {
+    "status": "OOS_WALKFORWARD_PASS",
+    "generated_at": "2026-05-19T13:50:56+09:00",
+    "top_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5223",
+    "top_market": "KRW-BIO",
+    "top_timeframe": "1d"
+  },
+  "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5223",
+  "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+  "market": "KRW-BIO",
+  "timeframe": "1d",
+  "pass_count": 6,
+  "cost_pass_count": 1,
+  "case_count": 7,
+  "cases": [
+    {
+      "case_id": "base",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": 1.2685787127099903,
+        "cagr": 2.0515149931255885,
+        "mdd": -0.082,
+        "trade_count": 26,
+        "profit_factor": 2.39834872293593,
+        "win_rate": 0.5384615384615384
+      },
+      "passed": true
+    },
+    {
+      "case_id": "higher_cost",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.005,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": 1.101865512930055,
+        "cagr": 1.7502276691620855,
+        "mdd": -0.085,
+        "trade_count": 26,
+        "profit_factor": 2.2408934967651657,
+        "win_rate": 0.5384615384615384
+      },
+      "passed": true
+    },
+    {
+      "case_id": "stricter_momentum",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.025,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": 0.9788926544354739,
+        "cagr": 1.533432800937848,
+        "mdd": -0.082,
+        "trade_count": 25,
+        "profit_factor": 2.2230419578212333,
+        "win_rate": 0.48
+      },
+      "passed": true
+    },
+    {
+      "case_id": "looser_momentum",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.017,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": 1.008628388213626,
+        "cagr": 1.5854203727174014,
+        "mdd": -0.082,
+        "trade_count": 30,
+        "profit_factor": 1.992266483790825,
+        "win_rate": 0.5333333333333333
+      },
+      "passed": true
+    },
+    {
+      "case_id": "shorter_hold",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 2,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": 0.22248919629914132,
+        "cagr": 0.3146874641782005,
+        "mdd": -0.082,
+        "trade_count": 34,
+        "profit_factor": 1.3952416563854437,
+        "win_rate": 0.35294117647058826
+      },
+      "passed": true
+    },
+    {
+      "case_id": "longer_hold",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 5,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": -0.14950419462215503,
+        "cagr": -0.1979199720135496,
+        "mdd": -0.082,
+        "trade_count": 20,
+        "profit_factor": 0.9735555331831676,
+        "win_rate": 0.3
+      },
+      "passed": false
+    },
+    {
+      "case_id": "tighter_stop",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.06,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "metrics": {
+        "total_return": 1.6784845821657957,
+        "cagr": 2.8261278495235946,
+        "mdd": -0.062,
+        "trade_count": 26,
+        "profit_factor": 2.990225191454469,
+        "win_rate": 0.5384615384615384
+      },
+      "passed": true
+    }
+  ],
+  "blockers": [],
+  "single_next_action": "Keep this candidate in model verification for tiny-live precondition review.",
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  }
+}

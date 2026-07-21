@@ -1,0 +1,1500 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:41.471110+00:00",
+  "report": "bithumb_current_actionable_orca_repair_seed_packet",
+  "status": "ORCA_REPAIR_SEED_PACKET_READY",
+  "scope": "orca_repair_seed_review_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_robustness_repair_latest.json",
+  "base_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+  "market": "KRW-ORCA",
+  "timeframe": "1d",
+  "source_trial_count": 3888,
+  "source_oos_pass_candidate_count": 147,
+  "source_robustness_pass_candidate_count": 0,
+  "near_miss_candidate_count": 147,
+  "top_near_miss_candidates": [
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2070",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.04294959885730221,
+      "average_mdd_gap_to_limit": 0.07304249005226206,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.7005085071192362,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 12,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32187946229258946,
+          "mdd_gap_to_limit": 0.07187946229258946,
+          "total_return": 0.6393563355413001,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32358770854110175,
+          "mdd_gap_to_limit": 0.07358770854110175,
+          "total_return": 0.6152728579483482,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32808607202609286,
+          "mdd_gap_to_limit": 0.07808607202609286,
+          "total_return": 0.5680910942432282,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32187946229258946,
+          "mdd_gap_to_limit": 0.07187946229258946,
+          "total_return": 0.6393563355413001,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.2929495988573022,
+          "mdd_gap_to_limit": 0.04294959885730221,
+          "total_return": 0.789478358748315,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3264914325493875,
+          "mdd_gap_to_limit": 0.0764914325493875,
+          "total_return": 0.2844816059584654,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4916873747294104,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2069",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.07895617919543774,
+      "average_mdd_gap_to_limit": 0.08661911192277875,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.5660705206358521,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 12,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.35,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910303,
+          "mdd_gap_to_limit": 0.08346313312910303,
+          "total_return": 0.545290522287496,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3367540211793477,
+          "mdd_gap_to_limit": 0.08675402117934772,
+          "total_return": 0.5225353241842359,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3438104898905856,
+          "mdd_gap_to_limit": 0.0938104898905856,
+          "total_return": 0.4779581230094272,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910303,
+          "mdd_gap_to_limit": 0.08346313312910303,
+          "total_return": 0.545290522287496,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910303,
+          "mdd_gap_to_limit": 0.08346313312910303,
+          "total_return": 0.686798585311406,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32895617919543774,
+          "mdd_gap_to_limit": 0.07895617919543774,
+          "total_return": 0.21077840656579694,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4060947656167482,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2068",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.07895617919543774,
+      "average_mdd_gap_to_limit": 0.08661911192277875,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.5626830777473568,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 13,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.2,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910303,
+          "mdd_gap_to_limit": 0.08346313312910303,
+          "total_return": 0.5423490323364106,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3367540211793477,
+          "mdd_gap_to_limit": 0.08675402117934772,
+          "total_return": 0.5181881939053767,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3438104898905856,
+          "mdd_gap_to_limit": 0.0938104898905856,
+          "total_return": 0.47092546189974893,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910303,
+          "mdd_gap_to_limit": 0.08346313312910303,
+          "total_return": 0.5423490323364106,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910303,
+          "mdd_gap_to_limit": 0.08346313312910303,
+          "total_return": 0.683587732066248,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32895617919543774,
+          "mdd_gap_to_limit": 0.07895617919543774,
+          "total_return": 0.20847366680033663,
+          "trade_count": 17,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4034182374405364,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2067",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.057683805684137446,
+      "average_mdd_gap_to_limit": 0.09042890352332798,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.4469285659686319,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 12,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.06,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34772150781422473,
+          "mdd_gap_to_limit": 0.09772150781422473,
+          "total_return": 0.4571333574796985,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3500636590626168,
+          "mdd_gap_to_limit": 0.10006365906261683,
+          "total_return": 0.43555239910415167,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35577465843815903,
+          "mdd_gap_to_limit": 0.10577465843815903,
+          "total_return": 0.39328046542351425,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34772150781422473,
+          "mdd_gap_to_limit": 0.09772150781422473,
+          "total_return": 0.4571333574796985,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.30768380568413745,
+          "mdd_gap_to_limit": 0.057683805684137446,
+          "total_return": 0.590568537473714,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35215772355734365,
+          "mdd_gap_to_limit": 0.10215772355734365,
+          "total_return": 0.13359963055538837,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.32187946229258946,
+          "mdd_gap_to_limit": 0.07187946229258946,
+          "total_return": 0.5762217072343718,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2073",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.042949598857302096,
+      "average_mdd_gap_to_limit": 0.09053887154827456,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.4859888587020003,
+      "estimated_mdd": -0.20000000000000004,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 12,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.1,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4916873747294104,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34812201312811697,
+          "mdd_gap_to_limit": 0.09812201312811697,
+          "total_return": 0.47109149441970044,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3525606713105195,
+          "mdd_gap_to_limit": 0.10256067131051949,
+          "total_return": 0.4306874247952188,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4916873747294104,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.2929495988573021,
+          "mdd_gap_to_limit": 0.042949598857302096,
+          "total_return": 0.6143478938263573,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3508687361216698,
+          "mdd_gap_to_limit": 0.1008687361216698,
+          "total_return": 0.10077940648515304,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.38692959406862104,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2076",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.05253906433766442,
+      "average_mdd_gap_to_limit": 0.09190879518832631,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.46404349392449096,
+      "estimated_mdd": -0.20000000000000004,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 11,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.12,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.47145616551951286,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34812201312811697,
+          "mdd_gap_to_limit": 0.09812201312811697,
+          "total_return": 0.45256746926163327,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3525606713105195,
+          "mdd_gap_to_limit": 0.10256067131051949,
+          "total_return": 0.41545761540795434,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.47145616551951286,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3025390643376644,
+          "mdd_gap_to_limit": 0.05253906433766442,
+          "total_return": 0.5924530849469276,
+          "trade_count": 12,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3508687361216698,
+          "mdd_gap_to_limit": 0.1008687361216698,
+          "total_return": 0.06305230051871269,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.43903376239085734,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2066",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.05758355333728926,
+      "average_mdd_gap_to_limit": 0.09570075634989118,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.44702151396531326,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 12,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.06,
+        "take_profit": 0.35,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34772150781422473,
+          "mdd_gap_to_limit": 0.09772150781422473,
+          "total_return": 0.45722012227137676,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3500636590626168,
+          "mdd_gap_to_limit": 0.10006365906261683,
+          "total_return": 0.435680845909614,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35577465843815903,
+          "mdd_gap_to_limit": 0.10577465843815903,
+          "total_return": 0.39348897754860235,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34772150781422473,
+          "mdd_gap_to_limit": 0.09772150781422473,
+          "total_return": 0.45722012227137676,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.30758355333728926,
+          "mdd_gap_to_limit": 0.05758355333728926,
+          "total_return": 0.5906632476435796,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35215772355734365,
+          "mdd_gap_to_limit": 0.10215772355734365,
+          "total_return": 0.13366713057883306,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35888268442538007,
+          "mdd_gap_to_limit": 0.10888268442538007,
+          "total_return": 0.4857785414961897,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2065",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.05758355333728926,
+      "average_mdd_gap_to_limit": 0.09570075634989118,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.4440514371895207,
+      "estimated_mdd": -0.2,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 13,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.06,
+        "take_profit": 0.2,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34772150781422473,
+          "mdd_gap_to_limit": 0.09772150781422473,
+          "total_return": 0.4544462760046981,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3500636590626168,
+          "mdd_gap_to_limit": 0.10006365906261683,
+          "total_return": 0.4315817018195578,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35577465843815903,
+          "mdd_gap_to_limit": 0.10577465843815903,
+          "total_return": 0.3868582512874166,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34772150781422473,
+          "mdd_gap_to_limit": 0.09772150781422473,
+          "total_return": 0.4544462760046981,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.30758355333728926,
+          "mdd_gap_to_limit": 0.05758355333728926,
+          "total_return": 0.587635389845307,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35215772355734365,
+          "mdd_gap_to_limit": 0.10215772355734365,
+          "total_return": 0.1315091735963898,
+          "trade_count": 17,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.35888268442538007,
+          "mdd_gap_to_limit": 0.10888268442538007,
+          "total_return": 0.482950333734403,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2072",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.08346313312910314,
+      "average_mdd_gap_to_limit": 0.10083419182923274,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.3942326641744804,
+      "estimated_mdd": -0.20000000000000004,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 12,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.1,
+        "take_profit": 0.35,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4060947656167482,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34812201312811697,
+          "mdd_gap_to_limit": 0.09812201312811697,
+          "total_return": 0.38663183395891165,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3525606713105195,
+          "mdd_gap_to_limit": 0.10256067131051949,
+          "total_return": 0.348452337192823,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4060947656167482,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910314,
+          "mdd_gap_to_limit": 0.08346313312910314,
+          "total_return": 0.5217170580433605,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3508687361216698,
+          "mdd_gap_to_limit": 0.1008687361216698,
+          "total_return": 0.03761698850488182,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.37797740150167747,
+          "mdd_gap_to_limit": 0.12797740150167747,
+          "total_return": 0.31218956267159803,
+          "trade_count": 13,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orcarepair_2071",
+      "status": "OOS_CANDIDATE_PASS",
+      "robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+      "stress_pass_count": 0,
+      "cost_pass_count": 0,
+      "case_count": 7,
+      "component_pass_total": 28,
+      "max_component_pass_total": 35,
+      "dominant_failure_dimensions": [
+        {
+          "dimension": "mdd_within_limit",
+          "case_count": 7
+        }
+      ],
+      "minimum_mdd_gap_to_limit": 0.08346313312910314,
+      "average_mdd_gap_to_limit": 0.10083419182923274,
+      "maximum_trade_gap_to_limit": 0,
+      "estimated_cagr": 0.39140970918111434,
+      "estimated_mdd": -0.20000000000000004,
+      "oos_pass_fold_count": 2,
+      "oos_fold_count": 3,
+      "oos_total_trade_count": 13,
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 5,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.1,
+        "take_profit": 0.2,
+        "round_trip_cost_rate": 0.002
+      },
+      "case_profiles": [
+        {
+          "case_id": "base_recheck",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4034182374405364,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_30bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.34812201312811697,
+          "mdd_gap_to_limit": 0.09812201312811697,
+          "total_return": 0.3826727342025482,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "cost_50bps",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3525606713105195,
+          "mdd_gap_to_limit": 0.10256067131051949,
+          "total_return": 0.34203591161053337,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_momentum",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3464236938067712,
+          "mdd_gap_to_limit": 0.09642369380677118,
+          "total_return": 0.4034182374405364,
+          "trade_count": 15,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "stricter_volume",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.33346313312910314,
+          "mdd_gap_to_limit": 0.08346313312910314,
+          "total_return": 0.518820440630601,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "shorter_hold",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.3508687361216698,
+          "mdd_gap_to_limit": 0.1008687361216698,
+          "total_return": 0.035641864797888,
+          "trade_count": 16,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        },
+        {
+          "case_id": "looser_stop",
+          "status": "STRESS_ITERATE",
+          "component_pass_count": 4,
+          "failed_dimensions": [
+            "mdd_within_limit"
+          ],
+          "mdd": -0.37797740150167747,
+          "mdd_gap_to_limit": 0.12797740150167747,
+          "total_return": 0.30969178483833737,
+          "trade_count": 14,
+          "trade_gap_to_limit": 0,
+          "pass_fold_count": 2,
+          "positive_fold_count": 2
+        }
+      ]
+    }
+  ],
+  "failure_dimension_counts": [
+    {
+      "dimension": "mdd_within_limit",
+      "case_count": 1029
+    },
+    {
+      "dimension": "positive_total_return",
+      "case_count": 367
+    },
+    {
+      "dimension": "enough_pass_folds",
+      "case_count": 328
+    },
+    {
+      "dimension": "enough_positive_folds",
+      "case_count": 306
+    }
+  ],
+  "proposed_seed_specs": [
+    {
+      "seed_id": "orca_mdd_compression_stop04_hold2_tp12",
+      "hypothesis": "compress full-window MDD first while preserving the two positive OOS folds",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 2,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.04,
+        "take_profit": 0.12,
+        "round_trip_cost_rate": 0.002
+      }
+    },
+    {
+      "seed_id": "orca_cost_resilience_stop05_hold2_tp16",
+      "hypothesis": "target one cost stress pass without allowing the full-window MDD breach to dominate",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 2,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.035,
+        "stop_loss": 0.05,
+        "take_profit": 0.16,
+        "round_trip_cost_rate": 0.003
+      }
+    },
+    {
+      "seed_id": "orca_selective_volume_stop05_hold3_tp18",
+      "hypothesis": "keep OOS trade count above threshold while filtering the drawdown-heavy full-window trades",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.25,
+        "momentum_threshold": 0.04,
+        "stop_loss": 0.05,
+        "take_profit": 0.18,
+        "round_trip_cost_rate": 0.002
+      }
+    }
+  ],
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Run the proposed ORCA repair seeds in a frozen research-only sweep; do not register, promote, enable paper/live, or submit orders."
+}

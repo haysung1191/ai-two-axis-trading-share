@@ -1,0 +1,1570 @@
+{
+  "generated_at_utc": "2026-05-05T01:16:16.696275+00:00",
+  "report": "btc_eth_intraday_oos_stability_review",
+  "status": "OOS_STABILITY_ITERATE",
+  "scope": "oos_stability_review_only_no_order_paths",
+  "source_sweep": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_parameter_sweep_latest.json",
+  "source_oos": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_oos_walkforward_latest.json",
+  "evaluated_trial_count": 20,
+  "stability_pass_count": 3,
+  "current_candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "current_worst_fold_mdd": -0.16791650341473752,
+  "current_average_fold_cagr": 0.31067497027660834,
+  "best_candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_001",
+  "best_worst_fold_mdd": -0.16791650341473752,
+  "best_average_fold_cagr": 0.31067497027660834,
+  "best_improves_current": false,
+  "candidate_results": [
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_001",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_4h",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.002,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.03
+      },
+      "screen_cagr": 0.12895319550809692,
+      "screen_mdd": -0.16791650341473752,
+      "fold_count": 3,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.16791650341473752,
+      "average_fold_cagr": 0.31067497027660834,
+      "total_trade_count": 76,
+      "first_fold_total_return": -0.1221411412663681,
+      "first_fold_mdd": -0.16791650341473752,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1221411412663681,
+            "cagr": -0.5492758271846331,
+            "mdd": -0.16791650341473752,
+            "win_rate": 0.3793103448275862,
+            "profit_factor": 0.6201350589847207,
+            "trade_count": 29,
+            "average_holding_bars": 5.379310344827586
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.09407845362838052,
+            "cagr": 0.7332926546730121,
+            "mdd": -0.06490150749869128,
+            "win_rate": 0.45,
+            "profit_factor": 1.4822240162020663,
+            "trade_count": 20,
+            "average_holding_bars": 5.1
+          },
+          "pass": true
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.09642998586630092,
+            "cagr": 0.748008083341446,
+            "mdd": -0.04904290045861437,
+            "win_rate": 0.5185185185185185,
+            "profit_factor": 1.6104763264537765,
+            "trade_count": 27,
+            "average_holding_bars": 5.925925925925926
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_003",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_4h",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.03
+      },
+      "screen_cagr": 0.03797867565391333,
+      "screen_mdd": -0.22047063015619928,
+      "fold_count": 3,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.18049319711132206,
+      "average_fold_cagr": 0.21942085475613796,
+      "total_trade_count": 70,
+      "first_fold_total_return": -0.13663575389350802,
+      "first_fold_mdd": -0.18049319711132206,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.13663575389350802,
+            "cagr": -0.5929209575785543,
+            "mdd": -0.18049319711132206,
+            "win_rate": 0.2692307692307692,
+            "profit_factor": 0.5421896301927727,
+            "trade_count": 26,
+            "average_holding_bars": 7.846153846153846
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.02082108785888881,
+            "cagr": 0.1343517751849499,
+            "mdd": -0.1275307518637605,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 1.1242073184010843,
+            "trade_count": 21,
+            "average_holding_bars": 6.571428571428571
+          },
+          "pass": true
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.13158243055545515,
+            "cagr": 1.1168317466620183,
+            "mdd": -0.053850571386395596,
+            "win_rate": 0.6086956521739131,
+            "profit_factor": 2.4826483379343363,
+            "trade_count": 23,
+            "average_holding_bars": 8.26086956521739
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_005",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_4h",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_PASS",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.002,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.03
+      },
+      "screen_cagr": 0.033721067571695906,
+      "screen_mdd": -0.22204765893166822,
+      "fold_count": 3,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.18049319711132206,
+      "average_fold_cagr": 0.21476556079002815,
+      "total_trade_count": 69,
+      "first_fold_total_return": -0.13663575389350802,
+      "first_fold_mdd": -0.18049319711132206,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.13663575389350802,
+            "cagr": -0.5929209575785543,
+            "mdd": -0.18049319711132206,
+            "win_rate": 0.2692307692307692,
+            "profit_factor": 0.5421896301927727,
+            "trade_count": 26,
+            "average_holding_bars": 7.846153846153846
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.01875591329018511,
+            "cagr": 0.12038589328662042,
+            "mdd": -0.1316495849790551,
+            "win_rate": 0.45,
+            "profit_factor": 1.1150714028652242,
+            "trade_count": 20,
+            "average_holding_bars": 6.45
+          },
+          "pass": true
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.13158243055545515,
+            "cagr": 1.1168317466620183,
+            "mdd": -0.053850571386395596,
+            "win_rate": 0.6086956521739131,
+            "profit_factor": 2.4826483379343363,
+            "trade_count": 23,
+            "average_holding_bars": 8.26086956521739
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_002",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_4h",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.03
+      },
+      "screen_cagr": 0.04826300577978593,
+      "screen_mdd": -0.2024342614852328,
+      "fold_count": 3,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.2024342614852328,
+      "average_fold_cagr": 0.29885488466230764,
+      "total_trade_count": 79,
+      "first_fold_total_return": -0.15855782280152908,
+      "first_fold_mdd": -0.2024342614852328,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.15855782280152908,
+            "cagr": -0.6521839420383044,
+            "mdd": -0.2024342614852328,
+            "win_rate": 0.36666666666666664,
+            "profit_factor": 0.5498330260011628,
+            "trade_count": 30,
+            "average_holding_bars": 5.333333333333333
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.0876935646167103,
+            "cagr": 0.6723310237175149,
+            "mdd": -0.06613960156964693,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 1.4410517886545577,
+            "trade_count": 21,
+            "average_holding_bars": 5.142857142857143
+          },
+          "pass": true
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.10931703777962998,
+            "cagr": 0.8764175723077126,
+            "mdd": -0.04904290045861437,
+            "win_rate": 0.5,
+            "profit_factor": 1.6526625914701807,
+            "trade_count": 28,
+            "average_holding_bars": 5.892857142857143
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h__stability_004",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_4h",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.03
+      },
+      "screen_cagr": 0.034412907009113036,
+      "screen_mdd": -0.21983979866026093,
+      "fold_count": 3,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.21983979866026093,
+      "average_fold_cagr": 0.339703400647928,
+      "total_trade_count": 80,
+      "first_fold_total_return": -0.1769208898048057,
+      "first_fold_mdd": -0.21983979866026093,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1769208898048057,
+            "cagr": -0.6961010393368943,
+            "mdd": -0.21983979866026093,
+            "win_rate": 0.3870967741935484,
+            "profit_factor": 0.5305334266291234,
+            "trade_count": 31,
+            "average_holding_bars": 5.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.10469730377157993,
+            "cagr": 0.8387936689729656,
+            "mdd": -0.06613960156964693,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 1.5516304651101043,
+            "trade_count": 21,
+            "average_holding_bars": 5.095238095238095
+          },
+          "pass": true
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.10931703777962998,
+            "cagr": 0.8764175723077126,
+            "mdd": -0.04904290045861437,
+            "win_rate": 0.5,
+            "profit_factor": 1.6526625914701807,
+            "trade_count": 28,
+            "average_holding_bars": 5.892857142857143
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_1h__stability_019",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_1h",
+      "market": "KRW-ETH",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 12,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.03
+      },
+      "screen_cagr": -0.3617422659496342,
+      "screen_mdd": -0.4269129520354583,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.3255950879199646,
+      "average_fold_cagr": 0.10546743279603703,
+      "total_trade_count": 218,
+      "first_fold_total_return": 0.02018177302249957,
+      "first_fold_mdd": -0.20439481392498415,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.02018177302249957,
+            "cagr": 0.12934120503347168,
+            "mdd": -0.20439481392498415,
+            "win_rate": 0.4927536231884058,
+            "profit_factor": 1.06246778609425,
+            "trade_count": 69,
+            "average_holding_bars": 8.956521739130435
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.290556392036212,
+            "cagr": -0.8771743299476223,
+            "mdd": -0.3255950879199646,
+            "win_rate": 0.3493975903614458,
+            "profit_factor": 0.6365058868939949,
+            "trade_count": 83,
+            "average_holding_bars": 7.975903614457831
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.12689893482796388,
+            "cagr": 1.0642354233022617,
+            "mdd": -0.11118704361522203,
+            "win_rate": 0.48484848484848486,
+            "profit_factor": 1.343674740745196,
+            "trade_count": 66,
+            "average_holding_bars": 10.575757575757576
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_1h__stability_011",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_1h",
+      "market": "KRW-BTC",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.001,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.02
+      },
+      "screen_cagr": -0.26058702897646224,
+      "screen_mdd": -0.26210057788380925,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.20042332873897095,
+      "average_fold_cagr": -0.19783180721323032,
+      "total_trade_count": 220,
+      "first_fold_total_return": -0.03438369847261691,
+      "first_fold_mdd": -0.11914758537825265,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.03438369847261691,
+            "cagr": -0.19184063300378884,
+            "mdd": -0.11914758537825265,
+            "win_rate": 0.4411764705882353,
+            "profit_factor": 0.923722783893971,
+            "trade_count": 68,
+            "average_holding_bars": 8.044117647058824
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.13685372957801523,
+            "cagr": -0.5930385909844078,
+            "mdd": -0.20042332873897095,
+            "win_rate": 0.4266666666666667,
+            "profit_factor": 0.7239684657463976,
+            "trade_count": 75,
+            "average_holding_bars": 7.8133333333333335
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.029286732317683306,
+            "cagr": 0.19138380234850572,
+            "mdd": -0.07207468607637879,
+            "win_rate": 0.4805194805194805,
+            "profit_factor": 1.1168446924605522,
+            "trade_count": 77,
+            "average_holding_bars": 8.61038961038961
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_1h__stability_013",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_1h",
+      "market": "KRW-BTC",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.02
+      },
+      "screen_cagr": -0.29300790539726607,
+      "screen_mdd": -0.26339651407385456,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.20136877807734777,
+      "average_fold_cagr": -0.24480024150869603,
+      "total_trade_count": 217,
+      "first_fold_total_return": -0.0325115337170665,
+      "first_fold_mdd": -0.11914758537825221,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.0325115337170665,
+            "cagr": -0.18225497137220248,
+            "mdd": -0.11914758537825221,
+            "win_rate": 0.43283582089552236,
+            "profit_factor": 0.9290449970669632,
+            "trade_count": 67,
+            "average_holding_bars": 8.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1393694733505655,
+            "cagr": -0.6002307239652906,
+            "mdd": -0.20136877807734777,
+            "win_rate": 0.4246575342465753,
+            "profit_factor": 0.7182745583802788,
+            "trade_count": 73,
+            "average_holding_bars": 7.780821917808219
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.007771707557862939,
+            "cagr": 0.04808497081140506,
+            "mdd": -0.07207468607637879,
+            "win_rate": 0.45454545454545453,
+            "profit_factor": 1.0404960958923328,
+            "trade_count": 77,
+            "average_holding_bars": 8.61038961038961
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_4h__stability_009",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_4h",
+      "market": "KRW-ETH",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 9,
+        "hold_bars": 6,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.05
+      },
+      "screen_cagr": -0.23744519422641097,
+      "screen_mdd": -0.26184692846820423,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.2071126400298713,
+      "average_fold_cagr": -0.19211768988808478,
+      "total_trade_count": 75,
+      "first_fold_total_return": -0.032361677231075525,
+      "first_fold_mdd": -0.16141239221349513,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.032361677231075525,
+            "cagr": -0.18228448367990235,
+            "mdd": -0.16141239221349513,
+            "win_rate": 0.52,
+            "profit_factor": 0.9397583109127228,
+            "trade_count": 25,
+            "average_holding_bars": 5.44
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.09319174128441554,
+            "cagr": -0.4503217134470172,
+            "mdd": -0.2071126400298713,
+            "win_rate": 0.4,
+            "profit_factor": 0.7615111815358868,
+            "trade_count": 20,
+            "average_holding_bars": 5.55
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.009062165562623292,
+            "cagr": 0.0562531274626652,
+            "mdd": -0.1014491741794934,
+            "win_rate": 0.5,
+            "profit_factor": 1.0615285951316529,
+            "trade_count": 30,
+            "average_holding_bars": 5.8
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_1h__stability_014",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_1h",
+      "market": "KRW-BTC",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.001,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.02
+      },
+      "screen_cagr": -0.30451904487478265,
+      "screen_mdd": -0.2824460270549698,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.209962101180737,
+      "average_fold_cagr": -0.22724792039394393,
+      "total_trade_count": 221,
+      "first_fold_total_return": -0.05904677776998646,
+      "first_fold_mdd": -0.13309253732071624,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.05904677776998646,
+            "cagr": -0.30961110261560154,
+            "mdd": -0.13309253732071624,
+            "win_rate": 0.4264705882352941,
+            "profit_factor": 0.8618423128485477,
+            "trade_count": 68,
+            "average_holding_bars": 7.720588235294118
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.14739526997619457,
+            "cagr": -0.6224689229163219,
+            "mdd": -0.209962101180737,
+            "win_rate": 0.40789473684210525,
+            "profit_factor": 0.7029781622958748,
+            "trade_count": 76,
+            "average_holding_bars": 7.447368421052632
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.0375138907351944,
+            "cagr": 0.2503362643500917,
+            "mdd": -0.07564738009982797,
+            "win_rate": 0.4805194805194805,
+            "profit_factor": 1.1482401859652902,
+            "trade_count": 77,
+            "average_holding_bars": 8.506493506493506
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_1h__stability_017",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_1h",
+      "market": "KRW-ETH",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.001,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.03
+      },
+      "screen_cagr": -0.35162288922211427,
+      "screen_mdd": -0.3537093155743153,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.21061878691226465,
+      "average_fold_cagr": -0.18076395442938664,
+      "total_trade_count": 281,
+      "first_fold_total_return": -0.10420457627153679,
+      "first_fold_mdd": -0.2088434972034905,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.10420457627153679,
+            "cagr": -0.48823756479323244,
+            "mdd": -0.2088434972034905,
+            "win_rate": 0.40425531914893614,
+            "profit_factor": 0.8463085986428216,
+            "trade_count": 94,
+            "average_holding_bars": 5.372340425531915
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1505026038517835,
+            "cagr": -0.6307962599071892,
+            "mdd": -0.21061878691226465,
+            "win_rate": 0.4065934065934066,
+            "profit_factor": 0.7944792035142486,
+            "trade_count": 91,
+            "average_holding_bars": 4.824175824175824
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.07795069691593559,
+            "cagr": 0.5767419614122617,
+            "mdd": -0.10635757268559431,
+            "win_rate": 0.5104166666666666,
+            "profit_factor": 1.1948962283882962,
+            "trade_count": 96,
+            "average_holding_bars": 5.6875
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_1h__stability_018",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_1h",
+      "market": "KRW-ETH",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.03
+      },
+      "screen_cagr": -0.35679966477612923,
+      "screen_mdd": -0.3482117647905051,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.21510554391410075,
+      "average_fold_cagr": -0.24981439888127446,
+      "total_trade_count": 271,
+      "first_fold_total_return": -0.07376898038799995,
+      "first_fold_mdd": -0.19835048732256466,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.07376898038799995,
+            "cagr": -0.372806071010218,
+            "mdd": -0.19835048732256466,
+            "win_rate": 0.4157303370786517,
+            "profit_factor": 0.8930185735268833,
+            "trade_count": 89,
+            "average_holding_bars": 5.370786516853933
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.15005870564851687,
+            "cagr": -0.6296161509775784,
+            "mdd": -0.21510554391410075,
+            "win_rate": 0.4111111111111111,
+            "profit_factor": 0.7950519309414551,
+            "trade_count": 90,
+            "average_holding_bars": 4.811111111111111
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.0378750552550966,
+            "cagr": 0.252979025343973,
+            "mdd": -0.10278117111743712,
+            "win_rate": 0.5,
+            "profit_factor": 1.105154658988879,
+            "trade_count": 92,
+            "average_holding_bars": 5.717391304347826
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_4h__stability_006",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_4h",
+      "market": "KRW-ETH",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 9,
+        "hold_bars": 9,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.05
+      },
+      "screen_cagr": -0.18709553626353248,
+      "screen_mdd": -0.23429111114836154,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.21638791132628132,
+      "average_fold_cagr": -0.08809668754848939,
+      "total_trade_count": 65,
+      "first_fold_total_return": -0.1474290970986526,
+      "first_fold_mdd": -0.21638791132628132,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1474290970986526,
+            "cagr": -0.6230736912387542,
+            "mdd": -0.21638791132628132,
+            "win_rate": 0.4782608695652174,
+            "profit_factor": 0.6017414558410582,
+            "trade_count": 23,
+            "average_holding_bars": 6.913043478260869
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.003984024522652119,
+            "cagr": -0.0241244631426466,
+            "mdd": -0.13330251835788942,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 1.0228839455246486,
+            "trade_count": 18,
+            "average_holding_bars": 6.666666666666667
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.05489296538674271,
+            "cagr": 0.38290809173593265,
+            "mdd": -0.08881129066052262,
+            "win_rate": 0.5416666666666666,
+            "profit_factor": 1.295107417346414,
+            "trade_count": 24,
+            "average_holding_bars": 7.958333333333333
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_1h__stability_015",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_1h",
+      "market": "KRW-BTC",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0008,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.02
+      },
+      "screen_cagr": -0.30634470437316186,
+      "screen_mdd": -0.27230352292058013,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.21771933534768007,
+      "average_fold_cagr": -0.24570030478521876,
+      "total_trade_count": 224,
+      "first_fold_total_return": -0.030807389427189413,
+      "first_fold_mdd": -0.11588521247390582,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.030807389427189413,
+            "cagr": -0.17344715971987235,
+            "mdd": -0.11588521247390582,
+            "win_rate": 0.45588235294117646,
+            "profit_factor": 0.9328758378012751,
+            "trade_count": 68,
+            "average_holding_bars": 8.044117647058824
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.15192942473872983,
+            "cagr": -0.6345682058286582,
+            "mdd": -0.21771933534768007,
+            "win_rate": 0.4155844155844156,
+            "profit_factor": 0.6995593313416704,
+            "trade_count": 77,
+            "average_holding_bars": 7.8441558441558445
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.011357695096397613,
+            "cagr": 0.07091445119287432,
+            "mdd": -0.08764334537003537,
+            "win_rate": 0.46835443037974683,
+            "profit_factor": 1.0519989171793875,
+            "trade_count": 79,
+            "average_holding_bars": 8.620253164556962
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_4h__stability_007",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_4h",
+      "market": "KRW-ETH",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 9,
+        "hold_bars": 9,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.003,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.05
+      },
+      "screen_cagr": -0.2011867899546811,
+      "screen_mdd": -0.24108887800377132,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.218638476745585,
+      "average_fold_cagr": -0.09392187507138909,
+      "total_trade_count": 65,
+      "first_fold_total_return": -0.15499800260570706,
+      "first_fold_mdd": -0.218638476745585,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.15499800260570706,
+            "cagr": -0.6430844438336294,
+            "mdd": -0.218638476745585,
+            "win_rate": 0.43478260869565216,
+            "profit_factor": 0.5613571933465985,
+            "trade_count": 23,
+            "average_holding_bars": 6.6521739130434785
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.003984024522652119,
+            "cagr": -0.0241244631426466,
+            "mdd": -0.13330251835788942,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 1.0228839455246486,
+            "trade_count": 18,
+            "average_holding_bars": 6.666666666666667
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.05521149987947549,
+            "cagr": 0.38544328176210874,
+            "mdd": -0.0888112906605224,
+            "win_rate": 0.5416666666666666,
+            "profit_factor": 1.2966582742804489,
+            "trade_count": 24,
+            "average_holding_bars": 7.916666666666667
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_1h__stability_016",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_1h",
+      "market": "KRW-ETH",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0008,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.03
+      },
+      "screen_cagr": -0.3402378539992883,
+      "screen_mdd": -0.3656963470042559,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.2319378856469002,
+      "average_fold_cagr": -0.0972580796645393,
+      "total_trade_count": 283,
+      "first_fold_total_return": -0.0993851454058875,
+      "first_fold_mdd": -0.20458702974659448,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.0993851454058875,
+            "cagr": -0.4712455411743103,
+            "mdd": -0.20458702974659448,
+            "win_rate": 0.40425531914893614,
+            "profit_factor": 0.8535262322542255,
+            "trade_count": 94,
+            "average_holding_bars": 5.372340425531915
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.17072017075045365,
+            "cagr": -0.6813144434366574,
+            "mdd": -0.2319378856469002,
+            "win_rate": 0.40217391304347827,
+            "profit_factor": 0.7692693867607328,
+            "trade_count": 92,
+            "average_holding_bars": 4.782608695652174
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.10778836371770462,
+            "cagr": 0.8607857456173498,
+            "mdd": -0.10536963281847322,
+            "win_rate": 0.5154639175257731,
+            "profit_factor": 1.2720649302991096,
+            "trade_count": 97,
+            "average_holding_bars": 5.701030927835052
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_4h__stability_008",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_4h",
+      "market": "KRW-ETH",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 9,
+        "hold_bars": 9,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.002,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.05
+      },
+      "screen_cagr": -0.22910035647490867,
+      "screen_mdd": -0.25404745861734834,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.23660618609119155,
+      "average_fold_cagr": -0.10666371346271675,
+      "total_trade_count": 65,
+      "first_fold_total_return": -0.16942660456513636,
+      "first_fold_mdd": -0.23660618609119155,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.16942660456513636,
+            "cagr": -0.6787747689814363,
+            "mdd": -0.23660618609119155,
+            "win_rate": 0.43478260869565216,
+            "profit_factor": 0.5449470493613455,
+            "trade_count": 23,
+            "average_holding_bars": 6.782608695652174
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.003984024522652119,
+            "cagr": -0.0241244631426466,
+            "mdd": -0.13330251835788942,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 1.0228839455246486,
+            "trade_count": 18,
+            "average_holding_bars": 6.666666666666667
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": 0.05489296538674271,
+            "cagr": 0.38290809173593265,
+            "mdd": -0.08881129066052262,
+            "win_rate": 0.5416666666666666,
+            "profit_factor": 1.295107417346414,
+            "trade_count": 24,
+            "average_holding_bars": 7.958333333333333
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_1h__stability_020",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_1h",
+      "market": "KRW-ETH",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 12,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.02
+      },
+      "screen_cagr": -0.36432459990400134,
+      "screen_mdd": -0.39943345856620993,
+      "fold_count": 3,
+      "pass_fold_count": 1,
+      "positive_fold_count": 1,
+      "worst_fold_mdd": -0.2992038369492166,
+      "average_fold_cagr": -0.018881444737725645,
+      "total_trade_count": 237,
+      "first_fold_total_return": -0.014223588989303315,
+      "first_fold_mdd": -0.19603586103440496,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.014223588989303315,
+            "cagr": -0.08351415247877458,
+            "mdd": -0.19603586103440496,
+            "win_rate": 0.4805194805194805,
+            "profit_factor": 0.9992235560941828,
+            "trade_count": 77,
+            "average_holding_bars": 8.090909090909092
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.2546196622458109,
+            "cagr": -0.833894496422959,
+            "mdd": -0.2992038369492166,
+            "win_rate": 0.375,
+            "profit_factor": 0.6953494055093532,
+            "trade_count": 88,
+            "average_holding_bars": 7.329545454545454
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": 0.10778626058538454,
+            "cagr": 0.8607643146885566,
+            "mdd": -0.09311627537677614,
+            "win_rate": 0.5138888888888888,
+            "profit_factor": 1.2587538179075224,
+            "trade_count": 72,
+            "average_holding_bars": 9.472222222222221
+          },
+          "pass": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_1h__stability_012",
+      "base_candidate_id": "btc_eth_intraday_momentum_btc_1h",
+      "market": "KRW-BTC",
+      "timeframe": "1h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.002,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.02
+      },
+      "screen_cagr": -0.2669507964255181,
+      "screen_mdd": -0.23067457579309014,
+      "fold_count": 3,
+      "pass_fold_count": 0,
+      "positive_fold_count": 0,
+      "worst_fold_mdd": -0.16945532246066553,
+      "average_fold_cagr": -0.25104206680832025,
+      "total_trade_count": 206,
+      "first_fold_total_return": -0.03315648911064151,
+      "first_fold_mdd": -0.12077474452062409,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T02:00:00+00:00",
+          "last_timestamp": "2026-01-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.03315648911064151,
+            "cagr": -0.18556787417484633,
+            "mdd": -0.12077474452062409,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 0.9241525970384232,
+            "trade_count": 63,
+            "average_holding_bars": 7.920634920634921
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-05T02:00:00+00:00",
+          "last_timestamp": "2026-03-05T20:00:00+00:00",
+          "metrics": {
+            "total_return": -0.1049785137178244,
+            "cagr": -0.4921202544452272,
+            "mdd": -0.16945532246066553,
+            "win_rate": 0.43661971830985913,
+            "profit_factor": 0.778496072771689,
+            "trade_count": 71,
+            "average_holding_bars": 7.830985915492958
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-03-05T21:00:00+00:00",
+          "last_timestamp": "2026-05-05T01:00:00+00:00",
+          "metrics": {
+            "total_return": -0.012846055997500883,
+            "cagr": -0.07543807180488726,
+            "mdd": -0.07873604020606895,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 0.9730870631464267,
+            "trade_count": 72,
+            "average_holding_bars": 8.680555555555555
+          },
+          "pass": false
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_4h__stability_010",
+      "base_candidate_id": "btc_eth_intraday_momentum_eth_4h",
+      "market": "KRW-ETH",
+      "timeframe": "4h",
+      "status": "OOS_STABILITY_ITERATE",
+      "parameters": {
+        "lookback_bars": 9,
+        "hold_bars": 6,
+        "volume_window": 18,
+        "volume_ratio_floor": 0.8,
+        "momentum_threshold": 0.004,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.05
+      },
+      "screen_cagr": -0.29045695689195405,
+      "screen_mdd": -0.24200102032805793,
+      "fold_count": 3,
+      "pass_fold_count": 0,
+      "positive_fold_count": 0,
+      "worst_fold_mdd": -0.19913968732762455,
+      "average_fold_cagr": -0.2668992462849494,
+      "total_trade_count": 82,
+      "first_fold_total_return": -0.10021951370197268,
+      "first_fold_mdd": -0.19913968732762455,
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-01-04T19:00:00+00:00",
+          "metrics": {
+            "total_return": -0.10021951370197268,
+            "cagr": -0.4758702684185462,
+            "mdd": -0.19913968732762455,
+            "win_rate": 0.4827586206896552,
+            "profit_factor": 0.7626361196967805,
+            "trade_count": 29,
+            "average_holding_bars": 5.310344827586207
+          },
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-01-04T23:00:00+00:00",
+          "last_timestamp": "2026-03-05T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.023349519981751166,
+            "cagr": -0.13457144177047087,
+            "mdd": -0.15528316592116698,
+            "win_rate": 0.4090909090909091,
+            "profit_factor": 0.9686127374674012,
+            "trade_count": 22,
+            "average_holding_bars": 5.454545454545454
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2026-03-05T19:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00",
+          "metrics": {
+            "total_return": -0.03418927903431035,
+            "cagr": -0.19025602866583113,
+            "mdd": -0.1378806955702876,
+            "win_rate": 0.5161290322580645,
+            "profit_factor": 0.9084901239939028,
+            "trade_count": 31,
+            "average_holding_bars": 5.903225806451613
+          },
+          "pass": false
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "blockers": [],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Keep current BTC/ETH intraday candidate in review-only state; no alternate improved OOS stability."
+}

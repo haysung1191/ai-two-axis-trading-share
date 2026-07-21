@@ -1,0 +1,81 @@
+{
+  "generated_at_utc": "2026-05-04T06:04:16.557826+00:00",
+  "report": "bithumb_research_hold_triage_review",
+  "status": "BITHUMB_RESEARCH_HOLD_TRIAGE_REVIEW_READY",
+  "scope": "bithumb_research_hold_archive_or_stronger_hypothesis_review_only_no_order_paths",
+  "source_reports": {
+    "candidate_registry": "C:\\AI\\gatekeeper\\artifacts\\candidate_registry_latest.json",
+    "pull_through_board": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json"
+  },
+  "research_hold_count": 3,
+  "family_counts": {
+    "btc_1d_impulse_flag_breakout": 1,
+    "btc_1d_narrow_range_expansion_drift": 2
+  },
+  "candidates": [
+    {
+      "candidate_id": "btc_1d_impulse_flag_breakout_v4",
+      "strategy_family": "btc_1d_impulse_flag_breakout",
+      "status": "RESEARCH_HOLD",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "failure_reason": "BACKTEST_BELOW_VALIDATION_INTAKE_BAR",
+      "cagr": 0.19040837,
+      "mdd": -0.08110688,
+      "sharpe": 1.40146112,
+      "latest_report_path": "C:\\AI\\gatekeeper\\reports\\candidates\\btc_1d_impulse_flag_breakout_v4.md",
+      "real_orders_count": 0,
+      "broker_submit_allowed": 0,
+      "private_submit_used": 0,
+      "recommended_triage": "ARCHIVE_OR_REQUIRE_STRONGER_FROZEN_HYPOTHESIS"
+    },
+    {
+      "candidate_id": "btc_1d_narrow_range_expansion_drift_v1",
+      "strategy_family": "btc_1d_narrow_range_expansion_drift",
+      "status": "RESEARCH_HOLD",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "failure_reason": "BACKTEST_BELOW_VALIDATION_INTAKE_BAR",
+      "cagr": 0.18390158,
+      "mdd": -0.14817932,
+      "sharpe": 1.08073465,
+      "latest_report_path": "C:\\AI\\gatekeeper\\reports\\candidates\\btc_1d_narrow_range_expansion_drift_v1.md",
+      "real_orders_count": 0,
+      "broker_submit_allowed": 0,
+      "private_submit_used": 0,
+      "recommended_triage": "ARCHIVE_OR_REQUIRE_STRONGER_FROZEN_HYPOTHESIS"
+    },
+    {
+      "candidate_id": "btc_1d_narrow_range_expansion_drift_v2",
+      "strategy_family": "btc_1d_narrow_range_expansion_drift",
+      "status": "RESEARCH_HOLD",
+      "current_gate": "G03_BACKTEST_SCREEN",
+      "failure_reason": "BACKTEST_BELOW_VALIDATION_INTAKE_BAR",
+      "cagr": 0.16576602,
+      "mdd": -0.24061906,
+      "sharpe": 0.90092927,
+      "latest_report_path": "C:\\AI\\gatekeeper\\reports\\candidates\\btc_1d_narrow_range_expansion_drift_v2.md",
+      "real_orders_count": 0,
+      "broker_submit_allowed": 0,
+      "private_submit_used": 0,
+      "recommended_triage": "ARCHIVE_OR_REQUIRE_STRONGER_FROZEN_HYPOTHESIS"
+    }
+  ],
+  "triage_summary": {
+    "dominant_failure_reason": "BACKTEST_BELOW_VALIDATION_INTAKE_BAR",
+    "recommended_action": "ARCHIVE_OR_REQUIRE_STRONGER_FROZEN_HYPOTHESIS",
+    "mutation_allowed_by_this_report": false,
+    "reason": "These candidates remain below validation intake at G03 and have no frozen scope or OOS evidence."
+  },
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "mutation_allowed_by_this_report": false,
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Gatekeeper can review Bithumb research-hold triage; do not mutate archive state or submit orders."
+}

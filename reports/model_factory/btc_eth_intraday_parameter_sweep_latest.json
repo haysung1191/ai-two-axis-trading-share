@@ -1,0 +1,2293 @@
+{
+  "generated_at_utc": "2026-05-05T01:16:15.012044+00:00",
+  "report": "btc_eth_intraday_parameter_sweep",
+  "status": "SWEEP_COMPLETE",
+  "scope": "research_parameter_sweep_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_backtest_screen_latest.json",
+  "lane": "btc_eth_1h4h",
+  "candidate_count": 4,
+  "sweep_count": 4,
+  "pass_like_count": 1,
+  "errors": [],
+  "top_sweep": {
+    "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+    "market": "KRW-BTC",
+    "timeframe": "4h",
+    "trials_run": 432,
+    "trials_with_min_trades": 432,
+    "best_status": "BACKTEST_SCREEN_PASS",
+    "best_metrics": {
+      "total_return": 0.06158096227378751,
+      "cagr": 0.12895319550809692,
+      "mdd": -0.16791650341473752,
+      "win_rate": 0.46153846153846156,
+      "profit_factor": 1.1138235481958885,
+      "trade_count": 78,
+      "average_holding_bars": 5.5256410256410255
+    },
+    "best_parameters": {
+      "lookback_bars": 3,
+      "hold_bars": 6,
+      "volume_window": 18,
+      "volume_ratio_floor": 1.0,
+      "momentum_threshold": 0.002,
+      "round_trip_cost_rate": 0.002,
+      "stop_loss": 0.035,
+      "take_profit": 0.03
+    },
+    "top_trials": [
+      {
+        "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+        "market": "KRW-BTC",
+        "timeframe": "4h",
+        "status": "BACKTEST_SCREEN_PASS",
+        "next_gate": "G04_OOS_WALKFORWARD_RESEARCH_ONLY",
+        "frozen_parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 6,
+          "volume_window": 18,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.002,
+          "round_trip_cost_rate": 0.002,
+          "stop_loss": 0.035,
+          "take_profit": 0.03
+        },
+        "data": {
+          "candle_count": 1079,
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00"
+        },
+        "metrics": {
+          "total_return": 0.06158096227378751,
+          "cagr": 0.12895319550809692,
+          "mdd": -0.16791650341473752,
+          "win_rate": 0.46153846153846156,
+          "profit_factor": 1.1138235481958885,
+          "trade_count": 78,
+          "average_holding_bars": 5.5256410256410255
+        },
+        "trade_samples": [
+          {
+            "entry_time": "2026-04-26T03:00:00+00:00",
+            "exit_time": "2026-04-27T03:00:00+00:00",
+            "entry_price": 115998000.0,
+            "exit_price": 115614000.0,
+            "gross_return": -0.003310401903481086,
+            "net_return": -0.005310401903481086,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-04-29T03:00:00+00:00",
+            "exit_time": "2026-04-30T03:00:00+00:00",
+            "entry_price": 114312000.0,
+            "exit_price": 112909000.0,
+            "gross_return": -0.012273427111764268,
+            "net_return": -0.014273427111764268,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-01T03:00:00+00:00",
+            "exit_time": "2026-05-02T03:00:00+00:00",
+            "entry_price": 114500000.0,
+            "exit_price": 116299000.0,
+            "gross_return": 0.01571179039301307,
+            "net_return": 0.01371179039301307,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-02T19:00:00+00:00",
+            "exit_time": "2026-05-03T19:00:00+00:00",
+            "entry_price": 116747000.0,
+            "exit_price": 117126000.0,
+            "gross_return": 0.0032463360942893704,
+            "net_return": 0.0012463360942893704,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-03T19:00:00+00:00",
+            "exit_time": "2026-05-04T19:00:00+00:00",
+            "entry_price": 117126000.0,
+            "exit_price": 118781000.0,
+            "gross_return": 0.014130082133770427,
+            "net_return": 0.012130082133770427,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          }
+        ],
+        "order_paths_allowed": false,
+        "counts_as_paper_or_live_evidence": false
+      },
+      {
+        "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+        "market": "KRW-BTC",
+        "timeframe": "4h",
+        "status": "BACKTEST_SCREEN_ITERATE",
+        "next_gate": "G03_RESEARCH_ITERATE",
+        "frozen_parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 6,
+          "volume_window": 18,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.0015,
+          "round_trip_cost_rate": 0.002,
+          "stop_loss": 0.035,
+          "take_profit": 0.03
+        },
+        "data": {
+          "candle_count": 1079,
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00"
+        },
+        "metrics": {
+          "total_return": 0.023494646287517407,
+          "cagr": 0.04826300577978593,
+          "mdd": -0.2024342614852328,
+          "win_rate": 0.4444444444444444,
+          "profit_factor": 1.0590063295000278,
+          "trade_count": 81,
+          "average_holding_bars": 5.506172839506172
+        },
+        "trade_samples": [
+          {
+            "entry_time": "2026-04-26T03:00:00+00:00",
+            "exit_time": "2026-04-27T03:00:00+00:00",
+            "entry_price": 115998000.0,
+            "exit_price": 115614000.0,
+            "gross_return": -0.003310401903481086,
+            "net_return": -0.005310401903481086,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-04-29T03:00:00+00:00",
+            "exit_time": "2026-04-30T03:00:00+00:00",
+            "entry_price": 114312000.0,
+            "exit_price": 112909000.0,
+            "gross_return": -0.012273427111764268,
+            "net_return": -0.014273427111764268,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-01T03:00:00+00:00",
+            "exit_time": "2026-05-02T03:00:00+00:00",
+            "entry_price": 114500000.0,
+            "exit_price": 116299000.0,
+            "gross_return": 0.01571179039301307,
+            "net_return": 0.01371179039301307,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-02T19:00:00+00:00",
+            "exit_time": "2026-05-03T19:00:00+00:00",
+            "entry_price": 116747000.0,
+            "exit_price": 117126000.0,
+            "gross_return": 0.0032463360942893704,
+            "net_return": 0.0012463360942893704,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-03T19:00:00+00:00",
+            "exit_time": "2026-05-04T19:00:00+00:00",
+            "entry_price": 117126000.0,
+            "exit_price": 118781000.0,
+            "gross_return": 0.014130082133770427,
+            "net_return": 0.012130082133770427,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          }
+        ],
+        "order_paths_allowed": false,
+        "counts_as_paper_or_live_evidence": false
+      },
+      {
+        "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+        "market": "KRW-BTC",
+        "timeframe": "4h",
+        "status": "BACKTEST_SCREEN_ITERATE",
+        "next_gate": "G03_RESEARCH_ITERATE",
+        "frozen_parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 9,
+          "volume_window": 18,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.0015,
+          "round_trip_cost_rate": 0.002,
+          "stop_loss": 0.035,
+          "take_profit": 0.03
+        },
+        "data": {
+          "candle_count": 1079,
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00"
+        },
+        "metrics": {
+          "total_return": 0.01853496897658502,
+          "cagr": 0.03797867565391333,
+          "mdd": -0.22047063015619928,
+          "win_rate": 0.43661971830985913,
+          "profit_factor": 1.0592431981059984,
+          "trade_count": 71,
+          "average_holding_bars": 7.704225352112676
+        },
+        "trade_samples": [
+          {
+            "entry_time": "2026-04-26T03:00:00+00:00",
+            "exit_time": "2026-04-27T15:00:00+00:00",
+            "entry_price": 115998000.0,
+            "exit_price": 114688000.0,
+            "gross_return": -0.011293298160313103,
+            "net_return": -0.013293298160313103,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-04-29T03:00:00+00:00",
+            "exit_time": "2026-04-30T15:00:00+00:00",
+            "entry_price": 114312000.0,
+            "exit_price": 113694000.0,
+            "gross_return": -0.0054062565609909186,
+            "net_return": -0.007406256560990919,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-01T03:00:00+00:00",
+            "exit_time": "2026-05-02T15:00:00+00:00",
+            "entry_price": 114500000.0,
+            "exit_price": 116389000.0,
+            "gross_return": 0.016497816593886494,
+            "net_return": 0.014497816593886494,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-02T19:00:00+00:00",
+            "exit_time": "2026-05-04T07:00:00+00:00",
+            "entry_price": 116747000.0,
+            "exit_price": 116867000.0,
+            "gross_return": 0.001027863671015039,
+            "net_return": -0.000972136328984961,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-04T15:00:00+00:00",
+            "exit_time": "2026-05-04T23:00:00+00:00",
+            "entry_price": 118580000.0,
+            "exit_price": 119134000.0,
+            "gross_return": 0.004671951425198273,
+            "net_return": 0.002671951425198273,
+            "holding_bars": 2,
+            "exit_reason": "data_end_exit"
+          }
+        ],
+        "order_paths_allowed": false,
+        "counts_as_paper_or_live_evidence": false
+      },
+      {
+        "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+        "market": "KRW-BTC",
+        "timeframe": "4h",
+        "status": "BACKTEST_SCREEN_ITERATE",
+        "next_gate": "G03_RESEARCH_ITERATE",
+        "frozen_parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 6,
+          "volume_window": 18,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.0015,
+          "round_trip_cost_rate": 0.002,
+          "stop_loss": 0.025,
+          "take_profit": 0.03
+        },
+        "data": {
+          "candle_count": 1079,
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00"
+        },
+        "metrics": {
+          "total_return": 0.01680954063876361,
+          "cagr": 0.034412907009113036,
+          "mdd": -0.21983979866026093,
+          "win_rate": 0.45121951219512196,
+          "profit_factor": 1.0493025552575987,
+          "trade_count": 82,
+          "average_holding_bars": 5.365853658536586
+        },
+        "trade_samples": [
+          {
+            "entry_time": "2026-04-26T03:00:00+00:00",
+            "exit_time": "2026-04-27T03:00:00+00:00",
+            "entry_price": 115998000.0,
+            "exit_price": 115614000.0,
+            "gross_return": -0.003310401903481086,
+            "net_return": -0.005310401903481086,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-04-29T03:00:00+00:00",
+            "exit_time": "2026-04-30T03:00:00+00:00",
+            "entry_price": 114312000.0,
+            "exit_price": 112909000.0,
+            "gross_return": -0.012273427111764268,
+            "net_return": -0.014273427111764268,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-01T03:00:00+00:00",
+            "exit_time": "2026-05-02T03:00:00+00:00",
+            "entry_price": 114500000.0,
+            "exit_price": 116299000.0,
+            "gross_return": 0.01571179039301307,
+            "net_return": 0.01371179039301307,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-02T19:00:00+00:00",
+            "exit_time": "2026-05-03T19:00:00+00:00",
+            "entry_price": 116747000.0,
+            "exit_price": 117126000.0,
+            "gross_return": 0.0032463360942893704,
+            "net_return": 0.0012463360942893704,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-03T19:00:00+00:00",
+            "exit_time": "2026-05-04T19:00:00+00:00",
+            "entry_price": 117126000.0,
+            "exit_price": 118781000.0,
+            "gross_return": 0.014130082133770427,
+            "net_return": 0.012130082133770427,
+            "holding_bars": 6,
+            "exit_reason": "time_exit"
+          }
+        ],
+        "order_paths_allowed": false,
+        "counts_as_paper_or_live_evidence": false
+      },
+      {
+        "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+        "market": "KRW-BTC",
+        "timeframe": "4h",
+        "status": "BACKTEST_SCREEN_ITERATE",
+        "next_gate": "G03_RESEARCH_ITERATE",
+        "frozen_parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 9,
+          "volume_window": 18,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.002,
+          "round_trip_cost_rate": 0.002,
+          "stop_loss": 0.035,
+          "take_profit": 0.03
+        },
+        "data": {
+          "candle_count": 1079,
+          "first_timestamp": "2025-11-06T03:00:00+00:00",
+          "last_timestamp": "2026-05-04T23:00:00+00:00"
+        },
+        "metrics": {
+          "total_return": 0.016474419346210745,
+          "cagr": 0.033721067571695906,
+          "mdd": -0.22204765893166822,
+          "win_rate": 0.44285714285714284,
+          "profit_factor": 1.0559438645292896,
+          "trade_count": 70,
+          "average_holding_bars": 7.685714285714286
+        },
+        "trade_samples": [
+          {
+            "entry_time": "2026-04-26T03:00:00+00:00",
+            "exit_time": "2026-04-27T15:00:00+00:00",
+            "entry_price": 115998000.0,
+            "exit_price": 114688000.0,
+            "gross_return": -0.011293298160313103,
+            "net_return": -0.013293298160313103,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-04-29T03:00:00+00:00",
+            "exit_time": "2026-04-30T15:00:00+00:00",
+            "entry_price": 114312000.0,
+            "exit_price": 113694000.0,
+            "gross_return": -0.0054062565609909186,
+            "net_return": -0.007406256560990919,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-01T03:00:00+00:00",
+            "exit_time": "2026-05-02T15:00:00+00:00",
+            "entry_price": 114500000.0,
+            "exit_price": 116389000.0,
+            "gross_return": 0.016497816593886494,
+            "net_return": 0.014497816593886494,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-02T19:00:00+00:00",
+            "exit_time": "2026-05-04T07:00:00+00:00",
+            "entry_price": 116747000.0,
+            "exit_price": 116867000.0,
+            "gross_return": 0.001027863671015039,
+            "net_return": -0.000972136328984961,
+            "holding_bars": 9,
+            "exit_reason": "time_exit"
+          },
+          {
+            "entry_time": "2026-05-04T15:00:00+00:00",
+            "exit_time": "2026-05-04T23:00:00+00:00",
+            "entry_price": 118580000.0,
+            "exit_price": 119134000.0,
+            "gross_return": 0.004671951425198273,
+            "net_return": 0.002671951425198273,
+            "holding_bars": 2,
+            "exit_reason": "data_end_exit"
+          }
+        ],
+        "order_paths_allowed": false,
+        "counts_as_paper_or_live_evidence": false
+      }
+    ]
+  },
+  "sweeps": [
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+      "market": "KRW-BTC",
+      "timeframe": "4h",
+      "trials_run": 432,
+      "trials_with_min_trades": 432,
+      "best_status": "BACKTEST_SCREEN_PASS",
+      "best_metrics": {
+        "total_return": 0.06158096227378751,
+        "cagr": 0.12895319550809692,
+        "mdd": -0.16791650341473752,
+        "win_rate": 0.46153846153846156,
+        "profit_factor": 1.1138235481958885,
+        "trade_count": 78,
+        "average_holding_bars": 5.5256410256410255
+      },
+      "best_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.002,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.035,
+        "take_profit": 0.03
+      },
+      "top_trials": [
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+          "market": "KRW-BTC",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_PASS",
+          "next_gate": "G04_OOS_WALKFORWARD_RESEARCH_ONLY",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 6,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.002,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.035,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": 0.06158096227378751,
+            "cagr": 0.12895319550809692,
+            "mdd": -0.16791650341473752,
+            "win_rate": 0.46153846153846156,
+            "profit_factor": 1.1138235481958885,
+            "trade_count": 78,
+            "average_holding_bars": 5.5256410256410255
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T03:00:00+00:00",
+              "exit_time": "2026-04-27T03:00:00+00:00",
+              "entry_price": 115998000.0,
+              "exit_price": 115614000.0,
+              "gross_return": -0.003310401903481086,
+              "net_return": -0.005310401903481086,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T03:00:00+00:00",
+              "entry_price": 114312000.0,
+              "exit_price": 112909000.0,
+              "gross_return": -0.012273427111764268,
+              "net_return": -0.014273427111764268,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T03:00:00+00:00",
+              "entry_price": 114500000.0,
+              "exit_price": 116299000.0,
+              "gross_return": 0.01571179039301307,
+              "net_return": 0.01371179039301307,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 117126000.0,
+              "gross_return": 0.0032463360942893704,
+              "net_return": 0.0012463360942893704,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T19:00:00+00:00",
+              "exit_time": "2026-05-04T19:00:00+00:00",
+              "entry_price": 117126000.0,
+              "exit_price": 118781000.0,
+              "gross_return": 0.014130082133770427,
+              "net_return": 0.012130082133770427,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+          "market": "KRW-BTC",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 6,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.035,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": 0.023494646287517407,
+            "cagr": 0.04826300577978593,
+            "mdd": -0.2024342614852328,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 1.0590063295000278,
+            "trade_count": 81,
+            "average_holding_bars": 5.506172839506172
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T03:00:00+00:00",
+              "exit_time": "2026-04-27T03:00:00+00:00",
+              "entry_price": 115998000.0,
+              "exit_price": 115614000.0,
+              "gross_return": -0.003310401903481086,
+              "net_return": -0.005310401903481086,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T03:00:00+00:00",
+              "entry_price": 114312000.0,
+              "exit_price": 112909000.0,
+              "gross_return": -0.012273427111764268,
+              "net_return": -0.014273427111764268,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T03:00:00+00:00",
+              "entry_price": 114500000.0,
+              "exit_price": 116299000.0,
+              "gross_return": 0.01571179039301307,
+              "net_return": 0.01371179039301307,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 117126000.0,
+              "gross_return": 0.0032463360942893704,
+              "net_return": 0.0012463360942893704,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T19:00:00+00:00",
+              "exit_time": "2026-05-04T19:00:00+00:00",
+              "entry_price": 117126000.0,
+              "exit_price": 118781000.0,
+              "gross_return": 0.014130082133770427,
+              "net_return": 0.012130082133770427,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+          "market": "KRW-BTC",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.035,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": 0.01853496897658502,
+            "cagr": 0.03797867565391333,
+            "mdd": -0.22047063015619928,
+            "win_rate": 0.43661971830985913,
+            "profit_factor": 1.0592431981059984,
+            "trade_count": 71,
+            "average_holding_bars": 7.704225352112676
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T03:00:00+00:00",
+              "exit_time": "2026-04-27T15:00:00+00:00",
+              "entry_price": 115998000.0,
+              "exit_price": 114688000.0,
+              "gross_return": -0.011293298160313103,
+              "net_return": -0.013293298160313103,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T15:00:00+00:00",
+              "entry_price": 114312000.0,
+              "exit_price": 113694000.0,
+              "gross_return": -0.0054062565609909186,
+              "net_return": -0.007406256560990919,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T15:00:00+00:00",
+              "entry_price": 114500000.0,
+              "exit_price": 116389000.0,
+              "gross_return": 0.016497816593886494,
+              "net_return": 0.014497816593886494,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 116867000.0,
+              "gross_return": 0.001027863671015039,
+              "net_return": -0.000972136328984961,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T15:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118580000.0,
+              "exit_price": 119134000.0,
+              "gross_return": 0.004671951425198273,
+              "net_return": 0.002671951425198273,
+              "holding_bars": 2,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+          "market": "KRW-BTC",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 6,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": 0.01680954063876361,
+            "cagr": 0.034412907009113036,
+            "mdd": -0.21983979866026093,
+            "win_rate": 0.45121951219512196,
+            "profit_factor": 1.0493025552575987,
+            "trade_count": 82,
+            "average_holding_bars": 5.365853658536586
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T03:00:00+00:00",
+              "exit_time": "2026-04-27T03:00:00+00:00",
+              "entry_price": 115998000.0,
+              "exit_price": 115614000.0,
+              "gross_return": -0.003310401903481086,
+              "net_return": -0.005310401903481086,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T03:00:00+00:00",
+              "entry_price": 114312000.0,
+              "exit_price": 112909000.0,
+              "gross_return": -0.012273427111764268,
+              "net_return": -0.014273427111764268,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T03:00:00+00:00",
+              "entry_price": 114500000.0,
+              "exit_price": 116299000.0,
+              "gross_return": 0.01571179039301307,
+              "net_return": 0.01371179039301307,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 117126000.0,
+              "gross_return": 0.0032463360942893704,
+              "net_return": 0.0012463360942893704,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T19:00:00+00:00",
+              "exit_time": "2026-05-04T19:00:00+00:00",
+              "entry_price": 117126000.0,
+              "exit_price": 118781000.0,
+              "gross_return": 0.014130082133770427,
+              "net_return": 0.012130082133770427,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_4h",
+          "market": "KRW-BTC",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.002,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.035,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": 0.016474419346210745,
+            "cagr": 0.033721067571695906,
+            "mdd": -0.22204765893166822,
+            "win_rate": 0.44285714285714284,
+            "profit_factor": 1.0559438645292896,
+            "trade_count": 70,
+            "average_holding_bars": 7.685714285714286
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T03:00:00+00:00",
+              "exit_time": "2026-04-27T15:00:00+00:00",
+              "entry_price": 115998000.0,
+              "exit_price": 114688000.0,
+              "gross_return": -0.011293298160313103,
+              "net_return": -0.013293298160313103,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T15:00:00+00:00",
+              "entry_price": 114312000.0,
+              "exit_price": 113694000.0,
+              "gross_return": -0.0054062565609909186,
+              "net_return": -0.007406256560990919,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T15:00:00+00:00",
+              "entry_price": 114500000.0,
+              "exit_price": 116389000.0,
+              "gross_return": 0.016497816593886494,
+              "net_return": 0.014497816593886494,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 116867000.0,
+              "gross_return": 0.001027863671015039,
+              "net_return": -0.000972136328984961,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T15:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118580000.0,
+              "exit_price": 119134000.0,
+              "gross_return": 0.004671951425198273,
+              "net_return": 0.002671951425198273,
+              "holding_bars": 2,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_4h",
+      "market": "KRW-ETH",
+      "timeframe": "4h",
+      "trials_run": 432,
+      "trials_with_min_trades": 432,
+      "best_status": "BACKTEST_SCREEN_ITERATE",
+      "best_metrics": {
+        "total_return": -0.0970223526485049,
+        "cagr": -0.18709553626353248,
+        "mdd": -0.23429111114836154,
+        "win_rate": 0.5074626865671642,
+        "profit_factor": 0.9130727216982036,
+        "trade_count": 67,
+        "average_holding_bars": 7.298507462686567
+      },
+      "best_parameters": {
+        "lookback_bars": 9,
+        "hold_bars": 9,
+        "volume_window": 18,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0015,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.05
+      },
+      "top_trials": [
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_4h",
+          "market": "KRW-ETH",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 9,
+            "hold_bars": 9,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.05
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.0970223526485049,
+            "cagr": -0.18709553626353248,
+            "mdd": -0.23429111114836154,
+            "win_rate": 0.5074626865671642,
+            "profit_factor": 0.9130727216982036,
+            "trade_count": 67,
+            "average_holding_bars": 7.298507462686567
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T11:00:00+00:00",
+              "exit_time": "2026-04-27T23:00:00+00:00",
+              "entry_price": 3486000.0,
+              "exit_price": 3403000.0,
+              "gross_return": -0.023809523809523836,
+              "net_return": -0.025809523809523838,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-29T15:00:00+00:00",
+              "entry_price": 3449000.0,
+              "exit_price": 3353000.0,
+              "gross_return": -0.02783415482748619,
+              "net_return": -0.029834154827486192,
+              "holding_bars": 3,
+              "exit_reason": "stop_loss"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T15:00:00+00:00",
+              "entry_price": 3387000.0,
+              "exit_price": 3426000.0,
+              "gross_return": 0.011514614703277193,
+              "net_return": 0.009514614703277193,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 3444000.0,
+              "exit_price": 3462000.0,
+              "gross_return": 0.005226480836237002,
+              "net_return": 0.003226480836237002,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T07:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 3462000.0,
+              "exit_price": 3502000.0,
+              "gross_return": 0.011554015020219577,
+              "net_return": 0.009554015020219577,
+              "holding_bars": 4,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_4h",
+          "market": "KRW-ETH",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 9,
+            "hold_bars": 9,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.003,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.05
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.10476851462692971,
+            "cagr": -0.2011867899546811,
+            "mdd": -0.24108887800377132,
+            "win_rate": 0.4925373134328358,
+            "profit_factor": 0.900332982518474,
+            "trade_count": 67,
+            "average_holding_bars": 7.1940298507462686
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T11:00:00+00:00",
+              "exit_time": "2026-04-27T23:00:00+00:00",
+              "entry_price": 3486000.0,
+              "exit_price": 3403000.0,
+              "gross_return": -0.023809523809523836,
+              "net_return": -0.025809523809523838,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-29T15:00:00+00:00",
+              "entry_price": 3449000.0,
+              "exit_price": 3353000.0,
+              "gross_return": -0.02783415482748619,
+              "net_return": -0.029834154827486192,
+              "holding_bars": 3,
+              "exit_reason": "stop_loss"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T15:00:00+00:00",
+              "entry_price": 3387000.0,
+              "exit_price": 3426000.0,
+              "gross_return": 0.011514614703277193,
+              "net_return": 0.009514614703277193,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 3444000.0,
+              "exit_price": 3462000.0,
+              "gross_return": 0.005226480836237002,
+              "net_return": 0.003226480836237002,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T07:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 3462000.0,
+              "exit_price": 3502000.0,
+              "gross_return": 0.011554015020219577,
+              "net_return": 0.009554015020219577,
+              "holding_bars": 4,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_4h",
+          "market": "KRW-ETH",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 9,
+            "hold_bars": 9,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.002,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.05
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.12032042377911267,
+            "cagr": -0.22910035647490867,
+            "mdd": -0.25404745861734834,
+            "win_rate": 0.4925373134328358,
+            "profit_factor": 0.8837211197212436,
+            "trade_count": 67,
+            "average_holding_bars": 7.253731343283582
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T11:00:00+00:00",
+              "exit_time": "2026-04-27T23:00:00+00:00",
+              "entry_price": 3486000.0,
+              "exit_price": 3403000.0,
+              "gross_return": -0.023809523809523836,
+              "net_return": -0.025809523809523838,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-29T15:00:00+00:00",
+              "entry_price": 3449000.0,
+              "exit_price": 3353000.0,
+              "gross_return": -0.02783415482748619,
+              "net_return": -0.029834154827486192,
+              "holding_bars": 3,
+              "exit_reason": "stop_loss"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T15:00:00+00:00",
+              "entry_price": 3387000.0,
+              "exit_price": 3426000.0,
+              "gross_return": 0.011514614703277193,
+              "net_return": 0.009514614703277193,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 3444000.0,
+              "exit_price": 3462000.0,
+              "gross_return": 0.005226480836237002,
+              "net_return": 0.003226480836237002,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T07:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 3462000.0,
+              "exit_price": 3502000.0,
+              "gross_return": 0.011554015020219577,
+              "net_return": 0.009554015020219577,
+              "holding_bars": 4,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_4h",
+          "market": "KRW-ETH",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 9,
+            "hold_bars": 6,
+            "volume_window": 18,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.035,
+            "take_profit": 0.05
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.1250249861462619,
+            "cagr": -0.23744519422641097,
+            "mdd": -0.26184692846820423,
+            "win_rate": 0.48717948717948717,
+            "profit_factor": 0.9068155992966025,
+            "trade_count": 78,
+            "average_holding_bars": 5.628205128205129
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T11:00:00+00:00",
+              "exit_time": "2026-04-27T11:00:00+00:00",
+              "entry_price": 3486000.0,
+              "exit_price": 3443000.0,
+              "gross_return": -0.012335054503729181,
+              "net_return": -0.014335054503729181,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T03:00:00+00:00",
+              "entry_price": 3449000.0,
+              "exit_price": 3354000.0,
+              "gross_return": -0.027544215714699893,
+              "net_return": -0.029544215714699895,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T03:00:00+00:00",
+              "entry_price": 3387000.0,
+              "exit_price": 3423000.0,
+              "gross_return": 0.010628875110717528,
+              "net_return": 0.008628875110717528,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3444000.0,
+              "exit_price": 3468000.0,
+              "gross_return": 0.006968641114982521,
+              "net_return": 0.004968641114982521,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T19:00:00+00:00",
+              "exit_time": "2026-05-04T19:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3493000.0,
+              "gross_return": 0.007208765859284982,
+              "net_return": 0.005208765859284982,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_4h",
+          "market": "KRW-ETH",
+          "timeframe": "4h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 9,
+            "hold_bars": 6,
+            "volume_window": 18,
+            "volume_ratio_floor": 0.8,
+            "momentum_threshold": 0.004,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.035,
+            "take_profit": 0.05
+          },
+          "data": {
+            "candle_count": 1079,
+            "first_timestamp": "2025-11-06T03:00:00+00:00",
+            "last_timestamp": "2026-05-04T23:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.15554188619592746,
+            "cagr": -0.29045695689195405,
+            "mdd": -0.24200102032805793,
+            "win_rate": 0.5,
+            "profit_factor": 0.8733040991265145,
+            "trade_count": 84,
+            "average_holding_bars": 5.666666666666667
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-04-26T03:00:00+00:00",
+              "exit_time": "2026-04-27T03:00:00+00:00",
+              "entry_price": 3465000.0,
+              "exit_price": 3455000.0,
+              "gross_return": -0.0028860028860029363,
+              "net_return": -0.004886002886002936,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-04-29T03:00:00+00:00",
+              "exit_time": "2026-04-30T03:00:00+00:00",
+              "entry_price": 3449000.0,
+              "exit_price": 3354000.0,
+              "gross_return": -0.027544215714699893,
+              "net_return": -0.029544215714699895,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-02T03:00:00+00:00",
+              "entry_price": 3387000.0,
+              "exit_price": 3423000.0,
+              "gross_return": 0.010628875110717528,
+              "net_return": 0.008628875110717528,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T19:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3444000.0,
+              "exit_price": 3468000.0,
+              "gross_return": 0.006968641114982521,
+              "net_return": 0.004968641114982521,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T19:00:00+00:00",
+              "exit_time": "2026-05-04T19:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3493000.0,
+              "gross_return": 0.007208765859284982,
+              "net_return": 0.005208765859284982,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_btc_1h",
+      "market": "KRW-BTC",
+      "timeframe": "1h",
+      "trials_run": 288,
+      "trials_with_min_trades": 288,
+      "best_status": "BACKTEST_SCREEN_ITERATE",
+      "best_metrics": {
+        "total_return": -0.13829912597380156,
+        "cagr": -0.26058702897646224,
+        "mdd": -0.26210057788380925,
+        "win_rate": 0.45248868778280543,
+        "profit_factor": 0.8885242149926155,
+        "trade_count": 221,
+        "average_holding_bars": 8.199095022624434
+      },
+      "best_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 9,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.001,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.025,
+        "take_profit": 0.02
+      },
+      "top_trials": [
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_1h",
+          "market": "KRW-BTC",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.001,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.02
+          },
+          "data": {
+            "candle_count": 4307,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.13829912597380156,
+            "cagr": -0.26058702897646224,
+            "mdd": -0.26210057788380925,
+            "win_rate": 0.45248868778280543,
+            "profit_factor": 0.8885242149926155,
+            "trade_count": 221,
+            "average_holding_bars": 8.199095022624434
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-02T21:00:00+00:00",
+              "exit_time": "2026-05-03T06:00:00+00:00",
+              "entry_price": 116619000.0,
+              "exit_price": 116257000.0,
+              "gross_return": -0.0031041253998062013,
+              "net_return": -0.005104125399806201,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T09:00:00+00:00",
+              "exit_time": "2026-05-03T18:00:00+00:00",
+              "entry_price": 116600000.0,
+              "exit_price": 116566000.0,
+              "gross_return": -0.0002915951972555231,
+              "net_return": -0.002291595197255523,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T20:00:00+00:00",
+              "exit_time": "2026-05-04T05:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 118070000.0,
+              "gross_return": 0.01133219697294141,
+              "net_return": 0.00933219697294141,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118372000.0,
+              "exit_price": 118594000.0,
+              "gross_return": 0.0018754435170480477,
+              "net_return": -0.00012455648295195236,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-05T00:00:00+00:00",
+              "exit_time": "2026-05-05T01:00:00+00:00",
+              "entry_price": 119100000.0,
+              "exit_price": 119137000.0,
+              "gross_return": 0.0003106633081444432,
+              "net_return": -0.0016893366918555568,
+              "holding_bars": 1,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_1h",
+          "market": "KRW-BTC",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.002,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.02
+          },
+          "data": {
+            "candle_count": 4307,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.1419636147754333,
+            "cagr": -0.2669507964255181,
+            "mdd": -0.23067457579309014,
+            "win_rate": 0.4444444444444444,
+            "profit_factor": 0.8821926617542329,
+            "trade_count": 207,
+            "average_holding_bars": 8.193236714975846
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-01T12:00:00+00:00",
+              "exit_time": "2026-05-01T21:00:00+00:00",
+              "entry_price": 115567000.0,
+              "exit_price": 115914000.0,
+              "gross_return": 0.003002587243763344,
+              "net_return": 0.0010025872437633438,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T22:00:00+00:00",
+              "exit_time": "2026-05-03T07:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 116380000.0,
+              "gross_return": -0.0031435497271878887,
+              "net_return": -0.005143549727187889,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T09:00:00+00:00",
+              "exit_time": "2026-05-03T18:00:00+00:00",
+              "entry_price": 116600000.0,
+              "exit_price": 116566000.0,
+              "gross_return": -0.0002915951972555231,
+              "net_return": -0.002291595197255523,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 117126000.0,
+              "exit_price": 117600000.0,
+              "gross_return": 0.004046923825623772,
+              "net_return": 0.0020469238256237716,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118372000.0,
+              "exit_price": 118594000.0,
+              "gross_return": 0.0018754435170480477,
+              "net_return": -0.00012455648295195236,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_1h",
+          "market": "KRW-BTC",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.02
+          },
+          "data": {
+            "candle_count": 4307,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.15713916105374848,
+            "cagr": -0.29300790539726607,
+            "mdd": -0.26339651407385456,
+            "win_rate": 0.44036697247706424,
+            "profit_factor": 0.8711631631688657,
+            "trade_count": 218,
+            "average_holding_bars": 8.178899082568808
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-02T21:00:00+00:00",
+              "exit_time": "2026-05-03T06:00:00+00:00",
+              "entry_price": 116619000.0,
+              "exit_price": 116257000.0,
+              "gross_return": -0.0031041253998062013,
+              "net_return": -0.005104125399806201,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T09:00:00+00:00",
+              "exit_time": "2026-05-03T18:00:00+00:00",
+              "entry_price": 116600000.0,
+              "exit_price": 116566000.0,
+              "gross_return": -0.0002915951972555231,
+              "net_return": -0.002291595197255523,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T07:00:00+00:00",
+              "entry_price": 117126000.0,
+              "exit_price": 117600000.0,
+              "gross_return": 0.004046923825623772,
+              "net_return": 0.0020469238256237716,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118372000.0,
+              "exit_price": 118594000.0,
+              "gross_return": 0.0018754435170480477,
+              "net_return": -0.00012455648295195236,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-05T00:00:00+00:00",
+              "exit_time": "2026-05-05T01:00:00+00:00",
+              "entry_price": 119100000.0,
+              "exit_price": 119137000.0,
+              "gross_return": 0.0003106633081444432,
+              "net_return": -0.0016893366918555568,
+              "holding_bars": 1,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_1h",
+          "market": "KRW-BTC",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.001,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.015,
+            "take_profit": 0.02
+          },
+          "data": {
+            "candle_count": 4307,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.16393342153171153,
+            "cagr": -0.30451904487478265,
+            "mdd": -0.2824460270549698,
+            "win_rate": 0.44144144144144143,
+            "profit_factor": 0.8640387818924744,
+            "trade_count": 222,
+            "average_holding_bars": 7.936936936936937
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-02T21:00:00+00:00",
+              "exit_time": "2026-05-03T06:00:00+00:00",
+              "entry_price": 116619000.0,
+              "exit_price": 116257000.0,
+              "gross_return": -0.0031041253998062013,
+              "net_return": -0.005104125399806201,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T09:00:00+00:00",
+              "exit_time": "2026-05-03T18:00:00+00:00",
+              "entry_price": 116600000.0,
+              "exit_price": 116566000.0,
+              "gross_return": -0.0002915951972555231,
+              "net_return": -0.002291595197255523,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T20:00:00+00:00",
+              "exit_time": "2026-05-04T05:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 118070000.0,
+              "gross_return": 0.01133219697294141,
+              "net_return": 0.00933219697294141,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118372000.0,
+              "exit_price": 118594000.0,
+              "gross_return": 0.0018754435170480477,
+              "net_return": -0.00012455648295195236,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-05T00:00:00+00:00",
+              "exit_time": "2026-05-05T01:00:00+00:00",
+              "entry_price": 119100000.0,
+              "exit_price": 119137000.0,
+              "gross_return": 0.0003106633081444432,
+              "net_return": -0.0016893366918555568,
+              "holding_bars": 1,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_btc_1h",
+          "market": "KRW-BTC",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 9,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0008,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.025,
+            "take_profit": 0.02
+          },
+          "data": {
+            "candle_count": 4307,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.16501621035380176,
+            "cagr": -0.30634470437316186,
+            "mdd": -0.27230352292058013,
+            "win_rate": 0.4488888888888889,
+            "profit_factor": 0.8653648759227116,
+            "trade_count": 225,
+            "average_holding_bars": 8.213333333333333
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-02T21:00:00+00:00",
+              "exit_time": "2026-05-03T06:00:00+00:00",
+              "entry_price": 116619000.0,
+              "exit_price": 116257000.0,
+              "gross_return": -0.0031041253998062013,
+              "net_return": -0.005104125399806201,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T09:00:00+00:00",
+              "exit_time": "2026-05-03T18:00:00+00:00",
+              "entry_price": 116600000.0,
+              "exit_price": 116566000.0,
+              "gross_return": -0.0002915951972555231,
+              "net_return": -0.002291595197255523,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T20:00:00+00:00",
+              "exit_time": "2026-05-04T05:00:00+00:00",
+              "entry_price": 116747000.0,
+              "exit_price": 118070000.0,
+              "gross_return": 0.01133219697294141,
+              "net_return": 0.00933219697294141,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T23:00:00+00:00",
+              "entry_price": 118372000.0,
+              "exit_price": 118594000.0,
+              "gross_return": 0.0018754435170480477,
+              "net_return": -0.00012455648295195236,
+              "holding_bars": 9,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-05T00:00:00+00:00",
+              "exit_time": "2026-05-05T01:00:00+00:00",
+              "entry_price": 119100000.0,
+              "exit_price": 119137000.0,
+              "gross_return": 0.0003106633081444432,
+              "net_return": -0.0016893366918555568,
+              "holding_bars": 1,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        }
+      ]
+    },
+    {
+      "candidate_id": "btc_eth_intraday_momentum_eth_1h",
+      "market": "KRW-ETH",
+      "timeframe": "1h",
+      "trials_run": 288,
+      "trials_with_min_trades": 288,
+      "best_status": "BACKTEST_SCREEN_ITERATE",
+      "best_metrics": {
+        "total_return": -0.1853869041170907,
+        "cagr": -0.3402378539992883,
+        "mdd": -0.3656963470042559,
+        "win_rate": 0.4405594405594406,
+        "profit_factor": 0.905141756059628,
+        "trade_count": 286,
+        "average_holding_bars": 5.318181818181818
+      },
+      "best_parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 6,
+        "volume_window": 24,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.0008,
+        "round_trip_cost_rate": 0.002,
+        "stop_loss": 0.015,
+        "take_profit": 0.03
+      },
+      "top_trials": [
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_1h",
+          "market": "KRW-ETH",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 6,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0008,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.015,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 4305,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.1853869041170907,
+            "cagr": -0.3402378539992883,
+            "mdd": -0.3656963470042559,
+            "win_rate": 0.4405594405594406,
+            "profit_factor": 0.905141756059628,
+            "trade_count": 286,
+            "average_holding_bars": 5.318181818181818
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-03T07:00:00+00:00",
+              "exit_time": "2026-05-03T13:00:00+00:00",
+              "entry_price": 3428000.0,
+              "exit_price": 3441000.0,
+              "gross_return": 0.0037922987164527022,
+              "net_return": 0.0017922987164527022,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T13:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3441000.0,
+              "exit_price": 3458000.0,
+              "gross_return": 0.004940424295263091,
+              "net_return": 0.0029404242952630905,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T04:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3524000.0,
+              "gross_return": 0.016147635524798254,
+              "net_return": 0.014147635524798254,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T04:00:00+00:00",
+              "exit_time": "2026-05-04T10:00:00+00:00",
+              "entry_price": 3524000.0,
+              "exit_price": 3462000.0,
+              "gross_return": -0.01759364358683313,
+              "net_return": -0.01959364358683313,
+              "holding_bars": 6,
+              "exit_reason": "stop_loss"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T20:00:00+00:00",
+              "entry_price": 3499000.0,
+              "exit_price": 3484000.0,
+              "gross_return": -0.004286939125464406,
+              "net_return": -0.006286939125464406,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_1h",
+          "market": "KRW-ETH",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 6,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.001,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.015,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 4305,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.19234819161872607,
+            "cagr": -0.35162288922211427,
+            "mdd": -0.3537093155743153,
+            "win_rate": 0.44014084507042256,
+            "profit_factor": 0.900478871379187,
+            "trade_count": 284,
+            "average_holding_bars": 5.327464788732394
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-03T07:00:00+00:00",
+              "exit_time": "2026-05-03T13:00:00+00:00",
+              "entry_price": 3428000.0,
+              "exit_price": 3441000.0,
+              "gross_return": 0.0037922987164527022,
+              "net_return": 0.0017922987164527022,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T13:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3441000.0,
+              "exit_price": 3458000.0,
+              "gross_return": 0.004940424295263091,
+              "net_return": 0.0029404242952630905,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T04:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3524000.0,
+              "gross_return": 0.016147635524798254,
+              "net_return": 0.014147635524798254,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T04:00:00+00:00",
+              "exit_time": "2026-05-04T10:00:00+00:00",
+              "entry_price": 3524000.0,
+              "exit_price": 3462000.0,
+              "gross_return": -0.01759364358683313,
+              "net_return": -0.01959364358683313,
+              "holding_bars": 6,
+              "exit_reason": "stop_loss"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T20:00:00+00:00",
+              "entry_price": 3499000.0,
+              "exit_price": 3484000.0,
+              "gross_return": -0.004286939125464406,
+              "net_return": -0.006286939125464406,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_1h",
+          "market": "KRW-ETH",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 6,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.015,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 4305,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.19553397705977082,
+            "cagr": -0.35679966477612923,
+            "mdd": -0.3482117647905051,
+            "win_rate": 0.4416058394160584,
+            "profit_factor": 0.8957333501074335,
+            "trade_count": 274,
+            "average_holding_bars": 5.328467153284672
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-03T07:00:00+00:00",
+              "exit_time": "2026-05-03T13:00:00+00:00",
+              "entry_price": 3428000.0,
+              "exit_price": 3441000.0,
+              "gross_return": 0.0037922987164527022,
+              "net_return": 0.0017922987164527022,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T13:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3441000.0,
+              "exit_price": 3458000.0,
+              "gross_return": 0.004940424295263091,
+              "net_return": 0.0029404242952630905,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T04:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3524000.0,
+              "gross_return": 0.016147635524798254,
+              "net_return": 0.014147635524798254,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T04:00:00+00:00",
+              "exit_time": "2026-05-04T10:00:00+00:00",
+              "entry_price": 3524000.0,
+              "exit_price": 3462000.0,
+              "gross_return": -0.01759364358683313,
+              "net_return": -0.01959364358683313,
+              "holding_bars": 6,
+              "exit_reason": "stop_loss"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-04T20:00:00+00:00",
+              "entry_price": 3499000.0,
+              "exit_price": 3484000.0,
+              "gross_return": -0.004286939125464406,
+              "net_return": -0.006286939125464406,
+              "holding_bars": 6,
+              "exit_reason": "time_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_1h",
+          "market": "KRW-ETH",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 12,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.015,
+            "take_profit": 0.03
+          },
+          "data": {
+            "candle_count": 4305,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.19858780457130876,
+            "cagr": -0.3617422659496342,
+            "mdd": -0.4269129520354583,
+            "win_rate": 0.43636363636363634,
+            "profit_factor": 0.9023917479057649,
+            "trade_count": 220,
+            "average_holding_bars": 9.145454545454545
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-01T15:00:00+00:00",
+              "entry_price": 3395000.0,
+              "exit_price": 3419000.0,
+              "gross_return": 0.007069219440353436,
+              "net_return": 0.005069219440353436,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T14:00:00+00:00",
+              "exit_time": "2026-05-03T02:00:00+00:00",
+              "entry_price": 3421000.0,
+              "exit_price": 3422000.0,
+              "gross_return": 0.00029231218941827564,
+              "net_return": -0.0017076878105817244,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T07:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3428000.0,
+              "exit_price": 3458000.0,
+              "gross_return": 0.00875145857642945,
+              "net_return": 0.006751458576429449,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T10:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3462000.0,
+              "gross_return": -0.0017301038062284002,
+              "net_return": -0.0037301038062284003,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-05T01:00:00+00:00",
+              "entry_price": 3499000.0,
+              "exit_price": 3502000.0,
+              "gross_return": 0.0008573878250928146,
+              "net_return": -0.0011426121749071854,
+              "holding_bars": 11,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        },
+        {
+          "candidate_id": "btc_eth_intraday_momentum_eth_1h",
+          "market": "KRW-ETH",
+          "timeframe": "1h",
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "next_gate": "G03_RESEARCH_ITERATE",
+          "frozen_parameters": {
+            "lookback_bars": 3,
+            "hold_bars": 12,
+            "volume_window": 24,
+            "volume_ratio_floor": 1.0,
+            "momentum_threshold": 0.0015,
+            "round_trip_cost_rate": 0.002,
+            "stop_loss": 0.015,
+            "take_profit": 0.02
+          },
+          "data": {
+            "candle_count": 4305,
+            "first_timestamp": "2025-11-06T02:00:00+00:00",
+            "last_timestamp": "2026-05-05T01:00:00+00:00"
+          },
+          "metrics": {
+            "total_return": -0.2001880899596702,
+            "cagr": -0.36432459990400134,
+            "mdd": -0.39943345856620993,
+            "win_rate": 0.45188284518828453,
+            "profit_factor": 0.9082423465538362,
+            "trade_count": 239,
+            "average_holding_bars": 8.301255230125523
+          },
+          "trade_samples": [
+            {
+              "entry_time": "2026-05-01T03:00:00+00:00",
+              "exit_time": "2026-05-01T15:00:00+00:00",
+              "entry_price": 3395000.0,
+              "exit_price": 3419000.0,
+              "gross_return": 0.007069219440353436,
+              "net_return": 0.005069219440353436,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-02T14:00:00+00:00",
+              "exit_time": "2026-05-03T02:00:00+00:00",
+              "entry_price": 3421000.0,
+              "exit_price": 3422000.0,
+              "gross_return": 0.00029231218941827564,
+              "net_return": -0.0017076878105817244,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T07:00:00+00:00",
+              "exit_time": "2026-05-03T19:00:00+00:00",
+              "entry_price": 3428000.0,
+              "exit_price": 3458000.0,
+              "gross_return": 0.00875145857642945,
+              "net_return": 0.006751458576429449,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-03T22:00:00+00:00",
+              "exit_time": "2026-05-04T10:00:00+00:00",
+              "entry_price": 3468000.0,
+              "exit_price": 3462000.0,
+              "gross_return": -0.0017301038062284002,
+              "net_return": -0.0037301038062284003,
+              "holding_bars": 12,
+              "exit_reason": "time_exit"
+            },
+            {
+              "entry_time": "2026-05-04T14:00:00+00:00",
+              "exit_time": "2026-05-05T01:00:00+00:00",
+              "entry_price": 3499000.0,
+              "exit_price": 3502000.0,
+              "gross_return": 0.0008573878250928146,
+              "net_return": -0.0011426121749071854,
+              "holding_bars": 11,
+              "exit_reason": "data_end_exit"
+            }
+          ],
+          "order_paths_allowed": false,
+          "counts_as_paper_or_live_evidence": false
+        }
+      ]
+    }
+  ],
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Freeze the best positive BTC/ETH intraday sweep into a new backtest-screen candidate; keep OOS and order paths blocked."
+}

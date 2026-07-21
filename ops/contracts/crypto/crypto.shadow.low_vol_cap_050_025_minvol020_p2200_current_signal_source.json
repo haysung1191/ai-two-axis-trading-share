@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "crypto.shadow.low_vol_cap_050_025_minvol020_p2200_current_signal_source",
+  "source_frozen_contract_id": "low_vol_cap_050_025_minvol020_p2200",
+  "model_id": "low_vol_cap_050_025_minvol020_p2200",
+  "asset_class": "crypto",
+  "symbols": [
+    "BTC-USD"
+  ],
+  "timeframe": "1d",
+  "mode": "shadow",
+  "status": "shadow_contract_signal_source_current",
+  "allowed_modes": [
+    "shadow"
+  ],
+  "broker_adapter": "shadow_only",
+  "allow_live_submit": false,
+  "generated_at_utc": "2026-04-28T12:11:32.258039+00:00",
+  "expires_at_utc": null,
+  "source_repo": "C:\\AI\\Crypto",
+  "source_freeze_pack": "C:\\AI\\Crypto\\analysis_results\\btc_1d_shadow_packet_latest.json",
+  "source_hashes": {
+    "btc_shadow_packet_hash": "e2c77be2931ada6f51446a129d78f8b17173485ad3c8da6cead9dc12feb22d91"
+  },
+  "candidate_metrics": {
+    "paper_validation_decision": "PASS",
+    "survivability_validation_decision": "PASS",
+    "shadow_decision": "shadow_ready_for_btc_only",
+    "walk_forward_passed": true
+  },
+  "gate_state": {
+    "signal_source_aligned": true,
+    "source": "btc_1d_shadow_packet_latest",
+    "freeze_artifacts_present": false,
+    "note": "Current signal-source contract. Promote to frozen contract only after matching freeze pack exists."
+  },
+  "sizing_policy": {
+    "type": "shadow_target_weight_cap",
+    "max_model_weight": 0.2,
+    "max_symbol_weight": 0.2,
+    "max_order_notional_pct_of_sleeve": 0.05,
+    "max_leverage": 1.0
+  },
+  "risk_policy": {
+    "daily_loss_pause_pct": 0.005,
+    "daily_loss_stop_pct": 0.01,
+    "max_contract_drawdown_pct": 0.12,
+    "max_spread_bps": 20,
+    "max_slippage_bps": 25,
+    "stale_signal_minutes": 90,
+    "require_finalized_daily_bar": true
+  },
+  "order_policy": {
+    "intent_only": true,
+    "submit_to_broker": false,
+    "order_style": "shadow_limit_or_market_fallback",
+    "time_in_force": "shadow_day",
+    "client_order_id_prefix": "SHADOW"
+  },
+  "deactivation_rules": {
+    "signal_mismatch_count": 1,
+    "critical_exception_count": 1,
+    "unreconciled_position_minutes": 30,
+    "duplicate_intent_violation": 1
+  },
+  "approval": {
+    "approved_by": "system_generated_from_current_shadow_packet",
+    "approved_at_utc": "2026-04-28T12:11:32.258039+00:00",
+    "manual_live_approval": false
+  },
+  "payload_hash": "86b136972bef5a0d0e094415c6f9941fc389579217c56912a339b8262797d146"
+}

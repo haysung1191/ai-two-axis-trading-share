@@ -1,0 +1,553 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:51.118560+00:00",
+  "report": "stock_portfolio_sleeve_tail_drop_fragility_repair_review",
+  "status": "PORTFOLIO_SLEEVE_TAIL_DROP_FRAGILITY_REPAIR_REVIEW_READY",
+  "scope": "top5_stock_etf_portfolio_tail_drop_fragility_repair_review_only_no_order_paths",
+  "source_sleeve_review": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_review_latest.json",
+  "source_tail_drop_resilience_review": "C:\\AI\\reports\\model_factory\\stock_portfolio_sleeve_tail_drop_resilience_review_latest.json",
+  "repair_policy": {
+    "policy_id": "tail_lane_cap_80pct_residual_cash_buffer",
+    "max_lane_weight": 0.8,
+    "max_component_effective_exposure": 0.35,
+    "min_cagr": 0.0,
+    "min_mdd_proxy": -0.25,
+    "max_residual_cash_buffer": 0.25,
+    "order_paths_allowed": false
+  },
+  "scenario_count": 10,
+  "repaired_viable_scenario_count": 10,
+  "source_fragile_scenario_count": 4,
+  "repaired_source_fragile_scenario_count": 4,
+  "worst_repaired_cagr": 0.3334522939161242,
+  "worst_repaired_mdd_proxy": -0.19266215964464184,
+  "max_repaired_lane_weight": 0.8,
+  "max_residual_cash_weight": 0.19999999999999996,
+  "scenarios": [
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+      "source_fragile": true,
+      "source_fragility_reasons": [
+        "SINGLE_LANE_TAIL"
+      ],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_etfs"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 0.8,
+      "residual_cash_weight": 0.19999999999999996,
+      "estimated_sleeve_cagr": 0.3334522939161242,
+      "weighted_mdd_proxy": -0.14886616231213057,
+      "total_effective_exposure": 0.44000000000000006,
+      "max_effective_component_exposure": 0.22000000000000003,
+      "lane_weights": {
+        "kis_stocks": 0.8
+      },
+      "max_lane_weight": 0.8,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.22000000000000003,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.22000000000000003,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "source_fragile": false,
+      "source_fragility_reasons": [],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 1.0,
+      "residual_cash_weight": 0.0,
+      "estimated_sleeve_cagr": 0.4325520551527464,
+      "weighted_mdd_proxy": -0.19158907551604276,
+      "total_effective_exposure": 0.595,
+      "max_effective_component_exposure": 0.32,
+      "lane_weights": {
+        "kis_etfs": 0.5,
+        "kis_stocks": 0.5
+      },
+      "max_lane_weight": 0.5,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.32,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_fragile": false,
+      "source_fragility_reasons": [],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 1.0,
+      "residual_cash_weight": 0.0,
+      "estimated_sleeve_cagr": 0.43796972778196397,
+      "weighted_mdd_proxy": -0.19158907551604282,
+      "total_effective_exposure": 0.595,
+      "max_effective_component_exposure": 0.32,
+      "lane_weights": {
+        "kis_etfs": 0.5,
+        "kis_stocks": 0.5
+      },
+      "max_lane_weight": 0.5,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.32,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "source_fragile": false,
+      "source_fragility_reasons": [],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 1.0,
+      "residual_cash_weight": 0.0,
+      "estimated_sleeve_cagr": 0.43346194718438413,
+      "weighted_mdd_proxy": -0.19204893535899742,
+      "total_effective_exposure": 0.595,
+      "max_effective_component_exposure": 0.32,
+      "lane_weights": {
+        "kis_etfs": 0.5,
+        "kis_stocks": 0.5
+      },
+      "max_lane_weight": 0.5,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.32,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_fragile": false,
+      "source_fragility_reasons": [],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 1.0,
+      "residual_cash_weight": 0.0,
+      "estimated_sleeve_cagr": 0.4388796198136017,
+      "weighted_mdd_proxy": -0.19204893535899747,
+      "total_effective_exposure": 0.595,
+      "max_effective_component_exposure": 0.32,
+      "lane_weights": {
+        "kis_etfs": 0.5,
+        "kis_stocks": 0.5
+      },
+      "max_lane_weight": 0.5,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.32,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_fragile": true,
+      "source_fragility_reasons": [
+        "SINGLE_LANE_TAIL"
+      ],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_stocks",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 0.8,
+      "residual_cash_weight": 0.19999999999999996,
+      "estimated_sleeve_cagr": 0.3636930460569544,
+      "weighted_mdd_proxy": -0.15804424638790165,
+      "total_effective_exposure": 0.512,
+      "max_effective_component_exposure": 0.256,
+      "lane_weights": {
+        "kis_etfs": 0.8
+      },
+      "max_lane_weight": 0.8,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.256,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.256,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+      "source_fragile": false,
+      "source_fragility_reasons": [],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 1.0,
+      "residual_cash_weight": 0.0,
+      "estimated_sleeve_cagr": 0.4351713420789241,
+      "weighted_mdd_proxy": -0.19266215964464178,
+      "total_effective_exposure": 0.6000000000000001,
+      "max_effective_component_exposure": 0.325,
+      "lane_weights": {
+        "kis_etfs": 0.5,
+        "kis_stocks": 0.5
+      },
+      "max_lane_weight": 0.5,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.325,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.4113976947659376,
+          "estimated_mdd": -0.18608270289016313
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_fragile": false,
+      "source_fragility_reasons": [],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_etfs",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 1.0,
+      "residual_cash_weight": 0.0,
+      "estimated_sleeve_cagr": 0.44058901470814166,
+      "weighted_mdd_proxy": -0.19266215964464184,
+      "total_effective_exposure": 0.6000000000000001,
+      "max_effective_component_exposure": 0.325,
+      "lane_weights": {
+        "kis_etfs": 0.5,
+        "kis_stocks": 0.5
+      },
+      "max_lane_weight": 0.5,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.325,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+          "lane": "kis_stocks",
+          "weight": 0.5,
+          "fixed_exposure_cap": 0.55,
+          "effective_exposure": 0.275,
+          "estimated_cagr": 0.42223304002437273,
+          "estimated_mdd": -0.18608270289016324
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_fragile": true,
+      "source_fragility_reasons": [
+        "SINGLE_LANE_TAIL"
+      ],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_stocks",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 0.8,
+      "residual_cash_weight": 0.19999999999999996,
+      "estimated_sleeve_cagr": 0.36506056197258635,
+      "weighted_mdd_proxy": -0.15853482581641715,
+      "total_effective_exposure": 0.516,
+      "max_effective_component_exposure": 0.26,
+      "lane_weights": {
+        "kis_etfs": 0.8
+      },
+      "max_lane_weight": 0.8,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.26,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.256,
+          "estimated_cagr": 0.4537064155395552,
+          "estimated_mdd": -0.19709544814192242
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    },
+    {
+      "scenario_id": "repair_drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_scenario_id": "drop_three_stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2__stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+      "source_fragile": true,
+      "source_fragility_reasons": [
+        "SINGLE_LANE_TAIL"
+      ],
+      "removed_candidate_ids": [
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "stock_aggressive__tail_release_top25_mid75_pen35_floor25"
+      ],
+      "removed_lanes": [
+        "kis_etfs",
+        "kis_stocks",
+        "kis_stocks"
+      ],
+      "repair_policy": "tail_lane_cap_80pct_residual_cash_buffer",
+      "component_count": 2,
+      "invested_weight": 0.8,
+      "residual_cash_weight": 0.19999999999999996,
+      "estimated_sleeve_cagr": 0.3657884755978965,
+      "weighted_mdd_proxy": -0.15890271369078085,
+      "total_effective_exposure": 0.516,
+      "max_effective_component_exposure": 0.26,
+      "lane_weights": {
+        "kis_etfs": 0.8
+      },
+      "max_lane_weight": 0.8,
+      "components": [
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.65,
+          "effective_exposure": 0.26,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044
+        },
+        {
+          "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+          "lane": "kis_etfs",
+          "weight": 0.4,
+          "fixed_exposure_cap": 0.64,
+          "effective_exposure": 0.256,
+          "estimated_cagr": 0.4555261996028307,
+          "estimated_mdd": -0.19801516782783168
+        }
+      ],
+      "repaired_viable": true,
+      "repair_reasons": []
+    }
+  ],
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Attach tail-drop fragility repair evidence to the stock/ETF Gatekeeper review packet; do not promote or submit orders."
+}

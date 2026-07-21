@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-05-03T01:37:16.786694+00:00",
+  "report": "stock_risk_conversion_execution_gap",
+  "status": "READY_FOR_GATEKEEPER_REVIEW",
+  "source_spec": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_experiment_spec_latest.json",
+  "source_wrapper": "C:\\AI\\momentum\\output\\split_models_operational_risk_wrapper\\risk_wrapper_packet_latest.json",
+  "source_candidate_backtest": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_candidate_backtest_latest.json",
+  "spec_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+  "wrapper_frozen_model": "rule_breadth_it_us5_cap",
+  "spec_requested_overlay": "fixed_exposure_065",
+  "wrapper_best_overlay": "fixed_exposure_075",
+  "same_candidate": false,
+  "same_overlay_available": false,
+  "candidate_specific_evidence_ready": true,
+  "candidate_specific_evidence": {
+    "status": "READY_FOR_GATEKEEPER_REVIEW",
+    "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+    "source_variant": "tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+    "overlay": "fixed_exposure_065",
+    "estimated_cagr": 0.4589449893919106,
+    "estimated_mdd": -0.19924161639912044,
+    "estimated_sharpe": 1.7455973852445321,
+    "gate_result": "pass_mdd_margin"
+  },
+  "matching_wrapper_metrics": {},
+  "gap_summary": [],
+  "safety": {
+    "scope": "evidence_alignment_report_only",
+    "live_enabled": false,
+    "broker_submit_allowed": false,
+    "private_submit_used": false,
+    "real_orders": 0
+  },
+  "next_action": "Gatekeeper may review the candidate-specific conversion evidence against the frozen spec."
+}

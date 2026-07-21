@@ -1,0 +1,46 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:10.160861+00:00",
+  "report": "btc_eth_intraday_shadow_human_decision_draft",
+  "status": "DRAFT_READY",
+  "scope": "draft_only_not_a_human_decision_no_registration_no_order_paths",
+  "draft_path": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_gatekeeper_decision_draft.json",
+  "target_human_decision_path": "C:\\AI\\reports\\model_factory\\btc_eth_intraday_shadow_gatekeeper_decision.json",
+  "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+  "existing_human_decision_present": false,
+  "existing_human_decision_candidate_id": null,
+  "evidence_summary": {
+    "market": "KRW-BTC",
+    "timeframe": "4h",
+    "recommended_exposure_cap": 0.7146408932992823,
+    "estimated_average_fold_cagr": 0.22202103828420336,
+    "estimated_worst_fold_mdd": -0.12,
+    "oos_pass_fold_count": 2,
+    "oos_total_trade_count": 76
+  },
+  "draft_decision": {
+    "candidate_id": "btc_eth_intraday_momentum_btc_4h_sweep001",
+    "decision": "HUMAN_MUST_CHOOSE_APPROVE_REJECT_OR_DEFER",
+    "allowed_decisions": [
+      "APPROVE_SHADOW_REVIEW_ONLY",
+      "REJECT",
+      "DEFER"
+    ],
+    "decided_by": "human_gatekeeper_name_or_initials",
+    "rationale": "Review BTC/ETH intraday shadow template before replacing this placeholder. Approval is shadow-review-only and does not approve paper, live, broker submit, private submit, or real orders."
+  },
+  "blockers": [],
+  "safety": {
+    "does_write_human_decision_file": false,
+    "does_register_shadow_candidate": false,
+    "does_start_shadow_loop": false,
+    "does_emit_order_signal": false,
+    "does_write_order_intent": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false,
+    "real_orders": 0
+  },
+  "next_action": "Human Gatekeeper may use this draft to write a fresh decision file after review; Codex must not auto-approve it."
+}

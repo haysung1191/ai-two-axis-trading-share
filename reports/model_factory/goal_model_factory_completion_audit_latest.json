@@ -1,0 +1,302 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:57.852682+00:00",
+  "report": "goal_model_factory_completion_audit",
+  "objective": "C:\\AI continuous model-factory pull-through goal",
+  "status": "COMPLETE",
+  "completion_allowed": true,
+  "total_count": 7,
+  "pass_count": 7,
+  "incomplete_count": 0,
+  "first_incomplete_requirement": null,
+  "pipeline_pull_through_allowed_without_live": true,
+  "extended_paper_or_live_completion_allowed": true,
+  "progress_summary": {
+    "progress_entry_count": 253,
+    "latest_iteration_number": 228,
+    "latest_iteration_heading": "## 2026-05-04 Iteration 228 Result"
+  },
+  "checks": [
+    {
+      "requirement": "Keep live/private/real-order paths disabled",
+      "status": "PASS",
+      "evidence": {
+        "risk_guard_status": "WARN",
+        "halt_count": 0,
+        "warn_count": 5,
+        "stock_packet_live_allowed": false,
+        "stock_packet_real_orders_allowed": false
+      }
+    },
+    {
+      "requirement": "Do not count historical replay as paper promotion evidence",
+      "status": "PASS",
+      "evidence": {
+        "scope": "paper_evidence_velocity_monitor_no_order_paths",
+        "live_enabled": false,
+        "broker_submit_allowed": false,
+        "private_submit_used": false,
+        "real_orders": 0,
+        "historical_replay_counts_as_promotion_evidence": false,
+        "historical_replay_excluded": true
+      }
+    },
+    {
+      "requirement": "Advance via paper-smoke evidence while extended paper evidence continues",
+      "status": "PASS",
+      "evidence": {
+        "decision": "PROMOTION_REVIEW_READY",
+        "evidence_gaps": [],
+        "paper_cycles_completed": 318,
+        "paper_cycles_missing": 0,
+        "non_flat_signal_count": 55,
+        "non_flat_signals_missing": 0,
+        "executable_order_count": 52,
+        "executable_orders_missing": 0,
+        "progress_delta_status": "COLLECT_EVIDENCE",
+        "progress_delta_cycles": 0,
+        "progress_delta_non_flat": 0,
+        "progress_delta_executable": 0,
+        "progress_history_count": 200,
+        "pace_summary": {
+          "observation_count": 200,
+          "elapsed_hours": 35.925,
+          "paper_cycles_delta": 66,
+          "non_flat_delta": 2,
+          "executable_delta": -1,
+          "cycles_per_hour": 1.837,
+          "non_flat_events_per_hour": 0.056,
+          "executable_events_per_hour": null,
+          "estimated_hours_to_cycle_target": 0.0,
+          "estimated_hours_to_non_flat_target": 0.0,
+          "estimated_hours_to_executable_target": 0.0,
+          "slowest_gate_dimension": "complete",
+          "promotion_review_eta_hours": 0.0,
+          "eta_status": "COMPLETE"
+        },
+        "event_stall_summary": {
+          "non_flat_signals": {
+            "last_increase_observed_at_utc": "2026-05-04T14:53:23.367764+00:00",
+            "observations_since_last_increase": 5,
+            "hours_since_last_increase": 10.407,
+            "paper_cycles_since_last_increase": 30,
+            "current_count": 55
+          },
+          "executable_orders": {
+            "last_increase_observed_at_utc": "2026-05-04T14:53:23.367764+00:00",
+            "observations_since_last_increase": 5,
+            "hours_since_last_increase": 10.407,
+            "paper_cycles_since_last_increase": 30,
+            "current_count": 52
+          },
+          "event_stall_status": "EVENT_EVIDENCE_STALLED",
+          "stall_severity": "REVIEW_STALL",
+          "max_hours_since_last_event": 10.407,
+          "max_paper_cycles_since_last_event": 30,
+          "safe_next_action": "Human review should inspect evidence velocity targets; keep order paths disabled."
+        },
+        "paper_evidence_readiness_percent": 100.0,
+        "dominant_blocking_dimensions": [
+          "paper_cycles",
+          "non_flat_signals",
+          "executable_orders"
+        ],
+        "promotion_review_ready": true,
+        "taxonomy_status": "PASS",
+        "recommended_gatekeeper_lane": "PAPER_SMOKE_REVIEW_READY",
+        "pipeline_can_advance_without_waiting_for_5_of_5": true,
+        "paper_smoke_ready": true,
+        "paper_smoke_can_advance_to": "EXTENDED_PAPER_OBSERVATION",
+        "extended_paper_ready": true,
+        "extended_paper_can_advance_to": "HUMAN_PROMOTION_REVIEW",
+        "live_or_real_order_allowed": false
+      }
+    },
+    {
+      "requirement": "Advance stock risk conversion for MDD_TOO_HIGH candidates without order paths",
+      "status": "PASS",
+      "evidence": {
+        "stock_packet_status": "READY_FOR_HUMAN_GATEKEEPER_REVIEW",
+        "blockers": [],
+        "proposed_conversion": {
+          "overlay": "fixed_exposure_065",
+          "fixed_exposure_cap": 0.65,
+          "estimated_cagr": 0.4589449893919106,
+          "estimated_mdd": -0.19924161639912044,
+          "estimated_sharpe": 1.7455973852445321,
+          "estimated_return_retention": 0.65,
+          "gate_result": "pass_mdd_margin"
+        },
+        "stock_queue_status": "READY_FOR_GATEKEEPER_REVIEW",
+        "stock_queue_target_count": 5,
+        "stock_queue_ready_candidate_count": 5,
+        "stock_queue_blocked_candidate_count": 0,
+        "stock_queue_no_order_assertions": {
+          "promotion_allowed_by_this_report": false,
+          "paper_enabled_by_this_report": false,
+          "live_allowed_by_this_report": false,
+          "broker_submit_allowed_by_this_report": false,
+          "private_submit_allowed_by_this_report": false,
+          "real_orders_allowed_by_this_report": false
+        }
+      }
+    },
+    {
+      "requirement": "Keep model-factory pull-through board Gatekeeper-safe",
+      "status": "PASS",
+      "evidence": {
+        "board_status": "PASS",
+        "promotion_allowed_by_this_report": false,
+        "live_allowed_by_this_report": false,
+        "real_orders_allowed_by_this_report": false
+      }
+    },
+    {
+      "requirement": "Maintain file-backed progress and checkpoint record",
+      "status": "PASS",
+      "evidence": {
+        "progress_file": "C:\\AI\\GOAL_MODEL_FACTORY_PROGRESS.md",
+        "iteration_count": 253,
+        "progress_entry_count": 253,
+        "latest_iteration_number": 228,
+        "latest_iteration_heading": "## 2026-05-04 Iteration 228 Result",
+        "operational_monitor_status": "WARN",
+        "operational_blockers": [],
+        "operational_warnings": [
+          "NON_PASS_STATUS:realtime_risk_guard:WARN",
+          "NON_PASS_STATUS:crypto_live_preflight:BLOCKED",
+          "NON_PASS_STATUS:stock_live_preflight:BLOCKED",
+          "NON_PASS_STATUS:pipeline_live_preflight_reconfiguration:RECONFIGURED_WITH_BLOCKERS"
+        ]
+      }
+    },
+    {
+      "requirement": "Prompt-to-artifact checklist verifies root model factory objective",
+      "status": "PASS",
+      "evidence": {
+        "checklist_status": "COMPLETE",
+        "completion_allowed": true,
+        "incomplete_count": 0,
+        "required_deliverables": [
+          "current_paper_activation_gate",
+          "file_backed_review_and_public_surfaces",
+          "frozen_scope_experiment_queue",
+          "gatekeeper_priority_review_queue",
+          "hard_safety_controls",
+          "research_conversion_operations_lanes",
+          "two_axis_model_factory_scope"
+        ],
+        "observed_deliverables": [
+          "current_paper_activation_gate",
+          "file_backed_review_and_public_surfaces",
+          "frozen_scope_experiment_queue",
+          "gatekeeper_priority_review_queue",
+          "hard_safety_controls",
+          "research_conversion_operations_lanes",
+          "two_axis_model_factory_scope"
+        ],
+        "checklist_maps_required_scope": true,
+        "checklist_items_have_evidence": true,
+        "incomplete_deliverables": []
+      }
+    }
+  ],
+  "missing_or_incomplete": [],
+  "completion_blocker_summary": {
+    "status": "CLEAR",
+    "primary_blocker": null,
+    "paper_evidence_remaining": {
+      "decision": "PROMOTION_REVIEW_READY",
+      "evidence_gaps": [],
+      "paper_cycles_completed": 318,
+      "paper_cycles_target": 288,
+      "paper_cycles_missing": 0,
+      "non_flat_signal_count": 55,
+      "non_flat_signal_target": 5,
+      "non_flat_signals_missing": 0,
+      "executable_order_count": 52,
+      "executable_order_target": 5,
+      "executable_orders_missing": 0,
+      "progress_delta_cycles": 0,
+      "progress_delta_non_flat": 0,
+      "progress_delta_executable": 0,
+      "progress_history_count": 200,
+      "pace_summary": {
+        "observation_count": 200,
+        "elapsed_hours": 35.925,
+        "paper_cycles_delta": 66,
+        "non_flat_delta": 2,
+        "executable_delta": -1,
+        "cycles_per_hour": 1.837,
+        "non_flat_events_per_hour": 0.056,
+        "executable_events_per_hour": null,
+        "estimated_hours_to_cycle_target": 0.0,
+        "estimated_hours_to_non_flat_target": 0.0,
+        "estimated_hours_to_executable_target": 0.0,
+        "slowest_gate_dimension": "complete",
+        "promotion_review_eta_hours": 0.0,
+        "eta_status": "COMPLETE"
+      },
+      "event_stall_summary": {
+        "non_flat_signals": {
+          "last_increase_observed_at_utc": "2026-05-04T14:53:23.367764+00:00",
+          "observations_since_last_increase": 5,
+          "hours_since_last_increase": 10.407,
+          "paper_cycles_since_last_increase": 30,
+          "current_count": 55
+        },
+        "executable_orders": {
+          "last_increase_observed_at_utc": "2026-05-04T14:53:23.367764+00:00",
+          "observations_since_last_increase": 5,
+          "hours_since_last_increase": 10.407,
+          "paper_cycles_since_last_increase": 30,
+          "current_count": 52
+        },
+        "event_stall_status": "EVENT_EVIDENCE_STALLED",
+        "stall_severity": "REVIEW_STALL",
+        "max_hours_since_last_event": 10.407,
+        "max_paper_cycles_since_last_event": 30,
+        "safe_next_action": "Human review should inspect evidence velocity targets; keep order paths disabled."
+      },
+      "paper_evidence_readiness_percent": 100.0,
+      "dominant_blocking_dimensions": [
+        "paper_cycles",
+        "non_flat_signals",
+        "executable_orders"
+      ],
+      "promotion_review_ready": true,
+      "velocity_proximity_summary": {
+        "live_like_target_count": 8,
+        "already_non_flat_target_count": 8,
+        "nearest_flat_target": null,
+        "operator_focus": "wait_for_new_live_like_targets"
+      }
+    },
+    "safety": {
+      "risk_guard_status": "WARN",
+      "halt_count": 0,
+      "warn_count": 5,
+      "historical_replay_counts_as_promotion_evidence": false,
+      "historical_replay_excluded": true,
+      "live_enabled": false,
+      "broker_submit_scope": "paper_only",
+      "broker_submit_allowed": false,
+      "private_submit_used": false,
+      "real_orders": 0
+    },
+    "next_gate_action": "All audited blockers are clear for the next Gatekeeper review step."
+  },
+  "next_action": "All audited requirements are complete.",
+  "source_files": {
+    "paper_evidence": "C:\\AI\\ops\\reports\\paper_promotion_evidence_latest.json",
+    "velocity_monitor": "C:\\AI\\ops\\reports\\paper_evidence_velocity_monitor_latest.json",
+    "progress_delta": "C:\\AI\\ops\\reports\\paper_evidence_progress_delta_latest.json",
+    "risk_guard": "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json",
+    "stock_review_packet": "C:\\AI\\reports\\model_factory\\stock_conversion_gatekeeper_review_packet_latest.json",
+    "stock_risk_conversion_queue": "C:\\AI\\reports\\model_factory\\stock_risk_conversion_queue_latest.json",
+    "pull_through_board": "C:\\AI\\reports\\model_factory\\pull_through_board_latest.json",
+    "evidence_taxonomy": "C:\\AI\\reports\\model_factory\\gatekeeper_evidence_taxonomy_latest.json",
+    "operational_monitor": "C:\\AI\\ops\\reports\\operational_monitor_latest.json",
+    "goal_requirement_checklist": "C:\\AI\\reports\\model_factory\\goal_model_factory_requirement_checklist_latest.json",
+    "progress": "C:\\AI\\GOAL_MODEL_FACTORY_PROGRESS.md"
+  }
+}

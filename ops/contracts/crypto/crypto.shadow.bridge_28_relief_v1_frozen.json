@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "crypto.shadow.bridge_28_relief_v1_frozen",
+  "source_frozen_contract_id": "bridge_28_relief_v1_frozen",
+  "model_id": "bridge_28_relief",
+  "asset_class": "crypto",
+  "symbols": [
+    "BTC-USD"
+  ],
+  "timeframe": "1d",
+  "mode": "shadow",
+  "status": "shadow_contract_pending_validation",
+  "allowed_modes": [
+    "shadow"
+  ],
+  "broker_adapter": "shadow_only",
+  "allow_live_submit": false,
+  "generated_at_utc": "2026-05-09T21:33:59.917916+00:00",
+  "expires_at_utc": null,
+  "source_repo": "C:\\AI\\Crypto",
+  "source_freeze_pack": "C:\\AI\\codex-output-kit\\profiles\\model_reports\\crypto_shadow_readiness_freeze_pack_latest.json",
+  "source_hashes": {
+    "scoreboard": "ff3fee8c83e33dc77c49914d1ac8cfeff0289807cc5feb9b88452d91841af834",
+    "scripts": {
+      "C:\\AI\\Crypto\\scripts\\attack_active_stack.py": "551423302a1589495d78c65c50a77a2c2ee5bcbe33461ec808a1783306ef47c2",
+      "C:\\AI\\Crypto\\scripts\\build_btc_1d_model_scoreboard.py": "69b96c1d7e29397d353e3a29e92cf9f0107fdfbc8221f4f2e91500c664bdeff1",
+      "C:\\AI\\Crypto\\scripts\\check_btc_1d_contract_health.py": "b4ac33fba4550dd09de361465eae01037f89ce1f0e458926ec5bb66c9b1879b7"
+    }
+  },
+  "candidate_metrics": {
+    "variant": "bridge_28_relief",
+    "role": "attack_backup",
+    "cagr": 0.35726566,
+    "mdd": -0.09077917,
+    "sharpe": 1.864248,
+    "cost_cagr": 0.34639312,
+    "oos_cagr": 0.35726566,
+    "turnover": null,
+    "negative_walk_forward_windows": [
+      5
+    ],
+    "mdd_abs": 0.09077917,
+    "calmar": 3.935546667809366,
+    "operating_gap": 0.0,
+    "operating_readiness_score": 82.6,
+    "readiness_score": 51.39,
+    "attack_score": 97.01,
+    "stabilization_score": 100.0,
+    "priority_score": 113.54,
+    "candidate_stage": "robustness_candidate",
+    "gate_failure_reason": "PENDING_SHADOW_READY_GATES"
+  },
+  "gate_state": {
+    "freeze_artifacts_present": true,
+    "signal_reproducibility": "pending",
+    "candle_finalization": "pending",
+    "research_vs_shadow_data_consistency": "pending",
+    "cost_slippage_stress": "pending",
+    "delayed_execution_stress": "pending"
+  },
+  "sizing_policy": {
+    "type": "shadow_target_weight_cap",
+    "max_model_weight": 0.2,
+    "max_symbol_weight": 0.2,
+    "max_order_notional_pct_of_sleeve": 0.05,
+    "max_leverage": 1.0
+  },
+  "risk_policy": {
+    "daily_loss_pause_pct": 0.005,
+    "daily_loss_stop_pct": 0.01,
+    "max_contract_drawdown_pct": 0.12,
+    "max_spread_bps": 20,
+    "max_slippage_bps": 25,
+    "stale_signal_minutes": 90,
+    "require_finalized_daily_bar": true
+  },
+  "order_policy": {
+    "intent_only": true,
+    "submit_to_broker": false,
+    "order_style": "shadow_limit_or_market_fallback",
+    "time_in_force": "shadow_day",
+    "client_order_id_prefix": "SHADOW"
+  },
+  "deactivation_rules": {
+    "signal_mismatch_count": 1,
+    "critical_exception_count": 1,
+    "unreconciled_position_minutes": 30,
+    "duplicate_intent_violation": 1
+  },
+  "approval": {
+    "approved_by": "system_generated_from_freeze_pack",
+    "approved_at_utc": "2026-05-09T21:33:59.917916+00:00",
+    "manual_live_approval": false
+  },
+  "payload_hash": "2ec31b4f46a8812fbc1847db5c00579be4389136329de4610e2cc6b59303fd49"
+}

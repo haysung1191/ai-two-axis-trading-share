@@ -1,0 +1,2054 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:41.807185+00:00",
+  "report": "bithumb_current_actionable_orca_repair_seed_sweep",
+  "status": "ORCA_REPAIR_SEED_SWEEP_ITERATE",
+  "scope": "orca_repair_seed_sweep_research_only_no_order_paths",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_repair_seed_packet_latest.json",
+  "base_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+  "market": "KRW-ORCA",
+  "timeframe": "1d",
+  "seed_count": 3,
+  "evaluated_seed_count": 3,
+  "oos_pass_seed_count": 3,
+  "robustness_pass_seed_count": 0,
+  "best_seed_id": "orca_selective_volume_stop05_hold3_tp18",
+  "best_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_selective_volume_stop05_hold3_tp18",
+  "best_candidate_status": "OOS_CANDIDATE_PASS",
+  "best_robustness_status": "ROBUSTNESS_STRESS_ITERATE",
+  "seed_results": [
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_selective_volume_stop05_hold3_tp18",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.25,
+        "momentum_threshold": 0.04,
+        "stop_loss": 0.05,
+        "take_profit": 0.18,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.4485781257113091,
+        "estimated_cagr": -0.09374029016754143,
+        "estimated_total_return": -0.06383164166776066,
+        "estimated_mdd": -0.2,
+        "source_cagr": -0.20897204922531099,
+        "source_total_return": -0.1422977136179857,
+        "source_mdd": -0.44585321605430617,
+        "source_trade_count": 13,
+        "source_profit_factor": 0.8690831753538567,
+        "pass_like": false
+      },
+      "status": "OOS_CANDIDATE_PASS",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.18224990538239028,
+        "average_fold_cagr": 0.3432496769767372,
+        "total_trade_count": 10
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.0007672085783465565,
+            "cagr": 0.0035496238418251114,
+            "mdd": -0.016949152542372836,
+            "win_rate": 1.0,
+            "profit_factor": 999.0,
+            "trade_count": 1,
+            "average_holding_bars": 3.0
+          },
+          "pass": true
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.10650133333333334,
+            "cagr": -0.4056510809463071,
+            "mdd": -0.10650133333333334,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 2,
+            "average_holding_bars": 2.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.21208071638855897,
+            "cagr": 1.4318504880346934,
+            "mdd": -0.18224990538239028,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 2.2102879738541783,
+            "trade_count": 7,
+            "average_holding_bars": 2.142857142857143
+          },
+          "pass": true
+        }
+      ],
+      "screen_metrics": {
+        "total_return": -0.1422977136179857,
+        "cagr": -0.20897204922531099,
+        "mdd": -0.44585321605430617,
+        "win_rate": 0.3076923076923077,
+        "profit_factor": 0.8690831753538567,
+        "trade_count": 13,
+        "average_holding_bars": 2.230769230769231
+      },
+      "seed_id": "orca_selective_volume_stop05_hold3_tp18",
+      "seed_hypothesis": "keep OOS trade count above threshold while filtering the drawdown-heavy full-window trades",
+      "robustness": {
+        "status": "ROBUSTNESS_STRESS_ITERATE",
+        "case_count": 7,
+        "pass_count": 0,
+        "cost_pass_count": 0,
+        "cases": [
+          {
+            "case_id": "base_recheck",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 3,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.04,
+              "stop_loss": 0.05,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.1422977136179857,
+              "cagr": -0.20897204922531099,
+              "mdd": -0.44585321605430617,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.8690831753538567,
+              "trade_count": 13,
+              "average_holding_bars": 2.230769230769231
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.18224990538239028,
+              "average_fold_cagr": 0.3432496769767372,
+              "total_trade_count": 10
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.0007672085783465565,
+                  "cagr": 0.0035496238418251114,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 1.0,
+                  "profit_factor": 999.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 3.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10650133333333334,
+                  "cagr": -0.4056510809463071,
+                  "mdd": -0.10650133333333334,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.21208071638855897,
+                  "cagr": 1.4318504880346934,
+                  "mdd": -0.18224990538239028,
+                  "win_rate": 0.42857142857142855,
+                  "profit_factor": 2.2102879738541783,
+                  "trade_count": 7,
+                  "average_holding_bars": 2.142857142857143
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "cost_30bps",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 3,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.04,
+              "stop_loss": 0.05,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.15357268979799032,
+              "cagr": -0.2247974678313992,
+              "mdd": -0.44997642924578196,
+              "win_rate": 0.23076923076923078,
+              "profit_factor": 0.8479512857168764,
+              "trade_count": 13,
+              "average_holding_bars": 2.230769230769231
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.18486817022657043,
+              "average_fold_cagr": 0.31445479695767037,
+              "total_trade_count": 10
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.00023279142165344435,
+                  "cagr": -0.001075102175137399,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 3.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10839185714285715,
+                  "cagr": -0.4114391278359477,
+                  "mdd": -0.10839185714285715,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.20378288482869444,
+                  "cagr": 1.3558786208840963,
+                  "mdd": -0.18486817022657043,
+                  "win_rate": 0.42857142857142855,
+                  "profit_factor": 2.1563226896865233,
+                  "trade_count": 7,
+                  "average_holding_bars": 2.142857142857143
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "cost_50bps",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 3,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.04,
+              "stop_loss": 0.05,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.005
+            },
+            "full_window_metrics": {
+              "total_return": -0.17571362529843904,
+              "cagr": -0.25555128013914785,
+              "mdd": -0.45814403890399114,
+              "win_rate": 0.23076923076923078,
+              "profit_factor": 0.8082287402506023,
+              "trade_count": 13,
+              "average_holding_bars": 2.230769230769231
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.19008794060245326,
+              "average_fold_cagr": 0.25921060516241506,
+              "total_trade_count": 10
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.002232791421653446,
+                  "cagr": -0.010274449110816097,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 3.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.11216690476190483,
+                  "cagr": -0.4228646664615664,
+                  "mdd": -0.11216690476190483,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.18733284531546435,
+                  "cagr": 1.2107709310596277,
+                  "mdd": -0.19008794060245326,
+                  "win_rate": 0.42857142857142855,
+                  "profit_factor": 2.0540871235590106,
+                  "trade_count": 7,
+                  "average_holding_bars": 2.142857142857143
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "stricter_momentum",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 3,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.05,
+              "stop_loss": 0.05,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.1422977136179857,
+              "cagr": -0.20897204922531099,
+              "mdd": -0.44585321605430617,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.8690831753538567,
+              "trade_count": 13,
+              "average_holding_bars": 2.230769230769231
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.18224990538239028,
+              "average_fold_cagr": 0.3432496769767372,
+              "total_trade_count": 10
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.0007672085783465565,
+                  "cagr": 0.0035496238418251114,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 1.0,
+                  "profit_factor": 999.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 3.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10650133333333334,
+                  "cagr": -0.4056510809463071,
+                  "mdd": -0.10650133333333334,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.21208071638855897,
+                  "cagr": 1.4318504880346934,
+                  "mdd": -0.18224990538239028,
+                  "win_rate": 0.42857142857142855,
+                  "profit_factor": 2.2102879738541783,
+                  "trade_count": 7,
+                  "average_holding_bars": 2.142857142857143
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "stricter_volume",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 3,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.5625,
+              "momentum_threshold": 0.04,
+              "stop_loss": 0.05,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.1422977136179857,
+              "cagr": -0.20897204922531099,
+              "mdd": -0.44585321605430617,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.8690831753538567,
+              "trade_count": 13,
+              "average_holding_bars": 2.230769230769231
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.18224990538239028,
+              "average_fold_cagr": 0.3432496769767372,
+              "total_trade_count": 10
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.0007672085783465565,
+                  "cagr": 0.0035496238418251114,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 1.0,
+                  "profit_factor": 999.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 3.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10650133333333334,
+                  "cagr": -0.4056510809463071,
+                  "mdd": -0.10650133333333334,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.21208071638855897,
+                  "cagr": 1.4318504880346934,
+                  "mdd": -0.18224990538239028,
+                  "win_rate": 0.42857142857142855,
+                  "profit_factor": 2.2102879738541783,
+                  "trade_count": 7,
+                  "average_holding_bars": 2.142857142857143
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "shorter_hold",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.04,
+              "stop_loss": 0.05,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.1415781948466559,
+              "cagr": -0.2079583984283997,
+              "mdd": -0.3905793173166283,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 0.9015505892132635,
+              "trade_count": 15,
+              "average_holding_bars": 1.6
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.20973161133750595,
+              "average_fold_cagr": -0.001859904672042334,
+              "total_trade_count": 11
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.00684261501210659,
+                  "cagr": -0.03122536885327165,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09395733333333345,
+                  "cagr": -0.3661070629564449,
+                  "mdd": -0.09395733333333345,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 1.5
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.07416832104369853,
+                  "cagr": 0.39175271779358956,
+                  "mdd": -0.20973161133750595,
+                  "win_rate": 0.375,
+                  "profit_factor": 1.429204187437351,
+                  "trade_count": 8,
+                  "average_holding_bars": 1.625
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "looser_stop",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 3,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.04,
+              "stop_loss": 0.0625,
+              "take_profit": 0.18,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.1422977136179857,
+              "cagr": -0.20897204922531099,
+              "mdd": -0.44585321605430617,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.8690831753538567,
+              "trade_count": 13,
+              "average_holding_bars": 2.230769230769231
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.18224990538239028,
+              "average_fold_cagr": 0.3432496769767372,
+              "total_trade_count": 10
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.0007672085783465565,
+                  "cagr": 0.0035496238418251114,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 1.0,
+                  "profit_factor": 999.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 3.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10650133333333334,
+                  "cagr": -0.4056510809463071,
+                  "mdd": -0.10650133333333334,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.21208071638855897,
+                  "cagr": 1.4318504880346934,
+                  "mdd": -0.18224990538239028,
+                  "win_rate": 0.42857142857142855,
+                  "profit_factor": 2.2102879738541783,
+                  "trade_count": 7,
+                  "average_holding_bars": 2.142857142857143
+                },
+                "pass": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_mdd_compression_stop04_hold2_tp12",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 2,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.04,
+        "take_profit": 0.12,
+        "round_trip_cost_rate": 0.002
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.4761224945162902,
+        "estimated_cagr": -0.11150280093018114,
+        "estimated_total_return": -0.07632318287937459,
+        "estimated_mdd": -0.2,
+        "source_cagr": -0.23418931517499675,
+        "source_total_return": -0.16030156894165237,
+        "source_mdd": -0.42005996839781146,
+        "source_trade_count": 19,
+        "source_profit_factor": 0.9072524238248086,
+        "pass_like": false
+      },
+      "status": "OOS_CANDIDATE_PASS",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.22549194957294028,
+        "average_fold_cagr": 0.005135727986634753,
+        "total_trade_count": 14
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.012219972760932007,
+            "cagr": 0.05772162733926245,
+            "mdd": -0.016949152542372836,
+            "win_rate": 0.5,
+            "profit_factor": 2.80505689336265,
+            "trade_count": 2,
+            "average_holding_bars": 2.0
+          },
+          "pass": true
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.09576941866666677,
+            "cagr": -0.3719433860630218,
+            "mdd": -0.09576941866666677,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 3,
+            "average_holding_bars": 1.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.06360413573246482,
+            "cagr": 0.3296289426836636,
+            "mdd": -0.22549194957294028,
+            "win_rate": 0.3333333333333333,
+            "profit_factor": 1.3900283413865806,
+            "trade_count": 9,
+            "average_holding_bars": 1.6666666666666667
+          },
+          "pass": true
+        }
+      ],
+      "screen_metrics": {
+        "total_return": -0.16030156894165237,
+        "cagr": -0.23418931517499675,
+        "mdd": -0.42005996839781146,
+        "win_rate": 0.3157894736842105,
+        "profit_factor": 0.9072524238248086,
+        "trade_count": 19,
+        "average_holding_bars": 1.5789473684210527
+      },
+      "seed_id": "orca_mdd_compression_stop04_hold2_tp12",
+      "seed_hypothesis": "compress full-window MDD first while preserving the two positive OOS folds",
+      "robustness": {
+        "status": "ROBUSTNESS_STRESS_ITERATE",
+        "case_count": 7,
+        "pass_count": 0,
+        "cost_pass_count": 0,
+        "cases": [
+          {
+            "case_id": "base_recheck",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.03,
+              "stop_loss": 0.04,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.16030156894165237,
+              "cagr": -0.23418931517499675,
+              "mdd": -0.42005996839781146,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 0.9072524238248086,
+              "trade_count": 19,
+              "average_holding_bars": 1.5789473684210527
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22549194957294028,
+              "average_fold_cagr": 0.005135727986634753,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.012219972760932007,
+                  "cagr": 0.05772162733926245,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.80505689336265,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09576941866666677,
+                  "cagr": -0.3719433860630218,
+                  "mdd": -0.09576941866666677,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.06360413573246482,
+                  "cagr": 0.3296289426836636,
+                  "mdd": -0.22549194957294028,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3900283413865806,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "cost_30bps",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.03,
+              "stop_loss": 0.04,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.1763362864284166,
+              "cagr": -0.256409931553085,
+              "mdd": -0.4261484628952015,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 0.8839704977448632,
+              "trade_count": 19,
+              "average_holding_bars": 1.5789473684210527
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22877545858888637,
+              "average_fold_cagr": -0.0191479496463756,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.010208621451536004,
+                  "cagr": 0.04804580245919721,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.319879833480352,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09857398671428586,
+                  "cagr": -0.38089317639541764,
+                  "mdd": -0.09857398671428586,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.05406209422892316,
+                  "cagr": 0.27540352499709364,
+                  "mdd": -0.22877545858888637,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3589414429850213,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "cost_50bps",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.03,
+              "stop_loss": 0.04,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.005
+            },
+            "full_window_metrics": {
+              "total_return": -0.20753999317837057,
+              "cagr": -0.29899913647785836,
+              "mdd": -0.43815320582993444,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 0.8397045066128329,
+              "trade_count": 19,
+              "average_holding_bars": 1.5789473684210527
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.2353111635339259,
+              "average_fold_cagr": -0.06538682935838258,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.006191918832743504,
+                  "cagr": 0.028930616586382074,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 1.6452867849059958,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10416572738095242,
+                  "cagr": -0.39843888226646196,
+                  "mdd": -0.10416572738095242,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.03520560017947827,
+                  "cagr": 0.17334777760493214,
+                  "mdd": -0.2353111635339259,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.2997378158174868,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "stricter_momentum",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.0375,
+              "stop_loss": 0.04,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.16030156894165237,
+              "cagr": -0.23418931517499675,
+              "mdd": -0.42005996839781146,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 0.9072524238248086,
+              "trade_count": 19,
+              "average_holding_bars": 1.5789473684210527
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22549194957294028,
+              "average_fold_cagr": 0.005135727986634753,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.012219972760932007,
+                  "cagr": 0.05772162733926245,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.80505689336265,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09576941866666677,
+                  "cagr": -0.3719433860630218,
+                  "mdd": -0.09576941866666677,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.06360413573246482,
+                  "cagr": 0.3296289426836636,
+                  "mdd": -0.22549194957294028,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3900283413865806,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "stricter_volume",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.03,
+              "stop_loss": 0.04,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.0591302654054735,
+              "cagr": -0.08888260369224754,
+              "mdd": -0.3308824484696933,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 1.062848604090143,
+              "trade_count": 15,
+              "average_holding_bars": 1.5333333333333334
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.20973161133750595,
+              "average_fold_cagr": -0.001859904672042334,
+              "total_trade_count": 11
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.00684261501210659,
+                  "cagr": -0.03122536885327165,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09395733333333345,
+                  "cagr": -0.3661070629564449,
+                  "mdd": -0.09395733333333345,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 1.5
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.07416832104369853,
+                  "cagr": 0.39175271779358956,
+                  "mdd": -0.20973161133750595,
+                  "win_rate": 0.375,
+                  "profit_factor": 1.429204187437351,
+                  "trade_count": 8,
+                  "average_holding_bars": 1.625
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "shorter_hold",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 1,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.03,
+              "stop_loss": 0.04,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.19514076834222105,
+              "cagr": -0.2821796070645658,
+              "mdd": -0.41671296975846905,
+              "win_rate": 0.24,
+              "profit_factor": 0.8707578766158308,
+              "trade_count": 25,
+              "average_holding_bars": 1.0
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.2192346104897276,
+              "average_fold_cagr": -0.061573868394866484,
+              "total_trade_count": 19
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.019525099737171425,
+                  "cagr": -0.08707653187817554,
+                  "mdd": -0.019525099737171425,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09757840203874024,
+                  "cagr": -0.37772763721713265,
+                  "mdd": -0.09757840203874024,
+                  "win_rate": 0.25,
+                  "profit_factor": 0.10630973168488243,
+                  "trade_count": 4,
+                  "average_holding_bars": 0.75
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.05489786303794819,
+                  "cagr": 0.28008256391070874,
+                  "mdd": -0.2192346104897276,
+                  "win_rate": 0.23076923076923078,
+                  "profit_factor": 1.3449228339637798,
+                  "trade_count": 13,
+                  "average_holding_bars": 1.0
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "looser_stop",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.03,
+              "stop_loss": 0.05,
+              "take_profit": 0.12,
+              "round_trip_cost_rate": 0.002
+            },
+            "full_window_metrics": {
+              "total_return": -0.16030156894165237,
+              "cagr": -0.23418931517499675,
+              "mdd": -0.42005996839781146,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 0.9072524238248086,
+              "trade_count": 19,
+              "average_holding_bars": 1.5789473684210527
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22549194957294028,
+              "average_fold_cagr": 0.005135727986634753,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.012219972760932007,
+                  "cagr": 0.05772162733926245,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.80505689336265,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09576941866666677,
+                  "cagr": -0.3719433860630218,
+                  "mdd": -0.09576941866666677,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.06360413573246482,
+                  "cagr": 0.3296289426836636,
+                  "mdd": -0.22549194957294028,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3900283413865806,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_orca_cost_resilience_stop05_hold2_tp16",
+      "parent_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001",
+      "market": "KRW-ORCA",
+      "timeframe": "1d",
+      "parameters": {
+        "lookback_bars": 3,
+        "hold_bars": 2,
+        "volume_window": 10,
+        "volume_ratio_floor": 1.0,
+        "momentum_threshold": 0.035,
+        "stop_loss": 0.05,
+        "take_profit": 0.16,
+        "round_trip_cost_rate": 0.003
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 0.46959081195530905,
+        "estimated_cagr": -0.1187817263084593,
+        "estimated_total_return": -0.08162748228243191,
+        "estimated_mdd": -0.2,
+        "source_cagr": -0.25294729642147207,
+        "source_total_return": -0.17382683009181277,
+        "source_mdd": -0.42590271127160384,
+        "source_trade_count": 18,
+        "source_profit_factor": 0.8534725138444013,
+        "pass_like": false
+      },
+      "status": "OOS_CANDIDATE_PASS",
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.22877545858888637,
+        "average_fold_cagr": -0.0191479496463756,
+        "total_trade_count": 14
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-09-07T15:00:00+00:00",
+          "last_timestamp": "2025-11-25T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.010208621451536004,
+            "cagr": 0.04804580245919721,
+            "mdd": -0.016949152542372836,
+            "win_rate": 0.5,
+            "profit_factor": 2.319879833480352,
+            "trade_count": 2,
+            "average_holding_bars": 2.0
+          },
+          "pass": true
+        },
+        {
+          "fold": 2,
+          "status": "BACKTEST_SCREEN_ITERATE",
+          "first_timestamp": "2025-11-26T15:00:00+00:00",
+          "last_timestamp": "2026-02-13T15:00:00+00:00",
+          "metrics": {
+            "total_return": -0.09857398671428586,
+            "cagr": -0.38089317639541764,
+            "mdd": -0.09857398671428586,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "trade_count": 3,
+            "average_holding_bars": 1.0
+          },
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "status": "BACKTEST_SCREEN_PASS",
+          "first_timestamp": "2026-02-14T15:00:00+00:00",
+          "last_timestamp": "2026-05-04T15:00:00+00:00",
+          "metrics": {
+            "total_return": 0.05406209422892316,
+            "cagr": 0.27540352499709364,
+            "mdd": -0.22877545858888637,
+            "win_rate": 0.3333333333333333,
+            "profit_factor": 1.3589414429850213,
+            "trade_count": 9,
+            "average_holding_bars": 1.6666666666666667
+          },
+          "pass": true
+        }
+      ],
+      "screen_metrics": {
+        "total_return": -0.17382683009181277,
+        "cagr": -0.25294729642147207,
+        "mdd": -0.42590271127160384,
+        "win_rate": 0.3333333333333333,
+        "profit_factor": 0.8534725138444013,
+        "trade_count": 18,
+        "average_holding_bars": 1.6666666666666667
+      },
+      "seed_id": "orca_cost_resilience_stop05_hold2_tp16",
+      "seed_hypothesis": "target one cost stress pass without allowing the full-window MDD breach to dominate",
+      "robustness": {
+        "status": "ROBUSTNESS_STRESS_ITERATE",
+        "case_count": 7,
+        "pass_count": 0,
+        "cost_pass_count": 0,
+        "cases": [
+          {
+            "case_id": "base_recheck",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.035,
+              "stop_loss": 0.05,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.17382683009181277,
+              "cagr": -0.25294729642147207,
+              "mdd": -0.42590271127160384,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 0.8534725138444013,
+              "trade_count": 18,
+              "average_holding_bars": 1.6666666666666667
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22877545858888637,
+              "average_fold_cagr": -0.0191479496463756,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.010208621451536004,
+                  "cagr": 0.04804580245919721,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.319879833480352,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09857398671428586,
+                  "cagr": -0.38089317639541764,
+                  "mdd": -0.09857398671428586,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.05406209422892316,
+                  "cagr": 0.27540352499709364,
+                  "mdd": -0.22877545858888637,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3589414429850213,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "cost_30bps",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.035,
+              "stop_loss": 0.05,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.17382683009181277,
+              "cagr": -0.25294729642147207,
+              "mdd": -0.42590271127160384,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 0.8534725138444013,
+              "trade_count": 18,
+              "average_holding_bars": 1.6666666666666667
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22877545858888637,
+              "average_fold_cagr": -0.0191479496463756,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.010208621451536004,
+                  "cagr": 0.04804580245919721,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.319879833480352,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09857398671428586,
+                  "cagr": -0.38089317639541764,
+                  "mdd": -0.09857398671428586,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.05406209422892316,
+                  "cagr": 0.27540352499709364,
+                  "mdd": -0.22877545858888637,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3589414429850213,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "cost_50bps",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.035,
+              "stop_loss": 0.05,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.005
+            },
+            "full_window_metrics": {
+              "total_return": -0.2035077275622379,
+              "cagr": -0.29354448580149184,
+              "mdd": -0.4377513044024458,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 0.8069227031924489,
+              "trade_count": 18,
+              "average_holding_bars": 1.6666666666666667
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.2353111635339259,
+              "average_fold_cagr": -0.06538682935838258,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.006191918832743504,
+                  "cagr": 0.028930616586382074,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 1.6452867849059958,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10416572738095242,
+                  "cagr": -0.39843888226646196,
+                  "mdd": -0.10416572738095242,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.03520560017947827,
+                  "cagr": 0.17334777760493214,
+                  "mdd": -0.2353111635339259,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.2997378158174868,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "stricter_momentum",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.043750000000000004,
+              "stop_loss": 0.05,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.17970183818163676,
+              "cagr": -0.26104511106937733,
+              "mdd": -0.4142204990009679,
+              "win_rate": 0.3125,
+              "profit_factor": 0.839977838693394,
+              "trade_count": 16,
+              "average_holding_bars": 1.625
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.2130819359438928,
+              "average_fold_cagr": -0.025125474863298042,
+              "total_trade_count": 12
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.00784261501210659,
+                  "cagr": -0.035723984455438895,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09857398671428586,
+                  "cagr": -0.38089317639541764,
+                  "mdd": -0.09857398671428586,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.06560769555713897,
+                  "cagr": 0.3412407362609624,
+                  "mdd": -0.2130819359438928,
+                  "win_rate": 0.375,
+                  "profit_factor": 1.40053943602404,
+                  "trade_count": 8,
+                  "average_holding_bars": 1.625
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "stricter_volume",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.25,
+              "momentum_threshold": 0.035,
+              "stop_loss": 0.05,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.15456406856104876,
+              "cagr": -0.22618366804214174,
+              "mdd": -0.39626947725061434,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 0.8794179553086752,
+              "trade_count": 15,
+              "average_holding_bars": 1.6
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.2130819359438928,
+              "average_fold_cagr": -0.022240769527678988,
+              "total_trade_count": 11
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.00784261501210659,
+                  "cagr": -0.035723984455438895,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 1,
+                  "average_holding_bars": 2.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09586157142857155,
+                  "cagr": -0.37223906038856047,
+                  "mdd": -0.09586157142857155,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 1.5
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.06560769555713897,
+                  "cagr": 0.3412407362609624,
+                  "mdd": -0.2130819359438928,
+                  "win_rate": 0.375,
+                  "profit_factor": 1.40053943602404,
+                  "trade_count": 8,
+                  "average_holding_bars": 1.625
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "shorter_hold",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 1,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.035,
+              "stop_loss": 0.05,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.21527060189086789,
+              "cagr": -0.3094158307927355,
+              "mdd": -0.42515191223155213,
+              "win_rate": 0.24,
+              "profit_factor": 0.844676507071099,
+              "trade_count": 25,
+              "average_holding_bars": 1.0
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 1,
+              "positive_fold_count": 1,
+              "worst_fold_mdd": -0.22410806178844866,
+              "average_fold_cagr": -0.09321677693206569,
+              "total_trade_count": 19
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.021504563512922847,
+                  "cagr": -0.09556098827491044,
+                  "mdd": -0.021504563512922847,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 2,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.10127904642783447,
+                  "cagr": -0.38943044305657315,
+                  "mdd": -0.10127904642783447,
+                  "win_rate": 0.25,
+                  "profit_factor": 0.09465740020954415,
+                  "trade_count": 4,
+                  "average_holding_bars": 0.75
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.04125070302817391,
+                  "cagr": 0.20534110053528654,
+                  "mdd": -0.22410806178844866,
+                  "win_rate": 0.23076923076923078,
+                  "profit_factor": 1.3027733751011958,
+                  "trade_count": 13,
+                  "average_holding_bars": 1.0
+                },
+                "pass": true
+              }
+            ]
+          },
+          {
+            "case_id": "looser_stop",
+            "status": "STRESS_ITERATE",
+            "parameters": {
+              "lookback_bars": 3,
+              "hold_bars": 2,
+              "volume_window": 10,
+              "volume_ratio_floor": 1.0,
+              "momentum_threshold": 0.035,
+              "stop_loss": 0.0625,
+              "take_profit": 0.16,
+              "round_trip_cost_rate": 0.003
+            },
+            "full_window_metrics": {
+              "total_return": -0.17382683009181277,
+              "cagr": -0.25294729642147207,
+              "mdd": -0.42590271127160384,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 0.8534725138444013,
+              "trade_count": 18,
+              "average_holding_bars": 1.6666666666666667
+            },
+            "fold_aggregate": {
+              "fold_count": 3,
+              "pass_fold_count": 2,
+              "positive_fold_count": 2,
+              "worst_fold_mdd": -0.22877545858888637,
+              "average_fold_cagr": -0.0191479496463756,
+              "total_trade_count": 14
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-09-07T15:00:00+00:00",
+                "last_timestamp": "2025-11-25T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.010208621451536004,
+                  "cagr": 0.04804580245919721,
+                  "mdd": -0.016949152542372836,
+                  "win_rate": 0.5,
+                  "profit_factor": 2.319879833480352,
+                  "trade_count": 2,
+                  "average_holding_bars": 2.0
+                },
+                "pass": true
+              },
+              {
+                "fold": 2,
+                "status": "BACKTEST_SCREEN_ITERATE",
+                "first_timestamp": "2025-11-26T15:00:00+00:00",
+                "last_timestamp": "2026-02-13T15:00:00+00:00",
+                "metrics": {
+                  "total_return": -0.09857398671428586,
+                  "cagr": -0.38089317639541764,
+                  "mdd": -0.09857398671428586,
+                  "win_rate": 0.0,
+                  "profit_factor": 0.0,
+                  "trade_count": 3,
+                  "average_holding_bars": 1.0
+                },
+                "pass": false
+              },
+              {
+                "fold": 3,
+                "status": "BACKTEST_SCREEN_PASS",
+                "first_timestamp": "2026-02-14T15:00:00+00:00",
+                "last_timestamp": "2026-05-04T15:00:00+00:00",
+                "metrics": {
+                  "total_return": 0.05406209422892316,
+                  "cagr": 0.27540352499709364,
+                  "mdd": -0.22877545858888637,
+                  "win_rate": 0.3333333333333333,
+                  "profit_factor": 1.3589414429850213,
+                  "trade_count": 9,
+                  "average_holding_bars": 1.6666666666666667
+                },
+                "pass": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "blockers": [
+    "NO_ORCA_REPAIR_SEED_ROBUSTNESS_PASS"
+  ],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Keep ORCA in repair iteration; seed sweep did not find a robustness-passing child."
+}

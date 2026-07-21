@@ -1,0 +1,31 @@
+{
+  "generated_at_utc": "2026-05-05T08:24:24.713518+00:00",
+  "report": "bithumb_current_actionable_shadow_signal_adapter",
+  "status": "BLOCKED",
+  "candidate_id": "bithumb_current_actionable_pola_1d_long_freeze001_sweep1354",
+  "signal_path": null,
+  "source_registry": "C:\\AI\\registry\\model_factory_shadow_candidates\\model_factory_shadow_candidates_latest.json",
+  "source_oos": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_oos_walkforward_latest.json",
+  "candle_count": 0,
+  "fetch_error": null,
+  "signal": {},
+  "blockers": [
+    "OOS_PARAMETERS_NOT_FOUND_FOR_REGISTERED_CANDIDATE"
+  ],
+  "warnings": [],
+  "parameter_source": null,
+  "parameter_candidate_id": null,
+  "parameter_candidate_matches_registered": false,
+  "safety": {
+    "does_start_shadow_loop": false,
+    "does_emit_order_signal": false,
+    "does_write_order_intent": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false,
+    "real_orders": 0
+  },
+  "next_action": "Resolve blockers before writing a Bithumb current-actionable shadow observation."
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "crypto.shadow.btc_1d_post_spike_consolidation_breakout_v4_v1_frozen",
+  "source_frozen_contract_id": "btc_1d_post_spike_consolidation_breakout_v4_v1_frozen",
+  "model_id": "btc_1d_post_spike_consolidation_breakout_v4",
+  "asset_class": "crypto",
+  "symbols": [
+    "BTC-USD"
+  ],
+  "timeframe": "1d",
+  "mode": "shadow",
+  "status": "shadow_contract_pending_validation",
+  "allowed_modes": [
+    "shadow"
+  ],
+  "broker_adapter": "shadow_only",
+  "allow_live_submit": false,
+  "generated_at_utc": "2026-05-09T21:33:59.917916+00:00",
+  "expires_at_utc": null,
+  "source_repo": "C:\\AI\\Crypto",
+  "source_freeze_pack": "C:\\AI\\codex-output-kit\\profiles\\model_reports\\crypto_shadow_readiness_freeze_pack_latest.json",
+  "source_hashes": {
+    "scoreboard": "ff3fee8c83e33dc77c49914d1ac8cfeff0289807cc5feb9b88452d91841af834",
+    "scripts": {
+      "C:\\AI\\Crypto\\scripts\\post_spike_active_candidate.py": "fd0cf3c4ba2b68418a3f9f768d6060d7954726cf9ad2f94a89f73e4c1bdc80eb",
+      "C:\\AI\\Crypto\\scripts\\validate_btc_1d_post_spike_consolidation_breakout_candidate.py": "7a599845dcf64e4cc5edfd2e877f36cacd747676c178fd8f998afb1b8fbdfa5e",
+      "C:\\AI\\Crypto\\scripts\\validate_btc_1d_post_spike_consolidation_breakout_friction.py": "a09e38d1332adc13d0086e36a84eed508a50136df84f18af623a1dbc7f7b0190",
+      "C:\\AI\\Crypto\\scripts\\run_btc_1d_walk_forward_post_spike_consolidation_breakout_candidate.py": "bdbc7c494b6ac2e92eefb614f7986d654d9e55989ba9bc8a3373accf5ba1cc6a"
+    }
+  },
+  "candidate_metrics": null,
+  "gate_state": {
+    "freeze_artifacts_present": false,
+    "signal_reproducibility": "pending",
+    "candle_finalization": "pending",
+    "research_vs_shadow_data_consistency": "pending",
+    "cost_slippage_stress": "pending",
+    "delayed_execution_stress": "pending"
+  },
+  "sizing_policy": {
+    "type": "shadow_target_weight_cap",
+    "max_model_weight": 0.2,
+    "max_symbol_weight": 0.2,
+    "max_order_notional_pct_of_sleeve": 0.05,
+    "max_leverage": 1.0
+  },
+  "risk_policy": {
+    "daily_loss_pause_pct": 0.005,
+    "daily_loss_stop_pct": 0.01,
+    "max_contract_drawdown_pct": 0.12,
+    "max_spread_bps": 20,
+    "max_slippage_bps": 25,
+    "stale_signal_minutes": 90,
+    "require_finalized_daily_bar": true
+  },
+  "order_policy": {
+    "intent_only": true,
+    "submit_to_broker": false,
+    "order_style": "shadow_limit_or_market_fallback",
+    "time_in_force": "shadow_day",
+    "client_order_id_prefix": "SHADOW"
+  },
+  "deactivation_rules": {
+    "signal_mismatch_count": 1,
+    "critical_exception_count": 1,
+    "unreconciled_position_minutes": 30,
+    "duplicate_intent_violation": 1
+  },
+  "approval": {
+    "approved_by": "system_generated_from_freeze_pack",
+    "approved_at_utc": "2026-05-09T21:33:59.917916+00:00",
+    "manual_live_approval": false
+  },
+  "payload_hash": "d9aec68b6d68eb335b52b941ebd14826ed8c9e529c92cf6ebbac0b96e2289cce"
+}

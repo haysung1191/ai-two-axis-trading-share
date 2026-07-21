@@ -1,0 +1,53 @@
+{
+  "generated_at_utc": "2026-05-05T01:15:42.388316+00:00",
+  "report": "bithumb_current_actionable_orca_repair_stop_condition_review",
+  "status": "ORCA_REPAIR_STOP_CONDITION_REVIEW_READY",
+  "scope": "orca_repair_stop_condition_review_only_no_order_paths",
+  "source_seed_packet": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_repair_seed_packet_latest.json",
+  "source_seed_sweep": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_repair_seed_sweep_latest.json",
+  "source_followup_packet": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_repair_followup_seed_packet_latest.json",
+  "source_followup_sweep": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_orca_repair_followup_seed_sweep_latest.json",
+  "base_candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2118",
+  "market": "KRW-ORCA",
+  "seed_generation_count": 2,
+  "total_seed_count": 6,
+  "total_evaluated_seed_count": 6,
+  "first_seed_oos_pass_count": 3,
+  "first_seed_robustness_pass_count": 0,
+  "followup_seed_oos_pass_count": 0,
+  "followup_seed_robustness_pass_count": 0,
+  "best_first_seed_id": "orca_selective_volume_stop05_hold3_tp18",
+  "best_followup_seed_id": "orca_followup_volume150_stop035_hold1_tp08",
+  "dominant_failure_dimensions": [
+    {
+      "dimension": "mdd_within_limit",
+      "case_count": 1050
+    },
+    {
+      "dimension": "positive_total_return",
+      "case_count": 388
+    },
+    {
+      "dimension": "enough_pass_folds",
+      "case_count": 336
+    },
+    {
+      "dimension": "enough_positive_folds",
+      "case_count": 314
+    }
+  ],
+  "recommended_branch_action": "STOP_ORCA_REPAIR_BRANCH_AUTOMATION",
+  "review_rationale": "First-generation ORCA repair seeds preserved OOS but found zero robustness-pass children; stricter follow-up seeds then lost OOS viability entirely.",
+  "ready_for_gatekeeper_review": true,
+  "blockers": [],
+  "counts_as_paper_or_live_evidence": false,
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "next_action": "Stop auto-expanding this ORCA repair branch and redirect research to alternate families or non-ORCA relief evidence."
+}

@@ -1,0 +1,99 @@
+{
+  "generated_at_utc": "2026-05-05T01:17:32.158721+00:00",
+  "report": "gatekeeper_evidence_taxonomy",
+  "scope": "decision_support_no_promotion_side_effects",
+  "status": "PASS",
+  "taxonomy": {
+    "replay_promotion_evidence": {
+      "purpose": "fast candidate selection, replayed execution logic checks, and edge-case review",
+      "can_advance_to": "ACCELERATED_SHADOW_REVIEW",
+      "counts_for_live_readiness": false,
+      "counts_for_extended_paper_promotion": false,
+      "historical_replay_non_flat_count": 7621,
+      "minimum_non_flat_for_accelerated_shadow": 20,
+      "ready": true
+    },
+    "accelerated_shadow_evidence": {
+      "purpose": "multi-asset current-snapshot signal breadth without broker submit",
+      "can_advance_to": "PAPER_SMOKE_REVIEW",
+      "counts_for_live_readiness": false,
+      "eligible_live_like_signal_count": 410,
+      "minimum_live_like_signals": 8,
+      "ready": true
+    },
+    "paper_smoke_evidence": {
+      "purpose": "short strict paper-runtime smoke test for data, dedup, order-candidate generation, and guards",
+      "can_advance_to": "EXTENDED_PAPER_OBSERVATION",
+      "counts_for_live_readiness": false,
+      "minimum_cycles": 24,
+      "minimum_non_flat": 1,
+      "minimum_executable": 1,
+      "paper_cycles_completed": 318,
+      "non_flat_signal_count": 55,
+      "executable_order_count": 52,
+      "ready": true
+    },
+    "extended_paper_evidence": {
+      "purpose": "promotion-review evidence before any live-readiness packet",
+      "can_advance_to": "HUMAN_PROMOTION_REVIEW",
+      "counts_for_live_readiness": false,
+      "decision": "PROMOTION_REVIEW_READY",
+      "evidence_gaps": [],
+      "ready": true
+    },
+    "live_readiness_evidence": {
+      "purpose": "separate live-readiness review only after explicit user approval and KRW caps",
+      "counts_historical_replay": false,
+      "requires_explicit_live_approval": true,
+      "ready": false
+    }
+  },
+  "current_decision": {
+    "pipeline_can_advance_without_waiting_for_5_of_5": true,
+    "recommended_gatekeeper_lane": "PAPER_SMOKE_REVIEW_READY",
+    "live_or_real_order_allowed": false,
+    "paper_promotion_5_of_5_still_required_for_extended_paper_or_live": true,
+    "safe_next_action": "Move qualifying candidates into paper-smoke/extended-paper review packets; do not wait for 5/5 to continue model-factory pull-through."
+  },
+  "safety": {
+    "risk_guard_status": "WARN",
+    "halt_count": 0,
+    "warn_count": 5,
+    "risk_guard_hard_safety_ok": true,
+    "live_enabled": false,
+    "broker_submit_allowed": false,
+    "private_submit_used": false,
+    "real_orders": 0,
+    "historical_replay_counts_as_live_readiness": false,
+    "historical_replay_counts_as_extended_paper_promotion": false,
+    "historical_replay_counts_as_paper_smoke": false,
+    "historical_replay_counts_as_accelerated_shadow": true
+  },
+  "event_stall_summary": {
+    "non_flat_signals": {
+      "last_increase_observed_at_utc": "2026-05-04T14:53:23.367764+00:00",
+      "observations_since_last_increase": 4,
+      "hours_since_last_increase": 10.397,
+      "paper_cycles_since_last_increase": 30,
+      "current_count": 55
+    },
+    "executable_orders": {
+      "last_increase_observed_at_utc": "2026-05-04T14:53:23.367764+00:00",
+      "observations_since_last_increase": 4,
+      "hours_since_last_increase": 10.397,
+      "paper_cycles_since_last_increase": 30,
+      "current_count": 52
+    },
+    "event_stall_status": "EVENT_EVIDENCE_STALLED",
+    "stall_severity": "REVIEW_STALL",
+    "max_hours_since_last_event": 10.397,
+    "max_paper_cycles_since_last_event": 30,
+    "safe_next_action": "Human review should inspect evidence velocity targets; keep order paths disabled."
+  },
+  "source_files": {
+    "paper_evidence": "C:\\AI\\ops\\reports\\paper_promotion_evidence_latest.json",
+    "acceleration": "C:\\AI\\ops\\reports\\paper_evidence_acceleration_latest.json",
+    "progress_delta": "C:\\AI\\ops\\reports\\paper_evidence_progress_delta_latest.json",
+    "risk_guard": "C:\\AI\\ops\\reports\\realtime_risk_guard_latest.json"
+  }
+}

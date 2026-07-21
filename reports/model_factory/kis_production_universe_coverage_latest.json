@@ -1,0 +1,119 @@
+{
+  "generated_at_utc": "2026-05-04T14:46:42.276883+00:00",
+  "report": "kis_production_universe_coverage",
+  "status": "KIS_API_UNIVERSE_READY",
+  "all_four_axes_local_coverage_present": true,
+  "kis_api_environment_ready": true,
+  "missing_kis_environment_requirements": [],
+  "axes": [
+    {
+      "axis": "kis_korea_stocks",
+      "source_mode": "local_price_files",
+      "source_dir": "C:\\AI\\momentum\\data\\prices\\stock",
+      "operating_dir": "C:\\AI\\momentum\\data\\prices_operating_v2\\stock",
+      "source_asset_count": 126,
+      "operating_asset_count": 59,
+      "sample_date_ranges": [
+        {
+          "rows": 1988,
+          "first_date": "2018-02-12",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 1988,
+          "first_date": "2018-02-12",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 1988,
+          "first_date": "2018-02-12",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 1988,
+          "first_date": "2018-02-12",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 1988,
+          "first_date": "2018-02-12",
+          "last_date": "2026-03-24"
+        }
+      ],
+      "local_coverage_present": true
+    },
+    {
+      "axis": "kis_us_stocks",
+      "source_mode": "local_point_in_time_coverage_snapshot",
+      "manifest_path": "C:\\AI\\data_snapshots\\manifests\\kis_us_stock_sp100_pitwiki_bdbcc995ecdb_manifest.json",
+      "asset_count": 132,
+      "row_count": 354249,
+      "min_timestamp": "2015-01-02",
+      "max_timestamp": "2026-04-17",
+      "missing_bars_count": 0,
+      "duplicate_timestamp_count": 0,
+      "bad_ohlc_count": 0,
+      "bad_volume_count": 0,
+      "local_coverage_present": true
+    },
+    {
+      "axis": "kis_korea_etfs",
+      "source_mode": "local_price_files",
+      "source_dir": "C:\\AI\\momentum\\data\\prices\\etf",
+      "operating_dir": "C:\\AI\\momentum\\data\\prices_operating_v2\\etf",
+      "source_asset_count": 8,
+      "operating_asset_count": 7,
+      "sample_date_ranges": [
+        {
+          "rows": 305,
+          "first_date": "2024-12-17",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 233,
+          "first_date": "2025-04-08",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 300,
+          "first_date": "2024-12-24",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 300,
+          "first_date": "2024-12-24",
+          "last_date": "2026-03-24"
+        },
+        {
+          "rows": 300,
+          "first_date": "2024-12-24",
+          "last_date": "2026-03-24"
+        }
+      ],
+      "local_coverage_present": true
+    },
+    {
+      "axis": "kis_us_etfs",
+      "source_mode": "local_coverage_snapshot",
+      "manifest_path": "C:\\AI\\data_snapshots\\manifests\\kis_us_etf_coverage_f658f78b3aa2_manifest.json",
+      "asset_count": 18,
+      "row_count": 51102,
+      "min_timestamp": "2015-01-02",
+      "max_timestamp": "2026-04-17",
+      "missing_bars_count": 0,
+      "duplicate_timestamp_count": 0,
+      "bad_ohlc_count": 0,
+      "bad_volume_count": 0,
+      "local_coverage_present": true
+    }
+  ],
+  "safety": {
+    "does_call_kis_api": false,
+    "paper_enabled": false,
+    "live_enabled": false,
+    "broker_submit_allowed": false,
+    "private_submit_used": false,
+    "real_orders": 0
+  },
+  "next_action": "Repair missing local KIS coverage axes before API validation."
+}

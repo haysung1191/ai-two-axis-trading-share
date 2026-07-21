@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-16T19:29:56+09:00",
+  "status": "READY_FOR_SEPARATE_SHADOW_REGISTRATION_REVIEW",
+  "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+  "evidence_summary": {
+    "market": "KRW-ORCA",
+    "timeframe": "1d",
+    "recommended_exposure_cap": 0.724065787923393,
+    "estimated_cagr": 1.6822725338689943,
+    "estimated_mdd": -0.2,
+    "oos_status": "OOS_WALKFORWARD_PASS",
+    "oos_pass_fold_count": 2,
+    "oos_positive_fold_count": 2,
+    "oos_total_trade_count": 17,
+    "robustness_status": "ROBUSTNESS_STRESS_PASS",
+    "robustness_pass_count": 7,
+    "robustness_cost_pass_count": 1,
+    "robustness_case_count": 7
+  },
+  "human_decision": {
+    "approved_for_shadow_review_only": true,
+    "decision": "APPROVE_SHADOW_REVIEW_ONLY",
+    "candidate_id": "bithumb_current_actionable_orca_1d_long_freeze001_sweep2154",
+    "decided_by": "human_gatekeeper",
+    "rationale": "HUMAN_REVIEWED_SWEEP2154_SHADOW_REVIEW_ONLY_NO_PAPER_LIVE_BROKER_ORDERS"
+  },
+  "operating_state": {
+    "shadow_enabled": false,
+    "paper_enabled": false,
+    "live_enabled": false
+  },
+  "blockers": [],
+  "single_next_action": "Review separate shadow registration packet; this preflight does not register or start loops.",
+  "no_order_assertions": {
+    "promotion_allowed_by_this_packet": false,
+    "shadow_enabled_by_this_packet": false,
+    "paper_enabled_by_this_packet": false,
+    "live_allowed_by_this_packet": false,
+    "broker_submit_allowed_by_this_packet": false,
+    "private_submit_allowed_by_this_packet": false,
+    "real_orders_allowed_by_this_packet": false
+  },
+  "safety": {
+    "does_register_shadow_candidate": false,
+    "does_start_shadow_loop": false,
+    "does_enable_paper": false,
+    "does_enable_live": false,
+    "broker_submit_allowed": false,
+    "real_orders_allowed": false
+  }
+}

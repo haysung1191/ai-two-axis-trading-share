@@ -1,0 +1,686 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-19T13:50:56+09:00",
+  "status": "OOS_WALKFORWARD_PASS",
+  "source": "C:\\AI\\reports\\model_factory\\bithumb_current_actionable_parameter_sweep_latest.json",
+  "candidate_count": 9,
+  "top_oos": {
+    "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5223",
+    "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+    "market": "KRW-BIO",
+    "timeframe": "1d",
+    "status": "OOS_CANDIDATE_PASS",
+    "parameters": {
+      "lookback_bars": 7,
+      "hold_bars": 3,
+      "volume_window": 20,
+      "volume_ratio_floor": 0.0,
+      "momentum_threshold": 0.02,
+      "stop_loss": 0.08,
+      "take_profit": 0.5,
+      "round_trip_cost_rate": 0.002,
+      "model_generation_source": "static_parameter_grid"
+    },
+    "source_conversion": {
+      "recommended_exposure_cap": 1.0,
+      "estimated_cagr": 2.0515149931255885,
+      "estimated_total_return": 1.2685787127099903,
+      "estimated_mdd": -0.082,
+      "source_cagr": 2.0515149931255885,
+      "source_total_return": 1.2685787127099903,
+      "source_mdd": -0.082,
+      "source_trade_count": 26,
+      "source_profit_factor": 2.39834872293593,
+      "pass_like": true
+    },
+    "folds": [
+      {
+        "total_return": -0.15089923631388236,
+        "cagr": -0.4887268004631635,
+        "mdd": -0.082,
+        "trade_count": 7,
+        "profit_factor": 0.4336706273192099,
+        "win_rate": 0.42857142857142855
+      },
+      {
+        "total_return": 0.04109458455408599,
+        "cagr": 0.1795854862856019,
+        "mdd": -0.07341826576251631,
+        "trade_count": 6,
+        "profit_factor": 1.3107628113293466,
+        "win_rate": 0.5
+      },
+      {
+        "total_return": 2.0452227893498494,
+        "cagr": 90.48376110368521,
+        "mdd": -0.082,
+        "trade_count": 11,
+        "profit_factor": 9.025920476324247,
+        "win_rate": 0.7272727272727273
+      }
+    ],
+    "aggregate": {
+      "fold_count": 3,
+      "pass_fold_count": 2,
+      "positive_fold_count": 2,
+      "worst_fold_mdd": -0.082,
+      "average_fold_cagr": 30.058206596502547,
+      "total_trade_count": 24
+    },
+    "order_paths_allowed": false,
+    "counts_as_paper_or_live_evidence": false
+  },
+  "evaluations": [
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5019",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.04,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 2.4683422369776364,
+        "estimated_total_return": 1.4921988321614563,
+        "estimated_mdd": -0.082,
+        "source_cagr": 2.4683422369776364,
+        "source_total_return": 1.4921988321614563,
+        "source_mdd": -0.082,
+        "source_trade_count": 23,
+        "source_profit_factor": 2.6993489491305973,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": 0.04463768539731694,
+          "cagr": 0.19613620145164212,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 1.32808997810984,
+          "win_rate": 0.42857142857142855
+        },
+        {
+          "total_return": -0.029496637006579896,
+          "cagr": -0.11555002704820516,
+          "mdd": -0.07341826576251631,
+          "trade_count": 5,
+          "profit_factor": 0.8327104755479487,
+          "win_rate": 0.4
+        },
+        {
+          "total_return": 1.6777946733568543,
+          "cagr": 53.309336546260006,
+          "mdd": -0.082,
+          "trade_count": 10,
+          "profit_factor": 6.415878655299662,
+          "win_rate": 0.6
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 17.796640906887813,
+        "total_trade_count": 22
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5007",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 2.136491160491006,
+        "estimated_total_return": 1.3147940464871666,
+        "estimated_mdd": -0.082,
+        "source_cagr": 2.136491160491006,
+        "source_total_return": 1.3147940464871666,
+        "source_mdd": -0.082,
+        "source_trade_count": 27,
+        "source_profit_factor": 2.31227183088636,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.13360141235725487,
+          "cagr": -0.4446423787749265,
+          "mdd": -0.082,
+          "trade_count": 8,
+          "profit_factor": 0.6857965651705776,
+          "win_rate": 0.375
+        },
+        {
+          "total_return": 0.04109458455408599,
+          "cagr": 0.1795854862856019,
+          "mdd": -0.07341826576251631,
+          "trade_count": 6,
+          "profit_factor": 1.3107628113293466,
+          "win_rate": 0.5
+        },
+        {
+          "total_return": 1.7955145206231613,
+          "cagr": 63.662194629353934,
+          "mdd": -0.082,
+          "trade_count": 12,
+          "profit_factor": 6.060535282820795,
+          "win_rate": 0.6666666666666666
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 21.132379245621536,
+        "total_trade_count": 26
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep4587",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 5,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.04,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 2.086852620148633,
+        "estimated_total_return": 1.2878385279242175,
+        "estimated_mdd": -0.082,
+        "source_cagr": 2.086852620148633,
+        "source_total_return": 1.2878385279242175,
+        "source_mdd": -0.082,
+        "source_trade_count": 24,
+        "source_profit_factor": 2.4180436242467103,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.04102260480526276,
+          "cagr": -0.1578414197505278,
+          "mdd": -0.082,
+          "trade_count": 8,
+          "profit_factor": 1.0124280122982259,
+          "win_rate": 0.375
+        },
+        {
+          "total_return": -0.029496637006579896,
+          "cagr": -0.11555002704820516,
+          "mdd": -0.07341826576251631,
+          "trade_count": 5,
+          "profit_factor": 0.8327104755479487,
+          "win_rate": 0.4
+        },
+        {
+          "total_return": 1.4582155101415921,
+          "cagr": 37.3867130907005,
+          "mdd": -0.082,
+          "trade_count": 11,
+          "profit_factor": 4.699682851880509,
+          "win_rate": 0.5454545454545454
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 12.371107214633923,
+        "total_trade_count": 24
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep4803",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 7,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.04,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 2.086852620148633,
+        "estimated_total_return": 1.2878385279242175,
+        "estimated_mdd": -0.082,
+        "source_cagr": 2.086852620148633,
+        "source_total_return": 1.2878385279242175,
+        "source_mdd": -0.082,
+        "source_trade_count": 24,
+        "source_profit_factor": 2.4180436242467103,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.04102260480526276,
+          "cagr": -0.1578414197505278,
+          "mdd": -0.082,
+          "trade_count": 8,
+          "profit_factor": 1.0124280122982259,
+          "win_rate": 0.375
+        },
+        {
+          "total_return": -0.029496637006579896,
+          "cagr": -0.11555002704820516,
+          "mdd": -0.07341826576251631,
+          "trade_count": 5,
+          "profit_factor": 0.8327104755479487,
+          "win_rate": 0.4
+        },
+        {
+          "total_return": 1.4582155101415921,
+          "cagr": 37.3867130907005,
+          "mdd": -0.082,
+          "trade_count": 11,
+          "profit_factor": 4.699682851880509,
+          "win_rate": 0.5454545454545454
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 12.371107214633923,
+        "total_trade_count": 24
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5223",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 2.0515149931255885,
+        "estimated_total_return": 1.2685787127099903,
+        "estimated_mdd": -0.082,
+        "source_cagr": 2.0515149931255885,
+        "source_total_return": 1.2685787127099903,
+        "source_mdd": -0.082,
+        "source_trade_count": 26,
+        "source_profit_factor": 2.39834872293593,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.15089923631388236,
+          "cagr": -0.4887268004631635,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 0.4336706273192099,
+          "win_rate": 0.42857142857142855
+        },
+        {
+          "total_return": 0.04109458455408599,
+          "cagr": 0.1795854862856019,
+          "mdd": -0.07341826576251631,
+          "trade_count": 6,
+          "profit_factor": 1.3107628113293466,
+          "win_rate": 0.5
+        },
+        {
+          "total_return": 2.0452227893498494,
+          "cagr": 90.48376110368521,
+          "mdd": -0.082,
+          "trade_count": 11,
+          "profit_factor": 9.025920476324247,
+          "win_rate": 0.7272727272727273
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 30.058206596502547,
+        "total_trade_count": 24
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5001",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_ITERATE",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.01,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 1.9858348058219706,
+        "estimated_total_return": 1.232623127853727,
+        "estimated_mdd": -0.082,
+        "source_cagr": 1.9858348058219706,
+        "source_total_return": 1.232623127853727,
+        "source_mdd": -0.082,
+        "source_trade_count": 30,
+        "source_profit_factor": 2.115552414964812,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.23111442712035257,
+          "cagr": -0.6596664420393548,
+          "mdd": -0.082,
+          "trade_count": 9,
+          "profit_factor": 0.5144167272597663,
+          "win_rate": 0.3333333333333333
+        },
+        {
+          "total_return": -0.04412343929113516,
+          "cagr": -0.16895333699815884,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 0.8733899430784584,
+          "win_rate": 0.5714285714285714
+        },
+        {
+          "total_return": 1.7955145206231613,
+          "cagr": 63.662194629353934,
+          "mdd": -0.082,
+          "trade_count": 12,
+          "profit_factor": 6.060535282820795,
+          "win_rate": 0.6666666666666666
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 20.94452495010547,
+        "total_trade_count": 28
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5013",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_ITERATE",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 10,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 1.9257957100804877,
+        "estimated_total_return": 1.1995713760481843,
+        "estimated_mdd": -0.082,
+        "source_cagr": 1.9257957100804877,
+        "source_total_return": 1.1995713760481843,
+        "source_mdd": -0.082,
+        "source_trade_count": 25,
+        "source_profit_factor": 2.381864512346263,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.13360141235725487,
+          "cagr": -0.4446423787749265,
+          "mdd": -0.082,
+          "trade_count": 8,
+          "profit_factor": 0.6857965651705776,
+          "win_rate": 0.375
+        },
+        {
+          "total_return": -0.029496637006579896,
+          "cagr": -0.11555002704820516,
+          "mdd": -0.07341826576251631,
+          "trade_count": 5,
+          "profit_factor": 0.8327104755479487,
+          "win_rate": 0.4
+        },
+        {
+          "total_return": 1.6159128973395882,
+          "cagr": 48.39629886951524,
+          "mdd": -0.082,
+          "trade_count": 12,
+          "profit_factor": 5.1103705563137325,
+          "win_rate": 0.5833333333333334
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 15.945368821230703,
+        "total_trade_count": 25
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep5229",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_ITERATE",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 20,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.03,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 1.8465278616425191,
+        "estimated_total_return": 1.155656486313152,
+        "estimated_mdd": -0.082,
+        "source_cagr": 1.8465278616425191,
+        "source_total_return": 1.155656486313152,
+        "source_mdd": -0.082,
+        "source_trade_count": 24,
+        "source_profit_factor": 2.487390138660172,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.15089923631388236,
+          "cagr": -0.4887268004631635,
+          "mdd": -0.082,
+          "trade_count": 7,
+          "profit_factor": 0.4336706273192099,
+          "win_rate": 0.42857142857142855
+        },
+        {
+          "total_return": -0.029496637006579896,
+          "cagr": -0.11555002704820516,
+          "mdd": -0.07341826576251631,
+          "trade_count": 5,
+          "profit_factor": 0.8327104755479487,
+          "win_rate": 0.4
+        },
+        {
+          "total_return": 1.8495783195420343,
+          "cagr": 68.88564540822965,
+          "mdd": -0.082,
+          "trade_count": 11,
+          "profit_factor": 7.11274497665496,
+          "win_rate": 0.6363636363636364
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 1,
+        "positive_fold_count": 1,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 22.76045619357276,
+        "total_trade_count": 23
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    },
+    {
+      "candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001_sweep4575",
+      "parent_candidate_id": "bithumb_current_actionable_bio_1d_long_freeze001",
+      "market": "KRW-BIO",
+      "timeframe": "1d",
+      "status": "OOS_CANDIDATE_PASS",
+      "parameters": {
+        "lookback_bars": 7,
+        "hold_bars": 3,
+        "volume_window": 5,
+        "volume_ratio_floor": 0.0,
+        "momentum_threshold": 0.02,
+        "stop_loss": 0.08,
+        "take_profit": 0.5,
+        "round_trip_cost_rate": 0.002,
+        "model_generation_source": "static_parameter_grid"
+      },
+      "source_conversion": {
+        "recommended_exposure_cap": 1.0,
+        "estimated_cagr": 1.79150248023725,
+        "estimated_total_return": 1.1249809346752189,
+        "estimated_mdd": -0.082,
+        "source_cagr": 1.79150248023725,
+        "source_total_return": 1.1249809346752189,
+        "source_mdd": -0.082,
+        "source_trade_count": 28,
+        "source_profit_factor": 2.111224409178222,
+        "pass_like": true
+      },
+      "folds": [
+        {
+          "total_return": -0.20464609654396004,
+          "cagr": -0.6089916973886191,
+          "mdd": -0.082,
+          "trade_count": 9,
+          "profit_factor": 0.5540979273626446,
+          "win_rate": 0.3333333333333333
+        },
+        {
+          "total_return": 0.04109458455408599,
+          "cagr": 0.1795854862856019,
+          "mdd": -0.07341826576251631,
+          "trade_count": 6,
+          "profit_factor": 1.3107628113293466,
+          "win_rate": 0.5
+        },
+        {
+          "total_return": 1.5662823299320623,
+          "cagr": 44.70427979612244,
+          "mdd": -0.082,
+          "trade_count": 13,
+          "profit_factor": 4.561797606772522,
+          "win_rate": 0.6153846153846154
+        }
+      ],
+      "aggregate": {
+        "fold_count": 3,
+        "pass_fold_count": 2,
+        "positive_fold_count": 2,
+        "worst_fold_mdd": -0.082,
+        "average_fold_cagr": 14.758291195006477,
+        "total_trade_count": 28
+      },
+      "order_paths_allowed": false,
+      "counts_as_paper_or_live_evidence": false
+    }
+  ],
+  "errors": [],
+  "aggregate": {
+    "fold_count": 3,
+    "candidate_count": 9,
+    "evaluated_count": 9,
+    "pass_count": 6,
+    "error_count": 0
+  },
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  },
+  "single_next_action": "Keep OOS pass candidates in model verification for tiny-live precondition review."
+}

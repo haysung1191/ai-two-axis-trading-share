@@ -1,0 +1,16 @@
+# Core (KIS / momentum axis)
+requests
+pandas
+python-dotenv
+openpyxl
+finance-datareader
+pykrx
+streamlit
+plotly
+google-cloud-storage
+gcsfs
+yfinance
+
+# Bithumb crypto client
+httpx
+tenacity

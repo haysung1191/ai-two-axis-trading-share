@@ -1,0 +1,42 @@
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from app.domains.experiments.btc_1d_breakout_retest_compression_batch import (
+    Btc1dBreakoutRetestCompressionBatchService,
+    Btc1dBreakoutRetestCompressionConfig,
+)
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Run the BTC 1d breakout-retest compression batch.")
+    parser.add_argument("--analysis-dir", type=Path, default=Path("analysis_results"))
+    parser.add_argument("--periods", type=int, default=2200)
+    parser.add_argument("--fee-bps", type=float, default=8.0)
+    parser.add_argument("--slippage-bps", type=float, default=8.0)
+    parser.add_argument("--allow-synthetic-ohlcv-fallback", action="store_true")
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    config = Btc1dBreakoutRetestCompressionConfig(
+        periods=args.periods,
+        fee_bps=args.fee_bps,
+        slippage_bps=args.slippage_bps,
+        allow_synthetic_ohlcv_fallback=bool(args.allow_synthetic_ohlcv_fallback),
+    )
+    result = Btc1dBreakoutRetestCompressionBatchService(analysis_results_dir=args.analysis_dir).run_batch(config)
+    print(json.dumps(result, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

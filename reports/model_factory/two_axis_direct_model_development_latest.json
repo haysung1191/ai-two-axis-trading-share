@@ -1,0 +1,4018 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-05-19T04:50:56.461935+00:00",
+  "report": "two_axis_direct_model_development",
+  "status": "TWO_AXIS_DIRECT_DEVELOPMENT_OK",
+  "crypto": {
+    "status": "CRYPTO_DIRECT_DEVELOPMENT_OK",
+    "raw_dir": "C:\\AI\\Crypto\\data\\bithumb_stage2_archive\\backfill_full\\20260513T111003Z",
+    "market_count": 10,
+    "candidate_market_count": 8,
+    "validated_market_count": 5,
+    "validated_markets": [
+      "KRW-BTC",
+      "KRW-ETH",
+      "KRW-ONDO",
+      "KRW-ORCA",
+      "KRW-SOL"
+    ],
+    "evaluated_count": 2880,
+    "candidate_count": 192,
+    "oos_pass_count": 165,
+    "validated_pass_count": 67,
+    "archive_signal_triggered_count": 1,
+    "top_live_signal_summary": {
+      "market_count": 5,
+      "all_live_verified": true,
+      "data_source_by_market": {
+        "KRW-BTC": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-BTC&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "KRW-ETH": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "KRW-ONDO": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ONDO&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "KRW-ORCA": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ORCA&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "KRW-SOL": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-SOL&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        }
+      },
+      "triggered_count": 0,
+      "top_live_near_miss_candidate": {
+        "candidate_id": "bithumb_direct_krw_ondo_4a3728c550",
+        "market": "KRW-ONDO",
+        "live_near_miss_rank": 1,
+        "momentum": 0.22340425531914887,
+        "momentum_threshold": 0.06,
+        "volume_ratio": 0.9828366504343724,
+        "volume_ratio_floor": 1.0,
+        "momentum_gap": 0.16340425531914887,
+        "volume_gap": -0.017163349565627595,
+        "nearest_trigger_gap": -0.017163349565627595,
+        "blocking_conditions": [
+          "volume_ratio_below_floor"
+        ],
+        "data_status": "LIVE_FETCH_OK",
+        "latest_timestamp": "2026-05-18T15:00:00"
+      }
+    },
+    "top_live_signal_triggered_count": 0,
+    "top_live_near_miss_candidate": {
+      "candidate_id": "bithumb_direct_krw_ondo_4a3728c550",
+      "market": "KRW-ONDO",
+      "live_near_miss_rank": 1,
+      "momentum": 0.22340425531914887,
+      "momentum_threshold": 0.06,
+      "volume_ratio": 0.9828366504343724,
+      "volume_ratio_floor": 1.0,
+      "momentum_gap": 0.16340425531914887,
+      "volume_gap": -0.017163349565627595,
+      "nearest_trigger_gap": -0.017163349565627595,
+      "blocking_conditions": [
+        "volume_ratio_below_floor"
+      ],
+      "data_status": "LIVE_FETCH_OK",
+      "latest_timestamp": "2026-05-18T15:00:00"
+    },
+    "top_candidates": [
+      {
+        "candidate_id": "bithumb_direct_krw_orca_161be61110",
+        "market": "KRW-ORCA",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 5,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 0.7867491096793691,
+          "cagr": 0.6722790503812945,
+          "mdd": -0.3320214765000403,
+          "trade_count": 21,
+          "win_rate": 0.42857142857142855,
+          "profit_factor": 2.02191658165735,
+          "average_holding_bars": 3.8095238095238093
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 0.13600006257032327,
+              "cagr": 0.4045618676102569,
+              "mdd": -0.15352716058837346,
+              "trade_count": 7,
+              "win_rate": 0.7142857142857143,
+              "profit_factor": 1.7608801551316031,
+              "average_holding_bars": 4.714285714285714
+            },
+            {
+              "total_return": -0.3248845416546753,
+              "cagr": -0.6489061048381706,
+              "mdd": -0.3248845416546753,
+              "trade_count": 6,
+              "win_rate": 0.16666666666666666,
+              "profit_factor": 0.05549166852556502,
+              "average_holding_bars": 2.6666666666666665
+            },
+            {
+              "total_return": 1.342866808193926,
+              "cagr": 8.50507630986847,
+              "mdd": -0.2709515929247198,
+              "trade_count": 8,
+              "win_rate": 0.375,
+              "profit_factor": 4.595956656032996,
+              "average_holding_bars": 3.75
+            }
+          ],
+          "positive_fold_count": 2,
+          "pass_fold_count": 2,
+          "average_fold_cagr": 2.753577357546852,
+          "worst_fold_mdd": -0.3248845416546753,
+          "total_trade_count": 21,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": -0.25479771216244607,
+            "cagr": -0.3111490490589003,
+            "mdd": -0.3320214765000403,
+            "trade_count": 14,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 0.6036675271362437,
+            "average_holding_bars": 3.857142857142857
+          },
+          "holdout": {
+            "total_return": 1.3976699197531994,
+            "cagr": 12.119837638321505,
+            "mdd": -0.27095159292472004,
+            "trade_count": 7,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 4.946818348029982,
+            "average_holding_bars": 3.5714285714285716
+          },
+          "high_cost_holdout": {
+            "total_return": 1.337325595763657,
+            "cagr": 11.171464888705795,
+            "mdd": -0.2835085919095779,
+            "trade_count": 7,
+            "win_rate": 0.42857142857142855,
+            "profit_factor": 4.6578256492129,
+            "average_holding_bars": 3.5714285714285716
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.0797041906327034,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.14160805063956225,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 2240.0,
+          "base_close": 2434.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.1097041906327034,
+          "volume_gap": -0.8583919493604377,
+          "nearest_trigger_gap": -0.8583919493604377,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ORCA&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.024074074074074026,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.06630441064224364,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 2108.0,
+          "base_close": 2160.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.054074074074074024,
+          "volume_gap": -0.9336955893577563,
+          "nearest_trigger_gap": -0.9336955893577563,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 25
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_676e4280d8",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 14,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 9279.300934872146,
+          "cagr": 1.5857184828309538,
+          "mdd": -0.28868489047316814,
+          "trade_count": 155,
+          "win_rate": 0.6258064516129033,
+          "profit_factor": 3.8707428594340807,
+          "average_holding_bars": 6.212903225806452
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 224.3098008190579,
+              "cagr": 4.419846031694022,
+              "mdd": -0.28868489047316814,
+              "trade_count": 55,
+              "win_rate": 0.6363636363636364,
+              "profit_factor": 4.7647476552081685,
+              "average_holding_bars": 5.381818181818182
+            },
+            {
+              "total_return": 16.216197477513166,
+              "cagr": 1.4297979607284383,
+              "mdd": -0.23698638049952192,
+              "trade_count": 52,
+              "win_rate": 0.6730769230769231,
+              "profit_factor": 4.349731496727691,
+              "average_holding_bars": 6.519230769230769
+            },
+            {
+              "total_return": 1.4751321610843262,
+              "cagr": 0.32675044617413707,
+              "mdd": -0.2767922321688857,
+              "trade_count": 48,
+              "win_rate": 0.5625,
+              "profit_factor": 2.003499491502241,
+              "average_holding_bars": 6.833333333333333
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 2.058798146198866,
+          "worst_fold_mdd": -0.28868489047316814,
+          "total_trade_count": 155,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 3829.2957842499613,
+            "cagr": 2.4064938443277875,
+            "mdd": -0.28868489047316814,
+            "trade_count": 113,
+            "win_rate": 0.6460176991150443,
+            "profit_factor": 4.472781959325953,
+            "average_holding_bars": 5.991150442477876
+          },
+          "holdout": {
+            "total_return": 1.4874706439453758,
+            "cagr": 0.3714534163700218,
+            "mdd": -0.2767922321688858,
+            "trade_count": 41,
+            "win_rate": 0.5853658536585366,
+            "profit_factor": 2.149084501595216,
+            "average_holding_bars": 6.804878048780488
+          },
+          "high_cost_holdout": {
+            "total_return": 1.1167870739797983,
+            "cagr": 0.2968479182253634,
+            "mdd": -0.29211213123774105,
+            "trade_count": 41,
+            "win_rate": 0.5365853658536586,
+            "profit_factor": 1.9094964950878348,
+            "average_holding_bars": 6.804878048780488
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.0064214827787507645,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3426000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.021421482778750764,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.09886363636363638,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3520000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.11386363636363638,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 15
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_ondo_4a3728c550",
+        "market": "KRW-ONDO",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 14,
+          "hold_bars": 3,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 1.567557732089893,
+          "cagr": 0.58137351146421,
+          "mdd": -0.2418718008631262,
+          "trade_count": 40,
+          "win_rate": 0.5,
+          "profit_factor": 2.0611969211132837,
+          "average_holding_bars": 2.9
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 1.1672586303148207,
+              "cagr": 2.093354419535149,
+              "mdd": -0.24088663158730772,
+              "trade_count": 19,
+              "win_rate": 0.5789473684210527,
+              "profit_factor": 2.6810239600700903,
+              "average_holding_bars": 2.9473684210526314
+            },
+            {
+              "total_return": -0.023594517389051495,
+              "cagr": -0.03426025387045628,
+              "mdd": -0.13409941936513736,
+              "trade_count": 11,
+              "win_rate": 0.45454545454545453,
+              "profit_factor": 1.0149827852445374,
+              "average_holding_bars": 2.727272727272727
+            },
+            {
+              "total_return": 0.13402588827345485,
+              "cagr": 0.20069252675674343,
+              "mdd": -0.18108574857030013,
+              "trade_count": 9,
+              "win_rate": 0.3333333333333333,
+              "profit_factor": 1.7697319770360431,
+              "average_holding_bars": 3
+            }
+          ],
+          "positive_fold_count": 2,
+          "pass_fold_count": 2,
+          "average_fold_cagr": 0.7532622308071454,
+          "worst_fold_mdd": -0.24088663158730772,
+          "total_trade_count": 39,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1.2641085698660528,
+            "cagr": 0.7649730854228947,
+            "mdd": -0.24088663158730772,
+            "trade_count": 31,
+            "win_rate": 0.5483870967741935,
+            "profit_factor": 2.135163210383281,
+            "average_holding_bars": 2.870967741935484
+          },
+          "holdout": {
+            "total_return": 0.13402588827345485,
+            "cagr": 0.22523251049567095,
+            "mdd": -0.18108574857030013,
+            "trade_count": 9,
+            "win_rate": 0.3333333333333333,
+            "profit_factor": 1.7697319770360431,
+            "average_holding_bars": 3
+          },
+          "high_cost_holdout": {
+            "total_return": 0.09421560289582032,
+            "cagr": 0.15651939144016724,
+            "mdd": -0.20080078611661734,
+            "trade_count": 9,
+            "win_rate": 0.2222222222222222,
+            "profit_factor": 1.543414639715375,
+            "average_holding_bars": 3
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": 0.4949238578680204,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.6667657291518314,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 589.0,
+          "base_close": 394.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": 0.4349238578680204,
+          "volume_gap": -0.3332342708481686,
+          "nearest_trigger_gap": -0.3332342708481686,
+          "blocking_conditions": [
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ONDO&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": 0.22340425531914887,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.9828366504343724,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 575.0,
+          "base_close": 470.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": 0.16340425531914887,
+          "volume_gap": -0.017163349565627595,
+          "nearest_trigger_gap": -0.017163349565627595,
+          "blocking_conditions": [
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 1
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_btc_6ed62cc53d",
+        "market": "KRW-BTC",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 5,
+          "hold_bars": 10,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 400.8679381141158,
+          "cagr": 0.6389196346470929,
+          "mdd": -0.2805886414234897,
+          "trade_count": 141,
+          "win_rate": 0.6312056737588653,
+          "profit_factor": 2.9243782890750345,
+          "average_holding_bars": 8.921985815602836
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 16.092470012582186,
+              "cagr": 1.0177170885898685,
+              "mdd": -0.2739930721462831,
+              "trade_count": 55,
+              "win_rate": 0.6181818181818182,
+              "profit_factor": 3.040576554001386,
+              "average_holding_bars": 8.218181818181819
+            },
+            {
+              "total_return": 6.126612372196741,
+              "cagr": 0.6252098579953753,
+              "mdd": -0.26427860039882345,
+              "trade_count": 47,
+              "win_rate": 0.6170212765957447,
+              "profit_factor": 2.6988887445050938,
+              "average_holding_bars": 8.914893617021276
+            },
+            {
+              "total_return": 1.4588908532302725,
+              "cagr": 0.24880648883420742,
+              "mdd": -0.15576644803976503,
+              "trade_count": 37,
+              "win_rate": 0.6486486486486487,
+              "profit_factor": 2.599903880337281,
+              "average_holding_bars": 9.91891891891892
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 0.6305778118064838,
+          "worst_fold_mdd": -0.2739930721462831,
+          "total_trade_count": 139,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 153.15190531885062,
+            "cagr": 0.8093819917307326,
+            "mdd": -0.2739930721462831,
+            "trade_count": 108,
+            "win_rate": 0.6203703703703703,
+            "profit_factor": 2.9006869193954716,
+            "average_holding_bars": 8.62037037037037
+          },
+          "holdout": {
+            "total_return": 1.6880267995404474,
+            "cagr": 0.31202090195932963,
+            "mdd": -0.15576644803976514,
+            "trade_count": 32,
+            "win_rate": 0.6875,
+            "profit_factor": 3.268542220888778,
+            "average_holding_bars": 9.90625
+          },
+          "high_cost_holdout": {
+            "total_return": 1.3728558982060104,
+            "cagr": 0.26784306357835996,
+            "mdd": -0.18954363733544477,
+            "trade_count": 32,
+            "win_rate": 0.6875,
+            "profit_factor": 2.852888200632502,
+            "average_holding_bars": 9.90625
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": 0.007981418918918903,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.7069743315975864,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 119345000.0,
+          "base_close": 118400000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.052018581081081094,
+          "volume_gap": -0.2930256684024136,
+          "nearest_trigger_gap": -0.2930256684024136,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-BTC&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.04470305177066192,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 1.226852367380654,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 114350000.0,
+          "base_close": 119701000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.10470305177066191,
+          "volume_gap": 0.22685236738065395,
+          "nearest_trigger_gap": -0.10470305177066191,
+          "blocking_conditions": [
+            "momentum_below_threshold"
+          ]
+        },
+        "live_near_miss_rank": 2
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_sol_e93119aafa",
+        "market": "KRW-SOL",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 3,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 8.254441576849548,
+          "cagr": 0.599561926030088,
+          "mdd": -0.264035779178312,
+          "trade_count": 111,
+          "win_rate": 0.5495495495495496,
+          "profit_factor": 2.176182971675856,
+          "average_holding_bars": 2.945945945945946
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 0.9331311211021636,
+              "cagr": 0.5184420690154847,
+              "mdd": -0.264035779178312,
+              "trade_count": 31,
+              "win_rate": 0.45161290322580644,
+              "profit_factor": 2.0296223858065954,
+              "average_holding_bars": 2.774193548387097
+            },
+            {
+              "total_return": 2.070877555369372,
+              "cagr": 1.035957799349835,
+              "mdd": -0.21681277248068953,
+              "trade_count": 42,
+              "win_rate": 0.6190476190476191,
+              "profit_factor": 2.547503516771518,
+              "average_holding_bars": 3
+            },
+            {
+              "total_return": 0.4467447985043611,
+              "cagr": 0.2631679541105678,
+              "mdd": -0.20689761178961785,
+              "trade_count": 33,
+              "win_rate": 0.5151515151515151,
+              "profit_factor": 1.873596764057976,
+              "average_holding_bars": 3
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 0.6058559408252958,
+          "worst_fold_mdd": -0.264035779178312,
+          "total_trade_count": 106,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 6.039794543258219,
+            "cagr": 0.8016437561534957,
+            "mdd": -0.264035779178312,
+            "trade_count": 81,
+            "win_rate": 0.5679012345679012,
+            "profit_factor": 2.3072734535923622,
+            "average_holding_bars": 2.925925925925926
+          },
+          "holdout": {
+            "total_return": 0.31458972559252074,
+            "cagr": 0.21211064278474168,
+            "mdd": -0.20689761178961763,
+            "trade_count": 30,
+            "win_rate": 0.5,
+            "profit_factor": 1.7036310181307686,
+            "average_holding_bars": 3
+          },
+          "high_cost_holdout": {
+            "total_return": 0.16664567343587167,
+            "cagr": 0.11449094160140527,
+            "mdd": -0.22027113486004213,
+            "trade_count": 30,
+            "win_rate": 0.5,
+            "profit_factor": 1.4070564179105356,
+            "average_holding_bars": 3
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": 0.07538461538461538,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.6290614834693935,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 139800.0,
+          "base_close": 130000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": 0.015384615384615385,
+          "volume_gap": -0.3709385165306065,
+          "nearest_trigger_gap": -0.3709385165306065,
+          "blocking_conditions": [
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-SOL&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.09499999999999997,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.2678622970895755,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 126700.0,
+          "base_close": 140000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.15499999999999997,
+          "volume_gap": -0.7321377029104246,
+          "nearest_trigger_gap": -0.7321377029104246,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 14
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_59a4cf1261",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 14,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 7824.345037600916,
+          "cagr": 1.5402706657180536,
+          "mdd": -0.2946622704002897,
+          "trade_count": 143,
+          "win_rate": 0.6363636363636364,
+          "profit_factor": 3.9607167913966044,
+          "average_holding_bars": 6.118881118881119
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 251.30282992188503,
+              "cagr": 4.614584016503399,
+              "mdd": -0.2570861640391352,
+              "trade_count": 54,
+              "win_rate": 0.6481481481481481,
+              "profit_factor": 4.910703980528771,
+              "average_holding_bars": 5.407407407407407
+            },
+            {
+              "total_return": 11.90410904774605,
+              "cagr": 1.220798574576878,
+              "mdd": -0.23698638049952192,
+              "trade_count": 50,
+              "win_rate": 0.66,
+              "profit_factor": 4.001279933730755,
+              "average_holding_bars": 6.46
+            },
+            {
+              "total_return": 1.3085823044375453,
+              "cagr": 0.2982290740826108,
+              "mdd": -0.2946622704002898,
+              "trade_count": 38,
+              "win_rate": 0.5789473684210527,
+              "profit_factor": 2.0635440325279983,
+              "average_holding_bars": 6.657894736842105
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 2.0445372217209625,
+          "worst_fold_mdd": -0.2946622704002898,
+          "total_trade_count": 142,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 3356.960478965568,
+            "cagr": 2.3405400404678987,
+            "mdd": -0.2588739835130246,
+            "trade_count": 107,
+            "win_rate": 0.6542056074766355,
+            "profit_factor": 4.495977625186594,
+            "average_holding_bars": 5.934579439252336
+          },
+          "holdout": {
+            "total_return": 1.3303862825721935,
+            "cagr": 0.3407908984970014,
+            "mdd": -0.2946622704002899,
+            "trade_count": 36,
+            "win_rate": 0.5833333333333334,
+            "profit_factor": 2.1727334853225178,
+            "average_holding_bars": 6.666666666666667
+          },
+          "high_cost_holdout": {
+            "total_return": 1.0229193135582184,
+            "cagr": 0.27661794426528696,
+            "mdd": -0.31518608082201116,
+            "trade_count": 36,
+            "win_rate": 0.5555555555555556,
+            "profit_factor": 1.937952928163583,
+            "average_holding_bars": 6.666666666666667
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.0064214827787507645,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3426000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.03642148277875076,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.09886363636363638,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3520000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.12886363636363637,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 16
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_25c250ff4f",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 4843.158654779038,
+          "cagr": 1.4166887061485296,
+          "mdd": -0.2966926076208649,
+          "trade_count": 161,
+          "win_rate": 0.6149068322981367,
+          "profit_factor": 3.5295121417824067,
+          "average_holding_bars": 6.273291925465839
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 192.10522534251967,
+              "cagr": 4.165229101560715,
+              "mdd": -0.2966926076208649,
+              "trade_count": 63,
+              "win_rate": 0.5873015873015873,
+              "profit_factor": 4.292026550218802,
+              "average_holding_bars": 5.634920634920635
+            },
+            {
+              "total_return": 10.142741551904175,
+              "cagr": 1.1214154494831896,
+              "mdd": -0.18251672713860534,
+              "trade_count": 49,
+              "win_rate": 0.673469387755102,
+              "profit_factor": 4.068777077323677,
+              "average_holding_bars": 6.591836734693878
+            },
+            {
+              "total_return": 1.2512943187208938,
+              "cagr": 0.28809181611883106,
+              "mdd": -0.2086240469641384,
+              "trade_count": 49,
+              "win_rate": 0.5918367346938775,
+              "profit_factor": 1.825684154904096,
+              "average_holding_bars": 6.775510204081633
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.8582454557209118,
+          "worst_fold_mdd": -0.2966926076208649,
+          "total_trade_count": 161,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 2232.601823280293,
+            "cagr": 2.144213640874035,
+            "mdd": -0.2966926076208649,
+            "trade_count": 117,
+            "win_rate": 0.6239316239316239,
+            "profit_factor": 4.129214558523247,
+            "average_holding_bars": 6.068376068376068
+          },
+          "holdout": {
+            "total_return": 1.203132114736532,
+            "cagr": 0.3149453085975682,
+            "mdd": -0.2086240469641384,
+            "trade_count": 44,
+            "win_rate": 0.5909090909090909,
+            "profit_factor": 1.8771678641477192,
+            "average_holding_bars": 6.75
+          },
+          "high_cost_holdout": {
+            "total_return": 0.8515644487081928,
+            "cagr": 0.23804557621062794,
+            "mdd": -0.21885980793116844,
+            "trade_count": 44,
+            "win_rate": 0.5681818181818182,
+            "profit_factor": 1.6723661050635288,
+            "average_holding_bars": 6.75
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.033737388296338974,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0720749108204518,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 17
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_75542183f0",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 14,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 3597.95817083865,
+          "cagr": 1.3431595465756505,
+          "mdd": -0.3178036619468261,
+          "trade_count": 128,
+          "win_rate": 0.609375,
+          "profit_factor": 3.8104210199616366,
+          "average_holding_bars": 6.078125
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 209.02500766498264,
+              "cagr": 4.302359395440564,
+              "mdd": -0.27489718087841375,
+              "trade_count": 52,
+              "win_rate": 0.6346153846153846,
+              "profit_factor": 4.5726567659525195,
+              "average_holding_bars": 5.288461538461538
+            },
+            {
+              "total_return": 7.743746505245483,
+              "cagr": 0.9668780938268535,
+              "mdd": -0.16691895123171463,
+              "trade_count": 42,
+              "win_rate": 0.6428571428571429,
+              "profit_factor": 3.9364707989475534,
+              "average_holding_bars": 6.595238095238095
+            },
+            {
+              "total_return": 0.9597841077717018,
+              "cagr": 0.2335563073170861,
+              "mdd": -0.31780366194682597,
+              "trade_count": 34,
+              "win_rate": 0.5294117647058824,
+              "profit_factor": 1.9678407106012272,
+              "average_holding_bars": 6.647058823529412
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.8342645988615012,
+          "worst_fold_mdd": -0.31780366194682597,
+          "total_trade_count": 128,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1989.1802562364182,
+            "cagr": 2.0907754397536316,
+            "mdd": -0.27489718087841375,
+            "trade_count": 95,
+            "win_rate": 0.6421052631578947,
+            "profit_factor": 4.408288176483967,
+            "average_holding_bars": 5.88421052631579
+          },
+          "holdout": {
+            "total_return": 0.8083578909804661,
+            "cagr": 0.22795413801828124,
+            "mdd": -0.31780366194682586,
+            "trade_count": 33,
+            "win_rate": 0.5151515151515151,
+            "profit_factor": 1.8694481473345967,
+            "average_holding_bars": 6.636363636363637
+          },
+          "high_cost_holdout": {
+            "total_return": 0.5872037876649763,
+            "cagr": 0.17366740865038488,
+            "mdd": -0.3377437705563857,
+            "trade_count": 33,
+            "win_rate": 0.48484848484848486,
+            "profit_factor": 1.6637525385816372,
+            "average_holding_bars": 6.636363636363637
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.0064214827787507645,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3426000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.06642148277875076,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.09886363636363638,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3520000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.15886363636363637,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 22
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_38eaaff40f",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 10,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 5292.678377569808,
+          "cagr": 1.439092941540812,
+          "mdd": -0.33415005610901727,
+          "trade_count": 148,
+          "win_rate": 0.581081081081081,
+          "profit_factor": 3.1643997623889266,
+          "average_holding_bars": 8.39864864864865
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 164.80116738262603,
+              "cagr": 3.9253312371656026,
+              "mdd": -0.33415005610901727,
+              "trade_count": 58,
+              "win_rate": 0.5517241379310345,
+              "profit_factor": 3.709217427743255,
+              "average_holding_bars": 7
+            },
+            {
+              "total_return": 12.872150274550636,
+              "cagr": 1.2714846859510716,
+              "mdd": -0.19692150136022146,
+              "trade_count": 44,
+              "win_rate": 0.6590909090909091,
+              "profit_factor": 3.9101237381499954,
+              "average_holding_bars": 9.272727272727273
+            },
+            {
+              "total_return": 1.3015805721105025,
+              "cagr": 0.2969994506105389,
+              "mdd": -0.2590284104758176,
+              "trade_count": 46,
+              "win_rate": 0.5434782608695652,
+              "profit_factor": 1.7254608306758836,
+              "average_holding_bars": 9.326086956521738
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.8312717912424044,
+          "worst_fold_mdd": -0.33415005610901727,
+          "total_trade_count": 148,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 2548.096351333681,
+            "cagr": 2.2065367048845776,
+            "mdd": -0.33415005610901727,
+            "trade_count": 107,
+            "win_rate": 0.5981308411214953,
+            "profit_factor": 3.710926576753839,
+            "average_holding_bars": 7.981308411214953
+          },
+          "holdout": {
+            "total_return": 1.03198746895624,
+            "cagr": 0.2785987000692307,
+            "mdd": -0.24030398348629023,
+            "trade_count": 41,
+            "win_rate": 0.5365853658536586,
+            "profit_factor": 1.686583602426997,
+            "average_holding_bars": 9.341463414634147
+          },
+          "high_cost_holdout": {
+            "total_return": 0.7274441918282373,
+            "cagr": 0.20862352719072685,
+            "mdd": -0.2582135218340674,
+            "trade_count": 41,
+            "win_rate": 0.5365853658536586,
+            "profit_factor": 1.5374902561407624,
+            "average_holding_bars": 9.341463414634147
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.033737388296338974,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0720749108204518,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 19
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_a3433ea5bb",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 10,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 4579.464507615454,
+          "cagr": 1.4026630557134792,
+          "mdd": -0.2704454305209142,
+          "trade_count": 135,
+          "win_rate": 0.6148148148148148,
+          "profit_factor": 3.3822205589706233,
+          "average_holding_bars": 8.125925925925927
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 174.80731543096405,
+              "cagr": 4.016199177180369,
+              "mdd": -0.2584268543949898,
+              "trade_count": 54,
+              "win_rate": 0.6111111111111112,
+              "profit_factor": 3.8692629098581084,
+              "average_holding_bars": 6.648148148148148
+            },
+            {
+              "total_return": 11.788647922968758,
+              "cagr": 1.2145803636920243,
+              "mdd": -0.19692150136022135,
+              "trade_count": 41,
+              "win_rate": 0.6585365853658537,
+              "profit_factor": 4.209540982346097,
+              "average_holding_bars": 9.341463414634147
+            },
+            {
+              "total_return": 1.0372669919736341,
+              "cagr": 0.24856855837602643,
+              "mdd": -0.27044543052091397,
+              "trade_count": 40,
+              "win_rate": 0.575,
+              "profit_factor": 1.766135937423708,
+              "average_holding_bars": 8.875
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.82644936641614,
+          "worst_fold_mdd": -0.27044543052091397,
+          "total_trade_count": 135,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 2490.818788164721,
+            "cagr": 2.1957294633246116,
+            "mdd": -0.2584268543949898,
+            "trade_count": 100,
+            "win_rate": 0.63,
+            "profit_factor": 3.895557755921763,
+            "average_holding_bars": 7.82
+          },
+          "holdout": {
+            "total_return": 0.7986339686611865,
+            "cagr": 0.2256613271172767,
+            "mdd": -0.2704454305209141,
+            "trade_count": 35,
+            "win_rate": 0.5714285714285714,
+            "profit_factor": 1.7206487193458335,
+            "average_holding_bars": 8.82857142857143
+          },
+          "high_cost_holdout": {
+            "total_return": 0.5658298043905363,
+            "cagr": 0.1681646184508021,
+            "mdd": -0.2887377903171259,
+            "trade_count": 35,
+            "win_rate": 0.5714285714285714,
+            "profit_factor": 1.558071612199715,
+            "average_holding_bars": 8.82857142857143
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.048737388296338974,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0870749108204518,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 23
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_8b9eac1ab4",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 3364.316946776471,
+          "cagr": 1.3268613565955483,
+          "mdd": -0.345091816327042,
+          "trade_count": 214,
+          "win_rate": 0.5560747663551402,
+          "profit_factor": 2.648448174250459,
+          "average_holding_bars": 6.149532710280374
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 191.34926378372373,
+              "cagr": 4.158912433448774,
+              "mdd": -0.345091816327042,
+              "trade_count": 75,
+              "win_rate": 0.56,
+              "profit_factor": 3.735040261098169,
+              "average_holding_bars": 5.573333333333333
+            },
+            {
+              "total_return": 7.157895495449402,
+              "cagr": 0.9247805163888319,
+              "mdd": -0.20835767348432588,
+              "trade_count": 70,
+              "win_rate": 0.6,
+              "profit_factor": 2.238520827143876,
+              "average_holding_bars": 6.242857142857143
+            },
+            {
+              "total_return": 1.1446543440436612,
+              "cagr": 0.26873859465073524,
+              "mdd": -0.27064527761620005,
+              "trade_count": 69,
+              "win_rate": 0.5072463768115942,
+              "profit_factor": 1.5788107725448868,
+              "average_holding_bars": 6.681159420289855
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.7841438481627803,
+          "worst_fold_mdd": -0.345091816327042,
+          "total_trade_count": 214,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1734.419690348133,
+            "cagr": 2.0285184223716097,
+            "mdd": -0.345091816327042,
+            "trade_count": 152,
+            "win_rate": 0.5855263157894737,
+            "profit_factor": 3.032672702301178,
+            "average_holding_bars": 5.921052631578948
+          },
+          "holdout": {
+            "total_return": 1.050935585786306,
+            "cagr": 0.28271896878064307,
+            "mdd": -0.27064527761620016,
+            "trade_count": 61,
+            "win_rate": 0.4918032786885246,
+            "profit_factor": 1.5975651082268367,
+            "average_holding_bars": 6.655737704918033
+          },
+          "high_cost_holdout": {
+            "total_return": 0.6092764810961879,
+            "cagr": 0.17929949999371853,
+            "mdd": -0.32240913215764544,
+            "trade_count": 61,
+            "win_rate": 0.47540983606557374,
+            "profit_factor": 1.4132957366772378,
+            "average_holding_bars": 6.655737704918033
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.033737388296338974,
+          "volume_gap": -0.4063045189714294,
+          "nearest_trigger_gap": -0.4063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0720749108204518,
+          "volume_gap": -0.5109329427636711,
+          "nearest_trigger_gap": -0.5109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 6
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_2206aafa77",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 10,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 3552.5921656124788,
+          "cagr": 1.3400706268101663,
+          "mdd": -0.34514260535245034,
+          "trade_count": 159,
+          "win_rate": 0.5723270440251572,
+          "profit_factor": 2.865083047029973,
+          "average_holding_bars": 8.30188679245283
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 103.34057279699549,
+              "cagr": 3.262735606214881,
+              "mdd": -0.34514260535245034,
+              "trade_count": 62,
+              "win_rate": 0.5645161290322581,
+              "profit_factor": 3.091616806173064,
+              "average_holding_bars": 6.870967741935484
+            },
+            {
+              "total_return": 13.71065090637616,
+              "cagr": 1.3134559280343554,
+              "mdd": -0.21375164806805502,
+              "trade_count": 53,
+              "win_rate": 0.6037735849056604,
+              "profit_factor": 3.418964796187615,
+              "average_holding_bars": 9.320754716981131
+            },
+            {
+              "total_return": 1.1525019734920647,
+              "cagr": 0.2701850812679669,
+              "mdd": -0.2805800765353509,
+              "trade_count": 43,
+              "win_rate": 0.5348837209302325,
+              "profit_factor": 1.7492310737647554,
+              "average_holding_bars": 9.069767441860465
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.615458871839068,
+          "worst_fold_mdd": -0.34514260535245034,
+          "total_trade_count": 158,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1688.9741651568343,
+            "cagr": 2.016603305903882,
+            "mdd": -0.34514260535245034,
+            "trade_count": 121,
+            "win_rate": 0.5867768595041323,
+            "profit_factor": 3.1551499128677936,
+            "average_holding_bars": 8.016528925619834
+          },
+          "holdout": {
+            "total_return": 1.0574876787034766,
+            "cagr": 0.28413793266908693,
+            "mdd": -0.2805800765353511,
+            "trade_count": 38,
+            "win_rate": 0.5263157894736842,
+            "profit_factor": 1.7763366664321143,
+            "average_holding_bars": 9.052631578947368
+          },
+          "high_cost_holdout": {
+            "total_return": 0.7705007743372627,
+            "cagr": 0.21898182667105726,
+            "mdd": -0.3057495627497103,
+            "trade_count": 38,
+            "win_rate": 0.5263157894736842,
+            "profit_factor": 1.6143843033388425,
+            "average_holding_bars": 9.052631578947368
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.048737388296338974,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0870749108204518,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 13
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_cd96ea48c3",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 20,
+          "volume_ratio_floor": 0.8,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 3170.517773172521,
+          "cagr": 1.3125540022073632,
+          "mdd": -0.329897057100625,
+          "trade_count": 218,
+          "win_rate": 0.5596330275229358,
+          "profit_factor": 2.5755191266621678,
+          "average_holding_bars": 6.091743119266055
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 132.77766517829045,
+              "cagr": 3.6063718131409868,
+              "mdd": -0.329897057100625,
+              "trade_count": 74,
+              "win_rate": 0.5945945945945946,
+              "profit_factor": 3.417954797030821,
+              "average_holding_bars": 5.527027027027027
+            },
+            {
+              "total_return": 7.789884697744963,
+              "cagr": 0.9701100147024893,
+              "mdd": -0.31909971750417765,
+              "trade_count": 78,
+              "win_rate": 0.5512820512820513,
+              "profit_factor": 2.1953720107564694,
+              "average_holding_bars": 6.17948717948718
+            },
+            {
+              "total_return": 1.0465599124394092,
+              "cagr": 0.2503425165480344,
+              "mdd": -0.2536182542706612,
+              "trade_count": 64,
+              "win_rate": 0.5,
+              "profit_factor": 1.5586754461050167,
+              "average_holding_bars": 6.609375
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.6089414481305035,
+          "worst_fold_mdd": -0.329897057100625,
+          "total_trade_count": 216,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1522.7016002369091,
+            "cagr": 1.9705452409052708,
+            "mdd": -0.329897057100625,
+            "trade_count": 159,
+            "win_rate": 0.5786163522012578,
+            "profit_factor": 2.896945149256138,
+            "average_holding_bars": 5.8930817610062896
+          },
+          "holdout": {
+            "total_return": 1.2262096806838474,
+            "cagr": 0.3197034954162692,
+            "mdd": -0.2536182542706611,
+            "trade_count": 58,
+            "win_rate": 0.5172413793103449,
+            "profit_factor": 1.6555811289152802,
+            "average_holding_bars": 6.568965517241379
+          },
+          "high_cost_holdout": {
+            "total_return": 0.7685411346162727,
+            "cagr": 0.21851398496062435,
+            "mdd": -0.27234689640980736,
+            "trade_count": 58,
+            "win_rate": 0.5172413793103449,
+            "profit_factor": 1.4743553696282683,
+            "average_holding_bars": 6.568965517241379
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 0.8,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.048737388296338974,
+          "volume_gap": -0.1627147067326623,
+          "nearest_trigger_gap": -0.1627147067326623,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 0.8,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0870749108204518,
+          "volume_gap": -0.35870630964651173,
+          "nearest_trigger_gap": -0.35870630964651173,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 3
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_5d622c4abf",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 2191.9200946664473,
+          "cagr": 1.2255035819419438,
+          "mdd": -0.3038238360746204,
+          "trade_count": 146,
+          "win_rate": 0.6438356164383562,
+          "profit_factor": 3.517236144701038,
+          "average_holding_bars": 6.171232876712328
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 142.99466212172345,
+              "cagr": 3.7133564530933425,
+              "mdd": -0.3038238360746204,
+              "trade_count": 58,
+              "win_rate": 0.6206896551724138,
+              "profit_factor": 4.270497196421358,
+              "average_holding_bars": 5.5
+            },
+            {
+              "total_return": 5.851640391146652,
+              "cagr": 0.8228012965914162,
+              "mdd": -0.18251672713860534,
+              "trade_count": 47,
+              "win_rate": 0.6595744680851063,
+              "profit_factor": 3.592091098814773,
+              "average_holding_bars": 6.659574468085107
+            },
+            {
+              "total_return": 1.2227051367766837,
+              "cagr": 0.28296638915925487,
+              "mdd": -0.21190780442524548,
+              "trade_count": 41,
+              "win_rate": 0.6585365853658537,
+              "profit_factor": 1.9719097952630935,
+              "average_holding_bars": 6.560975609756097
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.6063747129480046,
+          "worst_fold_mdd": -0.3038238360746204,
+          "total_trade_count": 146,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1023.143059643889,
+            "cagr": 1.8003000621253373,
+            "mdd": -0.3038238360746204,
+            "trade_count": 110,
+            "win_rate": 0.6363636363636364,
+            "profit_factor": 3.9711443243595417,
+            "average_holding_bars": 6.036363636363636
+          },
+          "holdout": {
+            "total_return": 1.1751545445221132,
+            "cagr": 0.30913295162408905,
+            "mdd": -0.2119078044252456,
+            "trade_count": 36,
+            "win_rate": 0.6666666666666666,
+            "profit_factor": 2.0528063830970558,
+            "average_holding_bars": 6.5
+          },
+          "high_cost_holdout": {
+            "total_return": 0.8876399827550963,
+            "cagr": 0.24635424406505502,
+            "mdd": -0.2283485802000369,
+            "trade_count": 36,
+            "win_rate": 0.6388888888888888,
+            "profit_factor": 1.8441136510324083,
+            "average_holding_bars": 6.5
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.048737388296338974,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0870749108204518,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 18
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_e5e85d4dc8",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 3790.5529326606747,
+          "cagr": 1.3558964437153156,
+          "mdd": -0.3024786488482837,
+          "trade_count": 199,
+          "win_rate": 0.5628140703517588,
+          "profit_factor": 2.7834262710813293,
+          "average_holding_bars": 6.221105527638191
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 112.45931350624289,
+              "cagr": 3.375622796832517,
+              "mdd": -0.3024786488482837,
+              "trade_count": 70,
+              "win_rate": 0.5571428571428572,
+              "profit_factor": 3.3946819998725495,
+              "average_holding_bars": 5.642857142857143
+            },
+            {
+              "total_return": 11.293412671423999,
+              "cagr": 1.1874621843341946,
+              "mdd": -0.21599594191346483,
+              "trade_count": 65,
+              "win_rate": 0.6,
+              "profit_factor": 2.7882128963944566,
+              "average_holding_bars": 6.415384615384616
+            },
+            {
+              "total_return": 1.0626645994632327,
+              "cagr": 0.25340371678294393,
+              "mdd": -0.2445227181155405,
+              "trade_count": 62,
+              "win_rate": 0.5,
+              "profit_factor": 1.5842273533897218,
+              "average_holding_bars": 6.645161290322581
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.6054962326498852,
+          "worst_fold_mdd": -0.3024786488482837,
+          "total_trade_count": 197,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1800.9816754213105,
+            "cagr": 2.0454991309839445,
+            "mdd": -0.3024786488482837,
+            "trade_count": 142,
+            "win_rate": 0.5845070422535211,
+            "profit_factor": 3.1899460092725342,
+            "average_holding_bars": 6.042253521126761
+          },
+          "holdout": {
+            "total_return": 1.3217312182669825,
+            "cagr": 0.3390626920322102,
+            "mdd": -0.2445227181155405,
+            "trade_count": 55,
+            "win_rate": 0.5272727272727272,
+            "profit_factor": 1.7272384891257722,
+            "average_holding_bars": 6.6
+          },
+          "high_cost_holdout": {
+            "total_return": 0.8671912540470534,
+            "cagr": 0.24165750331609126,
+            "mdd": -0.2721887647233818,
+            "trade_count": 55,
+            "win_rate": 0.5272727272727272,
+            "profit_factor": 1.5372022633051503,
+            "average_holding_bars": 6.6
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.033737388296338974,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0720749108204518,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 11
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_7d1bfde853",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 5,
+          "hold_bars": 5,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 5102.938861480309,
+          "cagr": 1.4298525087584775,
+          "mdd": -0.3042122315140926,
+          "trade_count": 227,
+          "win_rate": 0.5770925110132159,
+          "profit_factor": 2.9555255275164214,
+          "average_holding_bars": 4.6960352422907485
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 46.31994780713889,
+              "cagr": 2.330861246557444,
+              "mdd": -0.303555855709695,
+              "trade_count": 78,
+              "win_rate": 0.5641025641025641,
+              "profit_factor": 2.947148908769026,
+              "average_holding_bars": 4.410256410256411
+            },
+            {
+              "total_return": 35.12965717197977,
+              "cagr": 2.0619652525498515,
+              "mdd": -0.23888565244104765,
+              "trade_count": 77,
+              "win_rate": 0.6753246753246753,
+              "profit_factor": 4.048970832304037,
+              "average_holding_bars": 4.740259740259741
+            },
+            {
+              "total_return": 1.7729330061644593,
+              "cagr": 0.3746177339843777,
+              "mdd": -0.25889355445157314,
+              "trade_count": 69,
+              "win_rate": 0.4782608695652174,
+              "profit_factor": 1.9086259967841774,
+              "average_holding_bars": 4.956521739130435
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.5891480776972244,
+          "worst_fold_mdd": -0.303555855709695,
+          "total_trade_count": 224,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 1930.625799242119,
+            "cagr": 2.0770941105008625,
+            "mdd": -0.3042122315140926,
+            "trade_count": 165,
+            "win_rate": 0.6060606060606061,
+            "profit_factor": 3.256226430596772,
+            "average_holding_bars": 4.6
+          },
+          "holdout": {
+            "total_return": 1.8438790424548972,
+            "cagr": 0.43660909845358997,
+            "mdd": -0.25889355445157325,
+            "trade_count": 60,
+            "win_rate": 0.5166666666666667,
+            "profit_factor": 2.0775376806325805,
+            "average_holding_bars": 4.95
+          },
+          "high_cost_holdout": {
+            "total_return": 1.243660517935584,
+            "cagr": 0.32328019343453485,
+            "mdd": -0.30030137286619407,
+            "trade_count": 60,
+            "win_rate": 0.5,
+            "profit_factor": 1.7912719032651552,
+            "average_holding_bars": 4.95
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": 0.007696862048549358,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3378000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.007303137951450642,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.06264775413711587,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3384000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.07764775413711587,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 8
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_efcbc5ff3d",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 2034.5963040248644,
+          "cagr": 1.208341460017806,
+          "mdd": -0.2810611054165044,
+          "trade_count": 150,
+          "win_rate": 0.64,
+          "profit_factor": 3.391025054481739,
+          "average_holding_bars": 6.14
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 142.00689247757433,
+              "cagr": 3.7032459164180977,
+              "mdd": -0.2810611054165044,
+              "trade_count": 58,
+              "win_rate": 0.6551724137931034,
+              "profit_factor": 4.084501665022761,
+              "average_holding_bars": 5.413793103448276
+            },
+            {
+              "total_return": 4.793448999142504,
+              "cagr": 0.7298574622900513,
+              "mdd": -0.2558871709178271,
+              "trade_count": 53,
+              "win_rate": 0.6037735849056604,
+              "profit_factor": 2.690089275443269,
+              "average_holding_bars": 6.547169811320755
+            },
+            {
+              "total_return": 1.35987776799074,
+              "cagr": 0.30716008647255166,
+              "mdd": -0.21591433098743618,
+              "trade_count": 38,
+              "win_rate": 0.6578947368421053,
+              "profit_factor": 2.4470066873811427,
+              "average_holding_bars": 6.657894736842105
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.5800878217269003,
+          "worst_fold_mdd": -0.2810611054165044,
+          "total_trade_count": 149,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 904.7748830695672,
+            "cagr": 1.749670067517589,
+            "mdd": -0.2810611054165044,
+            "trade_count": 116,
+            "win_rate": 0.6379310344827587,
+            "profit_factor": 3.5903531979608068,
+            "average_holding_bars": 5.974137931034483
+          },
+          "holdout": {
+            "total_return": 1.2829653398529617,
+            "cagr": 0.33127000011370566,
+            "mdd": -0.21591433098743618,
+            "trade_count": 34,
+            "win_rate": 0.6470588235294118,
+            "profit_factor": 2.4197666805971347,
+            "average_holding_bars": 6.617647058823529
+          },
+          "high_cost_holdout": {
+            "total_return": 0.9978164502193032,
+            "cagr": 0.2711042933673291,
+            "mdd": -0.23532629407360217,
+            "trade_count": 34,
+            "win_rate": 0.6176470588235294,
+            "profit_factor": 2.1315800809082037,
+            "average_holding_bars": 6.617647058823529
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.07873738829633897,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.1170749108204518,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 12
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_ca6f28cc06",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 1168.3883277867624,
+          "cagr": 1.0846480701198882,
+          "mdd": -0.3027964055326722,
+          "trade_count": 125,
+          "win_rate": 0.624,
+          "profit_factor": 3.618795551217596,
+          "average_holding_bars": 6.064
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 146.75317413680386,
+              "cagr": 3.7513969599275434,
+              "mdd": -0.27085698644601985,
+              "trade_count": 51,
+              "win_rate": 0.6666666666666666,
+              "profit_factor": 4.5845823852326335,
+              "average_holding_bars": 5.254901960784314
+            },
+            {
+              "total_return": 3.546067804067488,
+              "cagr": 0.603835862585639,
+              "mdd": -0.1903526124445165,
+              "trade_count": 41,
+              "win_rate": 0.5853658536585366,
+              "profit_factor": 3.224354068024464,
+              "average_holding_bars": 6.658536585365853
+            },
+            {
+              "total_return": 0.7409489091850359,
+              "cagr": 0.18882247842015132,
+              "mdd": -0.30279640553267206,
+              "trade_count": 33,
+              "win_rate": 0.6060606060606061,
+              "profit_factor": 1.8496265426939411,
+              "average_holding_bars": 6.575757575757576
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 2,
+          "average_fold_cagr": 1.5146851003111113,
+          "worst_fold_mdd": -0.30279640553267206,
+          "total_trade_count": 125,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 682.319796592285,
+            "cagr": 1.6369262883276985,
+            "mdd": -0.2726116664853223,
+            "trade_count": 96,
+            "win_rate": 0.6354166666666666,
+            "profit_factor": 4.083118720007458,
+            "average_holding_bars": 5.895833333333333
+          },
+          "holdout": {
+            "total_return": 0.7384519428462781,
+            "cagr": 0.2112876132567847,
+            "mdd": -0.3027964055326723,
+            "trade_count": 29,
+            "win_rate": 0.5862068965517241,
+            "profit_factor": 1.9344172966598776,
+            "average_holding_bars": 6.517241379310345
+          },
+          "high_cost_holdout": {
+            "total_return": 0.550408098727537,
+            "cagr": 0.1641637054900016,
+            "mdd": -0.31767129501597213,
+            "trade_count": 29,
+            "win_rate": 0.5862068965517241,
+            "profit_factor": 1.7250188033410774,
+            "average_holding_bars": 6.517241379310345
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.07873738829633897,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.1170749108204518,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 24
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_f8342a65dc",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 1353.4671037561661,
+          "cagr": 1.116743478129533,
+          "mdd": -0.3160725628314085,
+          "trade_count": 157,
+          "win_rate": 0.6178343949044586,
+          "profit_factor": 3.0708437782475584,
+          "average_holding_bars": 6.019108280254777
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 126.92481702361434,
+              "cagr": 3.542530650254151,
+              "mdd": -0.3160725628314085,
+              "trade_count": 61,
+              "win_rate": 0.6229508196721312,
+              "profit_factor": 3.7627908015721196,
+              "average_holding_bars": 5.295081967213115
+            },
+            {
+              "total_return": 3.712437469553704,
+              "cagr": 0.6219206769377852,
+              "mdd": -0.20835767348432588,
+              "trade_count": 56,
+              "win_rate": 0.5892857142857143,
+              "profit_factor": 2.3310598651129957,
+              "average_holding_bars": 6.339285714285714
+            },
+            {
+              "total_return": 1.2468188393770014,
+              "cagr": 0.2872924267897934,
+              "mdd": -0.2551802451776698,
+              "trade_count": 40,
+              "win_rate": 0.65,
+              "profit_factor": 2.308201158399822,
+              "average_holding_bars": 6.675
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.4839145846605766,
+          "worst_fold_mdd": -0.3160725628314085,
+          "total_trade_count": 157,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 658.0623777408742,
+            "cagr": 1.6228052727115063,
+            "mdd": -0.3160725628314085,
+            "trade_count": 122,
+            "win_rate": 0.6147540983606558,
+            "profit_factor": 3.2354206281271654,
+            "average_holding_bars": 5.819672131147541
+          },
+          "holdout": {
+            "total_return": 1.0877085933517714,
+            "cagr": 0.2906448361233698,
+            "mdd": -0.2551802451776698,
+            "trade_count": 35,
+            "win_rate": 0.6285714285714286,
+            "profit_factor": 2.2215788385159008,
+            "average_holding_bars": 6.628571428571429
+          },
+          "high_cost_holdout": {
+            "total_return": 0.8189794252772704,
+            "cagr": 0.23044941104303795,
+            "mdd": -0.27087104377895765,
+            "trade_count": 35,
+            "win_rate": 0.6,
+            "profit_factor": 1.94965863275724,
+            "average_holding_bars": 6.628571428571429
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.07873738829633897,
+          "volume_gap": -0.4063045189714294,
+          "nearest_trigger_gap": -0.4063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.1170749108204518,
+          "volume_gap": -0.5109329427636711,
+          "nearest_trigger_gap": -0.5109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 5
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_81163276d4",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 3,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.06,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 1088.0139394286832,
+          "cagr": 1.069268599721537,
+          "mdd": -0.2534705882352941,
+          "trade_count": 120,
+          "win_rate": 0.6083333333333333,
+          "profit_factor": 3.6983864239748,
+          "average_holding_bars": 6.083333333333333
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 139.9925937254073,
+              "cagr": 3.6824782503187956,
+              "mdd": -0.2534705882352941,
+              "trade_count": 52,
+              "win_rate": 0.6730769230769231,
+              "profit_factor": 4.749147574783979,
+              "average_holding_bars": 5.3076923076923075
+            },
+            {
+              "total_return": 2.7606571027122393,
+              "cagr": 0.5116895766562746,
+              "mdd": -0.2146855070838476,
+              "trade_count": 38,
+              "win_rate": 0.5263157894736842,
+              "profit_factor": 2.8439740798917503,
+              "average_holding_bars": 6.605263157894737
+            },
+            {
+              "total_return": 1.0538721339227304,
+              "cagr": 0.25173447991809894,
+              "mdd": -0.18783538209941808,
+              "trade_count": 30,
+              "win_rate": 0.6,
+              "profit_factor": 2.2280119852079463,
+              "average_holding_bars": 6.766666666666667
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.4819674356310564,
+          "worst_fold_mdd": -0.2534705882352941,
+          "total_trade_count": 120,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 549.594617836139,
+            "cagr": 1.5536695574424622,
+            "mdd": -0.2534705882352941,
+            "trade_count": 93,
+            "win_rate": 0.6129032258064516,
+            "profit_factor": 4.036075143918181,
+            "average_holding_bars": 5.860215053763441
+          },
+          "holdout": {
+            "total_return": 1.0092288942633485,
+            "cagr": 0.27361652727960895,
+            "mdd": -0.1878353820994183,
+            "trade_count": 27,
+            "win_rate": 0.5925925925925926,
+            "profit_factor": 2.3344735666351686,
+            "average_holding_bars": 6.7407407407407405
+          },
+          "high_cost_holdout": {
+            "total_return": 0.8072079432639334,
+            "cagr": 0.22768341162767913,
+            "mdd": -0.20144876386128507,
+            "trade_count": 27,
+            "win_rate": 0.5555555555555556,
+            "profit_factor": 2.0879952337274963,
+            "average_holding_bars": 6.7407407407407405
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.00729075532225143,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3429000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.06729075532225143,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.02309824453341547,
+          "momentum_threshold": 0.06,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3247000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.08309824453341547,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 20
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_663298b707",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 7,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 2347.549281563925,
+          "cagr": 1.2414277933681674,
+          "mdd": -0.28106110541650453,
+          "trade_count": 179,
+          "win_rate": 0.5921787709497207,
+          "profit_factor": 2.8823189559396174,
+          "average_holding_bars": 6.184357541899441
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 98.28051773821893,
+              "cagr": 3.1971385864400714,
+              "mdd": -0.28106110541650453,
+              "trade_count": 65,
+              "win_rate": 0.5846153846153846,
+              "profit_factor": 3.442606781948007,
+              "average_holding_bars": 5.553846153846154
+            },
+            {
+              "total_return": 6.28589320781992,
+              "cagr": 0.8580831605695769,
+              "mdd": -0.21599594191346483,
+              "trade_count": 60,
+              "win_rate": 0.6,
+              "profit_factor": 2.553543213266635,
+              "average_holding_bars": 6.433333333333334
+            },
+            {
+              "total_return": 1.4636382984115879,
+              "cagr": 0.3248253212623353,
+              "mdd": -0.2003964191230978,
+              "trade_count": 52,
+              "win_rate": 0.5576923076923077,
+              "profit_factor": 1.8900429306561033,
+              "average_holding_bars": 6.653846153846154
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.4600156894239946,
+          "worst_fold_mdd": -0.28106110541650453,
+          "total_trade_count": 177,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 933.5113768788093,
+            "cagr": 1.7624576927794684,
+            "mdd": -0.28106110541650453,
+            "trade_count": 132,
+            "win_rate": 0.5984848484848485,
+            "profit_factor": 3.140988546991217,
+            "average_holding_bars": 6.007575757575758
+          },
+          "holdout": {
+            "total_return": 1.5529541955669668,
+            "cagr": 0.38386200533861015,
+            "mdd": -0.2003964191230978,
+            "trade_count": 47,
+            "win_rate": 0.574468085106383,
+            "profit_factor": 1.9795641193944802,
+            "average_holding_bars": 6.617021276595745
+          },
+          "high_cost_holdout": {
+            "total_return": 1.1210543065616254,
+            "cagr": 0.2977535192261467,
+            "mdd": -0.2478554407666096,
+            "trade_count": 47,
+            "win_rate": 0.574468085106383,
+            "profit_factor": 1.7631636708954577,
+            "average_holding_bars": 6.617021276595745
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.048737388296338974,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0870749108204518,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 10
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_900a15d0a2",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 7,
+          "hold_bars": 5,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.03,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 1423.1646522726398,
+          "cagr": 1.127817238684667,
+          "mdd": -0.3225629394499986,
+          "trade_count": 224,
+          "win_rate": 0.5982142857142857,
+          "profit_factor": 2.48189971619213,
+          "average_holding_bars": 4.638392857142857
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 101.38993862084457,
+              "cagr": 3.23771304642095,
+              "mdd": -0.3225629394499986,
+              "trade_count": 76,
+              "win_rate": 0.5789473684210527,
+              "profit_factor": 3.2966803927416275,
+              "average_holding_bars": 4.315789473684211
+            },
+            {
+              "total_return": 4.9811871900171845,
+              "cagr": 0.7471536918934676,
+              "mdd": -0.29396968331141793,
+              "trade_count": 79,
+              "win_rate": 0.6708860759493671,
+              "profit_factor": 2.1150511694583303,
+              "average_holding_bars": 4.7215189873417724
+            },
+            {
+              "total_return": 1.3254956165807998,
+              "cagr": 0.30118879099945617,
+              "mdd": -0.30752146949470693,
+              "trade_count": 69,
+              "win_rate": 0.5362318840579711,
+              "profit_factor": 1.6417766628585604,
+              "average_holding_bars": 4.898550724637682
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.428685176437958,
+          "worst_fold_mdd": -0.3225629394499986,
+          "total_trade_count": 224,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 677.0199708004303,
+            "cagr": 1.6338779595645763,
+            "mdd": -0.3225629394499986,
+            "trade_count": 162,
+            "win_rate": 0.6234567901234568,
+            "profit_factor": 2.7774827377317424,
+            "average_holding_bars": 4.537037037037037
+          },
+          "holdout": {
+            "total_return": 1.1165607584631294,
+            "cagr": 0.29679985577947554,
+            "mdd": -0.30752146949470716,
+            "trade_count": 62,
+            "win_rate": 0.532258064516129,
+            "profit_factor": 1.6195406337571499,
+            "average_holding_bars": 4.887096774193548
+          },
+          "high_cost_holdout": {
+            "total_return": 0.6543710662079889,
+            "cagr": 0.19065089436256222,
+            "mdd": -0.34371737016708637,
+            "trade_count": 62,
+            "win_rate": 0.5,
+            "profit_factor": 1.4299569049302718,
+            "average_holding_bars": 4.887096774193548
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.018737388296338975,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3469000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.048737388296338974,
+          "volume_gap": -0.4063045189714294,
+          "nearest_trigger_gap": -0.4063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.057074910820451796,
+          "momentum_threshold": 0.03,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3364000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.0870749108204518,
+          "volume_gap": -0.5109329427636711,
+          "nearest_trigger_gap": -0.5109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 4
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_ee7280565a",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 5,
+          "hold_bars": 7,
+          "volume_window": 10,
+          "volume_ratio_floor": 1.3,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 1532.8227052941745,
+          "cagr": 1.144293908055337,
+          "mdd": -0.3483004893149714,
+          "trade_count": 165,
+          "win_rate": 0.6181818181818182,
+          "profit_factor": 3.0236345415830645,
+          "average_holding_bars": 6.248484848484848
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 90.79356772953089,
+              "cagr": 3.095720550843085,
+              "mdd": -0.3483004893149714,
+              "trade_count": 64,
+              "win_rate": 0.5625,
+              "profit_factor": 3.599823116036108,
+              "average_holding_bars": 5.640625
+            },
+            {
+              "total_return": 6.525449717136256,
+              "cagr": 0.8769303635571328,
+              "mdd": -0.18459166169954566,
+              "trade_count": 52,
+              "win_rate": 0.6538461538461539,
+              "profit_factor": 2.9792771184333677,
+              "average_holding_bars": 6.538461538461538
+            },
+            {
+              "total_return": 1.2203960918617511,
+              "cagr": 0.2825504516559598,
+              "mdd": -0.3217597570759928,
+              "trade_count": 49,
+              "win_rate": 0.6530612244897959,
+              "profit_factor": 1.8814451682507187,
+              "average_holding_bars": 6.73469387755102
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.4184004553520593,
+          "worst_fold_mdd": -0.3483004893149714,
+          "total_trade_count": 165,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 781.0773220748506,
+            "cagr": 1.690339808896078,
+            "mdd": -0.3483004893149714,
+            "trade_count": 122,
+            "win_rate": 0.6065573770491803,
+            "profit_factor": 3.3831275190578496,
+            "average_holding_bars": 6.065573770491803
+          },
+          "holdout": {
+            "total_return": 0.9922939106905593,
+            "cagr": 0.26988524330995256,
+            "mdd": -0.3217597570759928,
+            "trade_count": 43,
+            "win_rate": 0.6511627906976745,
+            "profit_factor": 1.823292133435171,
+            "average_holding_bars": 6.6976744186046515
+          },
+          "high_cost_holdout": {
+            "total_return": 0.6803970920912081,
+            "cagr": 0.19711049081595178,
+            "mdd": -0.3336759289500717,
+            "trade_count": 43,
+            "win_rate": 0.627906976744186,
+            "profit_factor": 1.6231366578657218,
+            "average_holding_bars": 6.6976744186046515
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": 0.007696862048549358,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.5936954810285706,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3404000.0,
+          "base_close": 3378000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.007303137951450642,
+          "volume_gap": -0.7063045189714294,
+          "nearest_trigger_gap": -0.7063045189714294,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.06264775413711587,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.489067057236329,
+          "volume_ratio_floor": 1.3,
+          "latest_close": 3172000.0,
+          "base_close": 3384000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.07764775413711587,
+          "volume_gap": -0.8109329427636711,
+          "nearest_trigger_gap": -0.8109329427636711,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 21
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_615121a5f1",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 14,
+          "hold_bars": 7,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 2057.946367995307,
+          "cagr": 1.2109622180402666,
+          "mdd": -0.3278661153797511,
+          "trade_count": 197,
+          "win_rate": 0.5634517766497462,
+          "profit_factor": 2.661074874908396,
+          "average_holding_bars": 6.228426395939087
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 81.93777161546542,
+              "cagr": 2.9681231206104055,
+              "mdd": -0.3278661153797511,
+              "trade_count": 64,
+              "win_rate": 0.546875,
+              "profit_factor": 3.276339962078616,
+              "average_holding_bars": 5.484375
+            },
+            {
+              "total_return": 8.017244378102884,
+              "cagr": 0.9858680374690629,
+              "mdd": -0.3259655390444727,
+              "trade_count": 66,
+              "win_rate": 0.5757575757575758,
+              "profit_factor": 2.451697595779787,
+              "average_holding_bars": 6.378787878787879
+            },
+            {
+              "total_return": 1.0947050852460838,
+              "cagr": 0.259445451231864,
+              "mdd": -0.3221450399170763,
+              "trade_count": 65,
+              "win_rate": 0.5230769230769231,
+              "profit_factor": 1.6180786880193576,
+              "average_holding_bars": 6.7846153846153845
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.4044788697704442,
+          "worst_fold_mdd": -0.3278661153797511,
+          "total_trade_count": 195,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 825.6030148204733,
+            "cagr": 1.7125608351446453,
+            "mdd": -0.3278661153797511,
+            "trade_count": 140,
+            "win_rate": 0.5642857142857143,
+            "profit_factor": 2.887063842340195,
+            "average_holding_bars": 5.9714285714285715
+          },
+          "holdout": {
+            "total_return": 1.6016204626069173,
+            "cagr": 0.39294977878505355,
+            "mdd": -0.3221450399170763,
+            "trade_count": 55,
+            "win_rate": 0.5636363636363636,
+            "profit_factor": 1.9279570730503794,
+            "average_holding_bars": 6.745454545454545
+          },
+          "high_cost_holdout": {
+            "total_return": 1.0933213245058226,
+            "cagr": 0.2918465319875727,
+            "mdd": -0.3419733321171621,
+            "trade_count": 55,
+            "win_rate": 0.5272727272727272,
+            "profit_factor": 1.6961597425351818,
+            "average_holding_bars": 6.745454545454545
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": -0.0064214827787507645,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3426000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.021421482778750764,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.09886363636363638,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3520000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.11386363636363638,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 9
+      },
+      {
+        "candidate_id": "bithumb_direct_krw_eth_4ede84e993",
+        "market": "KRW-ETH",
+        "timeframe": "1d",
+        "strategy_family": "direct_volume_momentum",
+        "parameters": {
+          "lookback_bars": 5,
+          "hold_bars": 7,
+          "volume_window": 20,
+          "volume_ratio_floor": 1.0,
+          "momentum_threshold": 0.015,
+          "stop_loss": 0.08,
+          "take_profit": 0.35,
+          "round_trip_cost_rate": 0.002
+        },
+        "metrics": {
+          "total_return": 2392.456978292241,
+          "cagr": 1.245846955250593,
+          "mdd": -0.3170370974609683,
+          "trade_count": 195,
+          "win_rate": 0.5538461538461539,
+          "profit_factor": 2.7767236839410034,
+          "average_holding_bars": 6.276923076923077
+        },
+        "walkforward": {
+          "folds": [
+            {
+              "total_return": 64.25990579921151,
+              "cagr": 2.6822023504049692,
+              "mdd": -0.3170370974609683,
+              "trade_count": 68,
+              "win_rate": 0.5294117647058824,
+              "profit_factor": 3.093630141387421,
+              "average_holding_bars": 5.602941176470588
+            },
+            {
+              "total_return": 8.066482521163088,
+              "cagr": 0.9892445715196123,
+              "mdd": -0.25608506196279646,
+              "trade_count": 67,
+              "win_rate": 0.582089552238806,
+              "profit_factor": 2.484970758691271,
+              "average_holding_bars": 6.432835820895522
+            },
+            {
+              "total_return": 2.8052597110378517,
+              "cagr": 0.5172601809358388,
+              "mdd": -0.16979250847534488,
+              "trade_count": 58,
+              "win_rate": 0.5517241379310345,
+              "profit_factor": 2.432009431264775,
+              "average_holding_bars": 6.862068965517241
+            }
+          ],
+          "positive_fold_count": 3,
+          "pass_fold_count": 3,
+          "average_fold_cagr": 1.3962357009534734,
+          "worst_fold_mdd": -0.3170370974609683,
+          "total_trade_count": 193,
+          "passed": true
+        },
+        "holdout_validation": {
+          "train": {
+            "total_return": 639.8917265429204,
+            "cagr": 1.611934686731964,
+            "mdd": -0.3170370974609683,
+            "trade_count": 144,
+            "win_rate": 0.5486111111111112,
+            "profit_factor": 2.8061605431538545,
+            "average_holding_bars": 6.0625
+          },
+          "holdout": {
+            "total_return": 3.0843309799463583,
+            "cagr": 0.6286660398054544,
+            "mdd": -0.16979250847534488,
+            "trade_count": 49,
+            "win_rate": 0.5918367346938775,
+            "profit_factor": 2.8896233525751533,
+            "average_holding_bars": 6.836734693877551
+          },
+          "high_cost_holdout": {
+            "total_return": 2.372767007602419,
+            "cagr": 0.5241061249839856,
+            "mdd": -0.18036807184940007,
+            "trade_count": 49,
+            "win_rate": 0.5918367346938775,
+            "profit_factor": 2.512566777588331,
+            "average_holding_bars": 6.836734693877551
+          },
+          "holdout_pass": true,
+          "high_cost_pass": true,
+          "passed": true
+        },
+        "current_signal": {
+          "triggered": false,
+          "momentum": 0.007696862048549358,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.6372852932673377,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3404000.0,
+          "base_close": 3378000.0
+        },
+        "current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.007303137951450642,
+          "volume_gap": -0.36271470673266226,
+          "nearest_trigger_gap": -0.36271470673266226,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "status": "DIRECT_VALIDATED_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false,
+        "live_current_signal_data": {
+          "source": "bithumb_public_api",
+          "status": "LIVE_FETCH_OK",
+          "url": "https://api.bithumb.com/v1/candles/days?market=KRW-ETH&count=200",
+          "row_count": 200,
+          "latest_timestamp": "2026-05-18T15:00:00"
+        },
+        "live_current_signal": {
+          "triggered": false,
+          "momentum": -0.06264775413711587,
+          "momentum_threshold": 0.015,
+          "volume_ratio": 0.4412936903534883,
+          "volume_ratio_floor": 1.0,
+          "latest_close": 3172000.0,
+          "base_close": 3384000.0
+        },
+        "live_current_signal_gap": {
+          "eligible_for_gap_ranking": true,
+          "momentum_gap": -0.07764775413711587,
+          "volume_gap": -0.5587063096465117,
+          "nearest_trigger_gap": -0.5587063096465117,
+          "blocking_conditions": [
+            "momentum_below_threshold",
+            "volume_ratio_below_floor"
+          ]
+        },
+        "live_near_miss_rank": 7
+      }
+    ]
+  },
+  "kis": {
+    "status": "KIS_DIRECT_DEVELOPMENT_OK",
+    "source_queue_count": 5,
+    "source_bridge": {
+      "generated_at_utc": "2026-05-19T04:40:19.698302+00:00",
+      "status": "OPERATING_CANDIDATE_CONNECTED_SUBMIT_READY",
+      "candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+      "universe_validation_mode": "daily_close_presence",
+      "universe_validation_verifier_status": "NOT_REQUIRED"
+    },
+    "universe_validation_mode": "daily_close_presence",
+    "universe_validation_source": "operator_policy_daily_close_presence",
+    "universe_validation_verifier_status": "NOT_REQUIRED",
+    "universe_validation_operation_ready": true,
+    "universe_validation_all_verified": true,
+    "universe_validation_blockers": [],
+    "universe_validation_generated_at": "2026-05-19T04:39:44.955827+00:00",
+    "universe_validation_operational": true,
+    "counts_as_live_evidence": true,
+    "target_symbol_count": 6,
+    "conversion_variant_count": 25,
+    "pass_count": 16,
+    "top_variants": [
+      {
+        "candidate_id": "kis_direct_exposure_b56937bffd",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.64,
+        "estimated_cagr": 0.4555261996028307,
+        "estimated_mdd": -0.19801516782783168,
+        "source_sharpe": 1.7436785182561916,
+        "score": 0.5427101255156402,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_5de264e669",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.64,
+        "estimated_cagr": 0.4537064155395552,
+        "estimated_mdd": -0.19709544814192242,
+        "source_sharpe": 1.7446559487383329,
+        "score": 0.5409392129764719,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_41cffe3c29",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.64,
+        "estimated_cagr": 0.4518842972474197,
+        "estimated_mdd": -0.1961763607622109,
+        "source_sharpe": 1.7455973852445321,
+        "score": 0.5391641665096463,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_8070cb690b",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.4529408974806907,
+        "estimated_mdd": -0.19961599037308417,
+        "source_sharpe": 1.7178758127808547,
+        "score": 0.5388346881197335,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_b74c4ed026",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.62,
+        "estimated_cagr": 0.4412910058652422,
+        "estimated_mdd": -0.19182719383321192,
+        "source_sharpe": 1.7436785182561916,
+        "score": 0.5284749317780518,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_7c8f667343",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.62,
+        "estimated_cagr": 0.4395280900539441,
+        "estimated_mdd": -0.19093621538748734,
+        "source_sharpe": 1.7446559487383329,
+        "score": 0.5267608874908607,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_fe0d7117e8",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.44131752711255123,
+        "estimated_mdd": -0.19961599037308403,
+        "source_sharpe": 1.6936987997817152,
+        "score": 0.526002467101637,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_8d795f3ebf",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.62,
+        "estimated_cagr": 0.4377629129584378,
+        "estimated_mdd": -0.1900458494883918,
+        "source_sharpe": 1.7455973852445321,
+        "score": 0.5250427822206644,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_56445ac7f6",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.56,
+        "estimated_cagr": 0.4299100043884522,
+        "estimated_mdd": -0.18946602476089347,
+        "source_sharpe": 1.7178758127808547,
+        "score": 0.515803795027495,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_d06ebbf20e",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.4199382152588595,
+        "estimated_mdd": -0.18254523284128232,
+        "source_sharpe": 1.7436785182561916,
+        "score": 0.5071221411716691,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_8f0756dcd3",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.41826060182552743,
+        "estimated_mdd": -0.1816973662558347,
+        "source_sharpe": 1.7446559487383329,
+        "score": 0.5054933992624441,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_c6685418fc",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.59,
+        "estimated_cagr": 0.41658083652496497,
+        "estimated_mdd": -0.18085008257766316,
+        "source_sharpe": 1.7455973852445321,
+        "score": 0.5038607057871916,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_fad50a32a6",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.56,
+        "estimated_cagr": 0.41887765285259104,
+        "estimated_mdd": -0.18946602476089336,
+        "source_sharpe": 1.6936987997817152,
+        "score": 0.5035625928416768,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_c53be02586",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.56,
+        "estimated_cagr": 0.39858542465247687,
+        "estimated_mdd": -0.17326327184935272,
+        "source_sharpe": 1.7436785182561916,
+        "score": 0.4857693505652865,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_9fe481f3c3",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.56,
+        "estimated_cagr": 0.39699311359711087,
+        "estimated_mdd": -0.17245851712418214,
+        "source_sharpe": 1.7446559487383329,
+        "score": 0.4842259110340275,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_5dbc74f4a8",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.56,
+        "estimated_cagr": 0.3953987600914922,
+        "estimated_mdd": -0.17165431566693454,
+        "source_sharpe": 1.7455973852445321,
+        "score": 0.48267862935371886,
+        "status": "DIRECT_CONVERSION_PASS",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_8dbf98a75c",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim22_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.66,
+        "estimated_cagr": 0.46600568153640154,
+        "estimated_mdd": -0.20230687203602998,
+        "source_sharpe": 1.7455973852445321,
+        "score": 0.5486718067265682,
+        "status": "DIRECT_CONVERSION_ITERATE",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_2027217a2b",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim21_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.66,
+        "estimated_cagr": 0.46788474102516636,
+        "estimated_mdd": -0.2032546808963575,
+        "source_sharpe": 1.7446559487383329,
+        "score": 0.548608176669368,
+        "status": "DIRECT_CONVERSION_ITERATE",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_73260cb35d",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_conccarrykretfmicro_ct70_trim20_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.66,
+        "estimated_cagr": 0.46976139334041916,
+        "estimated_mdd": -0.20420314182245142,
+        "source_sharpe": 1.7436785182561916,
+        "score": 0.548539035608326,
+        "status": "DIRECT_CONVERSION_ITERATE",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      },
+      {
+        "candidate_id": "kis_direct_exposure_115fabb39d",
+        "parent_candidate_id": "stock_aggressive__tail_release_top25_mid75_pen35_floor25_switchcarry_gap02_top2",
+        "strategy_family": "direct_fixed_exposure_conversion",
+        "fixed_exposure_cap": 0.66,
+        "estimated_cagr": 0.5066796480292473,
+        "estimated_mdd": -0.22329924346819588,
+        "source_sharpe": 1.7178758127808547,
+        "score": 0.5459749517318983,
+        "status": "DIRECT_CONVERSION_ITERATE",
+        "order_paths_allowed": false,
+        "counts_as_live_evidence": false
+      }
+    ],
+    "current_target_symbols": [
+      {
+        "symbol": "049630",
+        "name": "\uc7ac\uc601\uc194\ub8e8\ud14d",
+        "asset_type": "STOCK",
+        "target_weight": 0.22404325114292067,
+        "momentum_rank": 1,
+        "momentum_score": 1.745500948360497
+      },
+      {
+        "symbol": "327260",
+        "name": "RF\uba38\ud2b8\ub9ac\uc5bc\uc988",
+        "asset_type": "STOCK",
+        "target_weight": 0.22404325114292067,
+        "momentum_rank": 2,
+        "momentum_score": 1.600670663578979
+      },
+      {
+        "symbol": "402340",
+        "name": "SK\uc2a4\ud018\uc5b4",
+        "asset_type": "STOCK",
+        "target_weight": 0.05787423561667779,
+        "momentum_rank": 4,
+        "momentum_score": 0.9989995457126295
+      },
+      {
+        "symbol": "319400",
+        "name": "\ud604\ub300\ubb34\ubca1\uc2a4",
+        "asset_type": "STOCK",
+        "target_weight": 0.04832746261312558,
+        "momentum_rank": 6,
+        "momentum_score": 0.6124937458006052
+      },
+      {
+        "symbol": "058610",
+        "name": "\uc5d0\uc2a4\ud53c\uc9c0",
+        "asset_type": "STOCK",
+        "target_weight": 0.04437305975815692,
+        "momentum_rank": 7,
+        "momentum_score": 0.459649454566593
+      },
+      {
+        "symbol": "069500",
+        "name": "069500",
+        "asset_type": "ETF",
+        "target_weight": 0.04133873972619842,
+        "momentum_rank": 22,
+        "momentum_score": 0.2736051699846076
+      }
+    ]
+  },
+  "no_order_assertions": {
+    "promotion_allowed_by_this_report": false,
+    "paper_enabled_by_this_report": false,
+    "live_allowed_by_this_report": false,
+    "broker_submit_allowed_by_this_report": false,
+    "private_submit_allowed_by_this_report": false,
+    "real_orders_allowed_by_this_report": false
+  }
+}
